@@ -1,0 +1,18 @@
+/*
+ * All UI colors on this file
+ *
+ */
+
+$ui-color: (
+    darkbrown : #202024,
+    redish : #F23054,
+    redish_strong : #F01941 
+);
+
+.redish{
+	background: map-get($ui-color, redish);
+}
+
+button.redish:hover{
+	background-color: map-get($ui-color, redish_strong);
+}

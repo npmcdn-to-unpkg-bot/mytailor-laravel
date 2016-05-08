@@ -1,0 +1,30 @@
+/**
+ * MyTailor Front end styles in Css
+ * @version v1.1
+ * @license Apache-2.0
+ * @copyright 2016 MyTailor.me.
+ * @link https://github.com/jobizzness/mytailor.dev
+ */
+
+@charset "UTF-8";
+
+/*Vendor Style that we need
+ *
+ *
+ *
+ */
+
+/*Normalize*/
+@import "vendor/normalize.scss";
+/*Boilers Plate*/
+@import "vendor/boilers_plate.scss";
+/*colors*/
+@import "components/colors.scss";
+/*Utility styles*/
+@import "utility/utility-layouts.scss";
+/*
+* Layout Styles
+*
+*
+*/
+@import "layouts/main_layout.scss";

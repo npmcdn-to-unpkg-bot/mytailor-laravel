@@ -5,8 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\User;
 use Validator;
 use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\ThrottlesLogins;
-use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class AuthController extends Controller
 {
@@ -21,7 +20,7 @@ class AuthController extends Controller
     |
     */
 
-    use AuthenticatesAndRegistersUsers, ThrottlesLogins;
+    use AuthenticatesUsers;
 
     /**
      * Where to redirect users after login / registration.
@@ -37,6 +36,9 @@ class AuthController extends Controller
      */
     public function __construct()
     {
+        $redirectAfterLogout = route('auth.login');
+        $this->redirectTo = route('admin.dashboard');
+
         $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
     }
 

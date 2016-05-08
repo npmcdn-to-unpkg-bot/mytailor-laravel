@@ -1,0 +1,41 @@
+/*
+ * Main layouts for our pages
+ *
+ *
+ * $this includes:
+ * header Layout
+ * Navigation Layout
+ * Grids
+ * Footer
+ *
+ */
+
+
+
+ /* ==========================================================================
+   Layout Styles: 
+   ========================================================================== */
+
+.mt-layout-admin-login{
+	height: 100%;
+	width: 100%;
+	min-height: 100vh;
+
+	& form.login-form{
+		margin-top: 80px;
+    	color: #a4aab2;
+    	font-size: 13px;
+	}
+}
+.mt-login-content{
+	margin: 0 80px;
+	margin-top:35%;
+}
+
+.mt-admin-login-title{
+	font-size: 30px;
+    font-weight: 300;
+    color: map-get($ui-color, darkbrown);
+    padding: 25px 0;
+}
+

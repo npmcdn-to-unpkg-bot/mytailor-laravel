@@ -1,0 +1,21 @@
+
+.card-4{
+	width:33.3333%;
+}
+
+.card-6{
+	width: 50%;
+}
+
+.card-8{
+	width: 66.6666%;
+}
+._has_space{
+	position: relative;
+    min-height: 1px;
+}
+
+.card-4,.card-6,.card-8{
+	padding-left: 15px;
+    padding-right: 15px;
+}
