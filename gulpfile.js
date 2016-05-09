@@ -11,9 +11,17 @@ var elixir = require('laravel-elixir');
  |
  */
 
-elixir.config.assetsPath = 'public/themes/default/assets';
+elixir.config.assetsPath = 'resources/assets';
 elixir.config.publicPath = elixir.config.assetsPath;
 
-elixir(function(mix) {
-    mix.sass('frontend.scss');
-});
+
+
+	elixir(function(mix) {
+
+		mix.scripts([
+
+    'bower/angular/angular.min.js',
+    'bower/jquery/dist/jquery.min.js',
+    'bower/Waves/dist/waves.min.js'
+			], 			'public/themes/default/assets/js/vendor.js')
+	});

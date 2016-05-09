@@ -15,16 +15,25 @@
  */
 
 /*Normalize*/
-@import "vendor/normalize.scss";
+@import "vendor/normalize";
 /*Boilers Plate*/
-@import "vendor/boilers_plate.scss";
+@import "vendor/boilers_plate";
+/*Waves*/
+@import "vendor/waves.sass";
+
+
 /*colors*/
-@import "components/colors.scss";
+@import "components/colors";
+/*banners*/
+@import "components/banners";
+/*Buttons*/
+@import "components/buttons";
+
 /*Utility styles*/
-@import "utility/utility-layouts.scss";
+@import "utility/utility-layouts";
 /*
 * Layout Styles
 *
 *
 */
-@import "layouts/main_layout.scss";
+@import "layouts/main_layout";

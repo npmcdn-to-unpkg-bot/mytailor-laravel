@@ -3,8 +3,8 @@
     <head>
         <title>@yield('pagetitle') | MyTailor Africa</title>
         <link rel="stylesheet" href="{{ theme('css/admin.css')}}">
-        <script src="{{ theme('js/vendor/jquery/jquery-2.1.4.min.js')}}"></script>
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+            <script src="{{ theme('js/vendor.js') }}"></script>
     </head>
     <body>
         <div class="mt-layout-container">
@@ -26,8 +26,6 @@
           </div>
         </div>
     </body>
-
-    <script src="{{ theme('js/vendor/plugins.js')}}"></script>
 
 
     <script type="text/javascript">

@@ -1,0 +1,103 @@
+/**
+ * MyTailor Banners and viewports
+ *
+ *
+ */
+/*********************************************************************************************
+
+     Hero Viewport
+
+*********************************************************************************************/
+.hero {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.cover-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-viewport {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-viewport-image {
+  width: 100%;
+  background: #151515 url("../../images/background/banner01.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  color: #fff;
+  padding: 15em 0;
+  width: 100%;
+  z-index: 25;
+  text-align: center;
+}
+
+/*.Buts_02{
+    padding: 0.9em 3.9em;
+    margin-left: 0.5em;
+    border-radius: 4px;
+    font-size: 21px;
+    background-color: transparent;
+}
+*/
+.mt-hero-textwrap {
+  text-align: left;
+}
+
+.mt-heading-text {
+  margin: 0 1em;
+  color: #fff;
+  font-weight: 600;
+}
+
+.mt-subheading-text {
+  margin: 0.5em 2.5em;
+}
+
+.mt-hero-button {
+  text-align: left;
+  margin: 2em 6em;
+}
+
+.button_09 {
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 2em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.button_09 {
+  color: #fff;
+  min-width: 12em;
+  font-size: .95rem;
+}
+
+.special {
+  background: linear-gradient(to bottom, #F23054, #F03054);
+}
+
+span.special:hover {
+  background: linear-gradient(to bottom, #D82849, #DC2749);
+}
+
+.mt-slide-button {
+  margin: 2em 2em;
+}

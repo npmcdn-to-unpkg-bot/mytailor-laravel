@@ -1,0 +1,8 @@
+{
+  "name": "mytailor-africa",
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "angular": "^1.5.5",
+    "Waves": "waves#^0.7.5"
+  }
+}

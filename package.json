@@ -1,7 +1,9 @@
 {
   "private": true,
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "grunt-bower-concat": "^1.0.0",
+    "gulp": "^3.9.1",
+    "load-grunt-tasks": "^3.5.0"
   },
   "dependencies": {
     "laravel-elixir": "^5.0.0",

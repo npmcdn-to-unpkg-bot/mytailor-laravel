@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Frontend | African Fashion is great !</title>
+        <title>@yield('pagetitle') | African Fashion prints & designs</title>
         <link rel="stylesheet" href="{{ theme('css/frontend.css')}}">
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+        <script src="{{ theme('js/vendor.js') }}"></script>
     </head>
     <body>
         <div class="mt-layout-container mt-layout">
-            <header class="mt-layout mt-layout-header mt-header--fixed" itemscope itemtype='https://schema.org/WPHeader'>
+            <header class="mt-layout-header mt-header--fixed" itemscope itemtype='https://schema.org/WPHeader'>
               <div class="mt-global-header">
                 <div class="pull-left">
                   <a class="sideTrigger">
@@ -42,15 +43,40 @@
               </nav>
             </div>
 
-            <div class="mt-page-wrapper">
+            <main class="mt-page-wrapper">
 
-                <div class="mt-layout-content">@yield('content')</div>
+                <div class="mt-layout-content">
 
-                <footer class="mt-layout-footer">
+                  <?php
+                  /*---------------------------------------------------->
+                  \ Load content Here and avoid complexity
+                  \----------------------------------------------------->
+                  \ 
+                  \ Here we will yield what ever page content we want.
+                  \
+                  \
+                  */
+                  ?>
 
-                </footer>
+                      @yield('content')
+            </main>
+
+                {{-- Footer --}}
+                
+                <footer class="mt-layout-footer"></footer>
             
-            </div>
+            </div> <!-- Page wrapper ends -->
         </div>
+
+          <script type="text/javascript">
+
+        $(window).on('load', function(){
+                  //Waves Buttons
+                    Waves.attach('.btn', ['waves-button', 'waves-float']);
+                    Waves.init();
+                 });
+    </script>
+
+
     </body>
 </html>
