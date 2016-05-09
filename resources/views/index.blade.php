@@ -10,7 +10,7 @@
 {{--Main Layout for home xiew--}}
 @extends('layouts.frontend')
 
-@section('pagetitle', 'Admin')
+@section('pagetitle', 'Home')
         {{--Content Area for our view--}}
         
         @section('content')
