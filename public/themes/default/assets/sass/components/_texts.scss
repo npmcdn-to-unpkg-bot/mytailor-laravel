@@ -1,3 +1,9 @@
+
+/* ==========================================================================
+   This File is for all texts Css
+   ========================================================================== */
+
+
 .forgot-password{
 	display: inline-block;
 	color: #eee;
@@ -9,4 +15,26 @@
     background-color: #fbe1e3;
     border-color: #fbe1e3;
     color: #e73d4a;
+}
+
+.mt-menu-text {
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 0px 1px 0px black, 2px 0px 1px rgba(0, 0, 0, 0.87);
+}
+
+.mt-call-items-title {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.mt-call-items-text {
+    color: #868686;
+    font-size: 15px;
+}
+
+
+.mt-call-items a:hover .kilama-tit {
+    color: #F23054;
 }

@@ -6,13 +6,17 @@
 $ui-color: (
     darkbrown : #202024,
     redish : #F23054,
-    redish_strong : #F01941 
+    redish_strong : #D9183C 
 );
 
 .redish{
 	background: map-get($ui-color, redish);
 }
 
-button.redish:hover{
-	background-color: map-get($ui-color, redish_strong);
+.redish:hover{
+	background-color: map-get($ui-color, redish_strong) !important;
+}
+
+.dark{
+	background-color: map-get($ui-color, darkbrown);
 }

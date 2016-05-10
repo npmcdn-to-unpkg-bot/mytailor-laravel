@@ -28,7 +28,8 @@
 @import "components/banners";
 /*Buttons*/
 @import "components/buttons";
-
+/*Texts*/
+@import "components/texts";
 /*Utility styles*/
 @import "utility/utility-layouts";
 /*
@@ -37,3 +38,9 @@
 *
 */
 @import "layouts/main_layout";
+@import "layouts/frontend_layout";
+/*Cars*/
+@import "layouts/cards";
+
+/*Animate*/
+@import "components/animate";

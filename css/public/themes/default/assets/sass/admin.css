@@ -461,120 +461,27 @@ a.waves-effect .waves-ripple {
  * All UI colors on this file
  *
  */
-.redish {
-  background: #F23054;
-}
-
-button.redish:hover {
-  background-color: #F01941;
-}
-
-/*banners*/
-/**
- * MyTailor Banners and viewports
- *
- *
- */
-/*********************************************************************************************
-
-     Hero Viewport
-
-*********************************************************************************************/
-.hero {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.cover-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-viewport {
-  width: 100%;
-  overflow: hidden;
-}
-
-.hero-viewport-image {
-  width: 100%;
-  background: #151515 url("../../images/background/banner01.jpg");
-  background-position: center top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.hero-content {
-  color: #fff;
-  padding: 15em 0;
-  width: 100%;
-  z-index: 25;
-  text-align: center;
-}
-
-/*.Buts_02{
-    padding: 0.9em 3.9em;
-    margin-left: 0.5em;
-    border-radius: 4px;
-    font-size: 21px;
-    background-color: transparent;
+/*.redish{
+	background: map-get($ui-color, redish);
 }
 */
-.mt-hero-textwrap {
-  text-align: left;
+.redish:hover {
+  background-color: #F01941 !important;
 }
 
-.mt-heading-text {
-  margin: 0 1em;
-  color: #fff;
-  font-weight: 600;
-}
-
-.mt-subheading-text {
-  margin: 0.5em 2.5em;
-}
-
-.mt-hero-button {
-  text-align: left;
-  margin: 2em 6em;
-}
-
-.button_09 {
-  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  background-color: transparent;
-  border-radius: 2px;
-  border: 0;
-  cursor: pointer;
+.forgot-password {
   display: inline-block;
-  font-weight: 600;
-  height: 3em;
-  line-height: 3em;
-  padding: 0 2em;
-  text-align: center;
-  text-decoration: none;
-  white-space: nowrap;
+  color: #eee;
+  margin-right: 5px;
 }
 
-.button_09 {
-  color: #fff;
-  min-width: 12em;
-  font-size: .95rem;
+.danger-text {
+  font-size: 12px;
+  background-color: #fbe1e3;
+  border-color: #fbe1e3;
+  color: #e73d4a;
 }
 
-.special {
-  background: linear-gradient(to bottom, #F23054, #F03054);
-}
-
-span.special:hover {
-  background: linear-gradient(to bottom, #D82849, #DC2749);
-}
-
-.mt-slide-button {
-  margin: 2em 2em;
-}
-
-/*Buttons*/
 .btn {
   color: #fff;
 }
@@ -647,144 +554,80 @@ span.special:hover {
 /* ==========================================================================
    Layout Styles: 
    ========================================================================== */
-.mt-layout {
-  width: 100%;
+.mt-layout-admin-login {
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow-y: auto;
-  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.mt-layout-admin-login form.login-form {
+  margin-top: 80px;
+  color: #a4aab2;
+  font-size: 13px;
+}
+
+.mt-login-content {
+  margin: 0 80px;
+  margin-top: 35%;
+}
+
+.mt-admin-login-title {
+  font-size: 30px;
+  font-weight: 300;
+  color: #202024;
+  padding: 25px 0;
+}
+
+.card-4 {
+  width: 33.3333%;
+}
+
+.card-6 {
+  width: 50%;
+}
+
+.card-8 {
+  width: 66.6666%;
+}
+
+._has_space {
   position: relative;
-  -webkit-overflow-scrolling: touch;
+  min-height: 1px;
 }
 
-.mt-layout-container {
-  position: absolute;
+.card-4, .card-6, .card-8 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.mt-forms {
   width: 100%;
-  height: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  background-color: #fff;
+  border: 1px solid #c2cad8;
+  border-radius: 4px;
+  outline: 0 !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 
-/* ==========================================================================
-   Header layout Styles: 
-   ========================================================================== */
-.mt-layout-header {
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  box-sizing: border-box;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  border: none;
-  min-height: 60px;
-  max-height: 60px;
-  z-index: 3;
-  background-color: #202024;
-  color: white;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: max-height, box-shadow;
-  transition-property: max-height, box-shadow;
+.login-form > .row > .card-6 > input[type='text'], input[type='password'] {
+  margin-bottom: 40px;
 }
 
-.mt-header--fixed {
-  top: 0;
+.rem-password {
+  margin-top: 15px;
 }
 
-.mt-global-header {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  box-sizing: border-box;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  height: 64px;
-  margin: 0;
-  padding: 0 30px 0 30px;
+.rem-password p {
+  display: inline-block;
+  padding: 5px;
 }
 
-/* ==========================================================================
-  SideBar layout Styles: 
-   ========================================================================== */
-.mt-layout-sidebar {
-  width: 18.45rem;
-  height: 100%;
-  max-height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  box-sizing: border-box;
-  border-right: 1px solid #e0e0e0;
-  background: #fafafa;
-  -webkit-transform: translateX(-18.45rem);
-  -ms-transform: translateX(-18.45rem);
-  transform: translateX(-18.45rem);
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  will-change: transform;
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: -webkit-transform;
-  transition-property: transform;
-  color: #424242;
-  overflow: visible;
-  overflow-y: auto;
-  z-index: 5;
-}
-
-.mt-layout-sidebar.__visible {
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
-}
-
-/* ==========================================================================
-  Page layout & content: 
-   ========================================================================== */
-.mt-page-wrapper {
-  z-index: 1;
-}
-
-.mt-layout-content {
-  min-height: 40em;
-}
-
-/* ==========================================================================
-  Footer Layout: 
-   ========================================================================== */
-.mt-layout-footer {
-  color: #9e9e9e;
-  background-color: #202024;
-  padding: 16px 40px;
-  min-height: 10em;
+.login-error {
+  padding: 0.5em 0;
 }

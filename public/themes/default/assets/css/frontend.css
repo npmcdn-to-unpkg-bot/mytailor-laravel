@@ -465,8 +465,12 @@ a.waves-effect .waves-ripple {
   background: #F23054;
 }
 
-button.redish:hover {
-  background-color: #F01941;
+.redish:hover {
+  background-color: #D9183C !important;
+}
+
+.dark {
+  background-color: #202024;
 }
 
 /*banners*/
@@ -521,17 +525,14 @@ button.redish:hover {
 }
 */
 .mt-hero-textwrap {
+  padding: 0.5em 3em;
   text-align: left;
 }
 
-.mt-heading-text {
-  margin: 0 1em;
-  color: #fff;
-  font-weight: 600;
-}
-
-.mt-subheading-text {
-  margin: 0.5em 2.5em;
+.mt-hero-textwrap .mt-heading-text {
+  padding: 0.2em 0;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .mt-hero-button {
@@ -581,7 +582,7 @@ span.special:hover {
 
 .mt-ms-button {
   padding: 10px 17px;
-  border-radius: 3px;
+  border-radius: 4px;
   border: 0;
 }
 
@@ -590,6 +591,45 @@ span.special:hover {
   margin-left: 0.5em;
   border-radius: 4px;
   font-size: 1em;
+}
+
+/*Special Type*/
+/*Texts*/
+/* ==========================================================================
+   This File is for all texts Css
+   ========================================================================== */
+.forgot-password {
+  display: inline-block;
+  color: #eee;
+  margin-right: 5px;
+}
+
+.danger-text {
+  font-size: 12px;
+  background-color: #fbe1e3;
+  border-color: #fbe1e3;
+  color: #e73d4a;
+}
+
+.mt-menu-text {
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 0px 1px 0px black, 2px 0px 1px rgba(0, 0, 0, 0.87);
+}
+
+.mt-call-items-title {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.mt-call-items-text {
+  color: #868686;
+  font-size: 15px;
+}
+
+.mt-call-items a:hover .kilama-tit {
+  color: #F23054;
 }
 
 /*Utility styles*/
@@ -693,12 +733,6 @@ span.special:hover {
   background-color: #202024;
   color: white;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: max-height, box-shadow;
-  transition-property: max-height, box-shadow;
 }
 
 .mt-header--fixed {
@@ -730,10 +764,17 @@ span.special:hover {
   padding: 0 30px 0 30px;
 }
 
+.pull-left {
+  cursor: pointer;
+}
+
 /* ==========================================================================
   SideBar layout Styles: 
    ========================================================================== */
 .mt-layout-sidebar {
+  -webkit-transform: translateX(-18.45rem);
+  -ms-transform: translateX(-18.45rem);
+  transform: translateX(-18.45rem);
   width: 18.45rem;
   height: 100%;
   max-height: 100%;
@@ -744,9 +785,10 @@ span.special:hover {
   box-sizing: border-box;
   border-right: 1px solid #e0e0e0;
   background: #fafafa;
-  -webkit-transform: translateX(-18.45rem);
-  -ms-transform: translateX(-18.45rem);
-  transform: translateX(-18.45rem);
+  color: #424242;
+  overflow: visible;
+  overflow-y: auto;
+  z-index: 5;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   will-change: transform;
@@ -756,16 +798,6 @@ span.special:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
-  color: #424242;
-  overflow: visible;
-  overflow-y: auto;
-  z-index: 5;
-}
-
-.mt-layout-sidebar.__visible {
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
 }
 
 /* ==========================================================================
@@ -788,3 +820,145 @@ span.special:hover {
   padding: 16px 40px;
   min-height: 10em;
 }
+
+.mt-obfuscator {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  visibility: hidden;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: .2s;
+  transition-duration: .2s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mt-obfuscator.show {
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: visible;
+}
+
+/*Call to action section*/
+.mt-layout_calls-wrapper {
+  box-sizing: border-box;
+  background: #202024;
+}
+
+.mt-call-actions {
+  padding: 25px 0;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: Center;
+}
+
+.mt-call-items {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  justify-content: center;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  flex: 0 0 210px;
+  font-size: 16px;
+  align-items: center;
+  font-weight: 400;
+  min-height: 200px;
+  margin: 1em;
+  overflow: hidden;
+  width: 261px;
+  z-index: 1;
+  position: relative;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.mt-call-items > .call-item {
+  padding: 0 30px;
+  text-align: center;
+}
+
+.mt-call-items > .call-item div.icon {
+  padding: 2em 0em;
+}
+
+.mt-after-call-items {
+  text-align: center;
+  padding: 4em 0;
+  border-bottom: 1px solid #eee;
+}
+
+.mt-shot-item {
+  height: 346px;
+  background: #2196F3;
+  margin-top: 2em;
+  margin-right: 1em;
+}
+
+/*Cars*/
+/* ==========================================================================
+  ROws
+   ========================================================================== */
+.card-4 {
+  width: 33.3333%;
+}
+
+.card-6 {
+  width: 50%;
+}
+
+.card-8 {
+  width: 66.6666%;
+}
+
+._has_space {
+  position: relative;
+  min-height: 1px;
+}
+
+.card-4, .card-6, .card-8 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*Rows go here*/
+.mt-row-shots {
+  display: flex;
+}
+
+.mt-row {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/*Animate*/
+.__visible {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+/*.mt-layout-sidebar.__visible-add{
+	-webkit-transition-duration: .2s;
+    transition-duration: .2s;
+}
+
+.mt-layout-sidebar.__vibile-add-active{
+
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+
+}
+*/

@@ -54,17 +54,17 @@
 }
 */
 .mt-hero-textwrap{
+    padding: 0.5em 3em;
     text-align: left;
-}                  
 
-.mt-heading-text{
-    margin: 0 1em;
-    color: #fff;
-    font-weight: 600;
-}
-.mt-subheading-text{
-    margin: 0.5em 2.5em;
-}
+    .mt-heading-text{
+        padding: 0.2em 0;
+        font: {
+            size: 25px;
+            weight: bold;
+        }
+    }
+}                  
 
 .mt-hero-button{
     text-align: left;

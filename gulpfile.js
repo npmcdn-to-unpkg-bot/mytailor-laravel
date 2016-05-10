@@ -16,12 +16,14 @@ elixir.config.publicPath = elixir.config.assetsPath;
 
 
 
+	// This will mix vendor scripts
 	elixir(function(mix) {
-
-		mix.scripts([
-
-    'bower/angular/angular.min.js',
-    'bower/jquery/dist/jquery.min.js',
-    'bower/Waves/dist/waves.min.js'
-			], 			'public/themes/default/assets/js/vendor.js')
+		mix.scripts(
+			[
+			    'bower/angular/angular.min.js',
+			    'bower/angular/angular-route.min.js',
+				'bower/angular/angular-animate.min.js',
+			    'bower/jquery/dist/jquery.min.js',
+			    'bower/Waves/dist/waves.min.js'
+			   ], 	 'public/themes/default/assets/js/vendor.js')
 	});

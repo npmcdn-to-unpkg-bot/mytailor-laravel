@@ -64,12 +64,6 @@
   background-color: map-get($ui-color, darkbrown);
   color: rgb(255,255,255);
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-transition-property: max-height, box-shadow;
-          transition-property: max-height, box-shadow;
 
 }
 
@@ -105,13 +99,18 @@
 }
 
 
-
+.pull-left{
+    cursor: pointer;
+}
  /* ==========================================================================
   SideBar layout Styles: 
    ========================================================================== */
 
 .mt-layout-sidebar{
     @extend .make-flex;
+    -webkit-transform: translateX(-18.45rem);
+    -ms-transform: translateX(-18.45rem);
+    transform: translateX(-18.45rem);
     width: 18.45rem;
     height: 100%;
     max-height: 100%;
@@ -122,9 +121,10 @@
     box-sizing: border-box;
     border-right: 1px solid #e0e0e0;
     background: #fafafa;
-    -webkit-transform: translateX(-18.45rem);
-    -ms-transform: translateX(-18.45rem);
-    transform: translateX(-18.45rem);
+    color: #424242;
+    overflow: visible;
+    overflow-y: auto;
+    z-index: 5;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     will-change: transform;
@@ -134,16 +134,6 @@
     transition-timing-function: cubic-bezier(.4,0,.2,1);
     -webkit-transition-property: -webkit-transform;
     transition-property: transform;
-    color: #424242;
-    overflow: visible;
-    overflow-y: auto;
-    z-index: 5;
-
-  &.__visible{
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-  }
 }
 
  /* ==========================================================================
@@ -168,3 +158,27 @@
     padding: 16px 40px;
     min-height: 10em;
   }
+
+  .mt-obfuscator{
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+    visibility: hidden;
+    -webkit-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+
+    &.show{
+          background-color: rgba(0,0,0,.5);
+          visibility: visible;
+    }
+  }
+
+

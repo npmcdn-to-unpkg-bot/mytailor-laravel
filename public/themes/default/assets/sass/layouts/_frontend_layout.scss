@@ -1,0 +1,60 @@
+/*Call to action section*/
+
+.mt-layout_calls-wrapper{
+	box-sizing: border-box;
+    background: map-get($ui-color, darkbrown);
+}
+
+.mt-call-actions{
+    padding: 25px 0;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: Center;
+}
+.mt-call-items{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    justify-content: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    flex: 0 0 210px;
+    font-size: 16px;
+    align-items: center;
+    font-weight: 400;
+    min-height: 200px;
+    margin: 1em;
+    overflow: hidden;
+    width: 261px;
+    z-index: 1;
+    position: relative;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.mt-call-items>.call-item{
+	padding: 0 30px;
+    text-align: center;
+	& div.icon{
+		    padding: 2em 0em;
+	}
+}
+
+.mt-after-call-items{
+    text-align: center;
+    padding: 4em 0;
+    border-bottom: 1px solid #eee;
+}
+
+.mt-shot-item{
+	height: 346px;
+    background: #2196F3;
+    margin-top: 2em;
+    margin-right: 1em;
+}

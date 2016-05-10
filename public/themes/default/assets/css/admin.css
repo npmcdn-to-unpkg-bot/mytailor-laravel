@@ -465,10 +465,17 @@ a.waves-effect .waves-ripple {
   background: #F23054;
 }
 
-button.redish:hover {
-  background-color: #F01941;
+.redish:hover {
+  background-color: #D9183C !important;
 }
 
+.dark {
+  background-color: #202024;
+}
+
+/* ==========================================================================
+   This File is for all texts Css
+   ========================================================================== */
 .forgot-password {
   display: inline-block;
   color: #eee;
@@ -482,13 +489,34 @@ button.redish:hover {
   color: #e73d4a;
 }
 
+.mt-menu-text {
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 0px 1px 0px black, 2px 0px 1px rgba(0, 0, 0, 0.87);
+}
+
+.mt-call-items-title {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.mt-call-items-text {
+  color: #868686;
+  font-size: 15px;
+}
+
+.mt-call-items a:hover .kilama-tit {
+  color: #F23054;
+}
+
 .btn {
   color: #fff;
 }
 
 .mt-ms-button {
   padding: 10px 17px;
-  border-radius: 3px;
+  border-radius: 4px;
   border: 0;
 }
 
@@ -499,6 +527,7 @@ button.redish:hover {
   font-size: 1em;
 }
 
+/*Special Type*/
 /*Utility styles*/
 .make_flex {
   display: -webkit-flex;
@@ -578,6 +607,9 @@ button.redish:hover {
   padding: 25px 0;
 }
 
+/* ==========================================================================
+  ROws
+   ========================================================================== */
 .card-4 {
   width: 33.3333%;
 }
@@ -598,6 +630,17 @@ button.redish:hover {
 .card-4, .card-6, .card-8 {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/*Rows go here*/
+.mt-row-shots {
+  display: flex;
+}
+
+.mt-row {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .mt-forms {
