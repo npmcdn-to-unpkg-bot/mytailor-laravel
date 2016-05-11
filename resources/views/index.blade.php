@@ -24,7 +24,7 @@
                             <div class="hero-content" style="">
                                 <div class="mt-hero-textwrap">
                                     <h1 class="mt-heading">MYTAILOR AFRICA</h1>
-                                    <h2 class="mt-subheading">GET INSPIRED BY TALENTED AFRICAN FASHION DESIGNERS.</h2>
+                                    <h2 class="mt-subheading">GET INSPIRED BY TALENTED <span>AFRICAN</span> FASHION <span>DESIGNERS</span>.</h2>
                                 </div>
                                 <div class="mt-hero-button">
                                     <a href="/shots" class="btn mt-call-button redish"><span>Explore</span></a>
@@ -91,10 +91,10 @@
 
               </section> <!-- Call actions end -->
 
-              <section class="mt-row-shots mt-row">
+              <section class="mdl-grid mt-row featured-grid">
                   {{-- Shots --}}
 
-                  <div class="mt-shot-item card-4">
+                  <div class="mt-shot-item mdl-cell mdl-cell--4-col">
                       <figure>
                         <a href="" class="sp-view">
                           <img src="">
@@ -107,7 +107,7 @@
                       </figure>
                   </div>
 
-                  <div class="mt-shot-item card-4">
+                  <div class="mt-shot-item mdl-cell mdl-cell--4-col">
                       <figure>
                         <a href="" class="sp-view">
                           <img src="">
@@ -120,7 +120,7 @@
                       </figure>
                   </div>
 
-                  <div class="mt-shot-item card-4">
+                  <div class="mt-shot-item mdl-cell mdl-cell--4-col">
                       <figure>
                         <a href="" class="sp-view">
                           <img src="">
@@ -134,8 +134,8 @@
                   </div>
               </section>
 
-            <div style="text-align: center;padding-bottom: 4em;">
-              <a href="/mytailor.me/public_html/shots/trending" class="norm-text"><span class="btn redish">Show me more</span></a>
+            <div class="after-shots-action">
+              <a href="/mytailor.me/public_html/shots/trending"><span class="btn __tranparent">Show me more</span></a>
             </div>
 
               {{-- Next --}}
@@ -173,5 +173,13 @@
                     </div>
                   </div>
                 </div>
+          </section>
+
+          <section class="mt-large-info-box">
+            <h3 class="mt-title-white">what you like, is for you</h3>
+            <p class="mt-sm-cont-text">Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos. </p>
+
+            <a href="" style="color: #03A9F4;">check out cool stuff</a>
+
           </section>
         @endsection

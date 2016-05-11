@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="app">
     <head>
-        <title>@yield('pagetitle') | African Fashion prints & designs</title>
+        <title>@yield('pagetitle') | Catalog of African Fashion prints & designs</title>
         <link rel="shortcut icon" href="{{ theme('images/favicon.png')}}">
         <link rel="stylesheet" href="{{ theme('css/frontend.css')}}">
 
@@ -21,8 +21,9 @@
                   </a>
 
                 </div>
+                <div class="mt-header-spacer"></div>
 
-               <!--  <div class="mt-search-wrapper expandable--search hide-on-phone">
+                <div class="mt-search-wrapper expandable--search hide-on-phone">
                   <span class="icon-search"><i class="mdi mdi-magnify" style="font-size: 22px;"></i></span>
                   <form method="Get" action="#" id="search-box">
                       <input type="search" id="q" autocapitalize="off" autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="text" value="" placeholder="search for items like men, women, shirts, shoes and more ..."/>
@@ -30,13 +31,12 @@
                 </div>
                 <button class="icon-round mdl-button mt-toggle-search" style="visibility:hidden;">
                     <i class="mdi mdi-magnify icon-center" data-type="search"></i>
-                  </button> -->
-                </div><!-- Main bar ends -->  
+                  </button>
+                </div><!-- Main bar ends --> 
+
             </header>
             <div class="mt-layout-sidebar --scroll" ng-class="{'__visible': toggle}">
               <div style="height:10em; background:#FB4164;">
-
-                Title
 
               </div>
               <nav id="mt-nav-main" class="mt-nav" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
@@ -64,24 +64,28 @@
                       @yield('content')
             </main>
 
-                {{-- Footer --}}
-                
-                <footer class="mt-layout-footer"></footer>
-                {{-- Obfuscator --}}
+                <footer class="mt-layout-footer">
+                  <ul class="icons">
+                    <li><a href="https://twitter.com/MyTailor_Africa" class="mdi mdi-twitter" title="Twitter"><span class="label"></span></a></li>
+                    <li><a href="https://www.facebook.com/MyTailorAfrica/" class="mdi mdi-facebook" title="Facebook"><span class="label"></span></a></li>
+                    <li><a href="#" class="mdi mdi-instagram"><span class="label"></span></a></li>
+                    <li><a href="#" class="mdi mdi-google-plus"><span class="label"></span></a></li>   
+                  </ul>
+                  <ul class="copyright">
+                    <li>© 2016 MyTailor. All rights reserved.</li>
+                  </ul> 
+                </footer> 
+
+                <!-- Black Screen -->
                 <div class="mt-obfuscator" ng-class="{'show': toggle}" ng-click="toggleSidebar()"></div>
             
             </div> <!-- Page wrapper ends -->
         </div>
-
+        <!-- Scripts -->
         <script src="{{ theme('js/app.js') }}"></script>
-        <script type="text/javascript">
+        <script src="{{ theme('js/script.js') }}"></script>
 
-        $(window).on('load', function(){
-                  //Waves Buttons
-                    Waves.attach('.btn', ['waves-button', 'waves-float']);
-                    Waves.init();
-                 });
-    </script>
+
 
 
     </body>

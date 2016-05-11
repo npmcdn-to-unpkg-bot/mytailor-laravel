@@ -3,6 +3,24 @@
    This File is for all texts Css
    ========================================================================== */
 
+/*
+* Global texts that are general
+*
+*/
+.mt-heading{
+    padding: 0.2em 0;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 113%
+}
+
+.mt-subheading{
+    max-width: 579px;
+    font-size: 1.1em;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 180%;
+}
 
 .forgot-password{
 	display: inline-block;
@@ -22,6 +40,7 @@
     text-shadow: 0px 1px 0px black, 2px 0px 1px rgba(0, 0, 0, 0.87);
 }
 
+/*More specific texts*/
 .mt-call-items-title {
     color: rgba(255, 255, 255, 0.6);
     font-size: 1em;
@@ -39,16 +58,3 @@ a.mt-call-items:hover .mt-call-items-title {
     color: #F23054;
 }
 
-.mt-heading{
-        padding: 0.2em 0;
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 113%;
-}
-.mt-subheading{
-        max-width: 559px;
-    font-size: 1.1em;
-    font-weight: normal;
-    letter-spacing: 2px;
-    line-height: 180%;
-}

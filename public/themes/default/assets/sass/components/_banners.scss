@@ -30,7 +30,7 @@
 
 .hero-viewport-image{
     width: 100%;
-    background: #151515 url("../../images/background/banner01.jpg");
+    background: #151515 url("../images/backgrounds/banner01.jpg");
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -106,3 +106,13 @@ span.special:hover{
     margin: 2em 2em;
 }
 
+
+.mt-small-banner{
+    height: 55vh;
+    background: url('../images/backgrounds/bb.jpg');
+    background-size: cover;
+}
+
+.mt-small-banner-wrapper{
+    padding-bottom: 50px;
+}

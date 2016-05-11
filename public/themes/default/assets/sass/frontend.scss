@@ -20,7 +20,8 @@
 @import "vendor/boilers_plate";
 /*Waves*/
 @import "vendor/waves.sass";
-
+/*Fonts*/
+@import "../fonts/MaterialDesign-Font/css/materialdesignicons.min.css";
 
 /*colors*/
 @import "components/colors";
@@ -30,8 +31,11 @@
 @import "components/buttons";
 /*Texts*/
 @import "components/texts";
+/*Forms*/
+@import "components/forms";
 /*Utility styles*/
 @import "utility/utility-layouts";
+
 /*
 * Layout Styles
 *
