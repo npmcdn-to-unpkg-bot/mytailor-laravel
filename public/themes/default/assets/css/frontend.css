@@ -473,6 +473,10 @@ a.waves-effect .waves-ripple {
   background-color: #202024;
 }
 
+.grey60 {
+  background-color: #D8D8D8;
+}
+
 /*banners*/
 /**
  * MyTailor Banners and viewports
@@ -628,8 +632,23 @@ span.special:hover {
   font-size: 15px;
 }
 
-.mt-call-items a:hover .kilama-tit {
+a.mt-call-items:hover .mt-call-items-title {
   color: #F23054;
+}
+
+.mt-heading {
+  padding: 0.2em 0;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 113%;
+}
+
+.mt-subheading {
+  max-width: 559px;
+  font-size: 1.1em;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 180%;
 }
 
 /*Utility styles*/
@@ -783,7 +802,7 @@ span.special:hover {
   left: 0;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
-  border-right: 1px solid #e0e0e0;
+  border-right: 1px solid #2F2525;
   background: #fafafa;
   color: #424242;
   overflow: visible;
@@ -892,17 +911,29 @@ span.special:hover {
   padding: 2em 0em;
 }
 
+/*The Big button concept*/
 .mt-after-call-items {
   text-align: center;
   padding: 4em 0;
   border-bottom: 1px solid #eee;
 }
 
+/*Featured Shots*/
 .mt-shot-item {
   height: 346px;
   background: #2196F3;
   margin-top: 2em;
   margin-right: 1em;
+}
+
+.mt-shot-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+/*Content Area text*/
+.mt-content-section-wrapper {
+  width: 100%;
+  padding: 0 10em;
 }
 
 /*Cars*/

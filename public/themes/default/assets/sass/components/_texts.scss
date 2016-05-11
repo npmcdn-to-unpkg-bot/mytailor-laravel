@@ -35,6 +35,20 @@
 }
 
 
-.mt-call-items a:hover .kilama-tit {
+a.mt-call-items:hover .mt-call-items-title {
     color: #F23054;
+}
+
+.mt-heading{
+        padding: 0.2em 0;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 113%;
+}
+.mt-subheading{
+        max-width: 559px;
+    font-size: 1.1em;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 180%;
 }

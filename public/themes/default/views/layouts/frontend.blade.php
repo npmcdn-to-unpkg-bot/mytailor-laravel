@@ -34,7 +34,7 @@
                 </div><!-- Main bar ends -->  
             </header>
             <div class="mt-layout-sidebar --scroll" ng-class="{'__visible': toggle}">
-              <div style="height:15em; background:#FB4164;">
+              <div style="height:10em; background:#FB4164;">
 
                 Title
 

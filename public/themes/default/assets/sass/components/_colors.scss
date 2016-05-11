@@ -6,7 +6,8 @@
 $ui-color: (
     darkbrown : #202024,
     redish : #F23054,
-    redish_strong : #D9183C 
+    redish_strong : #D9183C,
+    grey60	: #D8D8D8 
 );
 
 .redish{
@@ -19,4 +20,8 @@ $ui-color: (
 
 .dark{
 	background-color: map-get($ui-color, darkbrown);
+}
+
+.grey60{
+	background-color: map-get($ui-color, grey60);
 }

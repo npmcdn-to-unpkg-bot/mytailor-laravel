@@ -46,15 +46,31 @@
 	}
 }
 
+/*The Big button concept*/
 .mt-after-call-items{
     text-align: center;
     padding: 4em 0;
     border-bottom: 1px solid #eee;
 }
 
+
+/*Featured Shots*/
+
 .mt-shot-item{
 	height: 346px;
     background: #2196F3;
     margin-top: 2em;
     margin-right: 1em;
+}
+
+.mt-shot-item:nth-child(3n){
+	margin-right:0;
+}
+
+
+
+/*Content Area text*/
+.mt-content-section-wrapper{
+	width: 100%;
+	padding: 0 10em;
 }

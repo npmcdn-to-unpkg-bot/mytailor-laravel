@@ -23,8 +23,8 @@
                         <div class="hero-viewport-image">
                             <div class="hero-content" style="">
                                 <div class="mt-hero-textwrap">
-                                    <h1 class="mt-heading-text">MYTAILOR AFRICA</h1>
-                                    <h2 class="mt-subheading-text">GET INSPIRED BY TALENTED AFRICAN FASHION DESIGNERS.</h2>
+                                    <h1 class="mt-heading">MYTAILOR AFRICA</h1>
+                                    <h2 class="mt-subheading">GET INSPIRED BY TALENTED AFRICAN FASHION DESIGNERS.</h2>
                                 </div>
                                 <div class="mt-hero-button">
                                     <a href="/shots" class="btn mt-call-button redish"><span>Explore</span></a>
@@ -133,4 +133,45 @@
                       </figure>
                   </div>
               </section>
+
+            <div style="text-align: center;padding-bottom: 4em;">
+              <a href="/mytailor.me/public_html/shots/trending" class="norm-text"><span class="btn redish">Show me more</span></a>
+            </div>
+
+              {{-- Next --}}
+
+              <section class="mt-content-section-wrapper grey60">
+                <div class="mt-wrap-ptb clearfix">
+                  <div class="mt-2cols-wrap">
+                    <div class="mt-info-box">
+                      <div style="padding:2em 0;">
+                          <h2 class="bold-title">Designs Inspire !</h2>
+                      </div>
+
+                      <p class="attract-me">Inspiration comes in many ways. What you wear tells alot about you. On your next meeting, interview, every part of the Uber experience has been designed around your safety and security.</p>
+
+                      <div class="mt-call-text">
+                        <a href="" id="buzzle">See Classic wears <i class="mdi mdi-arrow-right-bold hvr-buzz-out" aria-hidden="true"></i></a>
+                      </div>
+                    </div>
+                    <div>
+
+                    </div>
+                  </div>
+
+                  <div class="mt-2cols-wrap mdl-cards">
+                    <div class="mt-small-banner-wrapper">
+                      <ul>
+                        <li>
+                          <div class="mt-small-banner"></div>
+                        </li>
+                       <!--  <li>
+                          <div class="mt-small-banner"></div>
+                        </li> -->
+                      </ul>
+                      
+                    </div>
+                  </div>
+                </div>
+          </section>
         @endsection
