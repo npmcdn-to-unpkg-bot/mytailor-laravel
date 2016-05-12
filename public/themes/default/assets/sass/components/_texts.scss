@@ -58,3 +58,7 @@ a.mt-call-items:hover .mt-call-items-title {
     color: #F23054;
 }
 
+
+.blue-text{
+    color: map-get($ui-color, blue);
+}

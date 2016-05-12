@@ -9,12 +9,13 @@
 		<div class="mt-row--fullwidth mdl-grid">
             
             <main class="admin-main-wrapper mdl-cell mdl-cell--8-col">
-               <section class="main-feed-header">
+               <section class="dashboard-main-header">
                 <div>
                    <ul class="breadcrump">
-                       <li><a href="#">Mytailor</a></li>
+                       <li><a href="#" class="blue-text">Mytailor</a></li>
                        <li>Dashboard</li>
                    </ul>
+
                </div>
                </section>
                 <div class="call-admin-head clearfix">

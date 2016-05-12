@@ -44,6 +44,11 @@
                       <button class="icon-round mdl-button btn" id="dropdown">
                         <i class="icon-center mdi mdi-menu-down" data-type="hidden"></i>
                       </button>
+                      <div class="mt-menu-container showMenu" style="visibility:hidden;" id="m9menu">
+          <ul>
+            <li class="mt-list-btn btn" style="transition-delay: 0.012s;"><a href="#" class="m-0">Settings</a></li>
+            <li class="mt-list-btn btn" style="transition-delay: 0.084s;"><a href="{{route('auth.logout')}}" class="m-0">Logout</a></li>
+          </ul></div>
                     </div>
                   </div>
               </header>
