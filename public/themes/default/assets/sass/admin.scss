@@ -15,24 +15,36 @@
  */
 
 /*Normalize*/
-@import "vendor/normalize.scss";
+@import "vendor/normalize";
 /*Boilers Plate*/
-@import "vendor/boilers_plate.scss";
-
+@import "vendor/boilers_plate";
 /*Waves*/
 @import "vendor/waves.sass";
+/*Fonts*/
+@import "../fonts/MaterialDesign-Font/css/materialdesignicons.min.css";
 
 /*colors*/
-@import "components/colors.scss";
-@import "components/texts.scss";
-@import "components/buttons.scss";
+@import "components/colors";
+/*banners*/
+@import "components/banners";
+/*Buttons*/
+@import "components/buttons";
+/*Texts*/
+@import "components/texts";
+/*Forms*/
+@import "components/forms";
 /*Utility styles*/
-@import "utility/utility-layouts.scss";
+@import "utility/utility-layouts";
+
 /*
 * Layout Styles
 *
 *
 */
-@import "layouts/admin_layout.scss";
-@import "layouts/cards.scss";
-@import "components/forms.scss";
+@import "layouts/main_layout";
+@import "layouts/admin_layout";
+/*Grids*/
+@import "layouts/cards";
+
+/*Animate*/
+@import "components/animate";

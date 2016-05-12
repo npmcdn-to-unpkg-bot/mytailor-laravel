@@ -122,6 +122,8 @@
 .pull-left>a{
       padding: 1em 0.5em 1em 0;
 }
+
+
  /* ==========================================================================
   SideBar layout Styles: 
    ========================================================================== */
@@ -139,7 +141,6 @@
     left: 0;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
     box-sizing: border-box;
-    border-right: 1px solid #2F2525;
     background: #fafafa;
     color: #424242;
     overflow: visible;
@@ -154,6 +155,111 @@
     transition-timing-function: cubic-bezier(.4,0,.2,1);
     -webkit-transition-property: -webkit-transform;
     transition-property: transform;
+}
+
+header.mt-layout-sidebar__users-info-wrapp{
+        box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 16px;
+    height: 120px;
+    box-shadow: 0 2px 2px 0 rgba(148, 148, 148, 0.14), 0 3px 1px -2px rgba(132, 132, 132, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+}
+.mt-sidebar-avatar>img{
+    max-width: 50px;
+    width: 48px;
+    height: 48px;
+    border-radius: 27px;
+    border: 1px solid #eee;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.sidebar-title-wrapper{
+    margin-top: 1em;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.mt-nav ul li{
+    margin: 0;
+    display: block;
+    box-sizing: border-box;
+    list-style: none !important;
+}
+
+.mt-nav .mt-sidebar-list .mt-sidebar-link{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    text-transform: uppercase;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: left;
+    letter-spacing: 0;
+    font-size: 14px;
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+
+    &:active{
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    i{
+      font-size: 30px;
+      margin-right: 18px;
+    }
+}
+
+a.mt-sidebar-link{
+    font-weight: 600;
+    padding: 1em 1.5em;
+    color:rgba(10, 10, 10, 0.68);
+    margin: 0;
+        &:hover{
+              background:rgba(148, 159, 164, 0.13) !important;
+    }
+}
+
+
+.mt-list-active>a{
+      background:rgba(148, 159, 164, 0.13) !important;
+      color: map-get($ui-color, redish);
+
+
 }
 
  /* ==========================================================================

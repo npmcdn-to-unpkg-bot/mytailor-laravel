@@ -347,6 +347,13 @@
 
 }
 
+.mt-row--fullwidth{
+  @extend .mt-row;
+  width:100%;
+  padding: 0;
+
+}
+
 /**/
 
 .mt-shot-item{

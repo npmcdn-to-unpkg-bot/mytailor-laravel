@@ -4,8 +4,6 @@
         <title>@yield('pagetitle') | Catalog of African Fashion prints & designs</title>
         <link rel="shortcut icon" href="{{ theme('images/favicon.png')}}">
         <link rel="stylesheet" href="{{ theme('css/frontend.css')}}">
-
-        {{-- <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css"> --}}
         <script src="{{ theme('js/vendor.js') }}"></script>
     </head>
     <body>
@@ -36,13 +34,31 @@
 
             </header>
             <div class="mt-layout-sidebar --scroll" ng-class="{'__visible': toggle}">
-              <div style="height:10em; background:#FB4164;">
+              <header class="mt-layout-sidebar__users-info-wrapp" style="background:#FB4164;">
+                  <div class="mt-sidebar-avatar">
+                    <img src="{{theme('images/profiles/11698517_10205466839968531_5750592294516276713_n.jpg')}}">
 
-              </div>
-              <nav id="mt-nav-main" class="mt-nav" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
+                    <div class="sidebar-title-wrapper">
+                      <span>Jobizzness Watumad</span>
+                      <div class="mdl-layout-spacer"></div>
+                      <button class="icon-round mdl-button btn" id="dropdown">
+                        <i class="icon-center mdi mdi-menu-down" data-type="hidden"></i>
+                      </button>
+                    </div>
+                  </div>
+              </header>
+               <nav id="mt-nav-main" class="mt-nav" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
                   <h1 class="hidden">Main Navigation</h1>
                   <ul class="mt-sidebar-list">
-                </ul>            
+
+            <li class="mt-list-active"><a href="#" class="mt-sidebar-link btn"><i class="mt-icon mdi mdi-home"></i>home</a></li>
+    <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-image"></i>shots</a></li>
+    <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-tshirt-v"></i>brands</a></li>
+    <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-trending-up"></i>trending</a></li>
+    <li><a href="#" class="mt-sidebar-link btn"><i class="mt-icon mt-accessories"></i>accessories</a></li>
+    <li><a href="#" class="mt-sidebar-link btn"><i class="mt-icon mt-"></i>contact</a></li>
+    <li><a href="#" class="mt-sidebar-link btn"><i class="mt-icon mt-shot"></i></a></li>
+      </ul>           
               </nav>
             </div>
 
@@ -84,9 +100,6 @@
         <!-- Scripts -->
         <script src="{{ theme('js/app.js') }}"></script>
         <script src="{{ theme('js/script.js') }}"></script>
-
-
-
 
     </body>
 </html>

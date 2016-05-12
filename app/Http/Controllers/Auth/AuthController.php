@@ -36,11 +36,12 @@ class AuthController extends Controller
      */
     public function __construct()
     {
-        $redirectAfterLogout = route('auth.login');
+        $this->redirectAfterLogout = route('auth.login');
         $this->redirectTo = route('admin.dashboard');
 
         $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
     }
+
 
     /**
      * Get a validator for an incoming registration request.

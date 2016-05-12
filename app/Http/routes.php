@@ -8,9 +8,14 @@
 |
 */
 
+Route::get('auth/logout', 'Auth\AuthController@logout');
+
 Route::controller('auth', 'Auth\AuthController', [
-	'getLogin' => 'auth.login'
+	'getLogin' => 'auth.login',
+	'getLogout' => 'auth.logout'
 	]);
+
+
 
 Route::get('admin/dashboard', [
 		'as' => 'admin.dashboard',

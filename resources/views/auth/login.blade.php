@@ -39,13 +39,6 @@
                     </div>
                 </div>
             </form>
-<!--                     <div class="login-footer">
-                        <div class="row bs-reset">
-                            <div class="col-xs-8 bs-reset">
-                                <div class="login-copyright text-right">
-                                    <p>Copyright © Keenthemes 2015</p>
-                                </div>
-                            </div>
-                        </div> -->
+
 
 @endsection
