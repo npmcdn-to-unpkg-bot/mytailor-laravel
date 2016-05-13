@@ -1,34 +1,110 @@
  
 
  /* ==========================================================================
-  	Cards
+    Cards
    ========================================================================== */
+.mdl-card {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  min-height: 200px;
+  overflow: hidden;
+  width: 330px;
+  z-index: 1;
+  position: relative;
+  background: rgb(255,255,255);
+  border-radius: 2px;
+  box-sizing: border-box; 
+      -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,.07),1px 2px 5px 0 rgba(0,0,0,.06);
+    box-shadow: 1px 1px 1px 0 rgba(0,0,0,.07),1px 2px 5px 0 rgba(0,0,0,.06);
+    }
 
-.card-8{
-	width: 66.6666%;
-}
+.mdl-card__media {
+  background-color: rgb(255,64,129);
+  background-repeat: repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-origin: padding-box;
+  background-attachment: scroll;
+  box-sizing: border-box; }
 
-.card-6{
-	width: 50%;
-}
+.mdl-card__title {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
+  color: rgb(0,0,0);
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: stretch;
+  -ms-flex-pack: stretch;
+      justify-content: stretch;
+  line-height: normal;
+  padding: 16px 16px;
+  -webkit-perspective-origin: 165px 56px;
+          perspective-origin: 165px 56px;
+  -webkit-transform-origin: 165px 56px;
+          transform-origin: 165px 56px;
+  box-sizing: border-box; }
+  .mdl-card__title.mdl-card--border {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
-.card-4{
-	width: 33.3333%;
-}
+.mdl-card__title-text {
+  -ms-flex-item-align: end;
+      -webkit-align-self: flex-end;
+          align-self: flex-end;
+  color: inherit;
+  display: block;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  overflow: hidden;
+  -webkit-transform-origin: 149px 48px;
+          transform-origin: 149px 48px;
+  margin: 0; }
 
-.card-2{
-	width:16.666667%;
-}
+.mdl-card__subtitle-text {
+  font-size: 14px;
+  color: rgba(0,0,0, 0.54);
+  margin: 0; }
 
-._has_space{
-	position: relative;
-    min-height: 1px;
-}
+.mdl-card__supporting-text {
+  color: rgba(0,0,0, 0.54);
+  font-size: 13px;
+  line-height: 18px;
+  overflow: hidden;
+  padding: 16px 16px;
+  width: 90%; }
 
-.card-4, .card-6, .card-8, .card-2{
-	padding-left: 15px;
-    padding-right: 15px;
-}
+.mdl-card__actions {
+  font-size: 16px;
+  line-height: normal;
+  width: 100%;
+  background-color: transparent;
+  padding: 8px;
+  box-sizing: border-box; }
+  .mdl-card__actions.mdl-card--border {
+    border-top: 1px solid rgba(0, 0, 0, 0.1); }
+
+.mdl-card--expand {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.mdl-card__menu {
+  position: absolute;
+  right: 16px;
+  top: 16px; }
 
 
 /*
@@ -39,11 +115,10 @@
  */
 
  /* ==========================================================================
-  	MDL grid compponents
+    MDL grid compponents
    ========================================================================== */
 
 .mdl-grid {
-  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -51,10 +126,9 @@
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
   margin: 0 auto 0 auto;
-  -webkit-box-align: stretch;
   -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch; }
+  -ms-flex-align: stretch;
+      align-items: stretch; }
   .mdl-grid.mdl-grid--no-spacing {
     padding: 0; }
 
@@ -62,23 +136,23 @@
   box-sizing: border-box; }
 
 .mdl-cell--top {
-  -webkit-align-self: flex-start;
-      -ms-flex-item-align: start;
+  -ms-flex-item-align: start;
+          -webkit-align-self: flex-start;
           align-self: flex-start; }
 
 .mdl-cell--middle {
-  -webkit-align-self: center;
-      -ms-flex-item-align: center;
+  -ms-flex-item-align: center;
+          -webkit-align-self: center;
           align-self: center; }
 
 .mdl-cell--bottom {
-  -webkit-align-self: flex-end;
-      -ms-flex-item-align: end;
+  -ms-flex-item-align: end;
+          -webkit-align-self: flex-end;
           align-self: flex-end; }
 
 .mdl-cell--stretch {
-  -webkit-align-self: stretch;
-      -ms-flex-item-align: stretch;
+  -ms-flex-item-align: stretch;
+          -webkit-align-self: stretch;
           align-self: stretch; }
 
 .mdl-grid.mdl-grid--no-spacing > .mdl-cell {
@@ -333,17 +407,19 @@
 
 /*Overright*/
 .featured-grid{
-	flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
 }
 
  /* ==========================================================================
-  	Rows
+    Rows
    ========================================================================== */
 .mt-row{
-	width: 80%;
-	margin: 0 auto;
-	padding: 0 20px;
-	min-width: 75em;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-width: 75em;
 
 }
 
@@ -357,43 +433,45 @@
 /**/
 
 .mt-shot-item{
-	width:32.4%;
+  width:32.4%;
 }
 
 /*Lets look at what breaks*/
 @media (max-width: 1049px) {
-	.mt-row{
-		width: 100%;
-		min-width: 60em;
-	}
+  .mt-row{
+    width: 100%;
+    min-width: 60em;
+  }
 }
 
 @media (max-width: 960px) {
-	.featured-grid{
-		flex-wrap: wrap;
-	}
+  .featured-grid{
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
 
-	.mt-shot-item{
-		width: 49%;
-	}
+  .mt-shot-item{
+    width: 49%;
+  }
 
-	.mt-row{
-		width: 88%;
-	}
+  .mt-row{
+    width: 88%;
+  }
 
-	.mt-shot-item:nth-child(3n){
-			margin-right:inherit;
-	}
+  .mt-shot-item:nth-child(3n){
+      margin-right:inherit;
+  }
 
-		.mt-shot-item:nth-child(2n){
-			margin-right:0;
-	}
+    .mt-shot-item:nth-child(2n){
+      margin-right:0;
+  }
 }
 
 
 @media (max-width: 860px) {
-	.mt-row{
-		width: 100%;
-		min-width: 40em;
-	}
+  .mt-row{
+    width: 100%;
+    min-width: 40em;
+  }
 }

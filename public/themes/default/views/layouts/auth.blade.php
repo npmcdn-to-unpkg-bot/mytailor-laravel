@@ -11,7 +11,7 @@
 
             <div class="mt-layout-admin-login clearfix">
 
-            <div class="card-6 __left">
+            <div class="mdl-cell mdl-cell--6-col __left">
 
                     <div class="mt-login-content">
                       <h1 class="mt-admin-login-title">@yield('heading')</h1>
@@ -21,7 +21,7 @@
 
                 </div><!-- Login Ends -->
 
-            <div class="card-6 __left hero_admin" style="min-height: 100vh;background: #03A9F4;"></div>
+            <div class="mdl-cell mdl-cell--6-col __left hero_admin" style="min-height: 100vh;background: #03A9F4;"></div>
 
           </div>
         </div>

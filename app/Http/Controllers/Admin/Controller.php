@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace MyTailor\Http\Controllers\Admin;
 
 use Illuminate\Routing\Controller as BaseController;
 

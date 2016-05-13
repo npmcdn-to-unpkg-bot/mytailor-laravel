@@ -19,38 +19,37 @@
                </div>
                </section>
                 <div class="call-admin-head clearfix">
-                  <div class="perform-text">
-                     <img src="images/icons/chart.svg" width="30px">
-                    <span>Daily Performance</span>
+                  <div class="performance-title-wrapper">
+                     <i class="mdi mdi-chart-line"></i>
+                    <h4 class="mt-md-title">Daily Performance</h4>
                   </div>
 
-                  <div class="right-icons-wrapper">
-                      <ul class="right-icons">
-                          <li><a href="">
-                              <img src="images/icons/chat.svg" alt="" width="20px">
+                  <div class="mt-right-icons">
+                      <ul class="admin-call-icons">
+                          <li><a href="#" class="btn icon-round" title="Upload shots">
+                              <i class="mdi mdi-image"></i>
                             </a></li>
-                            <li><a href="/mytailor.me/public_html/admin/shots">
-                              <img src="images/icons/media.svg" alt="" width="20px">
-
+                           <li><a href="#" class="btn" title="check messages">
+                              <i class="mdi mdi-email"></i>
                             </a></li>
-                            <li><a href="">
-                              <img src="images/icons/adduser.svg" alt="" width="20px">
+                            <li><a href="#" class="btn" title="add a new tailor">
+                              <i class="mdi mdi-account-plus"></i>
                             </a></li>
 
                       </ul>
 
                   </div>
                 </div>
-
-                <div class="single-column clearfix">
-                    <div class="col-3-box">
-                      <section class="chart-card purple">
+                <!-- Cards and other stuffs in one bag -->
+                <div class="row p1-Container dashboard-cards-wrapper clearfix">
+                    <div class="mdl-card mdl-cell mdl-cell--4-col">
+                      <section class="mdl-card__supporting-text purple mt-chart-card">
                           <div class="p-10">
                               <h2 class="cht-title">Today's Sales</h2>
                               <h3 class="chart-number">5</h3>
                           </div>
                       </section>
-                      <section class="chart-info">
+                      <section class="mdl-card__actions mdl-card--border chart-info">
                           <div class="p-10 clear-fix">
                               <ul class="cl-2-sales">
                                 <li>
@@ -65,8 +64,8 @@
                       </section>
 
                     </div>
-                    <div class="col-3-box">
-                         <section class="chart-card red">
+                    <div class="mdl-card mdl-cell mdl-cell--4-col">
+                         <section class="mdl-card__supporting-text purple mt-chart-card">
                             <div class="p-10">
                               <h2 class="cht-title">Today's Customers</h2>
                               <h3 class="chart-number">256</h3>
@@ -74,8 +73,8 @@
                       </section>
                       <section class="chart-info"></section>
                     </div>
-                    <div class="col-3-box">
-                       <section class="chart-card blue">
+                    <div class="mdl-card mdl-cell mdl-cell--4-col">
+                       <section class="mdl-card__supporting-text purple mt-chart-card">
                             <div class="p-10">
                               <h2 class="cht-title">New Users</h2>
                               <h3 class="chart-number">1</h3>
@@ -85,12 +84,13 @@
 
                     </div>
 
-                </div>
+                </div> <!-- First row ends -->
 
-                <div class="single-column">
-heyy
+                <div class="row">
+
                 </div>
             </main>
+
             <!-- Aside goes here -->
             <aside class="action-feed mdl-cell mdl-cell--4-col" style="background: #eee;">
                 <section class="feed-header clearfix">
@@ -149,6 +149,4 @@ heyy
             </aside>
         </div>
 
-
-	<a href="{{route('auth.logout')}}">LogOut</a>
 @endsection

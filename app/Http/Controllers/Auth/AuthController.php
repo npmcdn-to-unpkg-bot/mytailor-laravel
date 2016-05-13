@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace MyTailor\Http\Controllers\Auth;
 
-use App\User;
+use MyTailor\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use MyTailor\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class AuthController extends Controller

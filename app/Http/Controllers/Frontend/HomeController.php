@@ -5,7 +5,7 @@
  * Date: 5/8/2016
  * Time: 3:50 PM
  */
-namespace App\Http\Controllers\frontend;
+namespace MyTailor\Http\Controllers\frontend;
 
 use Illuminate\Routing\Controller as BaseController;
 

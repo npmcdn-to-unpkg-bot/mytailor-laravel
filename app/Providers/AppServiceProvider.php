@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Providers;
+namespace MyTailor\Providers;
 
-include '/../view/ThemeViewFinder.php';
-use mt\view\ThemeViewFinder;
+use MyTailor\view\ThemeViewFinder;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider

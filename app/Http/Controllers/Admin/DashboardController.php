@@ -6,7 +6,7 @@
  * Time: 6:04 PM
  */
 
-namespace App\Http\Controllers\Admin;
+namespace MyTailor\Http\Controllers\Admin;
 
 
 class DashboardController extends Controller {

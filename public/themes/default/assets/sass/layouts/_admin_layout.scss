@@ -43,3 +43,70 @@
 	margin-right: 16px;
     background: #eee;
 }
+
+/* ==========================================================================
+  Dashboard: 
+   ==========================================================================*/
+
+   .call-admin-head{
+  	display: block;
+  	padding: 1em;
+   }
+
+   .call-admin-head :first-child{
+   		float: left;
+   }
+
+   .call-admin-head :last-child{
+   		float:right;
+   }
+
+   ul.admin-call-icons li, .performance-title-wrapper>*{
+   	display: -webkit-inline-flex;
+   	display: -ms-inline-flexbox;
+   	display: inline-flex;
+   }
+
+.admin-call-icons>li>a{
+		padding: 0;
+		height: 45px;
+		width: 45px;
+		border-radius: 25px;
+		margin: 0 0.5em;
+
+		&:hover{
+			background-color:rgba(0, 0, 0, 0.06);
+		}
+
+		& i {
+			@extend .icon-center;
+			font-size: 1.8em;
+			color: map-get($ui-color, redish);
+		}
+}
+
+.performance-title-wrapper{
+	padding: 1em;
+	color: #8C8C8C;
+}
+
+.performance-title-wrapper i{
+	font-size: 1.5em;
+}
+.mt-md-title{
+	font-size: 1.3em;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.dashboard-cards-wrapper>*{
+	margin:10px 10px 10px 0;
+}
+.mdl-card>:first-child{
+	width: 100%;
+    min-height: 200px;
+}
+
+.mdl-card>:last-child{
+	min-height: 80px;
+}

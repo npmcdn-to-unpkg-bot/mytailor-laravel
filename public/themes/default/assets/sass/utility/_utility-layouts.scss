@@ -1,9 +1,7 @@
 .make_flex{
-	display: -webkit-flex;
+    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -36,4 +34,10 @@
 .is-visible{
     visibility:visible !important;
     display:block;
+}
+
+.p1-Container{
+    display: block;
+    padding: 1em;
+    margin-left: 7px;
 }

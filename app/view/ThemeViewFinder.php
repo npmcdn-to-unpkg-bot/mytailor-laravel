@@ -1,7 +1,7 @@
 <?php
 
 
-namespace mt\view;
+namespace MyTailor\view;
 
 use Illuminate\View\FileViewFinder;
 

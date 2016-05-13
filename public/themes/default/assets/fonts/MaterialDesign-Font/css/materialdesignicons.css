@@ -6,6 +6,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 .mdi {
   display: inline-block;
   font: normal normal normal 24px/1 "Material Design Icons";
@@ -6263,5 +6264,3 @@
 .mdi-light.mdi-inactive {
   color: rgba(255, 255, 255, 0.3);
 }
-
-/*# sourceMappingURL=materialdesignicons.css.map */

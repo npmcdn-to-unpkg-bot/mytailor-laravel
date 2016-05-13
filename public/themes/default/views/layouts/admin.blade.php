@@ -46,7 +46,7 @@
                       </button>
                       <div class="mt-menu-container showMenu" style="visibility:hidden;" id="m9menu">
           <ul>
-            <li class="mt-list-btn btn" style="transition-delay: 0.012s;"><a href="#" class="m-0">Settings</a></li>
+            <li class="mt-list-btn btn" style="transition-delay: 0.012s;"><a href="#" class="m-0">Profile</a></li>
             <li class="mt-list-btn btn" style="transition-delay: 0.084s;"><a href="{{route('auth.logout')}}" class="m-0">Logout</a></li>
           </ul></div>
                     </div>
@@ -56,12 +56,12 @@
                   <h1 class="hidden">Main Navigation</h1>
                   <ul class="mt-sidebar-list">
 
-            <li class="mt-list-active"><a href="#" class="mt-sidebar-link btn"><i class="mt-icon mdi mdi-home"></i>home</a></li>
-    <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-image"></i>shots</a></li>
-    <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-tshirt-v"></i>brands</a></li>
-    <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-trending-up"></i>trending</a></li>
-    <li><a href="#" class="mt-sidebar-link btn"><i class="mt-icon mt-accessories"></i>accessories</a></li>
-    <li><a href="#" class="mt-sidebar-link btn"><i class="mt-icon mt-"></i>contact</a></li>
+            <li class="mt-list-active"><a href="#" class="mt-sidebar-link btn"><i class="mt-icon mdi mdi-home"></i>Dashboard</a></li>
+    <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-image"></i>Shots</a></li>
+    <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-tshirt-v"></i>Tailors</a></li>
+    <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-trending-up"></i>Apps</a></li>
+    <li><a href="#" class="mt-sidebar-link btn"><i class="mt-icon mt-accessories"></i>Responses</a></li>
+    <li><a href="#" class="mt-sidebar-link btn"><i class="mt-icon mt-"></i>Settings</a></li>
     <li><a href="#" class="mt-sidebar-link btn"><i class="mt-icon mt-shot"></i></a></li>
       </ul>           
               </nav>

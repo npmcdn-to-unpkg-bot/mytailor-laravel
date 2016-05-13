@@ -9,21 +9,21 @@
 
             <form method="post" class="login-form clearfix">
                 <div class="row">
-                    <div class="card-6 _has_space">
+                    <div class="mdl-cell mdl-cell--6-col">
                         <input type="text" placeholder="Login" class="mt-forms login-username" id="login-username" name="email"> </div>
-                    <div class="card-6 _has_space">
+                    <div class="mdl-cell mdl-cell--6-col">
                         <input type="password" placeholder="Password" class="mt-forms login-password" id="login-password" name="password"> </div>
                         <input type="hidden" class="hidden" name="_token" value="{{ csrf_token() }}">
                 </div>
                 <div class="row">
-                    <div class="card-4">
+                    <div class="mdl-cell mdl-cell--4-col">
                         <div class="rem-password">
                             <p>Remember Me
                                 <div class="checker"><span class=""><input type="checkbox" class="rem-checkbox"></span></div>
                             </p>
                         </div>
                     </div>
-                    <div class="card-8 text-right">
+                    <div class="mdl-cell mdl-cell--8-col text-right">
 
                         <div class="forgot-password">
                             <a href="javascript:;">Forgot Password?</a>
