@@ -347,8 +347,8 @@ Mytailor.me
                   //Waves Buttons
                     Waves.attach('.btn', ['waves-button', 'waves-float']);
                     Waves.init();
-            //       //Scroller
-            //         $(".--scroll").mCustomScrollbar();
+                  //Scroller
+                    $(".--scroll").mCustomScrollbar();
 
             //         var $grid = $('.grid').masonry({
             //       // options

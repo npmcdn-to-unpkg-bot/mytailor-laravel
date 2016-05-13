@@ -23,6 +23,7 @@ elixir.config.publicPath = elixir.config.assetsPath;
 			    'bower/angular/angular.min.js',
 			    'bower/angular/angular-route.min.js',
 			    'bower/jquery/dist/jquery.min.js',
-			    'bower/Waves/dist/waves.min.js'
+			    'bower/Waves/dist/waves.min.js',
+			    'bower/custom-scroller.min.js'
 			   ], 	 'public/themes/default/assets/js/vendor.js')
 	});

@@ -4,6 +4,7 @@
     <title>@yield('pagetitle') | MyTailor African Fashion designers</title>
     <link rel="shortcut icon" href="{{ theme('images/favicon.png')}}">
     <link rel="stylesheet" href="{{ theme('css/admin.css')}}">
+    <link rel="stylesheet" href="{{ theme('css/vendor/jquery.mCustomScrollbar.min.css')}}">
     <script src="{{ theme('js/vendor.js') }}"></script>
 </head>
 <body>
@@ -56,12 +57,12 @@
                   <h1 class="hidden">Main Navigation</h1>
                   <ul class="mt-sidebar-list">
 
-            <li class="mt-list-active"><a href="#" class="mt-sidebar-link btn"><i class="mt-icon mdi mdi-home"></i>Dashboard</a></li>
+            <li class="mt-list-active"><a href="#" class="mt-sidebar-link btn"><i class="mt-icon mdi mdi-image-filter-tilt-shift"></i>Dashboard</a></li>
     <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-image"></i>Shots</a></li>
     <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-tshirt-v"></i>Tailors</a></li>
-    <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-trending-up"></i>Apps</a></li>
-    <li><a href="#" class="mt-sidebar-link btn"><i class="mt-icon mt-accessories"></i>Responses</a></li>
-    <li><a href="#" class="mt-sidebar-link btn"><i class="mt-icon mt-"></i>Settings</a></li>
+    <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-camera-iris"></i>Apps</a></li>
+    <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-message-alert"></i>Responses</a></li>
+    <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-settings"></i>Settings</a></li>
     <li><a href="#" class="mt-sidebar-link btn"><i class="mt-icon mt-shot"></i></a></li>
       </ul>           
               </nav>

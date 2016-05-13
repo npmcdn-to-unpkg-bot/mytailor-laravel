@@ -110,3 +110,36 @@
 .mdl-card>:last-child{
 	min-height: 80px;
 }
+
+.chart-text-addups>li{
+		text-align:center;
+		& span{
+				display: block;
+			    font-size: 18px;
+			    color: #8A8A8A;
+			    padding: 10px;
+		}
+}
+
+.chart-text-addups>:first-child{
+		    border-right: 1px solid #eee;
+}
+
+.chart-text-addups div{
+	font-size: 0.8em;
+    color: #505050;
+}
+
+
+/*Feeds*/
+
+.feeds-card{
+	padding: 1em;
+}
+
+.admin-feeds-header{
+	min-height: 70px !important;
+	border-bottom: 1px solid #eee;
+	padding: 1em;
+	margin-bottom: 10px;
+}

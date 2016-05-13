@@ -479,6 +479,19 @@ a.waves-effect .waves-ripple {
   background-color: #D8D8D8;
 }
 
+/*Backgrounds*/
+.blue {
+  background: #2196F3;
+}
+
+.bluegreen {
+  background: #4DD0E1;
+}
+
+.red {
+  background: #F23054;
+}
+
 /*banners*/
 /**
  * MyTailor Banners and viewports
@@ -688,6 +701,10 @@ button#dropdown > i {
   margin-right: 5px;
 }
 
+.link-text {
+  color: #2196F3;
+}
+
 .danger-text {
   font-size: 12px;
   background-color: #fbe1e3;
@@ -698,6 +715,10 @@ button#dropdown > i {
 .mt-menu-text {
   color: rgba(255, 255, 255, 0.6);
   text-shadow: 0px 1px 0px black, 2px 0px 1px rgba(0, 0, 0, 0.87);
+}
+
+.grey-text {
+  color: #9e9e9e;
 }
 
 /*More specific texts*/
@@ -724,6 +745,24 @@ a.mt-call-items:hover .mt-call-items-title {
 
 .blue-text {
   color: #2196F3;
+}
+
+.chart-title {
+  font-size: 120%;
+  color: #fff;
+}
+
+.chart-number {
+  color: #fff;
+  text-align: center;
+  font-size: 93pt;
+  line-height: 1.3;
+}
+
+.server-value {
+  font-size: 21px;
+  font-weight: 600;
+  margin: 1em;
 }
 
 /*Forms*/
@@ -1395,6 +1434,38 @@ ul.admin-call-icons li, .performance-title-wrapper > * {
   min-height: 80px;
 }
 
+.chart-text-addups > li {
+  text-align: center;
+}
+
+.chart-text-addups > li span {
+  display: block;
+  font-size: 18px;
+  color: #8A8A8A;
+  padding: 10px;
+}
+
+.chart-text-addups > :first-child {
+  border-right: 1px solid #eee;
+}
+
+.chart-text-addups div {
+  font-size: 0.8em;
+  color: #505050;
+}
+
+/*Feeds*/
+.feeds-card {
+  padding: 1em;
+}
+
+.admin-feeds-header {
+  min-height: 70px !important;
+  border-bottom: 1px solid #eee;
+  padding: 1em;
+  margin-bottom: 10px;
+}
+
 /*Grids*/
 /* ==========================================================================
     Cards
@@ -1416,7 +1487,6 @@ ul.admin-call-icons li, .performance-title-wrapper > * {
   background: white;
   border-radius: 2px;
   box-sizing: border-box;
-  -webkit-box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.07), 1px 2px 5px 0 rgba(0, 0, 0, 0.06);
   box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.07), 1px 2px 5px 0 rgba(0, 0, 0, 0.06);
 }
 
@@ -1959,6 +2029,12 @@ ul.admin-call-icons li, .performance-title-wrapper > * {
   .mt-shot-item:nth-child(2n) {
     margin-right: 0;
   }
+}
+
+/*Panels*/
+.mt-panel-heading {
+  padding: 10px 15px;
+  min-height: 100px !important;
 }
 
 @media (max-width: 860px) {
