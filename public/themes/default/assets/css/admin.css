@@ -1466,6 +1466,17 @@ ul.admin-call-icons li, .performance-title-wrapper > * {
   margin-bottom: 10px;
 }
 
+.feeds-wrapper {
+  min-height: 200px;
+}
+
+.feeds > li {
+  background-color: #fafafa;
+  color: #82949a;
+  margin-bottom: 7px;
+  font-size: 0.9em;
+}
+
 /*Grids*/
 /* ==========================================================================
     Cards

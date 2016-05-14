@@ -2,6 +2,7 @@
 
 namespace MyTailor\Providers;
 
+use MyTailor\View\Composers;
 use MyTailor\view\ThemeViewFinder;
 use Illuminate\Support\ServiceProvider;
 
@@ -12,8 +13,9 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
-    {
+    public function boot()  {
+
+        $this->app['view']->composer('layouts.admin', Composers\AddAdminUser::class);
         $this->app['view']->setFinder($this->app['theme.finder']);
     }
 

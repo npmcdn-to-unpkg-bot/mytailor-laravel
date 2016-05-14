@@ -15,7 +15,7 @@ Route::controller('auth', 'Auth\AuthController', [
 	'getLogout' => 'auth.logout'
 	]);
 
-
+Route::resource('admin/pages', 'Admin\PagesController');
 
 Route::get('admin/dashboard', [
 		'as' => 'admin.dashboard',

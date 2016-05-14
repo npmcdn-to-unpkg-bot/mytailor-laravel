@@ -463,6 +463,27 @@
 
                         </div>
                     </div>
+                    <div class="feeds-card mdl-card mdl-cell mdl-cell--6-col" style="min-height:240px;">
+                    ToDo List
+                    </div>
+                    <div class="feeds-card mdl-card mdl-cell mdl-cell--3-col" style="min-height:240px;">
+                    Facebook Feed
+                    </div>
+
+                    <div class="feeds-card mdl-card mdl-cell mdl-cell--3-col" style="min-height:240px;">
+                    Twitter Feed
+                    </div>
+                    <div class="feeds-card mdl-card mdl-cell mdl-cell--4-col" style="min-height:240px;">
+                    Stats
+                    </div>
+
+                    <div class="feeds-card mdl-card mdl-cell mdl-cell--8-col" style="min-height:240px;">
+                    Chats here
+                    </div>
+
+                    <div class="feeds-card mdl-card mdl-cell mdl-cell--12-col" style="min-height:240px;">
+                      Google Graphs for pageviews
+                    </div>
                 </div> <!-- First row ends -->
 
                 <div class="row">
