@@ -4,20 +4,9 @@
 
 @section('bg', 'grey60')
 
-@section('content')
-
-		<div class="mt-row--fullwidth mdl-grid">
-            
-            <main class="admin-main-wrapper mdl-cell mdl-cell--8-col">
-               <section class="dashboard-main-header">
-                <div>
-                   <ul class="breadcrump">
-                       <li><a href="#" class="blue-text">Mytailor</a></li>
-                       <li class="grey-text">Dashboard</li>
-                   </ul>
-
-               </div>
-               </section>
+@section('main')
+                @include('partials.breadcrump')
+                
                 <div class="call-admin-head clearfix">
                   <div class="performance-title-wrapper">
                      <i class="mdi mdi-chart-line"></i>
@@ -463,9 +452,19 @@
 
                         </div>
                     </div>
-                    <div class="feeds-card mdl-card mdl-cell mdl-cell--6-col" style="min-height:240px;">
-                    ToDo List
+                      <!-- Todos Card -->
+                    <div class="todos-card mdl-card mdl-cell mdl-cell--6-col" style="min-height:240px;">
+                        <header class="todos-header">
+                          <div>Todo's List</div>
+
+                          <div class="action pull-right">
+                              <button type="button" class="btn mdl-button">
+                                <i class="mdi mdi-check"></i>
+                              </button>
+                            </div>
+                        </header>
                     </div>
+
                     <div class="feeds-card mdl-card mdl-cell mdl-cell--3-col" style="min-height:240px;">
                     Facebook Feed
                     </div>
@@ -489,10 +488,11 @@
                 <div class="row">
 
                 </div>
-            </main>
+         @endsection
 
+                @section('aside')
             <!-- Aside goes here -->
-            <aside class="action-feed mdl-cell mdl-cell--4-col" style="background: #eee;">
+            
                 <section class="feed-header clearfix">
                     <div class="feed-left">
                         <h3 class="grey-text">Action Feed</h3>
@@ -500,9 +500,8 @@
                     <div class="feed-right">
                         <a href="#" title="more insights"><img src="images/icons/top03/bars42.svg" width="20px"></a>
                     </div>
-
-
                 </section>
+                
                  <div class="insights-container p-10">
                       <div class="single-card clearfix p-10">
                           <div class="pb-5">
@@ -546,7 +545,6 @@
 
 
                     </div>
-            </aside>
-        </div>
+
 
 @endsection

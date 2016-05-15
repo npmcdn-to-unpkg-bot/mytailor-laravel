@@ -154,3 +154,42 @@
     font-size: 0.9em;
 
 }
+.todos-header{
+    padding: 15px 20px;
+    background: #FAFAFA;
+    width: 104% !important;
+    min-height: 47px !important;
+    border-bottom: 1px solid #eee;
+}
+
+
+/*Aside*/
+
+.action-feed{
+	    background: #eee;
+    padding: 1em;
+}
+
+.feed-header{
+	    background: #202024;
+    padding: 1em;
+}
+
+/*shots page*/
+
+header.admin-shots-head{
+	width: 100%;
+    margin-top: 30px;
+    padding: 1em;
+}
+
+.admin-shots-wrapper{
+	width: 100%;
+}
+
+.shot-item{
+    background: #03A9F4;
+    box-sizing: border-box;
+    margin: 8px;
+    height: 200px;
+}

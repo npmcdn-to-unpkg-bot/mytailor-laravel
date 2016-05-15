@@ -21,88 +21,39 @@
 
                 </div>
                 <div class="mt-header-spacer"></div>
-
-                <div class="mt-search-wrapper expandable--search hide-on-phone">
-                  <span class="icon-search"><i class="mdi mdi-magnify" style="font-size: 22px;"></i></span>
-                  <form method="Get" action="#" id="search-box">
-                      <input type="search" id="q" autocapitalize="off" autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="text" value="" placeholder="search for items like men, women, shirts, shoes and more ..."/>
-                  </form>
-                </div>
-                <button class="icon-round mdl-button mt-toggle-search" style="visibility:hidden;">
-                    <i class="mdi mdi-magnify icon-center" data-type="search"></i>
-                  </button>
                 </div><!-- Main bar ends --> 
 
             </header>
-            <div class="mt-layout-sidebar --scroll" ng-class="{'__visible': toggle}">
-              <header class="mt-layout-sidebar__users-info-wrapp" style="background:#FB4164;">
-                  <div class="mt-sidebar-avatar">
-                    <img src="{{theme('images/profiles/11698517_10205466839968531_5750592294516276713_n.jpg')}}">
 
-                    <div class="sidebar-title-wrapper">
-                      <span>{{$admin->name}}</span>
-                      <div class="mdl-layout-spacer"></div>
-                      <button class="icon-round mdl-button btn" id="dropdown">
-                        <i class="icon-center mdi mdi-menu-down" data-type="hidden"></i>
-                      </button>
-                      <div class="mt-menu-container showMenu" style="visibility:hidden;" id="m9menu">
-          <ul>
-            <li class="mt-list-btn btn" style="transition-delay: 0.012s;"><a href="#" class="m-0">Profile</a></li>
-            <li class="mt-list-btn btn" style="transition-delay: 0.084s;"><a href="{{route('auth.logout')}}" class="m-0">Logout</a></li>
-          </ul></div>
-                    </div>
-                  </div>
-              </header>
-              <nav id="mt-nav-main" class="mt-nav" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-                  <h1 class="hidden">Main Navigation</h1>
-                  <ul class="mt-sidebar-list">
+            @include('partials.sidebar_nav')
 
-            <li class="mt-list-active"><a href="#" class="mt-sidebar-link btn"><i class="mt-icon mdi mdi-image-filter-tilt-shift"></i>Dashboard</a></li>
-    <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-image"></i>Shots</a></li>
-    <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-tshirt-v"></i>Tailors</a></li>
-    <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-camera-iris"></i>Apps</a></li>
-    <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-message-alert"></i>Responses</a></li>
-    <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-settings"></i>Settings</a></li>
-    <li><a href="#" class="mt-sidebar-link btn"><i class="mt-icon mt-shot"></i></a></li>
-      </ul>           
-              </nav>
-            </div>
-
-            <main class="mt-page-wrapper">
+            <div class="mt-page-wrapper">
 
                 <div class="mt-layout-content">
+                
+                    <div class="mt-row--fullwidth mdl-grid">
+                      <main class="admin-main-wrapper mdl-cell mdl-cell--8-col">
+                  @yield('main')
 
-                  <?php
-                  /*---------------------------------------------------->
-                  \ Load content Here and avoid complexity
-                  \----------------------------------------------------->
-                  \ 
-                  \ Here we will yield what ever page content we want.
-                  \
-                  \
-                  */
-                  ?>
+                      </main>
 
-                      @yield('content')
-            </main>
+                    <aside class="action-feed mdl-cell mdl-cell--4-col" style="background: #eee;">
 
-                <footer class="mt-layout-footer">
-                  <ul class="icons">
-                    <li><a href="https://twitter.com/MyTailor_Africa" class="mdi mdi-twitter" title="Twitter"><span class="label"></span></a></li>
-                    <li><a href="https://www.facebook.com/MyTailorAfrica/" class="mdi mdi-facebook" title="Facebook"><span class="label"></span></a></li>
-                    <li><a href="#" class="mdi mdi-instagram"><span class="label"></span></a></li>
-                    <li><a href="#" class="mdi mdi-google-plus"><span class="label"></span></a></li>   
-                  </ul>
-                  <ul class="copyright">
-                    <li>© 2016 MyTailor. All rights reserved.</li>
-                  </ul> 
+                      @yield('aside')
+
+                    </aside>
+            
+
+                    </div>
+                </div>
+
+                <footer>
                 </footer> 
 
                 <!-- Black Screen -->
                 <div class="mt-obfuscator" ng-class="{'show': toggle}" ng-click="toggleSidebar()"></div>
             
             </div> <!-- Page wrapper ends -->
-        </div>
         <!-- Scripts -->
         <script src="{{ theme('js/app.js') }}"></script>
         <script src="{{ theme('js/script.js') }}"></script>
