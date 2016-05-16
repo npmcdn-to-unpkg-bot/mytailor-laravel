@@ -29,8 +29,7 @@
 
 /*==========================================================
     Search bar
-  ===========================================================
-*/
+  ===========================================================*/
 
 .mt-search-wrapper, .mt-search-wrapper form, .mt-search-wrapper input{
     -webkit-box-flex: 1;
@@ -152,4 +151,64 @@ span.icon-search{
     box-shadow: 0px 0px 3px #03A9F4;
     padding: 10px 0;
     border-left: 5px solid #03A9F4;
+}
+
+/*==========================================================
+   Forms for inputting data
+  ===========================================================*/
+
+.mt-form-group {
+    position: relative;
+    margin: 0 0 35px;
+    padding-top: 20px;
+
+}
+
+.mt-form-group label.top-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #888;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.mt-form-group input, .mt-form-group textarea, .mt-form-group select {
+    width: 100%;
+    background: 0 0;
+    border: 0;
+    border-bottom: 1px solid #c2cad8;
+    border-radius: 0;
+    color: #4d6b8a;
+    box-shadow: none;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+        outline: 0;
+}
+
+.mt-form-group  input[type="text"], .mt-form-group  input[type="password"], .mt-form-group input[type="email"], .mt-form-group  select, textarea {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -moz-transition: border-color 0.2s ease, background-color 0.2s ease;
+    -webkit-transition: border-color 0.2s ease, background-color 0.2s ease;
+    -ms-transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.mt-form-group  input[type="text"]:focus, .mt-form-group  input[type="password"]:focus, .mt-form-group input[type="email"]:focus, .mt-form-group select:focus, .mt-form-group textarea:focus {
+    -webkit-animation: focus 0.1s;
+    animation: focus 0.1s;
+    background-color: rgba(176, 176, 176, 0.125);
+    border-color: #33A4FF !important;
+    -moz-animation: focus 0.1s;
+    -webkit-animation: focus 0.1s;
+    -ms-animation: focus 0.1s;
+    background-color: rgba(255, 255, 255, 0.125);
+    border-color: #33A4FF;
+}
+
+.mt-form-group input[disabled] {
+    cursor: not-allowed;
 }

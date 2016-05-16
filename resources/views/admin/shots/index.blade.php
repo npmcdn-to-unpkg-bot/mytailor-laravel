@@ -8,9 +8,14 @@
 
 
           @include('partials.breadcrump')
-          
+
            <div class="row m-0">
            		<header class="admin-shots-head">
+                <div style="height: 60px;">
+                  <button class="btn mdl-button icon-round">
+                    <a href="{{route('admin.shots.create')}}"><i class="mdi mdi-cloud-upload icon-center red"></i></a>
+                  </button>
+                </div>
            			<div class="mt-tool-bar">
            				
            			</div>
@@ -18,11 +23,13 @@
            		<section class="mdl-grid admin-shots-wrapper">
            			<div class="shot-item mdl-cell mdl-cell--4-col">
            				 <a href="#" data-id="5">
-                      <img src="#">   
+                    <figure class="">
+                       <img src="{{theme('images/shots/2c26358c99086b35cca686025ea6d6a0.jpg')}}">
+                    </figure>
                    </a>
            			</div>
            			<div class="shot-item mdl-cell mdl-cell--4-col">
-           				
+           				 
 
            			</div>
            			<div class="shot-item mdl-cell mdl-cell--4-col">
@@ -46,26 +53,13 @@
 @section('aside')
 
 			<!-- Aside goes here -->
-                <section class="feed-header clearfix">
-                    <div class="feed-left">
-                        <h3 class="grey-text">Shot Details</h3>
-                    </div>
-                    <div class="feed-right">
-                        <a href="#" title="more insights"><img src="images/icons/top03/bars42.svg" width="20px"></a>
-                    </div>
-                </section>
-                 <div class="insights-container p-10">
-                      <div class="single-card clearfix p-10">
+                
+                          <div class="mt-header-shotEdit">
 
-                          <div class="pb-5 clearfix mt-header-shotEdit">
-                          		<div class="shotEdit--title">
-                          			<span>Edit Shot</span>
-                          		</div>
-
-                          		<div class="btn--group">
-                          			<a href="#" class="btn btn-default --actions waves-effect waves-button waves-float">
+                          		<div class="clearfix">
+                          			<a href="#" class="btn float action_butt __right">
                           				ACTIONS
-                          				<i class="fa fa-angle-down"></i>
+                          				<i class="mdi mdi-menu-down"></i>
                           			</a>
                           			<ul class="dropdown-menu pull-right" style="display:none;">
                                     <li>
@@ -85,11 +79,11 @@
                                         <a href="javascript:;"> Make admin </a>
                                     </li>
                                 </ul>
-              				</div>
+              				        </div>
                           </div>
 
-                          <section class="mt-pad-wrap">
-                          	<form type="post" action="updateshot.php">
+                          <section class="pad-1">
+                          	<form type="post" action="">
                           		<div class="form-body">
 	              					<div class="mt-form-group">
 	                                    <input type="text" class="" readonly="" disabled="" value="">
@@ -128,16 +122,13 @@
 
 	                            </div>
 
-	                            <div class="mt-form-actions noborder">
-	                                <button type="submit" class="btn btn-blue waves-effect waves-button waves-float">Submit</button>
-	                                <button type="button" class="btn default waves-effect waves-button waves-float">Cancel</button>
+	                            <div class="center form-buts-wrap">
+	                                <button type="submit" class="btn float mdl-button btn-blue">Submit</button>
+	                                <button type="button" class="btn float mdl-button">Cancel</button>
 	                            </div>
                           	</form>
                           </section>
 
-                      </div>
-
-                    </div>
 
                     <div class="p-20">
 

@@ -20,4 +20,8 @@ class ShotsController extends Controller    {
 
         return view('admin.shots.index', compact('shots'));
     }
+
+    public function create(shot $shots)  {
+        return view('admin.shots.upload', compact('shots'));
+    }
 }

@@ -17,30 +17,30 @@
    ========================================================================== */
 
 .mt-layout-admin-login{
-	height: 100%;
-	width: 100%;
-	min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
 
-	& form.login-form{
-		margin-top: 80px;
-    	color: #a4aab2;
-    	font-size: 13px;
-	}
+  & form.login-form{
+    margin-top: 80px;
+      color: #a4aab2;
+      font-size: 13px;
+  }
 }
 .mt-login-content{
-	margin: 0 80px;
-	margin-top:35%;
+  margin: 0 80px;
+  margin-top:35%;
 }
 
 .mt-admin-login-title{
-	font-size: 30px;
+  font-size: 30px;
     font-weight: 300;
     color: map-get($ui-color, darkbrown);
     padding: 25px 0;
 }
 
 .admin-main-wrapper{
-	margin-right: 16px;
+  margin-right: 16px;
     background: #eee;
 }
 
@@ -49,84 +49,84 @@
    ==========================================================================*/
 
    .call-admin-head{
-  	display: block;
-  	padding: 1em;
+    display: block;
+    padding: 1em;
    }
 
    .call-admin-head :first-child{
-   		float: left;
+      float: left;
    }
 
    .call-admin-head :last-child{
-   		float:right;
+      float:right;
    }
 
    ul.admin-call-icons li, .performance-title-wrapper>*{
-   	display: -webkit-inline-flex;
-   	display: -ms-inline-flexbox;
-   	display: inline-flex;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
    }
 
 .admin-call-icons>li>a{
-		padding: 0;
-		height: 45px;
-		width: 45px;
-		border-radius: 25px;
-		margin: 0 0.5em;
+    padding: 0;
+    height: 45px;
+    width: 45px;
+    border-radius: 25px;
+    margin: 0 0.5em;
 
-		&:hover{
-			background-color:rgba(0, 0, 0, 0.06);
-		}
+    &:hover{
+      background-color:rgba(0, 0, 0, 0.06);
+    }
 
-		& i {
-			@extend .icon-center;
-			font-size: 1.8em;
-			color: map-get($ui-color, redish);
-		}
+    & i {
+      @extend .icon-center;
+      font-size: 1.8em;
+      color: map-get($ui-color, redish);
+    }
 }
 
 .performance-title-wrapper{
-	padding: 1em;
-	color: #8C8C8C;
+  padding: 1em;
+  color: #8C8C8C;
 }
 
 .performance-title-wrapper i{
-	font-size: 1.5em;
+  font-size: 1.5em;
 }
 .mt-md-title{
-	font-size: 1.3em;
+  font-size: 1.3em;
     margin-left: 5px;
     margin-top: 2px;
 }
 
 .dashboard-cards-wrapper>*{
-	margin:10px 10px 10px 0;
+  margin:10px 10px 10px 0;
 }
 .mdl-card>:first-child{
-	width: 100%;
+  width: 100%;
     min-height: 200px;
 }
 
 .mdl-card>:last-child{
-	min-height: 80px;
+  min-height: 80px;
 }
 
 .chart-text-addups>li{
-		text-align:center;
-		& span{
-				display: block;
-			    font-size: 18px;
-			    color: #8A8A8A;
-			    padding: 10px;
-		}
+    text-align:center;
+    & span{
+        display: block;
+          font-size: 18px;
+          color: #8A8A8A;
+          padding: 10px;
+    }
 }
 
 .chart-text-addups>:first-child{
-		    border-right: 1px solid #eee;
+        border-right: 1px solid #eee;
 }
 
 .chart-text-addups div{
-	font-size: 0.8em;
+  font-size: 0.8em;
     color: #505050;
 }
 
@@ -134,18 +134,18 @@
 /*Feeds*/
 
 .feeds-card{
-	padding: 1em;
+  padding: 1em;
 }
 
 .admin-feeds-header{
-	min-height: 70px !important;
-	border-bottom: 1px solid #eee;
-	padding: 1em;
-	margin-bottom: 10px;
+  min-height: 70px !important;
+  border-bottom: 1px solid #eee;
+  padding: 1em;
+  margin-bottom: 10px;
 }
 
 .feeds-wrapper{
-	min-height: 200px;
+  min-height: 200px;
 }
 .feeds>li{
     background-color: #fafafa;
@@ -166,25 +166,48 @@
 /*Aside*/
 
 .action-feed{
-	    background: #eee;
-    padding: 1em;
+      background: #eee;
+    padding: 0 1em;
+    margin-top: 13px;
 }
 
 .feed-header{
-	    background: #202024;
-    padding: 1em;
+      background: #202024;
+    padding: 1.5em 1em;
+    margin-bottom: 10px;
+}
+
+.feed-header>h3{
+      display: inline-block;
+    padding: 0.2em;
+    font-weight: 600;
+    color: #948E8E;
+}
+
+.feed-header>span{
+      display: inline-block;
+    float: right;
+    color: map-get($ui-color, redish);
+
+    & i{
+          font-size: 1.5em;
+    }
+}
+
+.mt-header-shotEdit{
+      padding: 0.5em 0.5em;
+    border-bottom: 1px solid #EEE;
 }
 
 /*shots page*/
 
 header.admin-shots-head{
-	width: 100%;
-    margin-top: 30px;
+  width: 100%;
     padding: 1em;
 }
 
 .admin-shots-wrapper{
-	width: 100%;
+  width: 100%;
 }
 
 .shot-item{
@@ -192,4 +215,5 @@ header.admin-shots-head{
     box-sizing: border-box;
     margin: 8px;
     height: 200px;
+    overflow:hidden;
 }

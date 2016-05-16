@@ -38,5 +38,16 @@ $ui-color: (
 }
 
 .red{
-	    background: #F23054;
+	    color: #F23054;
+}
+
+.btn-blue {
+    color: #fff !important;
+    background: #3598dc !important;
+    border-color: #3598dc !important;
+
+    &:hover{
+    	    color: #fff !important;
+    background: #217ebd !important;
+    }
 }

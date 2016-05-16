@@ -21,34 +21,26 @@
 
                 </div>
                 <div class="mt-header-spacer"></div>
-                </div><!-- Main bar ends --> 
-
+                </div><!-- global header ends--> 
             </header>
 
             @include('partials.sidebar_nav')
-
             <div class="mt-page-wrapper">
 
                 <div class="mt-layout-content">
                 
                     <div class="mt-row--fullwidth mdl-grid">
                       <main class="admin-main-wrapper mdl-cell mdl-cell--8-col">
-                  @yield('main')
 
+                      @yield('main')
                       </main>
 
-                    <aside class="action-feed mdl-cell mdl-cell--4-col" style="background: #eee;">
+                      <aside class="action-feed mdl-cell mdl-cell--4-col" style="background: #eee;">
 
-                      @yield('aside')
-
-                    </aside>
-            
-
+                      @include('partials.right-aside')
+                      </aside>
                     </div>
                 </div>
-
-                <footer>
-                </footer> 
 
                 <!-- Black Screen -->
                 <div class="mt-obfuscator" ng-class="{'show': toggle}" ng-click="toggleSidebar()"></div>

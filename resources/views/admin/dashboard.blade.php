@@ -87,7 +87,7 @@
                     </div>
 
                     <div class="mdl-card mdl-cell mdl-cell--4-col">
-                       <section class="red mdl-card__supporting-text purple mt-chart-card">
+                       <section class="redish mdl-card__supporting-text purple mt-chart-card">
                             <div class="p-10">
                               <h2 class="chart-title">New Users</h2>
                               <h3 class="chart-number">1</h3>
@@ -493,17 +493,6 @@
                 @section('aside')
             <!-- Aside goes here -->
             
-                <section class="feed-header clearfix">
-                    <div class="feed-left">
-                        <h3 class="grey-text">Action Feed</h3>
-                    </div>
-                    <div class="feed-right">
-                        <a href="#" title="more insights"><img src="images/icons/top03/bars42.svg" width="20px"></a>
-                    </div>
-                </section>
-                
-                 <div class="insights-container p-10">
-                      <div class="single-card clearfix p-10">
                           <div class="pb-5">
                             <h4>Insights</h4>
                           </div>
@@ -536,9 +525,6 @@
                             <h3>Monthly Customers</h3>
                             <span>250</span>
                           </div>
-                      </div>
-
-                    </div>
 
                     <div class="p-20">
 
