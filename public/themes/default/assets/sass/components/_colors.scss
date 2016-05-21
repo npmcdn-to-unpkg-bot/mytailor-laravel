@@ -30,13 +30,18 @@ $ui-color: (
 /*Backgrounds*/
 
 .blue{
-	    background: #2196F3;
+	    background: #2196F3 !important;
+        color:#fff !important;
 }
 
 .bluegreen{
 	    background: #4DD0E1;
 }
 
+.danger{
+    background:#e12330 !important;
+    color:#fff !important;
+}
 .red{
 	    color: #F23054;
 }

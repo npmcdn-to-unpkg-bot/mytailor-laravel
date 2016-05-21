@@ -211,9 +211,32 @@ header.admin-shots-head{
 }
 
 .shot-item{
-    background: #03A9F4;
     box-sizing: border-box;
     margin: 8px;
-    height: 200px;
+    height: 300px;
     overflow:hidden;
+}
+
+.shot-item figure>img{
+  min-height:300px;
+}
+
+/*Uploads*/
+.upload-form-actions-wrapper{
+    border-bottom: 1px solid #EDEDED;
+    margin-bottom: 20px;
+}
+
+.upload-form-actions>span.fileinput-button{
+    background: #32c5d2;
+}
+
+.upload-form-actions>button{
+      font-size: 16px;
+    margin: 0 17px;
+}
+
+.upload-actions button{
+        font-size: 14px;
+        cursor: pointer;
 }

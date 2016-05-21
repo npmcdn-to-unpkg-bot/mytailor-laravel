@@ -55,3 +55,13 @@ img{
 .center{
     text-align:center;
 }
+
+.table{
+        width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #F3F6F9;
+}

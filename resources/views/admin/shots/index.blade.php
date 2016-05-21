@@ -13,7 +13,7 @@
            		<header class="admin-shots-head">
                 <div style="height: 60px;">
                   <button class="btn mdl-button icon-round">
-                    <a href="{{route('admin.shots.create')}}"><i class="mdi mdi-cloud-upload icon-center red"></i></a>
+                    <a href="{{route('shots.upload')}}"><i class="mdi mdi-cloud-upload icon-center red"></i></a>
                   </button>
                 </div>
            			<div class="mt-tool-bar">
@@ -21,33 +21,21 @@
            			</div>
            		</header>
            		<section class="mdl-grid admin-shots-wrapper">
-           			<div class="shot-item mdl-cell mdl-cell--4-col">
-           				 <a href="#" data-id="5">
+
+              @foreach($shots as $shot)
+                <div class="shot-item mdl-cell mdl-cell--4-col">
+                   <a href="#" data-id="{{$shot->id}}">
                     <figure class="">
-                       <img src="{{theme('images/shots/2c26358c99086b35cca686025ea6d6a0.jpg')}}">
+                       <img src="{{'../uploads/' . $shot->file_name . '.' . $shot->file_type}}">
                     </figure>
                    </a>
-           			</div>
-           			<div class="shot-item mdl-cell mdl-cell--4-col">
-           				 
+                </div>
 
-           			</div>
-           			<div class="shot-item mdl-cell mdl-cell--4-col">
-           				
+              @endforeach
 
-           			</div>
-           			<div class="shot-item mdl-cell mdl-cell--4-col">
-           				
-
-           			</div>
-           			<div class="shot-item mdl-cell mdl-cell--4-col">
-           				
-
-           			</div>
-           			<div class="shot-item mdl-cell mdl-cell--4-col">
-           			</div>
-           				
            		</section>
+
+              {!! $shots->render() !!}
 @endsection
 
 @section('aside')

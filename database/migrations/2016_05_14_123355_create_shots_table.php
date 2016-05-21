@@ -20,6 +20,7 @@ class CreateShotsTable extends Migration
             $table->string('file_type', 10);
             $table->string('category', 5);
             $table->smallInteger('featured');
+            $table->smallInteger('published');
             $table->integer('views');
             $table->timestamps('upload_date');
             $table->integer('user_id');

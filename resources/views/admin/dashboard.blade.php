@@ -15,7 +15,7 @@
 
                   <div class="mt-right-icons">
                       <ul class="admin-call-icons">
-                          <li><a href="#" class="btn icon-round" title="Upload shots">
+                          <li><a href="{{route('admin.shots.index')}}" class="btn icon-round" title="Shots media">
                               <i class="mdi mdi-image"></i>
                             </a></li>
                            <li><a href="#" class="btn" title="check messages">

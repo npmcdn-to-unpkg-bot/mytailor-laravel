@@ -366,7 +366,7 @@
             // Callback for file deletion:
             destroy: function (e, data) {
                 if (e.isDefaultPrevented()) {
-                    return false;
+                    //return false;
                 }
                 var that = $(this).data('blueimp-fileupload') ||
                         $(this).data('fileupload'),
@@ -589,6 +589,7 @@
             });
             this._on(fileUploadButtonBar.find('.delete'), {
                 click: function (e) {
+                    
                     e.preventDefault();
                     filesList.find('.toggle:checked')
                         .closest('.template-download')

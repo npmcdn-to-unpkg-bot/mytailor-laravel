@@ -16,6 +16,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot()  {
 
         $this->app['view']->composer('layouts.admin', Composers\AddAdminUser::class);
+        $this->app['view']->composer('layouts.upload', Composers\AddAdminUser::class);
         $this->app['view']->setFinder($this->app['theme.finder']);
     }
 
