@@ -111,6 +111,7 @@
       box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.07), 1px 2px 5px 0 rgba(0, 0, 0, 0.06);
       padding: 1em;
 }
+
 /*
  * Inherits Material Design Grid
  * No changes wil be made to this section but classes can be overwritten.
@@ -411,9 +412,11 @@
 
 /*Overright*/
 .featured-grid{
+  width: 90% !important;
   -webkit-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
           flex-wrap: nowrap;
+
 }
 
  /* ==========================================================================
@@ -459,13 +462,6 @@
     width: 49%;
   }
 
-  .mt-shot-item:nth-child(3n){
-      margin-right:inherit;
-  }
-
-    .mt-shot-item:nth-child(2n){
-      margin-right:0;
-  }
 }
 
 

@@ -2295,6 +2295,7 @@ header.admin-shots-head {
 
 /*Overright*/
 .featured-grid {
+  width: 90% !important;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -2336,12 +2337,6 @@ header.admin-shots-head {
   }
   .mt-shot-item {
     width: 49%;
-  }
-  .mt-shot-item:nth-child(3n) {
-    margin-right: inherit;
-  }
-  .mt-shot-item:nth-child(2n) {
-    margin-right: 0;
   }
 }
 

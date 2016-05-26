@@ -1537,12 +1537,13 @@ a.mt-sidebar-link:hover {
 /*Featured Shots*/
 .mt-shot-item {
   height: 346px;
-  background: #2196F3;
-  margin-top: 2em;
-  margin-right: 1em;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  background: #F4F4F4;
+  margin: 10px 5px 10px 0;
 }
 
-.mt-shot-item:nth-child(3n) {
+.mt-shot-item:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -2136,6 +2137,7 @@ a.mt-sidebar-link:hover {
 
 /*Overright*/
 .featured-grid {
+  width: 90% !important;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -2177,12 +2179,6 @@ a.mt-sidebar-link:hover {
   }
   .mt-shot-item {
     width: 49%;
-  }
-  .mt-shot-item:nth-child(3n) {
-    margin-right: inherit;
-  }
-  .mt-shot-item:nth-child(2n) {
-    margin-right: 0;
   }
 }
 
