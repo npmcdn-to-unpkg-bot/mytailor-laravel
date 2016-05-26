@@ -1,10 +1,11 @@
 /*!
  * Waves v0.7.5
- * http://fian.my.id/Waves
- *
- * Copyright 2014-2016 Alfiana E. Sibuea and other contributors
- * Released under the MIT license
- * https: */
+ * http://fian.my.id/Waves 
+ * 
+ * Copyright 2014-2016 Alfiana E. Sibuea and other contributors 
+ * Released under the MIT license 
+ * https://github.com/fians/Waves/blob/master/LICENSE 
+ */
 .waves-effect {
   position: relative;
   cursor: pointer;
@@ -144,12 +145,6 @@
 .waves-float:active {
   -webkit-box-shadow: 0px 8px 20px 1px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 8px 20px 1px rgba(0, 0, 0, 0.3);
-}
-
-.waves-block {
-  display: block;
-}
-gba(0, 0, 0, 0.3);
 }
 
 .waves-block {

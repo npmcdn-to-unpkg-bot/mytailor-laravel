@@ -86,7 +86,7 @@
 
 
                       <div class="mt-after-call-items">
-                      <a href="/mytailor.me/public_html/shots" class="norm-text"><span class="btn redish">View Shots</span></a>
+                      <a href="/mytailor.me/public_html/shots" class="norm-text"><span class="btn btn--mobile redish">View Shots</span></a>
                       </div>
 
               </section> <!-- Call actions end -->
