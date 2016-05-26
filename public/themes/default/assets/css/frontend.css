@@ -816,10 +816,23 @@ a.mt-call-items:hover .mt-call-items-title {
   line-height: 1.3;
 }
 
+p.attract-me {
+  font-size: 1.5rem;
+  line-height: 1.77778;
+  margin: 0;
+  color: #424242;
+}
+
 .server-value {
   font-size: 21px;
   font-weight: 600;
   margin: 1em;
+}
+
+.bold-title {
+  font-size: 2rem;
+  line-height: 1.22222;
+  color: #202024;
 }
 
 @media (max-width: 890px) {
@@ -1531,20 +1544,6 @@ a.mt-sidebar-link:hover {
 .mt-after-call-items {
   text-align: center;
   padding: 4em 0;
-  border-bottom: 1px solid #eee;
-}
-
-/*Featured Shots*/
-.mt-shot-item {
-  height: 346px;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
-  background: #F4F4F4;
-  margin: 10px 5px 10px 0;
-}
-
-.mt-shot-item:nth-child(4n) {
-  margin-right: 0;
 }
 
 .after-shots-action {
@@ -2136,13 +2135,6 @@ a.mt-sidebar-link:hover {
 }
 
 /*Overright*/
-.featured-grid {
-  width: 90% !important;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-}
-
 /* ==========================================================================
     Rows
    ========================================================================== */
@@ -2158,12 +2150,34 @@ a.mt-sidebar-link:hover {
   padding: 0;
 }
 
-/**/
+.featured-grid {
+  width: 90% !important;
+  min-width: 86em;
+  max-width: 90em;
+}
+
+/*Featured Shots*/
 .mt-shot-item {
-  width: 32.4%;
+  height: 346px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  background: #F4F4F4;
+  margin: 0 5px 5px 0;
+  flex-basis: 24.6666%;
+}
+
+.mt-shot-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 /*Lets look at what breaks*/
+@media (max-width: 1250px) {
+  .featured-grid {
+    width: 100% !important;
+    min-width: 0;
+  }
+}
+
 @media (max-width: 1049px) {
   .mt-row, .mt-row--fullwidth {
     width: 100%;
@@ -2172,11 +2186,6 @@ a.mt-sidebar-link:hover {
 }
 
 @media (max-width: 960px) {
-  .featured-grid {
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
   .mt-shot-item {
     width: 49%;
   }

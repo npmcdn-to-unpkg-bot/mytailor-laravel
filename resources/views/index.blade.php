@@ -144,6 +144,58 @@
                         </a>
                       </figure>
                   </div>
+
+                                    <div class="mt-shot-item mdl-cell mdl-cell--4-col">
+                      <figure>
+                        <a href="" class="sp-view">
+                          <img src="">
+                          <div class="grid-overlay-items">
+                            <figcaption>
+                              <span><img src="{{theme('images/icons/search67.svg')}}"></span>
+                            </figcaption>
+                          </div>
+                        </a>
+                      </figure>
+                  </div>
+
+                  <div class="mt-shot-item mdl-cell mdl-cell--4-col">
+                      <figure>
+                        <a href="" class="sp-view">
+                          <img src="">
+                          <div class="grid-overlay-items">
+                            <figcaption>
+                              <span><img src="{{theme('images/icons/search67.svg')}}"></span>
+                            </figcaption>
+                          </div>
+                        </a>
+                      </figure>
+                  </div>
+
+                  <div class="mt-shot-item mdl-cell mdl-cell--4-col">
+                      <figure>
+                        <a href="" class="sp-view">
+                          <img src="">
+                          <div class="grid-overlay-items">
+                            <figcaption>
+                              <span><img src="{{theme('images/icons/search67.svg')}}"></span>
+                            </figcaption>
+                          </div>
+                        </a>
+                      </figure>
+                  </div>
+
+                  <div class="mt-shot-item mdl-cell mdl-cell--4-col">
+                      <figure>
+                        <a href="" class="sp-view">
+                          <img src="">
+                          <div class="grid-overlay-items">
+                            <figcaption>
+                              <span><img src="{{theme('images/icons/search67.svg')}}"></span>
+                            </figcaption>
+                          </div>
+                        </a>
+                      </figure>
+                  </div>
               </section>
 
             <div class="after-shots-action">
@@ -157,7 +209,7 @@
                   <div class="mt-2cols-wrap">
                     <div class="mt-info-box">
                       <div style="padding:2em 0;">
-                          <h2 class="bold-title">Designs Inspire !</h2>
+                          <h2 class="bold-title">MyTailor Classics</h2>
                       </div>
 
                       <p class="attract-me">Inspiration comes in many ways. What you wear tells alot about you. On your next meeting, interview, every part of the Uber experience has been designed around your safety and security.</p>

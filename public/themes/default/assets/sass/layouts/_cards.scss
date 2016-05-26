@@ -411,13 +411,7 @@
       width: 100%; } }
 
 /*Overright*/
-.featured-grid{
-  width: 90% !important;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
 
-}
 
  /* ==========================================================================
     Rows
@@ -437,30 +431,59 @@
 
 }
 
-/**/
 
-.mt-shot-item{
-  width:32.4%;
+.featured-grid{
+  width: 90% !important; 
+  min-width: 86em;
+  max-width: 90em;
+
 }
 
+
+/*Featured Shots*/
+
+.mt-shot-item{
+    height: 346px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    background: #F4F4F4;
+    margin: 0 5px 5px 0;
+    flex-basis: 24.6666%;
+}
+
+.mt-shot-item:nth-child(4n){
+    margin-right: 0;
+}
+
+
 /*Lets look at what breaks*/
+
+@media (max-width: 1025px){
+
+}
+
+@media (max-width: 1250px){
+    .featured-grid{
+  width: 100% !important; 
+  min-width: 0;
+  }
+}
+
 @media (max-width: 1049px) {
   .mt-row{
     width: 100%;
     min-width: 60em;
   }
+
 }
 
 @media (max-width: 960px) {
-  .featured-grid{
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-  }
 
   .mt-shot-item{
     width: 49%;
   }
+
+
 
 }
 
