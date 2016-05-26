@@ -20,11 +20,11 @@
            				
            			</div>
            		</header>
-           		<section class="mdl-grid admin-shots-wrapper">
+           		<section class="mdl-grid admin-shots-wrapper" ng-controller="ShotsController">
 
               @foreach($shots as $shot)
                 <div class="shot-item mdl-cell mdl-cell--4-col">
-                   <a href="#" data-id="{{$shot->id}}">
+                   <a href="#" ng-click="loadShotData({{$shot->id}})">
                     <figure class="">
                        <img src="{{'../uploads/' . $shot->file_name . '.' . $shot->file_type}}">
                     </figure>
@@ -71,23 +71,23 @@
                           </div>
 
                           <section class="pad-1">
-                          	<form type="post" action="">
+                          	<form type="post" action="" ng-controller="shotEditForm">
                           		<div class="form-body">
 	              					<div class="mt-form-group">
-	                                    <input type="text" class="" readonly="" disabled="" value="">
+	                                    <input type="text" class="" readonly="" disabled="" ng-model="shot.url">
 	                                    <label class="top-label">URL</label>
 	                                </div>
 	                                <div class="mt-form-group">
-	                                    <input type="text" class="" value="">
+	                                    <input type="text" class="" ng-model="shot.title">
 	                                    <label class="top-label">Title</label>
 	                                </div>
                                   <div class="mt-form-group">
-                                      <input type="text" class="" value="">
+                                      <input type="text" class="" ng-model="shot.source_url">
                                       <label class="top-label">Source URL</label>
                                   </div>
 	                                <div class="mt-form-group">
-	                                    <select>
-                                        <option value="" selected=""></option>
+	                                    <select ng-model="shot.category">
+                                        <option selected=""></option>
 	                                        <option value="ma">Men</option>
 	                                        <option value="fm">Female</option>
 	                                        <option value="ki">Kids</option>

@@ -48,6 +48,12 @@
             </div> <!-- Page wrapper ends -->
         <!-- Scripts -->
         <script src="{{ theme('js/app.js') }}"></script>
+
+        <!-- Controllers -->
+        <script src="{{ theme('js/controllers/shotEditController.js') }}"></script>
+
+        <!-- Services -->
+        <script src="{{ theme('js/services/getShotData.js') }}"></script>
         <script src="{{ theme('js/script.js') }}"></script>
 
 </body>

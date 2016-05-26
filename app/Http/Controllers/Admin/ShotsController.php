@@ -35,7 +35,8 @@ class ShotsController extends Controller    {
 
     }
 
-    public function show() {
-
+    public function show($id) {
+            $data = Shot::find($id);
+            return json_encode($data);
     }
 }
