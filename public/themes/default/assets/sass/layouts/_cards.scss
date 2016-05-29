@@ -165,7 +165,7 @@
 
 @media (max-width: 479px) {
   .mdl-grid {
-    padding: 8px; }
+    padding: 0px; }
   .mdl-cell {
     margin: 8px;
     width: calc(100% - 16px); }
@@ -411,7 +411,16 @@
       width: 100%; } }
 
 /*Overright*/
+@media (max-width: 428px){
+.featured-grid>.mdl-cell--2-col, .mdl-cell--2-col-phone.mdl-cell--2-col-phone {
+    width: calc(36% - 16px);
+}
+    .mt-shot-item{
+      margin: 0px 2px 2px 0 !important;
+    }
 
+
+}
 
  /* ==========================================================================
     Rows
@@ -433,9 +442,9 @@
 
 
 .featured-grid{
-  width: 90% !important; 
-  min-width: 86em;
-  max-width: 90em;
+    width: 100% !important;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -443,47 +452,28 @@
 /*Featured Shots*/
 
 .mt-shot-item{
-    height: 346px;
+    max-height: 346px;
+    min-height: 112px;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
     background: #F4F4F4;
     margin: 0 5px 5px 0;
-    flex-basis: 24.6666%;
+    //flex-basis: 24.6666%;
 }
 
-.mt-shot-item:nth-child(4n){
-    margin-right: 0;
-}
+// .mt-shot-item:nth-child(4n){
+//     margin-right: 0;
+// }
 
 
 /*Lets look at what breaks*/
 
-@media (max-width: 1025px){
-
-}
-
-@media (max-width: 1250px){
-    .featured-grid{
-  width: 100% !important; 
-  min-width: 0;
-  }
-}
 
 @media (max-width: 1049px) {
   .mt-row{
     width: 100%;
     min-width: 60em;
   }
-
-}
-
-@media (max-width: 960px) {
-
-  .mt-shot-item{
-    width: 49%;
-  }
-
-
 
 }
 

@@ -717,12 +717,6 @@ button#dropdown > i {
   box-shadow: 0px 1px 1.5px 1px rgba(0, 0, 0, 0.12);
 }
 
-@media (max-width: 768px) {
-  .btn--mobile {
-    padding: 1em 2em;
-  }
-}
-
 @media (max-width: 480px) {
   .btn--mobile {
     padding: 1.1em 3em;
@@ -1525,18 +1519,24 @@ a.mt-sidebar-link:hover {
   padding: 2em 0em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 839px) and (min-width: 480px) {
   .mt-call-actions {
     flex-wrap: wrap;
   }
-  .mt-call-items {
-    flex-basis: 315px;
+  .btn--mobile {
+    padding: 1em 2em;
   }
 }
 
-@media (max-width: 687px) {
+@media (max-width: 839px) {
   .mt-call-items {
-    flex-basis: 258px;
+    flex-basis: 261px;
+  }
+}
+
+@media (max-width: 580px) {
+  .mt-call-items {
+    flex-basis: 200px;
   }
 }
 
@@ -1802,7 +1802,7 @@ a.mt-sidebar-link:hover {
 
 @media (max-width: 479px) {
   .mdl-grid {
-    padding: 8px;
+    padding: 0px;
   }
   .mdl-cell {
     margin: 8px;
@@ -2135,6 +2135,15 @@ a.mt-sidebar-link:hover {
 }
 
 /*Overright*/
+@media (max-width: 428px) {
+  .featured-grid > .mdl-cell--2-col, .mdl-cell--2-col-phone.mdl-cell--2-col-phone {
+    width: calc(36% - 16px);
+  }
+  .mt-shot-item {
+    margin: 0px 2px 2px 0 !important;
+  }
+}
+
 /* ==========================================================================
     Rows
    ========================================================================== */
@@ -2151,43 +2160,26 @@ a.mt-sidebar-link:hover {
 }
 
 .featured-grid {
-  width: 90% !important;
-  min-width: 86em;
-  max-width: 90em;
+  width: 100% !important;
+  align-items: center;
+  justify-content: center;
 }
 
 /*Featured Shots*/
 .mt-shot-item {
-  height: 346px;
+  max-height: 346px;
+  min-height: 112px;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   background: #F4F4F4;
   margin: 0 5px 5px 0;
-  flex-basis: 24.6666%;
-}
-
-.mt-shot-item:nth-child(4n) {
-  margin-right: 0;
 }
 
 /*Lets look at what breaks*/
-@media (max-width: 1250px) {
-  .featured-grid {
-    width: 100% !important;
-    min-width: 0;
-  }
-}
-
 @media (max-width: 1049px) {
   .mt-row, .mt-row--fullwidth {
     width: 100%;
     min-width: 60em;
-  }
-}
-
-@media (max-width: 960px) {
-  .mt-shot-item {
-    width: 49%;
   }
 }
 

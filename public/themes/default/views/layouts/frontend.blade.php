@@ -2,6 +2,8 @@
 <html lang="en" ng-app="app">
     <head>
         <title>@yield('pagetitle') | Catalog of African Fashion prints & designs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="{{ theme('images/favicon.png')}}">
         <link rel="stylesheet" href="{{ theme('css/frontend.css')}}">
         <script src="{{ theme('js/vendor.js') }}"></script>

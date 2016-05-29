@@ -1,33 +1,20 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-|
-*/
-
-/*
- * This route will log Admin out of the system
- * @redirect to auth/login
- */
+//Authentication :
 Route::get('auth/logout', 'Auth\AuthController@logout');
-
 Route::controller('auth', 'Auth\AuthController', [
 	'getLogin' => 'auth.login',
 	'getLogout' => 'auth.logout'
 	]);
 
-//Route::resource('admin/pages', 'Admin\PagesController');
-
+//This will run our uploader class and upload all files
 Route::get('admin/shots/upload', [
 		'as' => 'shots.upload',
 		'uses' => 'Admin\ShotsController@upload'
 ]);
-Route::delete('admin/uploader', function(){
-		return 'hello Africans';
-});
+// Resources :
+Route::resource('admin/pages', 'Admin\PagesController');
+Route::resource('admin/users', 'Admin\UsersController');
 Route::resource('admin/uploader', 'Admin\UploadController');
 Route::resource('admin/shots', 'Admin\ShotsController');
 

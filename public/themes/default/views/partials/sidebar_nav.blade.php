@@ -26,8 +26,9 @@
     <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-tshirt-v"></i>Tailors</a></li>
     <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-camera-iris"></i>Apps</a></li>
     <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-message-alert"></i>Responses</a></li>
+    <li><a href="{{route('admin.users.index')}}" class="mt-sidebar-link btn"><i class="mdi mdi-account"></i>Users</a></li>
+    <li><a href="{{route('admin.pages.index')}}" class="mt-sidebar-link btn"><i class="mdi mdi-book"></i>Pages</a></li>
     <li><a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-settings"></i>Settings</a></li>
-    <li><a href="#" class="mt-sidebar-link btn"><i class="mt-icon mt-shot"></i></a></li>
       </ul>           
               </nav>
 </div> <!-- SideBar -->

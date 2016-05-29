@@ -91,9 +91,9 @@
 
               </section> <!-- Call actions end -->
 
-              <section class="mdl-grid mt-row featured-grid">
+              <section class="mdl-grid featured-grid">
 
-                  <div class="mt-shot-item mdl-cell mdl-cell--4-col">
+                  <div class="mt-shot-item mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
                       <figure>
                         <a href="" class="sp-view">
                           <img src="">
@@ -106,7 +106,7 @@
                       </figure>
                   </div>
 
-                  <div class="mt-shot-item mdl-cell mdl-cell--4-col">
+                  <div class="mt-shot-item mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
                       <figure>
                         <a href="" class="sp-view">
                           <img src="">
@@ -119,7 +119,7 @@
                       </figure>
                   </div>
 
-                  <div class="mt-shot-item mdl-cell mdl-cell--4-col">
+                  <div class="mt-shot-item mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
                       <figure>
                         <a href="" class="sp-view">
                           <img src="">
@@ -132,7 +132,19 @@
                       </figure>
                   </div>
 
-                  <div class="mt-shot-item mdl-cell mdl-cell--4-col">
+                  <div class="mt-shot-item mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+                      <figure>
+                        <a href="" class="sp-view">
+                          <img src="">
+                          <div class="grid-overlay-items">
+                            <figcaption>
+                              <span><img src="{{theme('images/icons/search67.svg')}}"></span>
+                            </figcaption>
+                          </div>
+                        </a>
+                      </figure>
+                  </div>
+                  <div class="mt-shot-item mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
                       <figure>
                         <a href="" class="sp-view">
                           <img src="">
@@ -145,7 +157,7 @@
                       </figure>
                   </div>
 
-                                    <div class="mt-shot-item mdl-cell mdl-cell--4-col">
+                  <div class="mt-shot-item mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
                       <figure>
                         <a href="" class="sp-view">
                           <img src="">
@@ -158,7 +170,7 @@
                       </figure>
                   </div>
 
-                  <div class="mt-shot-item mdl-cell mdl-cell--4-col">
+                  <div class="mt-shot-item mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
                       <figure>
                         <a href="" class="sp-view">
                           <img src="">
@@ -171,20 +183,7 @@
                       </figure>
                   </div>
 
-                  <div class="mt-shot-item mdl-cell mdl-cell--4-col">
-                      <figure>
-                        <a href="" class="sp-view">
-                          <img src="">
-                          <div class="grid-overlay-items">
-                            <figcaption>
-                              <span><img src="{{theme('images/icons/search67.svg')}}"></span>
-                            </figcaption>
-                          </div>
-                        </a>
-                      </figure>
-                  </div>
-
-                  <div class="mt-shot-item mdl-cell mdl-cell--4-col">
+                  <div class="mt-shot-item mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
                       <figure>
                         <a href="" class="sp-view">
                           <img src="">

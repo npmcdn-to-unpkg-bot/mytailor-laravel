@@ -33,22 +33,31 @@
 	}
 }
 
-@media (max-width: 768px){
+@media(max-width: 839px) and (min-width: 480px){
+
     .mt-call-actions{
         flex-wrap:wrap;
     }
 
-   .mt-call-items{
-    flex-basis: 315px;
-   }
+
+
+       .btn--mobile{
+        padding: 1em 2em;
+    }
 
 }
 
 
-@media (max-width: 687px){
-    .mt-call-items {
-        flex-basis: 258px;
-    }
+@media (max-width: 839px){
+   .mt-call-items{
+    flex-basis: 261px;
+   }
+}
+
+@media (max-width: 580px){
+   .mt-call-items{
+    flex-basis: 200px;
+   }
 }
 
 /*The Big button concept*/

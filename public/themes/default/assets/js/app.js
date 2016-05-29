@@ -10,16 +10,14 @@
 	var app = angular.module('app', ['ngRoute']);
 
 
-	/*
-	* Main Simple function to toggle Sidebar
-	*
-	 */
+/*
+ * Main Simple function to toggle Sidebar
+ *
+ */
 	app.controller("MainController",
-
-			function($scope) {
+		function($scope) {
 				$scope.toggle = false;
-
 				$scope.toggleSidebar = function () {
-					$scope.toggle = !$scope.toggle;
-				};
+						$scope.toggle = !$scope.toggle;
+					};
 	});

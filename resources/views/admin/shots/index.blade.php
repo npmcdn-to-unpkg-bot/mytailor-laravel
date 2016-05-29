@@ -1,11 +1,10 @@
-@extends('layouts.admin')
+@extends('layouts.template.page-with-aside')
 
 @section('pagetitle', 'Shots')
 
 @section('bg', 'grey60')
 
 @section('main')
-
 
           @include('partials.breadcrump')
 
@@ -20,11 +19,11 @@
            				
            			</div>
            		</header>
-           		<section class="mdl-grid admin-shots-wrapper" ng-controller="ShotsController">
+           		<section class="mdl-grid admin-shots-wrapper">
 
               @foreach($shots as $shot)
                 <div class="shot-item mdl-cell mdl-cell--4-col">
-                   <a href="#" ng-click="loadShotData({{$shot->id}})">
+                   <a href="#" ng-click="show({{$shot->id}})">
                     <figure class="">
                        <img src="{{'../uploads/' . $shot->file_name . '.' . $shot->file_type}}">
                     </figure>
@@ -71,7 +70,7 @@
                           </div>
 
                           <section class="pad-1">
-                          	<form type="post" action="" ng-controller="shotEditForm">
+                          	<form type="post">
                           		<div class="form-body">
 	              					<div class="mt-form-group">
 	                                    <input type="text" class="" readonly="" disabled="" ng-model="shot.url">
@@ -104,7 +103,7 @@
                                       Feature</label>
                                  </div>
 	                                <div class="mt-form-group">
-	                                    <textarea class="" rows="3" value=""></textarea>
+	                                    <textarea class="" rows="7" ng-model="shot.description"></textarea>
 	                                    <label class="top-label">Description</label>
 	                                </div>
 

@@ -15,7 +15,11 @@ class ShotsController extends Controller    {
         parent::__construct();
     }
 
-    public function index() {
+    public function index(Request $request) {
+        if ($request->ajax()){
+            $shots = $this->shots->paginate(15);
+            return $shots;
+        }
         $shots = $this->shots->paginate(15);
         return view('admin.shots.index', compact('shots'));
     }
@@ -36,7 +40,7 @@ class ShotsController extends Controller    {
     }
 
     public function show($id) {
-            $data = Shot::find($id);
-            return json_encode($data);
+        return Shot::find($id);
+
     }
 }
