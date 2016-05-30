@@ -215,6 +215,10 @@ header.admin-shots-head{
     margin: 8px;
     height: 300px;
     overflow:hidden;
+    &:active{
+  box-shadow: 0px 0px 6px 3px #03A9F4;
+}
+
 }
 
 .shot-item figure>img{

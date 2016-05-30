@@ -1,20 +1,23 @@
-	app.controller("shotsController", ["$scope","shots", 
+	'use strict';
 
-		function($scope, shots) {
+	app.controller("shotsController", ["$scope","shotFactory", 
 
-			 shots.get().then(function(response){
-			 		$scope.shots = response;
-			 });
+		function($scope, shotFactory) {
 
-			 $scope.show = function(id){
-			 		 shots.show(id).then(function(response){
+			$scope.show = function(id){
+			 		 shotFactory.show(id).then(function(response){
 			 				$scope.shot = response.data;
-			 				//console.log(response.data);
 			 		});
-			 		
-			 					 	//console.log($scope.shot);
-			 	}
+			 	};
 
+			$scope.updateShot = function(){
+				shotFactory.update($scope.shot.id, $scope.shot).then(function(response){
+			 		});
+			 };
+
+			 $scope.reset = function(){
+			 	$scope.shot = {};
+			 };
 
 
 	}]);

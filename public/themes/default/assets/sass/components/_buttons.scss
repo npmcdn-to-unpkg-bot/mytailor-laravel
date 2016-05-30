@@ -67,6 +67,20 @@ button.icon-round{
         background-color: rgba(158,158,158,.2);
 }
 
+.mdl-checkbox__ripple-container {
+    position: absolute;
+    z-index: 2;
+    top: -6px;
+    left: -10px;
+    box-sizing: border-box;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    -webkit-mask-image: -webkit-radial-gradient(center, circle cover, rgb(255, 255, 255), rgb(0, 0, 0));
+    border-radius: 50%;
+    overflow: hidden;
+}
+
 button#dropdown>i{
     color:#fff;
 }

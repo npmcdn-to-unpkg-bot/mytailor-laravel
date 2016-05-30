@@ -43,4 +43,13 @@ class ShotsController extends Controller    {
         return Shot::find($id);
 
     }
+
+    public function update(Requests\UpdateShotRequest $request, $id) {
+
+        $shot = $this->shots->findOrFail($id);
+
+        $shot->fill($request->only('title', 'category', 'featured', 'published', 'views', 'source_url', 'description'))->save();
+       return 'Shot was updated !';
+
+    }
 }
