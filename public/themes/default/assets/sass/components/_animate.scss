@@ -5,13 +5,34 @@
 
 }
 
+/* ==========================
+    Angular Animations
+  ===========================*/
 
+  // ng-hide-add ng-hide-remove
 
-/*.fade {
-    opacity: 0;
-    transition: opacity .15s linear;
+#show_pages.ng-hide-add{
+      animation:0.2s fadeOut;
 }
-*/
+
+#show_pages.ng-hide-remove{
+    animation:0.8s fadeIn;
+}
+
+#show_pages.ng-hide{
+  position: absolute;
+  width: 100%;
+}
+
+#show_pages_form.ng-hide-remove{
+    animation:0.3s fadeInLeft;
+}
+
+#show_pages_form.ng-hide-add{
+    animation:0.2s fadeOutLeft;
+}
+
+
 /* Buzz Out */
 @-webkit-keyframes hvr-buzz-out {
   10% {
@@ -137,3 +158,4 @@ a#buzzle:hover .hvr-buzz-out{
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
+

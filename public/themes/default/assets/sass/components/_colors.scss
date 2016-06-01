@@ -8,7 +8,7 @@ $ui-color: (
     redish : #F23054,
     redish_strong : #D9183C,
     grey60	: #D8D8D8,
-    blue : #2196F3
+    blue : #03A9F4
 );
 
 .redish{
@@ -21,6 +21,7 @@ $ui-color: (
 
 .dark{
 	background-color: map-get($ui-color, darkbrown);
+    color: #948E8E;
 }
 
 .grey60{
@@ -36,6 +37,9 @@ $ui-color: (
 
 .bluegreen{
 	    background: #4DD0E1;
+        &:hover{
+            background: #3CB4C3;
+        }
 }
 
 .danger{
@@ -55,4 +59,7 @@ $ui-color: (
     	    color: #fff !important;
     background: #217ebd !important;
     }
+}
+.whitee{
+    background-color: #fff;
 }

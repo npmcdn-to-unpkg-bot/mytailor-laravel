@@ -1,3 +1,4 @@
 {
-"directory": "resources/assets/js/bower"
+	"directory": "vendor/bower_components"
+
 }

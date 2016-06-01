@@ -11,19 +11,25 @@ var elixir = require('laravel-elixir');
  |
  */
 
-elixir.config.assetsPath = 'resources/assets';
-elixir.config.publicPath = elixir.config.assetsPath;
+elixir.config.assetsPath = 'vendor/bower_components';
+elixir.config.publicPath = 'public/themes/default/assets';
 
 
 
 	// This will mix vendor scripts
 	elixir(function(mix) {
+		mix.sass('../../../public/themes/default/assets/sass/admin.scss');
 		mix.scripts(
 			[
-			    'bower/angular/angular.min.js',
-			    'bower/angular/angular-route.min.js',
-			    'bower/jquery/dist/jquery.min.js',
-			    'bower/Waves/dist/waves.min.js',
-			    'bower/custom-scroller.min.js'
+			    '../angular/angular.min.js',
+			    '../angular/angular-animate.min.js',
+			    '../angular/angular-messages.min.js',
+			   	'../angular/angular-sanitize.min.js',
+			    '../jquery/dist/jquery.min.js',
+			    '../Waves/dist/waves.min.js'
 			   ], 	 'public/themes/default/assets/js/vendor.js')
 	});
+
+/*
+ * Here we shall mix
+ */

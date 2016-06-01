@@ -8,13 +8,15 @@ use MyTailor\Http\Requests;
 
 class PagesController extends Controller   {
 
+    protected $pages;
     public function __construct(Page $pages)  {
-
+        $this->pages = $pages;
         parent::__construct();
     }
 
     public function index() {
-        return view('admin.pages.index');
+        $pages = $this->pages->all();
+        return view('admin.pages.index', compact('pages'));
     }
 
 }

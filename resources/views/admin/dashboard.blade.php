@@ -1,9 +1,10 @@
-@extends('layouts.template.page-with-aside')
+@extends('layouts.template.admin.page-with-aside')
 
 @section('pagetitle', 'Dashboard')
 
 @section('bg', 'grey60')
-
+@section('sidebar_title', 'Analytics')
+@section('icon', 'mdi-chart-areaspline')
 @section('main')
                 @include('partials.breadcrump')
                 

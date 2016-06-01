@@ -45,7 +45,7 @@
    ========================================================================== */
 
 .mt-layout-header{
-  @extend .make-flex;
+  @extend .make-flex !optional;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
@@ -129,7 +129,7 @@
    ========================================================================== */
 
 .mt-layout-sidebar{
-    @extend .make-flex;
+    @extend .make-flex !optional;
     -webkit-transform: translateX(-18.45rem);
     -ms-transform: translateX(-18.45rem);
     transform: translateX(-18.45rem);

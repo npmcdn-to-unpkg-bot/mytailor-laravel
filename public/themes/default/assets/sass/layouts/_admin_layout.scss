@@ -40,7 +40,6 @@
 }
 
 .admin-main-wrapper{
-  margin-right: 16px;
     background: #eee;
 }
 
@@ -79,7 +78,7 @@
     }
 
     & i {
-      @extend .icon-center;
+      @extend .icon-center !optional;
       font-size: 1.8em;
       color: map-get($ui-color, redish);
     }
@@ -168,7 +167,6 @@
 .action-feed{
       background: #eee;
     padding: 0 1em;
-    margin-top: 13px;
 }
 
 .feed-header{
@@ -195,8 +193,10 @@
 }
 
 .mt-header-shotEdit{
-      padding: 0.5em 0.5em;
+    padding: 0.5em 0.5em;
     border-bottom: 1px solid #EEE;
+    display: flex;
+    height: 100px;
 }
 
 /*shots page*/
@@ -215,6 +215,7 @@ header.admin-shots-head{
     margin: 8px;
     height: 300px;
     overflow:hidden;
+    
     &:active{
   box-shadow: 0px 0px 6px 3px #03A9F4;
 }

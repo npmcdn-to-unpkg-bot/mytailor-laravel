@@ -1,6 +1,6 @@
-            @include('partials.head')
-                    @include('partials.header')
-            @include('partials.sidebar_nav')
+            @include('layouts.template.admin.partials.head')
+                    @include('layouts.template.admin.partials.header')
+            @include('layouts.template.admin.partials.sidebar_nav')
             <div class="mt-page-wrapper">
 
                 <div class="mt-layout-content">
@@ -10,4 +10,4 @@
                         </main>
                     </div>
                 </div>
-            @include('partials.foot')
+            @include('layouts.template.admin.partials.foot')

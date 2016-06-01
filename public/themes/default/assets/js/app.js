@@ -7,7 +7,7 @@
 
 
 	// Here we declare our ng-app and modules we need
-	var app = angular.module('app', ['ngRoute']);
+	var app = angular.module('app', ['ngAnimate', 'ngMessages', 'ngSanitize']);
 
 
 /*
@@ -20,4 +20,6 @@
 				$scope.toggleSidebar = function () {
 						$scope.toggle = !$scope.toggle;
 					};
+
+					$scope.showForm = false;
 	});

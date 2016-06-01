@@ -8,14 +8,14 @@
   ?>
 
     {{--Main Layout for home xiew--}}
-    @extends('layouts.frontend')
+    @extends('layouts.template.frontend.default')
 
     @section('bg', 'dark')
     @section('pagetitle', 'Home')
 
         {{--Content Area for our view--}}
 
-        @section('content')
+        @section('main')
             
             <section class="hero" style="margin-top:0px;">
                 <div class="cover-container">
@@ -37,8 +37,8 @@
 
             <section class="mt-layout_calls-wrapper mt-row">
 
-                  <section class="mt-call-actions">
-                      <a class="mt-call-items" href="" title="Trending">
+                  <section class="mt-call-actions mdl-grid">
+                      <a class="mt-call-items mdl-cell mdl-cell--3-col" href="" title="Trending">
                           <div class="call-item">
                             <div class="icon">
                               <img class="kilama-img" style="height:6.25rem;" src="{{theme('images/icons/t-deals.svg')}}" alt="">
@@ -49,7 +49,7 @@
                       </a>
 
 
-                      <a class="mt-call-items" href="/mytailor.me/public_html/brands/local" title="Local-designers">
+                      <a class="mt-call-items mdl-cell mdl-cell--3-col" href="/mytailor.me/public_html/brands/local" title="Local-designers">
                           <div class="call-item">
                             <div class="icon">
                               <img class="kilama-img" style="height:6.25rem;" src="{{theme('images/icons/local.svg')}}" alt="">
@@ -59,7 +59,7 @@
                           </div>
                       </a>
 
-                        <a class="mt-call-items" href="#" title="Community">
+                        <a class="mt-call-items mdl-cell mdl-cell--3-col" href="#" title="Community">
                           <div class="call-item">
                             <div class="icon">
                               <img class="kilama-img" style="height:6.25rem;" src="{{theme('images/icons/community.svg')}}" alt="">
@@ -69,7 +69,7 @@
                           </div>
                       </a>
                       
-                         <a class="mt-call-items" href="/mytailor.me/public_html/partners" title="Partners">
+                         <a class="mt-call-items mdl-cell mdl-cell--3-col" href="/mytailor.me/public_html/partners" title="Partners">
                           <div class="call-item">
                             <div class="icon">
                               <img class="kilama-img" style="height:6.25rem;" src="{{theme('images/icons/partner.svg')}}" alt="">

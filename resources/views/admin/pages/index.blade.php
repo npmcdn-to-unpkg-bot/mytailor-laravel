@@ -1,149 +1,57 @@
-@extends('layouts.template.default')
+@extends('layouts.template.admin.default')
 
 @section('pagetitle', 'Pages')
 
-@section('bg', 'grey60')
+@section('bg', 'whiteee')
 
 @section('main')
 
-<div class="mt-portlet-wrapper mt-card">
-   <div class="table-scrollable">
-            <table class=" table-striped mdl-data-table " role="grid" aria-describedby="sample_1_info">
-               <thead>
-                  <tr role="row"><th class="sorting_disabled" rowspan="1" colspan="1" aria-label="
-                        
-                     " style="width: 65px;">
-                        <div class="checker"><span><input type="checkbox" class="group-checkable" data-set="#sample_1 .checkboxes"></span></div>
-                     </th><th class="sorting_asc" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="
-                        Username
-                     : activate to sort column descending" style="width: 143px;">
-                        Username
-                     </th><th class="sorting" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1" aria-label="
-                        Email
-                     : activate to sort column ascending" style="width: 217px;">
-                        Email
-                     </th><th class="sorting" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1" aria-label="
-                        Points
-                     : activate to sort column ascending" style="width: 99px;">
-                        Points
-                     </th><th class="sorting" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1" aria-label="
-                        Joined
-                     : activate to sort column ascending" style="width: 108px;">
-                        Joined
-                     </th><th class="sorting" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1" aria-label="
-                        Status
-                     : activate to sort column ascending" style="width: 103px;">
-                        Status
-                     </th></tr>
-               </thead>
-               <tbody>   
-               <tr class="gradeX odd" role="row">
-                     <td>
-                        <div class="checker"><span><input type="checkbox" class="checkboxes" value="1"></span></div>
-                     </td>
-                     <td class="sorting_1">
-                        coop
-                     </td>
-                     <td>
-                        <a href="mailto:userwow@gmail.com">
-                        good@gmail.com </a>
-                     </td>
-                     <td>
-                        20
-                     </td>
-                     <td class="center">
-                        19.11.2010
-                     </td>
-                     <td>
-                        <span class="label label-sm label-success">
-                        Approved </span>
-                     </td>
-                  </tr><tr class="gradeX even" role="row">
-                     <td>
-                        <div class="checker"><span><input type="checkbox" class="checkboxes" value="1"></span></div>
-                     </td>
-                     <td class="sorting_1">
-                        foopl
-                     </td>
-                     <td>
-                        <a href="mailto:userwow@gmail.com">
-                        good@gmail.com </a>
-                     </td>
-                     <td>
-                        20
-                     </td>
-                     <td class="center">
-                        19.11.2010
-                     </td>
-                     <td>
-                        <span class="label label-sm label-success">
-                        Approved </span>
-                     </td>
-                  </tr><tr class="gradeX odd" role="row">
-                     <td>
-                        <div class="checker"><span><input type="checkbox" class="checkboxes" value="1"></span></div>
-                     </td>
-                     <td class="sorting_1">
-                        fop
-                     </td>
-                     <td>
-                        <a href="mailto:userwow@gmail.com">
-                        good@gmail.com </a>
-                     </td>
-                     <td>
-                        20
-                     </td>
-                     <td class="center">
-                        13.11.2010
-                     </td>
-                     <td>
-                        <span class="label label-sm label-warning">
-                        Suspended </span>
-                     </td>
-                  </tr><tr class="gradeX even" role="row">
-                     <td>
-                        <div class="checker"><span><input type="checkbox" class="checkboxes" value="1"></span></div>
-                     </td>
-                     <td class="sorting_1">
-                        goop
-                     </td>
-                     <td>
-                        <a href="mailto:userwow@gmail.com">
-                        good@gmail.com </a>
-                     </td>
-                     <td>
-                        20
-                     </td>
-                     <td class="center">
-                        12.11.2010
-                     </td>
-                     <td>
-                        <span class="label label-sm label-success">
-                        Approved </span>
-                     </td>
-                  </tr><tr class="gradeX odd" role="row">
-                     <td>
-                        <div class="checker"><span><input type="checkbox" class="checkboxes" value="1"></span></div>
-                     </td>
-                     <td class="sorting_1">
-                        kop
-                     </td>
-                     <td>
-                        <a href="mailto:userwow@gmail.com">
-                        good@gmail.com </a>
-                     </td>
-                     <td>
-                        20
-                     </td>
-                     <td class="center">
-                        17.11.2010
-                     </td>
-                     <td>
-                        <span class="label label-sm label-success">
-                        Approved </span>
-                     </td>
-                  </tr></tbody>
-            </table>
-            </div>
-      </div>
+<div class="mt-portlet-wrapper mt-card" ng-show="!showForm" id="show_pages">
+    <div class="mdl-card mt-fullwidth-table">
+        <div class="mdl-card__title mt-table-head">
+            <h2 class="mdl-card__title-text">Pages</h2>
+        </div>
+        <div class="mdl-layout__header-row mt-table-nav">
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation -->
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link __active" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+            </nav>
+        </div>
+        <a href="#"  ng-click="showForm = !showForm" class="btn bluegreen">Create New Page</a>
+       <table class="mdl-data-table mdl-js-data-table mt-fullwidth-table">
+          <thead>
+            <tr>
+              <th class="mdl-data-table__cell--non-numeric">Title</th>
+              <th class="mdl-data-table__cell--non-numeric">URI</th>
+              <th class="mdl-data-table__cell--non-numeric">Name</th>
+              <th class="mdl-data-table__cell--non-numeric">Edit</th>
+              <th class="mdl-data-table__cell--non-numeric">Delete</th>
+            </tr>
+          </thead>
+          <tbody>
+             @forelse($pages as $page)
+                 <tr>
+                 <td class="mdl-data-table__cell--non-numeric">
+                 <a href="#">{{$page->title}}</a></td>
+                 <td class="mdl-data-table__cell--non-numeric">
+                 <a href="{{url($page->uri)}}">{{$page->present()->prettyUri}}</a></td>
+                 <td class="mdl-data-table__cell--non-numeric">{{$page->name or 'None'}}</td>
+                 <td class="mdl-data-table__cell--non-numeric"><a href="#"><i class="mdi mdi-pencil"></i></a>
+                 </td>
+                 <td class="mdl-data-table__cell--non-numeric"><a href="#"><i class="mdi mdi-delete"></i></a></td>
+               </tr>
+             @empty
+             <tr>
+                <td colspan="5" align="center">sorry no data</td>
+             </tr>
+             @endforelse
+          </tbody>
+    </table>
+    </div>
+</div>
+    @include('admin.pages.form')
 @endsection

@@ -1,9 +1,13 @@
 {
-  "name": "angular",
-  "version": "1.5.5",
+  "name": "bower-angularjs",
+  "version": "1.2.28",
+  "homepage": "https://github.com/chrisyip/bower-angularjs",
   "license": "MIT",
-  "main": "./angular.js",
-  "ignore": [],
-  "dependencies": {
-  }
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
