@@ -36,8 +36,8 @@
             </section>
 
             <section class="mt-layout_calls-wrapper mt-row">
-
                   <section class="mt-call-actions mdl-grid">
+
                       <a class="mt-call-items mdl-cell mdl-cell--3-col" href="" title="Trending">
                           <div class="call-item">
                             <div class="icon">

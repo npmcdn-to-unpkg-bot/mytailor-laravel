@@ -5,16 +5,16 @@
 @section('bg', 'whiteee')
 
 @section('main')
-
+<ng-controller ng-controller="pagesController">
 <div class="mt-portlet-wrapper mt-card" ng-show="!showForm" id="show_pages">
     <div class="mdl-card mt-fullwidth-table">
-        <div class="mdl-card__title mt-table-head">
+        <div class="mdl-card__title mt-table-head dark">
             <h2 class="mdl-card__title-text">Pages</h2>
         </div>
         <div class="mdl-layout__header-row mt-table-nav">
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation -->
-            <nav class="mdl-navigation">
+            <nav class="mdl-navigation mt-nav-has-border">
                 <a class="mdl-navigation__link __active" href="">Link</a>
                 <a class="mdl-navigation__link" href="">Link</a>
                 <a class="mdl-navigation__link" href="">Link</a>
@@ -54,4 +54,5 @@
     </div>
 </div>
     @include('admin.pages.form')
+</ng-controller>
 @endsection

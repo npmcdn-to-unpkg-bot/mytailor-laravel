@@ -67,6 +67,43 @@ button.icon-round{
         background-color: rgba(158,158,158,.2);
 }
 
+.mt-nav-has-border,.mt-nav-has-border>.mdl-navigation__link{
+    position: relative;
+}
+
+.mt-nav-has-border>.mdl-navigation__link:after {
+    content: "";
+    left: 0px;
+    bottom: -7px;
+    right: 0px;
+    height: 4px;
+    background-color: #F23054;
+    position: absolute;
+    transition: bottom 250ms ease-in-out;
+}
+
+.mt-nav-has-border>.mdl-navigation__link.__active{
+            background-color:#eee;
+                font-weight: 600;
+            &:after{
+                bottom:0 !important;    
+            }
+
+}
+.mt-nav-has-border>.mdl-navigation__link{
+
+     &:hover{
+    color: #7D7D7D !important;
+    background-color: #eee;
+
+            &:after{
+                bottom:0 !important;
+            }       
+    }
+
+}
+
+
 .mdl-checkbox__ripple-container {
     position: absolute;
     z-index: 2;

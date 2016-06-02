@@ -1,19 +1,19 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: USER
- * Date: 5/8/2016
- * Time: 3:50 PM
- */
-namespace MyTailor\Http\Controllers\frontend;
 
+namespace MyTailor\Http\Controllers\frontend;
+use MyTailor\Shot;
 use Illuminate\Routing\Controller as BaseController;
 
 
 class HomeController extends BaseController {
 
+    protected $shots;
+    public function __construct(Shot $shots) {
+        $this->shots = $shots;
+    }
     public function index(){
-        return view('index');
+
+        return view('frontend.index');
     }
 
 }

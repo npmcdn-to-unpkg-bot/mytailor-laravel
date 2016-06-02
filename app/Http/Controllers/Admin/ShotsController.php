@@ -22,7 +22,7 @@ class ShotsController extends Controller    {
         }
         $shots = $this->shots->paginate(15);
         return view('admin.shots.index', compact('shots'));
-    }
+}
 
     public function upload() {
         return view('admin.shots.upload');

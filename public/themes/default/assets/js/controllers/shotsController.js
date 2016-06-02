@@ -6,7 +6,6 @@
 
 			$scope.show = function(id){
 			 		 shotFactory.show(id).then(function(response){
-			 		 	console.log(response);
 			 				$scope.shot = response.data;
 			 		});
 			 	};

@@ -9,13 +9,27 @@
     <div class="mt-portlet-wrapper mt-card mdl-cell mdl-cell--12-col-desktop" ng-show="!showForm">
         <div class="mdl-card mt-fullwidth-table">
             <div class="mdl-card__title mt-table-head dark">
-                <h2 class="mdl-card__title-text">Users</h2>
+                <div class="label">
+                    <h2 class="mdl-card__title-text">Users</h2>
+                </div>
+                <div class="actions">
+                    <button class="btn mdl-button icon-round">
+                        <a href="#"><i class="mdi mdi-delete icon-center red"></i></a>
+                    </button>
+                    <button class="btn mdl-button icon-round">
+                        <a href="#"><i class="mdi mdi-pencil icon-center red"></i></a>
+                    </button>
+                    <button class="btn mdl-button icon-round">
+                        <a href="#"><i class="mdi mdi-account-plus icon-center red"></i></a>
+                    </button>
+                </div>
             </div>
             <div class="mdl-layout__header-row mt-table-nav">
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation -->
-                <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link" href="">Admins</a>
+                <nav class="mdl-navigation mt-nav-has-border">
+                    <a class="mdl-navigation__link" href="">All</a>
+                    <a class="mdl-navigation__link __active" href="">Admins</a>
                     <a class="mdl-navigation__link" href="">Users</a>
                     <a class="mdl-navigation__link" href="">Customers</a>
                     <a class="mdl-navigation__link" href="">Team</a>

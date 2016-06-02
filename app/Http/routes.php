@@ -24,6 +24,6 @@ Route::get('admin/dashboard', [
 	]);
 
 Route::get('/', function(){
-	return view('index');
+	return view('frontend.index');
 });
 

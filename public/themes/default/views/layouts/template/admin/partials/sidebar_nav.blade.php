@@ -4,7 +4,7 @@
                     <img src="{{theme('images/profiles/11698517_10205466839968531_5750592294516276713_n.jpg')}}">
 
                     <div class="sidebar-title-wrapper">
-                      <span>{{'admin->name'}}</span>
+                      <span>{{$admin->name}}</span>
                       <div class="mdl-layout-spacer"></div>
                       <button class="icon-round mdl-button btn" id="dropdown">
                         <i class="icon-center mdi mdi-menu-down" data-type="hidden"></i>

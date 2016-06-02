@@ -19,4 +19,9 @@ class PagesController extends Controller   {
         return view('admin.pages.index', compact('pages'));
     }
 
+    public function store(Requests\StorePageRequest $request){
+            $this->pages->create($request->only('title', 'uri', 'name', 'content'));
+            return('Page was created successfully');
+    }
+
 }

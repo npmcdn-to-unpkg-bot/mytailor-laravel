@@ -19,6 +19,7 @@ elixir.config.publicPath = 'public/themes/default/assets';
 	// This will mix vendor scripts
 	elixir(function(mix) {
 		mix.sass('../../../public/themes/default/assets/sass/admin.scss');
+				mix.sass('../../../public/themes/default/assets/sass/frontend.scss');
 		mix.scripts(
 			[
 			    '../angular/angular.min.js',
