@@ -92,109 +92,20 @@
               </section> <!-- Call actions end -->
 
               <section class="mdl-grid featured-grid">
-
+                  @foreach($shots as $shot)
                   <div class="mt-shot-item mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
                       <figure>
                         <a href="" class="sp-view">
-                          <img src="">
+                          <img src="../uploads/{{$shot->file_name . '.' . $shot->file_type}}">
                           <div class="grid-overlay-items">
                             <figcaption>
-                              <span><img src="{{theme('images/icons/search67.svg')}}"></span>
+                              <span></span>
                             </figcaption>
                           </div>
                         </a>
                       </figure>
                   </div>
-
-                  <div class="mt-shot-item mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-                      <figure>
-                        <a href="" class="sp-view">
-                          <img src="">
-                          <div class="grid-overlay-items">
-                            <figcaption>
-                              <span><img src="{{theme('images/icons/search67.svg')}}"></span>
-                            </figcaption>
-                          </div>
-                        </a>
-                      </figure>
-                  </div>
-
-                  <div class="mt-shot-item mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-                      <figure>
-                        <a href="" class="sp-view">
-                          <img src="">
-                          <div class="grid-overlay-items">
-                            <figcaption>
-                              <span><img src="{{theme('images/icons/search67.svg')}}"></span>
-                            </figcaption>
-                          </div>
-                        </a>
-                      </figure>
-                  </div>
-
-                  <div class="mt-shot-item mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-                      <figure>
-                        <a href="" class="sp-view">
-                          <img src="">
-                          <div class="grid-overlay-items">
-                            <figcaption>
-                              <span><img src="{{theme('images/icons/search67.svg')}}"></span>
-                            </figcaption>
-                          </div>
-                        </a>
-                      </figure>
-                  </div>
-                  <div class="mt-shot-item mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-                      <figure>
-                        <a href="" class="sp-view">
-                          <img src="">
-                          <div class="grid-overlay-items">
-                            <figcaption>
-                              <span><img src="{{theme('images/icons/search67.svg')}}"></span>
-                            </figcaption>
-                          </div>
-                        </a>
-                      </figure>
-                  </div>
-
-                  <div class="mt-shot-item mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-                      <figure>
-                        <a href="" class="sp-view">
-                          <img src="">
-                          <div class="grid-overlay-items">
-                            <figcaption>
-                              <span><img src="{{theme('images/icons/search67.svg')}}"></span>
-                            </figcaption>
-                          </div>
-                        </a>
-                      </figure>
-                  </div>
-
-                  <div class="mt-shot-item mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-                      <figure>
-                        <a href="" class="sp-view">
-                          <img src="">
-                          <div class="grid-overlay-items">
-                            <figcaption>
-                              <span><img src="{{theme('images/icons/search67.svg')}}"></span>
-                            </figcaption>
-                          </div>
-                        </a>
-                      </figure>
-                  </div>
-
-                  <div class="mt-shot-item mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
-                      <figure>
-                        <a href="" class="sp-view">
-                          <img src="">
-                          <div class="grid-overlay-items">
-                            <figcaption>
-                              <span><img src="{{theme('images/icons/search67.svg')}}"></span>
-                            </figcaption>
-                          </div>
-                        </a>
-                      </figure>
-                  </div>
+                  @endforeach
               </section>
 
             <div class="after-shots-action">
@@ -239,10 +150,46 @@
           </section>
 
           <section class="mt-large-info-box">
-            <h3 class="mt-title-white">what you like, is for you</h3>
-            <p class="mt-sm-cont-text">Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos. </p>
+            <h3 class="mt-title-grey">what you like, is for you</h3>
+            <p class="mt-sm-cont-txt">Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos. </p>
 
             <a href="" style="color: #03A9F4;">check out cool stuff</a>
 
+          </section>
+          <section class="mt-row mdl-grid">
+              <div class="mdl-cell dark-card mdl-cell-4--col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media" style="height: 300px">
+                      <img src="{{theme('images/backgrounds/women.jpg')}}">
+                  </div>
+                  <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                    Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                    <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Women<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+                  </div>
+              </div>
+              <div class="mdl-cell dark-card mdl-cell-4--col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media" style="height: 300px">
+                      <img src="{{theme('images/backgrounds/men.jpg')}}">
+                  </div>
+                  <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                      Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                      <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Men<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+                  </div>
+              </div>
+              <div class="mdl-cell dark-card mdl-cell-4--col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+                  <div class="mdl-card__media" style="height: 300px">
+                      <img src="{{theme('images/backgrounds/kids.jpg')}}">
+                  </div>
+                  <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                      Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                  </div>
+                  <div class="mdl-card__actions mdl-card--border">
+                      <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Kids<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+                  </div>
+              </div>
+            
           </section>
         @endsection

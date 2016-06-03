@@ -12,6 +12,7 @@
                 <div class="label">
                     <h2 class="mdl-card__title-text">Users</h2>
                 </div>
+                <div class="mdl-layout-spacer"></div>
                 <div class="actions">
                     <button class="btn mdl-button icon-round">
                         <a href="#"><i class="mdi mdi-delete icon-center red"></i></a>
@@ -20,7 +21,7 @@
                         <a href="#"><i class="mdi mdi-pencil icon-center red"></i></a>
                     </button>
                     <button class="btn mdl-button icon-round">
-                        <a href="#"><i class="mdi mdi-account-plus icon-center red"></i></a>
+                        <a href="#" ng-click="showForm = !showForm"><i class="mdi mdi-account-plus icon-center red"></i></a>
                     </button>
                 </div>
             </div>

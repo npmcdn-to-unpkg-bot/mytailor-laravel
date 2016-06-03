@@ -9,7 +9,21 @@
 <div class="mt-portlet-wrapper mt-card" ng-show="!showForm" id="show_pages">
     <div class="mdl-card mt-fullwidth-table">
         <div class="mdl-card__title mt-table-head dark">
-            <h2 class="mdl-card__title-text">Pages</h2>
+            <div class="label">
+                <h2 class="mdl-card__title-text">Pages</h2>
+            </div>
+            <div class="mdl-layout-spacer"></div>
+            <div class="actions">
+                <button class="btn mdl-button icon-round">
+                    <a href="#"><i class="mdi mdi-delete icon-center red"></i></a>
+                </button>
+                <button class="btn mdl-button icon-round">
+                    <a href="#"><i class="mdi mdi-pencil icon-center red"></i></a>
+                </button>
+                <button class="btn mdl-button icon-round">
+                    <a href="#" ng-click="showForm = !showForm"><i class="mdi mdi-checkbox-multiple-blank icon-center red"></i></a>
+                </button>
+            </div>
         </div>
         <div class="mdl-layout__header-row mt-table-nav">
             <div class="mdl-layout-spacer"></div>
@@ -28,6 +42,7 @@
               <th class="mdl-data-table__cell--non-numeric">Title</th>
               <th class="mdl-data-table__cell--non-numeric">URI</th>
               <th class="mdl-data-table__cell--non-numeric">Name</th>
+              <th class="mdl-data-table__cell--non-numeric">Template</th>
               <th class="mdl-data-table__cell--non-numeric">Edit</th>
               <th class="mdl-data-table__cell--non-numeric">Delete</th>
             </tr>
@@ -39,6 +54,7 @@
                  <a href="#">{{$page->title}}</a></td>
                  <td class="mdl-data-table__cell--non-numeric">
                  <a href="{{url($page->uri)}}">{{$page->present()->prettyUri}}</a></td>
+                 <td class="mdl-data-table__cell--non-numeric">{{$page->name or 'None'}}</td>
                  <td class="mdl-data-table__cell--non-numeric">{{$page->name or 'None'}}</td>
                  <td class="mdl-data-table__cell--non-numeric"><a href="#"><i class="mdi mdi-pencil"></i></a>
                  </td>

@@ -24,6 +24,9 @@ $ui-color: (
     color: #948E8E;
 }
 
+.dark-card{
+    background-color: #151515;
+}
 .grey60{
 	background-color: map-get($ui-color, grey60);
 }

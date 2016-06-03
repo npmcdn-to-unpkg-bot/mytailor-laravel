@@ -12,8 +12,8 @@ class HomeController extends BaseController {
         $this->shots = $shots;
     }
     public function index(){
-
-        return view('frontend.index');
+        $shots = $this->shots->all();
+        return view('frontend.index', compact('shots'));
     }
 
 }

@@ -23,7 +23,9 @@ Route::get('admin/dashboard', [
 		'uses' => 'Admin\DashboardController@index'
 	]);
 
-Route::get('/', function(){
-	return view('frontend.index');
-});
+Route::get('/', [
+		'as' => 'frontend.home',
+		'uses' => 'Frontend\HomeController@index']
+);
+
 
