@@ -12,7 +12,10 @@ Route::get('admin/shots/upload', [
 		'as' => 'shots.upload',
 		'uses' => 'Admin\ShotsController@upload'
 ]);
-// Resources :
+
+// Admin Resources :
+
+// Admin Resources :
 Route::resource('admin/pages', 'Admin\PagesController');
 Route::resource('admin/users', 'Admin\UsersController');
 Route::resource('admin/uploader', 'Admin\UploadController');

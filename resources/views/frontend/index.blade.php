@@ -1,11 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: USER
- * Date: 5/8/2016
- * Time: 1:35 AM
- */
-  ?>
 
     {{--Main Layout for home xiew--}}
     @extends('layouts.template.frontend.default')
@@ -90,12 +82,11 @@
                       </div>
 
               </section> <!-- Call actions end -->
-
               <section class="mdl-grid featured-grid">
                   @foreach($shots as $shot)
-                  <div class="mt-shot-item mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--2-col-phone">
+                  <div class="mt-shot-item mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
                       <figure>
-                        <a href="" class="sp-view">
+                        <a href="" class="shot-img_view">
                           <img src="../uploads/{{$shot->file_name . '.' . $shot->file_type}}">
                           <div class="grid-overlay-items">
                             <figcaption>

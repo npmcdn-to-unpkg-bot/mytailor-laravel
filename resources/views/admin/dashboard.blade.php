@@ -7,7 +7,7 @@
 @section('icon', 'mdi-chart-areaspline')
 @section('main')
                 @include('partials.breadcrump')
-                
+                <!-- here is where our view starts -->
                 <div class="call-admin-head clearfix">
                   <div class="performance-title-wrapper">
                      <i class="mdi mdi-chart-line"></i>

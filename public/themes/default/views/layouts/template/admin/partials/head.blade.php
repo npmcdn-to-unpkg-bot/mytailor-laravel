@@ -7,9 +7,12 @@
     <link rel="shortcut icon" href="{{ theme('images/favicon.png')}}">
     <!-- Material Design style -->
     <link rel="stylesheet" href="{{ theme('vendor/material-design-lite/material.min.css')}}">
+    <!-- Site style -->
     <link rel="stylesheet" href="{{ theme('css/admin.css')}}">
+    <!-- vendor styles -->
+    <link rel="stylesheet" href="{{ theme('css/vendor/ng-dialog/ngDialog.min.css') }}">
     <link rel="stylesheet" href="{{ theme('css/animate.css')}}">
-    <link rel="stylesheet" href="{{ theme('css/vendor/jquery.mCustomScrollbar.min.css')}}">
+    <!-- vendor Scripts -->
     <script src="{{ theme('js/vendor.js') }}"></script>
 </head>
 <body>

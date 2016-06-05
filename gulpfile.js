@@ -16,10 +16,13 @@ elixir.config.publicPath = 'public/themes/default/assets';
 
 
 
-	// This will mix vendor scripts
+
 	elixir(function(mix) {
+        //mix main sass for our app
 		mix.sass('../../../public/themes/default/assets/sass/admin.scss');
-				mix.sass('../../../public/themes/default/assets/sass/frontend.scss');
+        mix.sass('../../../public/themes/default/assets/sass/frontend.scss');
+
+        // This will mix vendor scripts
 		mix.scripts(
 			[
 			    '../angular/angular.min.js',
@@ -27,8 +30,11 @@ elixir.config.publicPath = 'public/themes/default/assets';
 			    '../angular/angular-messages.min.js',
 			   	'../angular/angular-sanitize.min.js',
 			    '../jquery/dist/jquery.min.js',
-			    '../Waves/dist/waves.min.js'
-			   ], 	 'public/themes/default/assets/js/vendor.js')
+			    '../Waves/dist/waves.min.js',
+				'../ng-dialog/js/ngDialog.min.js'
+			   ], 	 'public/themes/default/assets/js/vendor.js');
+
+     //   mix vendor css
 	});
 
 /*

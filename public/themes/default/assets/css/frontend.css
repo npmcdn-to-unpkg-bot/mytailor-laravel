@@ -1495,7 +1495,8 @@ a.mt-sidebar-link {
   padding: 0; }
 
 .featured-grid {
-  width: 100% !important;
+  padding: 0;
+  max-width: 935px;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1503,14 +1504,38 @@ a.mt-sidebar-link {
   -ms-flex-pack: center;
   justify-content: center; }
 
+@media (min-width: 736px) {
+  .featured-grid {
+    box-sizing: content-box;
+    padding: 0 20px;
+    width: calc(100% - 40px); } }
+
+@media (max-width: 840px) {
+  .featured-grid > .mdl-cell--4-col, .mdl-cell--4-col-desktop.mdl-cell--4-col-desktop {
+    width: calc(34.3444444% - 15px) !important; } }
+
 /*Featured Shots*/
 .mt-shot-item {
-  max-height: 346px;
-  min-height: 112px;
+  overflow: hidden;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
   background: #F4F4F4;
   margin: 0 5px 5px 0; }
+  .mt-shot-item .shot-img_view {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding-bottom: 100%; }
+  .mt-shot-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100%; }
 
 /*Lets look at what breaks*/
 @media (max-width: 1049px) {
@@ -1527,6 +1552,18 @@ a.mt-sidebar-link {
   .mt-row, .mt-row--fullwidth {
     width: 100%;
     min-width: 10em; } }
+
+.mt-figure__card {
+  padding: 0 87px;
+  background: #000000;
+  height: 555px;
+  width: 100%;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 /*Animate*/
 .__visible {

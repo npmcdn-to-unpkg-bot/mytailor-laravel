@@ -29,10 +29,10 @@
             <div class="mdl-layout-spacer"></div>
             <!-- Navigation -->
             <nav class="mdl-navigation mt-nav-has-border">
-                <a class="mdl-navigation__link __active" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link __active" href="">Main</a>
+                <a class="mdl-navigation__link" href="">Abstract</a>
+                <a class="mdl-navigation__link" href="">Users</a>
+                <a class="mdl-navigation__link" href="">Landings</a>
             </nav>
         </div>
         <a href="#"  ng-click="showForm = !showForm" class="btn bluegreen">Create New Page</a>
