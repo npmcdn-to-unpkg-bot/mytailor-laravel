@@ -4,9 +4,9 @@
     <title>@yield('pagetitle') | MyTailor African Fashion designers</title>
     <link rel="shortcut icon" href="{{ theme('images/favicon.png')}}">
     <link rel="stylesheet" href="{{ theme('css/admin.css')}}">
-    <link rel="stylesheet" href="{{ theme('vendor/jquery.mCustomScrollbar.min.css')}}">
     <script src="{{ theme('js/vendor.js') }}"></script>
-
+    <!-- Material Design style -->
+    <link rel="stylesheet" href="{{ theme('vendor/material-design-lite/material.min.css')}}">
     <!-- BEGIN PAGE LEVEL PLUGINS -->
 
     <link href="{{ theme('vendor/jquery-file-upload/blueimp-gallery/blueimp-gallery.min.css')}}" rel="stylesheet" type="text/css"/>

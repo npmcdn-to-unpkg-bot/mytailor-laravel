@@ -13,7 +13,7 @@
    		<div class="mdl-cell mdl-cell--12-col mt-card">
         <div style="height:3em"></div>
           <!-- The file upload form used as target for the file upload widget -->
-    <form id="fileupload" action="{{route('admin.uploader.store')}}" method="POST" enctype="multipart/form-data">
+    <form id="fileupload" action="{{route('admin.shots.store')}}" method="POST" enctype="multipart/form-data">
       <input type="hidden" class="hidden" name="_token" value="{{ csrf_token() }}">
         <!-- Redirect browsers with JavaScript disabled to the origin page -->
         <noscript><input type="hidden" name="redirect" value=""></noscript>

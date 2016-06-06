@@ -10,7 +10,7 @@ Route::controller('auth', 'Auth\AuthController', [
 //This will run our uploader class and upload all files
 Route::get('admin/shots/upload', [
 		'as' => 'shots.upload',
-		'uses' => 'Admin\ShotsController@upload'
+		'uses' => 'Admin\ShotsController@create'
 ]);
 
 // Admin Resources :
@@ -18,7 +18,6 @@ Route::get('admin/shots/upload', [
 // Admin Resources :
 Route::resource('admin/pages', 'Admin\PagesController');
 Route::resource('admin/users', 'Admin\UsersController');
-Route::resource('admin/uploader', 'Admin\UploadController');
 Route::resource('admin/shots', 'Admin\ShotsController');
 
 Route::get('admin/dashboard', [
