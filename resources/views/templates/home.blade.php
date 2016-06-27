@@ -20,7 +20,7 @@
             <section class="mt-layout_calls-wrapper mt-row">
                   <section class="mt-call-actions mdl-grid">
 
-                      <a class="mt-call-items mdl-cell mdl-cell--3-col" href="" title="Trending">
+                      <a class="mt-call-items mdl-cell mdl-cell--3-col" href="{{URL::to('shots/trending')}}" title="Trending">
                           <div class="call-item">
                             <div class="icon">
                               <img class="kilama-img" style="height:6.25rem;" src="{{theme('images/icons/t-deals.svg')}}" alt="">
@@ -89,7 +89,7 @@
               </section>
 
             <div class="after-shots-action">
-              <a href="/mytailor.me/public_html/shots/trending"><span class="btn __tranparent">Show me more</span></a>
+              <a href="{{URL::to('shots/trending')}}"><span class="btn __tranparent">Show me more</span></a>
             </div>
 
               {{-- Next --}}
@@ -133,7 +133,7 @@
             <h3 class="mt-title-grey">what you like, is for you</h3>
             <p class="mt-sm-cont-txt">Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos. </p>
 
-            <a href="" style="color: #03A9F4;">check out cool stuff</a>
+            <a href="/explore" style="color: #03A9F4;">check out cool stuff</a>
 
           </section>
           <section class="mt-row mdl-grid">
@@ -145,7 +145,7 @@
                     Non dolore elit adipisicing ea reprehenderit consectetur culpa.
                   </div>
                   <div class="mdl-card__actions mdl-card--border dark-card">
-                    <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Women<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+                    <a href="{{route('shots.index', ['cat=fm'])}}" class="mdl-button mdl-js-button mdl-js-ripple-effect">Women<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
                   </div>
               </div>
               <div class="mdl-cell dark-card mdl-cell-4--col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
@@ -156,7 +156,7 @@
                       Non dolore elit adipisicing ea reprehenderit consectetur culpa.
                   </div>
                   <div class="mdl-card__actions mdl-card--border blue-card">
-                      <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Men<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+                      <a href="{{route('shots.index', ['cat=ma'])}}" class="mdl-button mdl-js-button mdl-js-ripple-effect">Men<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
                   </div>
               </div>
               <div class="mdl-cell dark-card mdl-cell-4--col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
@@ -166,8 +166,8 @@
                   <div class="mdl-card__supporting-text mdl-color-text--grey-600">
                       Non dolore elit adipisicing ea reprehenderit consectetur culpa.
                   </div>
-                  <div class="mdl-card__actions mdl-card--border">
-                      <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Kids<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+                  <div class="mdl-card__actions mdl-card--border redy-card">
+                      <a href="{{route('shots.index', ['cat=ki'])}}" class="mdl-button mdl-js-button mdl-js-ripple-effect">Kids<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
                   </div>
               </div>
 

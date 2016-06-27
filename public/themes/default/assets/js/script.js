@@ -131,7 +131,7 @@ Mytailor.me
                     Waves.attach('.btn', ['waves-button', 'waves-float']);
                     Waves.init();
 
-                  $('.grid').masonry({
+                  $('#grid').masonry({
                   // options
                     columnWidth: '.grid-item',
                     itemSelector: '.grid-item'

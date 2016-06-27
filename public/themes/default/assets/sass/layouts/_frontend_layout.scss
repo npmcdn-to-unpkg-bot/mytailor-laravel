@@ -142,3 +142,37 @@
     margin: 0 auto;
 }
 
+/*********************************************************************************************
+
+     Page Footer
+
+*********************************************************************************************/
+
+.footerContainerWrapper{
+    padding: 4em 0px 1em 0;
+    text-align: center;
+    clear: both;
+    width:100%;
+
+}                                       
+
+ul.icons {
+    padding: 2em;
+    margin: 0 0 2em 0;
+}
+
+ul.icons li{
+    display: inline-block;
+    padding: 0 1.25em 0 0;
+    margin: 0;
+          a{    font-size: 200%;
+
+    }
+}
+
+.copyright li{
+    text-align: center;
+
+}
+
+

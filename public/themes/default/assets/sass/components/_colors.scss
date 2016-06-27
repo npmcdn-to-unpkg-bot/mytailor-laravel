@@ -33,10 +33,14 @@ $ui-color: (
 }
 
 .blue-card{
-        background: rgb(37, 80, 125);
+        background: #2196F3;
 }
 .grey60{
 	background-color: map-get($ui-color, grey60);
+}
+
+.redy-card{
+        background: #f24f86;
 }
 
 /*Backgrounds*/

@@ -398,10 +398,13 @@ a.waves-effect .waves-ripple {
     color: rgba(255, 255, 255, 0.57); }
 
 .blue-card {
-  background: #25507d; }
+  background: #2196F3; }
 
 .grey60 {
   background-color: #D8D8D8; }
+
+.redy-card {
+  background: #f24f86; }
 
 /*Backgrounds*/
 .blue {
@@ -1496,6 +1499,31 @@ a.mt-sidebar-link {
   text-align: center;
   width: 35%;
   margin: 0 auto; }
+
+/*********************************************************************************************
+
+     Page Footer
+
+*********************************************************************************************/
+.footerContainerWrapper {
+  padding: 4em 0px 1em 0;
+  text-align: center;
+  clear: both;
+  width: 100%; }
+
+ul.icons {
+  padding: 2em;
+  margin: 0 0 2em 0; }
+
+ul.icons li {
+  display: inline-block;
+  padding: 0 1.25em 0 0;
+  margin: 0; }
+  ul.icons li a {
+    font-size: 200%; }
+
+.copyright li {
+  text-align: center; }
 
 /*Cars*/
 /* ==========================================================================

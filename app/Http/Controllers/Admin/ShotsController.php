@@ -62,13 +62,13 @@ class ShotsController extends Controller    {
     public function show($id) {
          $shot = Shot::find($id);
 
-       $tags = [];
-        foreach($shot->tags as $tag){
-            $tags [] = $tag->tag_name;
-        }
-
-        unset($shot->tags);
-        $shot->setAttribute('tags', $tags);
+//       $tags = [];
+//        foreach($shot->tags as $tag){
+//            $tags [] = $tag->tag_name;
+//        }
+//
+//        unset($shot->tags);
+//        $shot->setAttribute('tags', $tags);
 
         return $shot;
 

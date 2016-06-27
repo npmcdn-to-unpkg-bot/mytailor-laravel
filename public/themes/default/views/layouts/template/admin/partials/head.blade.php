@@ -16,4 +16,4 @@
     <script src="{{ theme('js/vendor.js') }}"></script>
 </head>
 <body>
-        <div class="mt-layout-container mt-layout @yield('bg')" ng-controller="MainController">
+        <div class="mt-layout @yield('bg')" ng-controller="MainController">

@@ -558,10 +558,13 @@ a.waves-effect .waves-ripple {
     color: rgba(255, 255, 255, 0.57); }
 
 .blue-card {
-  background: #25507d; }
+  background: #2196F3; }
 
 .grey60 {
   background-color: #D8D8D8; }
+
+.redy-card {
+  background: #f24f86; }
 
 /*Backgrounds*/
 .blue {
