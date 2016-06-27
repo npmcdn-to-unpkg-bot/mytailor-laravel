@@ -50,15 +50,13 @@
           <tbody>
              @forelse($pages as $page)
                  <tr>
-                 <td class="mdl-data-table__cell--non-numeric">
-                 <a href="#">{{$page->title}}</a></td>
-                 <td class="mdl-data-table__cell--non-numeric">
-                 <a href="{{url($page->uri)}}">{{$page->present()->prettyUri}}</a></td>
-                 <td class="mdl-data-table__cell--non-numeric">{{$page->name or 'None'}}</td>
-                 <td class="mdl-data-table__cell--non-numeric">{{$page->name or 'None'}}</td>
-                 <td class="mdl-data-table__cell--non-numeric"><a href="#"><i class="mdi mdi-pencil"></i></a>
-                 </td>
-                 <td class="mdl-data-table__cell--non-numeric"><a href="#"><i class="mdi mdi-delete"></i></a></td>
+                     <td class="mdl-data-table__cell--non-numeric"><a href="#">{{$page->title}}</a></td>
+                     <td class="mdl-data-table__cell--non-numeric"><a href="{{url($page->uri)}}">{{$page->present()->prettyUri}}</a></td>
+                     <td class="mdl-data-table__cell--non-numeric">{{$page->name or 'None'}}</td>
+                     <td class="mdl-data-table__cell--non-numeric">{{$page->template or 'None'}}</td>
+                     <td class="mdl-data-table__cell--non-numeric"><a href="#"><i class="mdi mdi-pencil"></i></a>
+                     </td>
+                     <td class="mdl-data-table__cell--non-numeric"><a href="#"><i class="mdi mdi-delete"></i></a></td>
                </tr>
              @empty
              <tr>

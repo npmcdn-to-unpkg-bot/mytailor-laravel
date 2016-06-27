@@ -16,7 +16,7 @@
 	 *
 	 */
 	app.controller("MainController",
-		function($scope, ngDialog) {
+		function($scope) {
 
 			/*
 			 * initial value for vars
@@ -34,10 +34,4 @@
 				};
 
 
-
-			$scope.clickToOpen = function () {
-    			ngDialog.open({ 
-    				template: template_path + 'corp_template.html', className: 'mt-large-overlay' 
-    			});
-			};
 	});

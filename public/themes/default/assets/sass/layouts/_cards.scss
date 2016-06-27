@@ -84,13 +84,18 @@
     margin: 0 5px 5px 0;
 
     .shot-img_view {
-      position: relative;
+          position: relative;
           display: block;
           overflow: hidden;
           padding-bottom: 100%;
+          background-color: #000;
+
+        &:hover img{
+          opacity:.8;
+        }
       }
 
-      img{
+    img{
         position: absolute;
         top: 0;
         left: 0;
@@ -100,12 +105,11 @@
         -ms-user-select: none;
         user-select: none;
         width: 100%;
+        transition:opacity linear .2s;
+
+
     }
 }
-
-// .mt-shot-item:nth-child(4n){
-//     margin-right: 0;
-// }
 
 
 /*Lets look at what breaks*/
@@ -141,4 +145,91 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+}
+
+/*Mansonry grid*/
+
+.grid{
+  margin-top: 1em;
+}
+.grid-item {
+    width: 25%;
+    display: inline-block;
+    float: left;
+    padding: 0.125rem;
+    overflow: hidden;
+
+    figure{
+        overflow: hidden;
+        position: relative;
+    }
+}
+
+.grid-item figcaption {
+    -webkit-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
+
+@media screen and (max-width: 1000px){
+  .grid-item {
+      width: 33.1%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .grid-item {
+      width: 50%;
+  }
+}
+
+@media screen and (max-width: 490px){
+  .grid-item {
+      padding: 1em;
+      width: 100%;
+      max-height: 450px;
+  }
+}
+
+.dimOverlay {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.15);
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.3)));
+    background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+    bottom: 0;
+    height: 100px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all, 0.3s, ease-in-out;
+    transition: all, 0.3s, ease-in-out;
+
+}
+  .grid-item figcaption {
+    display: -webkit-box;
+    display: flex;
+    filter: alpha(opacity=100);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    vertical-align: middle;
+    line-height: 25;
+    text-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mt-grid___link:hover .dimOverlay, .mt-grid___link:hover figcaption:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
 }

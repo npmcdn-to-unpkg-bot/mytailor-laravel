@@ -12,7 +12,8 @@ class CreateShotsTagsTable extends Migration
      */
     public function up()
     {
-        Schema::create('tag_shots', function(Blueprint $table){
+        Schema::create('tag_shot', function(Blueprint $table){
+            $table->increments('id');
             $table->integer('tag_id');
             $table->integer('shot_id');
         });
@@ -25,6 +26,6 @@ class CreateShotsTagsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('tag_shots');
+        Schema::drop('tag_shot');
     }
 }

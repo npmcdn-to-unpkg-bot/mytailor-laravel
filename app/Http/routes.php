@@ -1,5 +1,6 @@
 <?php
 
+
 //Authentication :
 Route::get('auth/logout', 'Auth\AuthController@logout');
 Route::controller('auth', 'Auth\AuthController', [
@@ -7,13 +8,12 @@ Route::controller('auth', 'Auth\AuthController', [
 	'getLogout' => 'auth.logout'
 	]);
 
-//This will run our uploader class and upload all files
+//Form to upload shots
 Route::get('admin/shots/upload', [
 		'as' => 'shots.upload',
 		'uses' => 'Admin\ShotsController@create'
 ]);
 
-// Admin Resources :
 
 // Admin Resources :
 Route::resource('admin/pages', 'Admin\PagesController');
@@ -25,6 +25,9 @@ Route::get('admin/dashboard', [
 		'uses' => 'Admin\DashboardController@index'
 	]);
 
+//Route::get('/shots', function(){
+//	return view('frontend.shots');
+//});
 Route::get('/', [
 		'as' => 'frontend.home',
 		'uses' => 'Frontend\HomeController@index']

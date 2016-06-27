@@ -1,6 +1,12 @@
 @extends('layouts.template.admin.page-with-aside')
 
 @section('pagetitle', 'Shots')
+
+    @section('page_styles')
+        <link rel="stylesheet" type="text/css" href="{{ theme('css/vendor/ng-img-crop/ng-img-crop.css')}}">
+        <link rel="stylesheet" href="{{ theme('css/vendor/ng-dialog/ngDialog.min.css') }}">
+    @endsection
+
 @section('sidebar_title', 'Edit Shot')
 @section('icon', 'mdi-pencil-box')
 @section('bg', 'grey60')
@@ -23,17 +29,17 @@
            		<section class="mdl-grid admin-shots-wrapper">
 
                    @foreach($shots as $shot)
-                      <div class="shot-item mdl-cell mdl-cell--4-col">
+                      <div class="shot-item mdl-cell mdl-cell--4-col" ng-show="!showShot">
                          <a href="#" ng-click="show({{$shot->id}})">
                           <figure class="">
-                             <img src="../uploads/{{$shot->file_name . '.' . $shot->file_type}}">
+                             <img src="../uploads/{{$shot->file_name}}">
                           </figure>
                          </a>
                       </div>
                   @endforeach
 
            		</section>
-
+                {!! $shots->render() !!}
 @endsection
 
 @section('aside')
@@ -58,7 +64,7 @@
                     for="form-actions">
                   <li class="mdl-menu__item" ng-click="clickToOpen()">Set Featured</li>
                   <li class="mdl-menu__item">Edit</li>
-                  <li class="mdl-menu__item">Delete</li>
+                  <li class="mdl-menu__item" ng-click="destroy()">Delete</li>
                 </ul>
           </div>
 
@@ -83,9 +89,14 @@
                           <option value="ma">Men</option>
                           <option value="fm">Female</option>
                           <option value="ki">Kids</option>
+                          <option value="cu">Couples</option>
                           <option value="ac">Accessories</option>
                       </select>
                       <label class="top-label">Category</label>
+                  </div>
+                 <div class="mt-form-group">
+                      <input type="text" ng-model="shot.tags">
+                      <label class="top-label">Tags</label>
                   </div>
                   <div class="mdl-checkbox mb-30">
                       <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">

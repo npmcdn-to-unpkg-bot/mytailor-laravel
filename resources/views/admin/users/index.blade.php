@@ -57,7 +57,7 @@
                         <td class="mdl-data-table__cell--non-numeric"></td>
                         <td class="mdl-data-table__cell--non-numeric">{{$user->email}}</td>
                         <td class="mdl-data-table__cell--non-numeric">Admin</td>
-                        <td class="mdl-data-table__cell--non-numeric"></td>
+                        <td class="mdl-data-table__cell--non-numeric">{{$user->last_login_at or 'Never'}}</td>
                         <td class="mdl-data-table__cell--non-numeric"><a href="#"><i class="mdi mdi-pencil"></i></a>
                         </td>
                         <td class="mdl-data-table__cell--non-numeric"><a href="#"><i class="mdi mdi-delete"></i></a></td>

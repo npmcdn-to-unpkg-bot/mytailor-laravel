@@ -3,6 +3,8 @@
   "dependencies": {
     "jquery": "^2.2.3",
     "Waves": "waves#^0.7.5",
-    "ng-dialog": "^0.6.1"
+    "ng-dialog": "^0.6.1",
+    "masonry": "^4.1.0",
+    "jscroll": "^2.3.5"
   }
 }

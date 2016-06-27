@@ -83,17 +83,17 @@ button.icon-round{
 }
 
 .mt-nav-has-border>.mdl-navigation__link.__active{
-            background-color:#eee;
-                font-weight: 600;
+
             &:after{
                 bottom:0 !important;    
             }
 
 }
 .mt-nav-has-border>.mdl-navigation__link{
-
+    font-weight: 600;
+    color: #4E4E4F;
+    line-height: 64px !important;
      &:hover{
-    color: #7D7D7D !important;
     background-color: #eee;
 
             &:after{
@@ -103,7 +103,11 @@ button.icon-round{
 
 }
 
-
+button#demo-menu-lower-right{
+        position: absolute;
+    right: 6px;
+    top: 75px;
+}
 .mdl-checkbox__ripple-container {
     position: absolute;
     z-index: 2;

@@ -10,8 +10,8 @@
     <!-- Site style -->
     <link rel="stylesheet" href="{{ theme('css/admin.css')}}">
     <!-- vendor styles -->
-    <link rel="stylesheet" href="{{ theme('css/vendor/ng-dialog/ngDialog.min.css') }}">
     <link rel="stylesheet" href="{{ theme('css/animate.css')}}">
+    @yield('page_styles')
     <!-- vendor Scripts -->
     <script src="{{ theme('js/vendor.js') }}"></script>
 </head>

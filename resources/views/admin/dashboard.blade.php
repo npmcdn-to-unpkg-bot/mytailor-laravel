@@ -45,13 +45,13 @@
                               <ul class="row chart-text-addups clearfix">
                                 <li class="mdl-cell mdl-cell--6-col">
                                   <div>
-                                    <span>+$5,525</span>
+                                    <span>+$6,525</span>
                                     Total revenue
                                   </div>
                                 </li>
                                 <li class="mdl-cell mdl-cell--6-col">
                                   <div>
-                                    <span>$1,200</span>
+                                    <span>$1,500</span>
                                     Today's sales
                                   </div>
                                 </li>

@@ -7,6 +7,7 @@ return [
 	'active' => 'default' ],
 
 	'templates' => [
-		'home' => MyTailor\Templates\PageTemplate::class
+		'home' 	=> MyTailor\Templates\HomeTemplate::class,
+		'shots' => MyTailor\Templates\ShotsTemplate::class
 	]
 ];

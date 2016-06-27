@@ -5,6 +5,7 @@ namespace MyTailor\Http\Controllers\Admin;
 use MyTailor\Shot;
 use Illuminate\Http\Request;
 use MyTailor\Http\Requests;
+use MyTailor\Modules\Shots\UploadServer;
 
 class ShotsController extends Controller    {
 
@@ -20,15 +21,14 @@ class ShotsController extends Controller    {
     }
 
     /**
-     * @param Request $request
+     *  show me a list of shots
+     *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function index(Request $request) {
-//        if ($request->ajax()){
-//            $shots = $this->shots->paginate(15);
-//            return $shots;
-//        }
-        $shots = $this->shots->paginate(15);
+    public function index() {
+
+        $shots = $this->shots
+                        ->orderBy('shots.created_at', 'desc')->paginate(15);
         return view('admin.shots.index', compact('shots'));
 }
 
@@ -44,15 +44,14 @@ class ShotsController extends Controller    {
      */
     public function store() {
 
-        // validate form input
-        // i
-return 'done dead';
-//        foreach($data as $item){
-//            $shot = new Shot();
-//            $shot->file_name       = $item["name"];
-//            $shot->file_type      = $item["type"];
-//            $shot->save();
-//        }
+        $name = (new UploadServer)->get_name();
+
+        /**
+         * Store it in the model now
+         */
+        $shot = new Shot();
+        $shot->file_name = $name;
+        $shot->save();
 
     }
 
@@ -61,11 +60,22 @@ return 'done dead';
      * @return mixed
      */
     public function show($id) {
-        return Shot::find($id);
+         $shot = Shot::find($id);
+
+       $tags = [];
+        foreach($shot->tags as $tag){
+            $tags [] = $tag->tag_name;
+        }
+
+        unset($shot->tags);
+        $shot->setAttribute('tags', $tags);
+
+        return $shot;
 
     }
 
     /**
+     * Update a shot.
      * @param Requests\UpdateShotRequest $request
      * @param $id
      * @return string
@@ -77,5 +87,18 @@ return 'done dead';
         $shot->fill($request->only('title', 'category', 'featured', 'published', 'views', 'source_url', 'description'))->save();
        return 'Shot was successfully updated !';
 
+    }
+
+    /**
+     * @return string
+     */
+    public function destroy($id){
+
+        $file = new UploadServer();
+//        $file->delete(false, $id);
+//
+//        $this->shots->where('file_name', '=', $id)->delete();
+
+        
     }
 }

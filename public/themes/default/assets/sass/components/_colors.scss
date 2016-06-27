@@ -25,7 +25,15 @@ $ui-color: (
 }
 
 .dark-card{
-    background-color: #151515;
+    background-color: rgba(41, 41, 41, 0.97);
+
+    a{
+        color: rgba(255, 255, 255, 0.57);
+    }
+}
+
+.blue-card{
+        background: rgb(37, 80, 125);
 }
 .grey60{
 	background-color: map-get($ui-color, grey60);

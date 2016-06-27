@@ -2,6 +2,7 @@
 
 namespace MyTailor\Providers;
 
+use MyTailor\Page;
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 
@@ -53,9 +54,19 @@ class RouteServiceProvider extends ServiceProvider
     protected function mapWebRoutes(Router $router)
     {
         $router->group([
-            'namespace' => $this->namespace, 'middleware' => 'web',
-        ], function ($router) {
-            require app_path('Http/routes.php');
+                        'namespace' => $this->namespace, 'middleware' => 'web',
+            ], function ($router) {
+                    require app_path('Http/routes.php');
         });
+
+        foreach(Page::all() as $page){
+            $router->get($page->uri, ['as' => $page->name, function() use($page, $router){
+
+                  return $this->app->call('MyTailor\Http\Controllers\PageController@show', [
+                        'page'       => $page,
+                        'parameters' => $router->current()->parameters()
+                    ]);
+            }]);
+        }
     }
 }

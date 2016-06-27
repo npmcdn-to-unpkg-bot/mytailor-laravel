@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'MyTailor\Events\SomeEvent' => [
-            'MyTailor\Listeners\EventListener',
+        'auth.login' => [
+            'MyTailor\Listeners\UpdateLastLoginOnLogin',
         ],
     ];
 

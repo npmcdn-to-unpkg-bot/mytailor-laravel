@@ -155,6 +155,8 @@ return [
         MyTailor\Providers\AuthServiceProvider::class,
         MyTailor\Providers\EventServiceProvider::class,
         MyTailor\Providers\RouteServiceProvider::class,
+        MyTailor\Providers\MtServiceProvider::class,
+
 
     ],
 

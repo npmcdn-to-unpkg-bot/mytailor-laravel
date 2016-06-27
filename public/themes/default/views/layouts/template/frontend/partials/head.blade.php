@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="{{ theme('vendor/material-design-lite/material.min.css')}}">
     <link rel="stylesheet" href="{{ theme('css/frontend.css')}}">
     <link rel="stylesheet" href="{{ theme('css/animate.css')}}">
-    <link rel="stylesheet" href="{{ theme('css/vendor/jquery.mCustomScrollbar.min.css')}}">
     <script src="{{ theme('js/vendor.js') }}"></script>
 </head>
 <body>
-        <div class="mt-layout-container mt-layout @yield('bg')" ng-controller="MainController">
+  <div class="mt-layout @yield('bg')" ng-controller="MainController">

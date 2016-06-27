@@ -1,8 +1,8 @@
 	'use strict';
 
-	app.controller("shotsController", ["$scope","shotFactory", 
+	app.controller("shotsController", ["$scope","shotFactory", "ngDialog",
 
-		function($scope, shotFactory) {
+		function($scope, shotFactory, ngDialog) {
 
 			$scope.show = function(id){
 			 		 shotFactory.show(id).then(function(response){
@@ -21,6 +21,19 @@
 			 	$scope.shot = {};
 			 };
 
+			$scope.clickToOpen = function (id) {
+    			ngDialog.open({ 
+    				template: template_path + 'corp_template.html', className: 'mt-large-overlay' 
+    			});
 
+			};
+
+			$scope.destroy = function () {
+				shotFactory.destroy($scope.shot.file_name).then(function(response){
+
+					angular.element(document.querySelector('.__active')).remove();
+
+				});
+			}
 
 	}]);
