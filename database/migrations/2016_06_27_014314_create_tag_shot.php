@@ -12,7 +12,7 @@ class CreateTagShot extends Migration
      */
     public function up()
     {
-        Schema::create('tag_shot', function(Blueprint $table){
+        Schema::create('shot_tag', function(Blueprint $table){
             $table->integer('shot_id')->unsigned()->index();
             $table->foreign('shot_id')->references('id')->on('shots')->onDelete('cascade');
 
@@ -30,6 +30,6 @@ class CreateTagShot extends Migration
      */
     public function down()
     {
-        Schema::drop('tag_shot');
+        Schema::drop('shot_tag');
     }
 }

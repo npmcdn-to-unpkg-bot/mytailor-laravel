@@ -8,6 +8,6 @@ class Tag extends Model
 {
     public function shots()
     {
-        return $this->belongsToMany('MyTailor\Shot');
+        return $this->belongsToMany('MyTailor\Shot')->withTimestamps();
     }
 }
