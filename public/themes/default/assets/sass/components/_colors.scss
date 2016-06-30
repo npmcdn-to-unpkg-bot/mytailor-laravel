@@ -62,7 +62,7 @@ $ui-color: (
     color:#fff !important;
 }
 .red{
-	    color: #F23054;
+	    color: map-get($ui-color, redish) !important;
 }
 
 .btn-blue {

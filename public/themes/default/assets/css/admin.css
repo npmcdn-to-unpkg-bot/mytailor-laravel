@@ -95,7 +95,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #eee;
   margin: 1em 0;
   padding: 0; }
 
@@ -581,7 +581,7 @@ a.waves-effect .waves-ripple {
   color: #fff !important; }
 
 .red {
-  color: #F23054; }
+  color: #F23054 !important; }
 
 .btn-blue {
   color: #fff !important;
@@ -925,6 +925,34 @@ p.attract-me {
 @media (max-width: 890px) {
   .mt-call-items-text {
     font-size: 13px; } }
+
+.mt-avatar__link {
+  display: block;
+  margin-bottom: 15px;
+  text-align: center;
+  max-width: 201px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #7f7f7f; }
+  .mt-avatar__link:hover {
+    color: #545454; }
+  .mt-avatar__link p {
+    color: #7d7d7d;
+    font-weight: 100;
+    font-size: 12px;
+    margin-top: 6px; }
+
+.mt-title__text {
+  font-weight: 600;
+  margin: 1em 0;
+  font-size: 12px;
+  color: #7f7f7f; }
+
+.mt_support__text {
+  font-size: 13px;
+  color: #7f7f7f;
+  letter-spacing: 1px;
+  line-height: normal; }
 
 /*Forms*/
 .mt-forms {
@@ -1322,6 +1350,63 @@ a#buzzle:hover .hvr-buzz-out {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1; }
 
+.mt-load-bar {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  height: 6px;
+  background-color: #fdba2c; }
+
+.bar {
+  content: "";
+  display: inline;
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: 50%;
+  text-align: center; }
+
+.bar:nth-child(1) {
+  background-color: #F23054;
+  -webkit-animation: loading 3s linear infinite;
+  animation: loading 3s linear infinite; }
+
+.bar:nth-child(2) {
+  background-color: #3b78e7;
+  -webkit-animation: loading 3s linear 1s infinite;
+  animation: loading 3s linear 1s infinite; }
+
+.bar:nth-child(3) {
+  background-color: #F23054;
+  -webkit-animation: loading 3s linear 2s infinite;
+  animation: loading 3s linear 2s infinite; }
+
+@-webkit-keyframes loading {
+  from {
+    left: 50%;
+    width: 0;
+    z-index: 100; }
+  33.3333% {
+    left: 0;
+    width: 100%;
+    z-index: 10; }
+  to {
+    left: 0;
+    width: 100%; } }
+
+@keyframes loading {
+  from {
+    left: 50%;
+    width: 0;
+    z-index: 100; }
+  33.3333% {
+    left: 0;
+    width: 100%;
+    z-index: 10; }
+  to {
+    left: 0;
+    width: 100%; } }
+
 /*Utility styles*/
 .make_flex {
   display: -webkit-flex;
@@ -1379,6 +1464,9 @@ img {
 
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #F3F6F9; }
+
+.mt-ptop {
+  padding-top: 1em; }
 
 /*
 * Layout Styles
@@ -1936,6 +2024,11 @@ header.admin-shots-head {
   box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.07), 1px 2px 5px 0 rgba(0, 0, 0, 0.06);
   padding: 1em; }
 
+.mt__media-card {
+  height: 290px;
+  background: #000;
+  overflow: hidden; }
+
 /* ==========================================================================
     MDL grid compponents
    ========================================================================== */
@@ -2063,7 +2156,7 @@ header.admin-shots-head {
   .grid-item {
     padding: 1em;
     width: 100%;
-    max-height: 450px; } }
+    max-height: 300px; } }
 
 .dimOverlay {
   background-color: #000;
@@ -2218,5 +2311,62 @@ a#buzzle:hover .hvr-buzz-out {
   animation-timing-function: linear;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1; }
+
+.mt-load-bar {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  height: 6px;
+  background-color: #fdba2c; }
+
+.bar {
+  content: "";
+  display: inline;
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: 50%;
+  text-align: center; }
+
+.bar:nth-child(1) {
+  background-color: #F23054;
+  -webkit-animation: loading 3s linear infinite;
+  animation: loading 3s linear infinite; }
+
+.bar:nth-child(2) {
+  background-color: #3b78e7;
+  -webkit-animation: loading 3s linear 1s infinite;
+  animation: loading 3s linear 1s infinite; }
+
+.bar:nth-child(3) {
+  background-color: #F23054;
+  -webkit-animation: loading 3s linear 2s infinite;
+  animation: loading 3s linear 2s infinite; }
+
+@-webkit-keyframes loading {
+  from {
+    left: 50%;
+    width: 0;
+    z-index: 100; }
+  33.3333% {
+    left: 0;
+    width: 100%;
+    z-index: 10; }
+  to {
+    left: 0;
+    width: 100%; } }
+
+@keyframes loading {
+  from {
+    left: 50%;
+    width: 0;
+    z-index: 100; }
+  33.3333% {
+    left: 0;
+    width: 100%;
+    z-index: 10; }
+  to {
+    left: 0;
+    width: 100%; } }
 
 /*# sourceMappingURL=admin.css.map */

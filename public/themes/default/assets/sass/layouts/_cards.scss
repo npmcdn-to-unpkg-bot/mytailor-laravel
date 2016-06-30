@@ -10,6 +10,12 @@
       box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.07), 1px 2px 5px 0 rgba(0, 0, 0, 0.06);
       padding: 1em;
 }
+.mt__media-card{
+        height: 290px;
+    background: #000;
+    overflow: hidden;
+}
+
 
  /* ==========================================================================
     MDL grid compponents
@@ -186,7 +192,7 @@
   .grid-item {
       padding: 1em;
       width: 100%;
-      max-height: 450px;
+      max-height: 300px;
   }
 }
 

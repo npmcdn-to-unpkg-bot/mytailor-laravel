@@ -2,7 +2,7 @@
 
     <nav class="mdl-navigation mt-nav-has-border">
         <a class="mdl-navigation__link {{ (Request::is('shots/trending') ? '__active' : '') }}" href="{{URL::to('shots/trending')}}">Trending</a>
-        <a class="mdl-navigation__link {{ (Request::is('shots/latest') ? '__active' : '') }}" href="{{URL::to('shots/latest')}}">Latest</a>
+        <a class="mdl-navigation__link {{ (Request::is('shots') || Request::is('shots/latest')? '__active' : '') }}" href="{{URL::to('shots/latest')}}">Latest</a>
         <a class="mdl-navigation__link {{ (Request::is('shots/featured') ? '__active' : '') }}" href="{{URL::to('shots/featured')}}">Featured</a>
     </nav>
 
@@ -49,3 +49,4 @@
 
 </section>
 {!! $shots->render() !!}
+

@@ -95,9 +95,9 @@ class ShotsController extends Controller    {
     public function destroy($id){
 
         $file = new UploadServer();
-//        $file->delete(false, $id);
-//
-//        $this->shots->where('file_name', '=', $id)->delete();
+        $file->delete(false, $id);
+
+        $this->shots->where('file_name', '=', $id)->delete();
 
         
     }

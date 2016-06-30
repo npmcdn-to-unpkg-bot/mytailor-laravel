@@ -8,7 +8,8 @@
 			    <ul class="copyright">
 			      <li>&copy; 2016 MyTailor. All rights reserved.</li>
 			    </ul>
-			  </footer>
+			</footer>
+
                 <!-- Black Screen -->
                 <div class="mt-obfuscator" ng-class="{'show': toggle}" ng-click="toggleSidebar()"></div>
             
@@ -17,6 +18,14 @@
             <script src="{{ theme('vendor/material-design-lite/material.min.js') }}"></script>
         <!-- Scripts -->
         <script src="{{ theme('js/app.js') }}"></script>
+
+        <!-- Controllers -->
+        <script src="{{ theme('js/controllers/frontend/shotsController.js') }}"></script>
+        {{-- <script src="{{ theme('js/controllers/pagesController.js') }}"></script> --}}
+
+        <!-- Services -->
+        {{-- <script src="{{ theme('js/services/shots.js') }}"></script> --}}
+        {{-- <script src="{{ theme('js/services/pages.js') }}"></script> --}}
         <script src="{{ theme('js/script.js') }}"></script>
 
 </body>

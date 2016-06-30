@@ -28,7 +28,7 @@ class DbShotsRepository implements ShotsRepositoryInterface{
             ->orderBy('created_at', 'desc')
             ->orderBy('views', 'desc')
             ->orderBy('id', 'desc')
-            ->paginate(5);
+            ->paginate(15);
 
     }
 
@@ -43,7 +43,7 @@ class DbShotsRepository implements ShotsRepositoryInterface{
             ->category($cat)
             ->orderBy('Popularity', 'desc')
             ->groupBy('id')
-            ->paginate(5);
+            ->paginate(15);
     }
 
     /**
@@ -56,7 +56,7 @@ class DbShotsRepository implements ShotsRepositoryInterface{
             ->category($cat)
             ->orderBy('views', 'desc')
             ->orderBy('id', 'desc')
-            ->paginate(5);
+            ->paginate(15);
     }
 
 

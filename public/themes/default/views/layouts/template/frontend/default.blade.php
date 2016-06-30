@@ -10,4 +10,11 @@
             </main>
         </div>
     </div>
+    <section class="mt-load-more-wrapper">
+        <div class="mt-load-bar">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+	</section>
 @include('layouts.template.frontend.partials.foot')

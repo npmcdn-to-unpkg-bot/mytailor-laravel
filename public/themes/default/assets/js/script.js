@@ -26,9 +26,13 @@ Mytailor.me
                       return "?page=" + index;
                   }
               }, function(newElements, data, url){
+                  $('.grid').imagesLoaded(function(){
 
-                  var $newElems = $( newElements );
-                  $('.grid').masonry( 'appended', $newElems, true);
+                        var $newElems = $( newElements );
+                        $('.grid').masonry( 'appended', $newElems, 'reloadItems');
+     
+                    });
+                  
 
               });
 
