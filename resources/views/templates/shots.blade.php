@@ -1,4 +1,8 @@
-<section class="mt-sub-header mdl-layout__header-row">
+@section('page_styles')
+    <link rel="stylesheet" type="text/css" href="{{ theme('css/vendor/ng-img-crop/ng-img-crop.css')}}">
+    <link rel="stylesheet" href="{{ theme('css/vendor/ng-dialog/ngDialog.min.css') }}">
+@endsection
+<section class="mt-sub-header mdl-layout__header-row" >
 
     <nav class="mdl-navigation mt-nav-has-border">
         <a class="mdl-navigation__link {{ (Request::is('shots/trending') ? '__active' : '') }}" href="{{URL::to('shots/trending')}}">Trending</a>
@@ -21,13 +25,13 @@
 
 </section>
 
-<section class="mt-grid clearfix grid" id="grid">
+<section class="mt-grid clearfix grid" id="grid" ng-controller="shotsController">
 
 @forelse($shots as $shot)
 
     <div class="grid-item">
       <figure>
-            <a href="#" class="mt-grid___link">
+            <a href="#" class="mt-grid___link" ng-click="open({{$shot->file_name}})">
                 <div class="mt-image-holder">
                     <img src="/uploads/{{$shot->file_name}}">
                 </div>
