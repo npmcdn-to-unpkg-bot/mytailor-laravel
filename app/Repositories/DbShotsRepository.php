@@ -28,6 +28,7 @@ class DbShotsRepository implements ShotsRepositoryInterface{
             ->orderBy('created_at', 'desc')
             ->orderBy('views', 'desc')
             ->orderBy('id', 'desc')
+            ->where('published', '=', 1)
             ->paginate(15);
 
     }
@@ -42,6 +43,7 @@ class DbShotsRepository implements ShotsRepositoryInterface{
             ->select(\DB::raw('AVG(views/DATEDIFF(NOW(), created_at)) as Popularity, shots.*'))
             ->category($cat)
             ->orderBy('Popularity', 'desc')
+            ->where('published', '=', 1)
             ->groupBy('id')
             ->paginate(15);
     }
@@ -56,6 +58,7 @@ class DbShotsRepository implements ShotsRepositoryInterface{
             ->category($cat)
             ->orderBy('views', 'desc')
             ->orderBy('id', 'desc')
+            ->where('published', '=', 1)
             ->paginate(15);
     }
 

@@ -28,7 +28,17 @@ Mytailor.me
               }, function(newElements, data, url){
                   $('.grid').imagesLoaded(function(){
 
-                        var $newElems = $( newElements );
+                        var $newElems = $( newElements ),
+                            $target = $(".grid");
+
+                               angular.element($target).injector().invoke(function($compile){
+                                var $scope = angular.element($target).scope();
+                                    $compile($newElems)($scope);
+                                    $scope.$apply();
+
+                               });
+                             
+
                         $('.grid').masonry( 'appended', $newElems, 'reloadItems');
      
                     });
@@ -109,24 +119,6 @@ Mytailor.me
         });
         
       
-                  // $('.mt-search-wrapper input[type="search"]').keyup(function() {
-                  //    if( $(this).val() ) {
-                  //     $('#search-form').delay(200).submit();
-                  //   $('.mt-search-result-wrapper').show();
-                  //   $('.pageContainer').hide();
-
-                  // } else{
-                  //     $('.mt-search-result-wrapper').hide();
-                  //   $('.pageContainer').show();
-                  // }
-
-                  // });
-
-                  // $("#search-form").submit(function (event) {
-                  //     event.preventDefault();
-
-                  // });
-
     
         //Initializa all plugins
         $window.on('load', function(){

@@ -4,16 +4,11 @@
                     <img src="{{theme('images/profiles/11698517_10205466839968531_5750592294516276713_n.jpg')}}">
 
                     <div class="sidebar-title-wrapper">
-                      <span></span>
+                      <span>MyTailor</span>
                       <div class="mdl-layout-spacer"></div>
                       <button class="icon-round mdl-button btn" id="dropdown">
                         <i class="icon-center mdi mdi-menu-down" data-type="hidden"></i>
                       </button>
-                      <div class="mt-menu-container showMenu" style="visibility:hidden;" id="m9menu">
-                          <ul>
-                            <li class="mt-list-btn btn" style="transition-delay: 0.012s;"><a href="#" class="m-0">Profile</a></li>
-                            <li class="mt-list-btn btn" style="transition-delay: 0.084s;"><a href="{{route('auth.logout')}}" class="m-0">Logout</a></li>
-                          </ul></div>
                     </div>
                   </div>
               </header>

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ theme('vendor/material-design-lite/material.min.css')}}">
     <link rel="stylesheet" href="{{ theme('css/frontend.css')}}">
     <link rel="stylesheet" href="{{ theme('css/animate.css')}}">
+    <link rel="stylesheet" href="{{ theme('css/vendor/ng-dialog/ngDialog.min.css') }}">
     @yield('page_styles')
     <script src="{{ theme('js/vendor.js') }}"></script>
 </head>

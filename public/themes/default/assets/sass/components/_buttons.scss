@@ -158,3 +158,29 @@ button#dropdown>i{
         padding: 1.1em 3em;
         }
 }
+
+// Like Comment buttons
+
+.mt-shot-user-actions > * a {
+    display: block;
+    margin: 0;
+    font-size: 12px;
+
+}
+
+.mt-shot-info-head a{
+    color:#4E4E4F
+}
+
+.mt-shot-user-actions>li.each-action{
+        margin: 0 10px;
+}
+
+.util-list-surcelink > a {
+    font-size: 15px;
+    border: 1px solid #D8D8D8;
+    padding: 0.5em;
+}
+.mt-btn-circle {
+    border-radius: 50%;
+}

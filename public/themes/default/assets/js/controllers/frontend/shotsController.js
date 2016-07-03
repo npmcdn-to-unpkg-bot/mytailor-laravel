@@ -5,18 +5,35 @@
 		function($scope, ngDialog) {
 
 			$scope.open = function ($name) {
-    			ngDialog.open({ 
+
+				$name = $name.replace(/\.[^/.]+$/, "");
+
+				var dialogScope = $scope.$new();
+				dialogScope.name = $name;
+
+				history.pushState({}, '', '/shot/'+$name);
+
+    			ngDialog.open({
+    				closeByNavigation: true,
+				    cache:false, 
     				template: template_path + 'shots_overlay.html', className: 'mt-shots-overlay' ,
-    				 controller: 'ovalController',
-    				 resolve: {
-				        dep: function depFactory() {
-				            return 'dep value';
-				        }
-				    }
+    				controller: 'ovalController',
+				    scope: dialogScope,
+					preCloseCallback: function() {
+				       		history.back();
+				            return true;
+				        
+
+				    
+    			}
+
+				    
     			});
 
 			};
 
 		}
+
+
 
 			]);

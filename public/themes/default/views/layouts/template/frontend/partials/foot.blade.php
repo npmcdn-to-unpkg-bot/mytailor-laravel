@@ -22,10 +22,11 @@
         <!-- Controllers -->
         <script src="{{ theme('js/controllers/frontend/shotsController.js') }}"></script>
         <script src="{{ theme('js/controllers/frontend/ovalController.js') }}"></script>
+        <script src="{{ theme('js/controllers/frontend/HomeController.js') }}"></script>
 
         <!-- Services -->
         {{-- <script src="{{ theme('js/services/shots.js') }}"></script> --}}
-        {{-- <script src="{{ theme('js/services/pages.js') }}"></script> --}}
+        <script src="{{ theme('js/services/frontend/shotFactory.js') }}"></script>
         <script src="{{ theme('js/script.js') }}"></script>
 
 </body>

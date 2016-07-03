@@ -72,11 +72,11 @@
                       </div>
 
               </section> <!-- Call actions end -->
-              <section class="mdl-grid featured-grid">
+              <section class="mdl-grid featured-grid grid" ng-controller="shotsController">
                   @foreach($shots as $shot)
                   <div class="mt-shot-item mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
                       <figure>
-                        <a href="" class="shot-img_view">
+                        <a href="" class="shot-img_view" ng-click='open("{{$shot->file_name}}")'>
                           <img src="../uploads/featured/{{$shot->file_name . '.' . $shot->file_type}}">
                           <div class="grid-overlay-items">
                             <figcaption>

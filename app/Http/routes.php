@@ -25,12 +25,26 @@ Route::get('admin/dashboard', [
 		'uses' => 'Admin\DashboardController@index'
 	]);
 
-//Route::get('/shots', function(){
-//	return view('frontend.shots');
-//});
+Route::get('/shot/{id}',  [
+				'as' => 'shot',
+				'uses' => 'Frontend\ShotsController@show']
+);
+
+Route::post('/shot/viewed/{id}',  [
+				'as' => 'shot.viewed',
+				'uses' => 'Frontend\ShotsController@viewed']
+);
+
 Route::get('/', [
 		'as' => 'frontend.home',
 		'uses' => 'Frontend\HomeController@index']
 );
 
 
+Route::get('/tester', function(){
+
+	 $user = MyTailor\User::find(1);
+
+	 return $user->profile;
+	
+});

@@ -24,4 +24,55 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function profile()
+    {
+        return $this->hasOne(UserProfile::class, 'id')
+                    ->select(['id','username','avatar']); //Profile is your profile model
+    }
+
+    public function shots(){
+
+        return $this->hasMany(Shot::class, 'published_by');
+
+    }
+
+    public function roles()
+    {
+        return $this->belongsToMany(Role::class)->withTimestamps();
+    }
+
+    /**
+     * does our user have role of $name or not
+     *
+     * @param $name
+     * @return bool
+     */
+    public function hasRole($name)
+    {
+        foreach($this->roles as $role){
+
+            if($role->name == $name) return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * @param $role
+     */
+    public function assignRole($role){
+        return $this->roles()->attach($role);
+    }
+
+    /**
+     * @param $role
+     * @return int
+     */
+    public function revokeRole($role){
+        return $this->roles()->detach($role);
+    }
+
+
+
 }

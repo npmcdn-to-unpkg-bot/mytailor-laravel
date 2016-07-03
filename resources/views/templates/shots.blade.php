@@ -1,7 +1,3 @@
-@section('page_styles')
-    <link rel="stylesheet" type="text/css" href="{{ theme('css/vendor/ng-img-crop/ng-img-crop.css')}}">
-    <link rel="stylesheet" href="{{ theme('css/vendor/ng-dialog/ngDialog.min.css') }}">
-@endsection
 <section class="mt-sub-header mdl-layout__header-row" >
 
     <nav class="mdl-navigation mt-nav-has-border">
@@ -25,13 +21,13 @@
 
 </section>
 
-<section class="mt-grid clearfix grid" id="grid" ng-controller="shotsController">
+<section class="mt-grid clearfix grid" id="grid" ng-controller="shotsController" ng-init="init()">
 
 @forelse($shots as $shot)
 
     <div class="grid-item">
       <figure>
-            <a href="#" class="mt-grid___link" ng-click="open({{$shot->file_name}})">
+            <a href="" class="mt-grid___link" ng-click='open("{{$shot->file_name}}")'>
                 <div class="mt-image-holder">
                     <img src="/uploads/{{$shot->file_name}}">
                 </div>
@@ -52,5 +48,13 @@
 
 
 </section>
+
 {!! $shots->render() !!}
 
+<section class="mt-load-more-wrapper">
+        <div class="mt-load-bar">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+</section>

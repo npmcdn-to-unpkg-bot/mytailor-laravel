@@ -11,6 +11,10 @@
 
 	var template_path = '/themes/default/views/segments/';
 
+app.config(function (ngDialogProvider) {
+    ngDialogProvider.setForceHtmlReload(true);
+});
+
 	/*
 	 * Main Simple function to toggle Sidebar
 	 *

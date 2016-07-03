@@ -176,3 +176,40 @@ ul.icons li{
 }
 
 
+/*********************************************************************************************
+
+     Shots Dialog
+
+*********************************************************************************************/
+.shot-info{
+    padding: 1em 3em;
+    min-height: 20px;
+    background: #F8F8F8;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.mt-shots-info-wrap {
+    border-bottom: 1px solid #eee;
+    margin-top: 1px;
+    padding: 0 45px;
+}
+
+.mt-shot-info-head {
+    border-bottom: 1px solid #eee;
+    padding: 1em 0;
+}
+
+.comment-form-wrapper {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #eee;
+    overflow: hidden;
+}
+.mt-shot-user-actions-wrap, .mt-shot-user-actions > *{
+    display: inline-block;
+}
+
+.mt-shot-utility-icons {
+    display: inline-block;
+    float: right;
+}
