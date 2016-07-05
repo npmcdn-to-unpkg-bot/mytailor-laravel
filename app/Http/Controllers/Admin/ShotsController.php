@@ -52,7 +52,8 @@ class ShotsController extends Controller    {
         $shot = new Shot();
         $shot->file_name = $name;
         $shot->published_by = \Auth::user()->id;
-        $shot->published_as = 1;
+        $shot->publishable_type = 'MyTailor\\Brand';
+        $shot->publishable_id = 1;
         $shot->save();
 
     }

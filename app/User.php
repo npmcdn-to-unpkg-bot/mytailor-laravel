@@ -27,14 +27,18 @@ class User extends Authenticatable
 
     public function profile()
     {
-        return $this->hasOne(UserProfile::class, 'id')
+        return $this->hasOne(Profile::class, 'id')
                     ->select(['id','username','avatar']); //Profile is your profile model
     }
 
-    public function shots(){
+    /**
+     * A shot is owned by a publisher.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function shots() {
 
-        return $this->hasMany(Shot::class, 'published_by');
-
+        return $this->morphMany(Shot::class, 'publishable_id');
     }
 
     public function roles()

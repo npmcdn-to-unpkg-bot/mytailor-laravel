@@ -8,7 +8,7 @@ class Shot extends Model {
 
     protected $fillable = ['title', 'category', 'featured', 'published', 'views', 'source_url', 'description',
                             'published_by', 'published_as'
-                            ];
+    ];
 
 
     /**
@@ -55,9 +55,9 @@ class Shot extends Model {
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
-    public function publisher() {
+    public function publishable() {
 
-        return $this->belongsTo(User::class, 'published_by')
+        return $this->morphTo()
                     ->select(['id','profile_id']);
     }
 

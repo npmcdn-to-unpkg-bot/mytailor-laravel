@@ -106,11 +106,26 @@ span.special:hover{
     margin: 2em 2em;
 }
 
-
+//==================================================================*
 .mt-small-banner{
     height: 55vh;
     background: url('../images/backgrounds/bb.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+    .mt-small-banner{
+        background-size: contain;
+    }
+
+    p.attract-me{
+            font-size: 1.14286rem !important;
+    }
+
+    .mt-content-section-wrapper {
+    padding: 0 5em !important;
+    }
 }
 
 .mt-small-banner-wrapper{

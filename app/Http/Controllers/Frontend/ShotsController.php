@@ -5,6 +5,7 @@ namespace MyTailor\Http\Controllers\Frontend;
 use Illuminate\Http\Request;
 use MyTailor\Http\Controllers\Controller;
 use MyTailor\Shot;
+use MyTailor\Profile;
 use MyTailor\Http\Requests;
 
 class ShotsController extends Controller
@@ -33,14 +34,16 @@ class ShotsController extends Controller
     public function show($id)
     {
 
-    // $shot = $this->shot->
 
-        $shot = Shot::with('publisher.profile')->where(
+       $shot = Shot::with('publishable')->where(
 
-                            \DB::raw("left(file_name, length(file_name) - LOCATE('.', Reverse(file_name)))"
-                                    ), '=', $id)
-                                    ->first();
-                    return $shot;
+                           \DB::raw("left(file_name, length(file_name) - LOCATE('.', Reverse(file_name)))"
+                                   ), '=', $id)
+                                   ->first();
+
+        $shot->publishable->profile = Profile::find([$shot->publishable->profile_id])->first();
+
+        return $shot;
             }
 
     /**

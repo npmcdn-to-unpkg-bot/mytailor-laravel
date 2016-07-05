@@ -99,13 +99,13 @@
                   <div class="mt-2cols-wrap">
                     <div class="mt-info-box">
                       <div style="padding:2em 0;">
-                          <h2 class="bold-title">MyTailor Classics</h2>
+                          <h2 class="bold-title">Occasional Wears</h2>
                       </div>
 
-                      <p class="attract-me">Inspiration comes in many ways. What you wear tells alot about you. On your next meeting, interview, every part of the Uber experience has been designed around your safety and security.</p>
+                      <p class="attract-me">Inspiration comes in many ways. Meet some of our designers and their awesome stories. Learn what others think about them to help you choose the perfect one for your next occasion.</p>
 
                       <div class="mt-call-text">
-                        <a href="" id="buzzle">See Classic wears <i class="mdi mdi-arrow-right-bold hvr-buzz-out" aria-hidden="true"></i></a>
+                        <a href="" id="buzzle">See occasional wears <i class="mdi mdi-arrow-right-bold hvr-buzz-out" aria-hidden="true"></i></a>
                       </div>
                     </div>
                     <div>
@@ -130,10 +130,10 @@
           </section>
 
           <section class="mt-large-info-box">
-            <h3 class="mt-title-grey">what you like, is for you</h3>
-            <p class="mt-sm-cont-txt">Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos. </p>
+            <h3 class="mt-title-grey">what you like, specially picked</h3>
+            <p class="mt-sm-cont-txt">If your looking for something fancy let us help you by showing you the coolest shots we have. See what viewers love the most</p>
 
-            <a href="/explore" style="color: #03A9F4;">check out cool stuff</a>
+            <a href="#" style="color: #03A9F4;">check out cool stuff</a>
 
           </section>
           <section class="mt-row mdl-grid">
@@ -142,7 +142,7 @@
                       <img src="{{theme('images/backgrounds/women.jpg')}}">
                   </div>
                   <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-                    Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                    See coolest African women prints, dresses, classic wears. 
                   </div>
                   <div class="mdl-card__actions mdl-card--border dark-card">
                     <a href="{{route('shots.index', ['cat=fm'])}}" class="mdl-button mdl-js-button mdl-js-ripple-effect">Women<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
@@ -153,7 +153,7 @@
                       <img src="{{theme('images/backgrounds/men.jpg')}}">
                   </div>
                   <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-                      Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                      Checkout men t-shirts & blazers uniquely made by top african tailors.
                   </div>
                   <div class="mdl-card__actions mdl-card--border blue-card">
                       <a href="{{route('shots.index', ['cat=ma'])}}" class="mdl-button mdl-js-button mdl-js-ripple-effect">Men<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
@@ -164,7 +164,7 @@
                       <img src="{{theme('images/backgrounds/kids.jpg')}}">
                   </div>
                   <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-                      Non dolore elit adipisicing ea reprehenderit consectetur culpa.
+                      Kids also love it fancy. browse here for some cool stuffs.
                   </div>
                   <div class="mdl-card__actions mdl-card--border redy-card">
                       <a href="{{route('shots.index', ['cat=ki'])}}" class="mdl-button mdl-js-button mdl-js-ripple-effect">Kids<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
