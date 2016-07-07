@@ -17,4 +17,9 @@
                       </aside>
                     </div>
                 </div>
+                {{-- Extract later --}}
+                <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+                  <div class="mdl-snackbar__text"></div>
+                  <button class="mdl-snackbar__action" type="button"></button>
+                </div>
             @include('layouts.template.admin.partials.foot')

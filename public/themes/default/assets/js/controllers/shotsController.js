@@ -1,8 +1,8 @@
 	'use strict';
 
-	app.controller("shotsController", ["$scope","shotFactory", "ngDialog",
+	app.controller("shotsController", ["$scope","shotFactory", "ngDialog", '$window',
 
-		function($scope, shotFactory, ngDialog) {
+		function($scope, shotFactory, ngDialog, $window) {
 
 			$scope.show = function(id){
 			 		 shotFactory.show(id).then(function(response){
@@ -13,7 +13,17 @@
 
 			$scope.updateShot = function(){
 				shotFactory.update($scope.shot.id, $scope.shot).then(function(response){
-    				// snackbar.create(response.data, 5000);
+    				var data = response.data.data;
+// snackbar.create(response.data, 5000);
+								  'use strict';
+								  var snackbarContainer = document.querySelector('#demo-snackbar-example');
+								    var data = {
+								      message: data.message,
+								      timeout: 2000,
+								      actionText: 'Undo'
+								    };
+								    snackbarContainer.MaterialSnackbar.showSnackbar(data);
+
 			 		});
 			 };
 

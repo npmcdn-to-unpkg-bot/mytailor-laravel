@@ -14,7 +14,6 @@
 @section('main')
 
           @include('partials.breadcrump')
-
            <div class="row m-0">
            		<header class="admin-shots-head">
                 <div style="height: 60px;">
@@ -124,5 +123,6 @@
 
 
     </div>
+
 
 @endsection

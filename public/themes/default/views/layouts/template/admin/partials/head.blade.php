@@ -6,7 +6,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{ theme('images/favicon.png')}}">
     <!-- Material Design style -->
-    <link rel="stylesheet" href="{{ theme('vendor/material-design-lite/material.min.css')}}">
+    {{-- <link rel="stylesheet" href="{{ theme('vendor/material-design-lite/material.min.css')}}"> --}}
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
     <!-- Site style -->
     <link rel="stylesheet" href="{{ theme('css/admin.css')}}">
     <!-- vendor styles -->
