@@ -50,8 +50,8 @@ class UserTableSeeder extends Seeder
                 'first_name' => 'Mola',
                 'last_name' => '',
                 'role_id' => 2,
-                'profile_id'=>6,
-                'email' => '',
+                'profile_id'=> 6,
+                'email' => 'molamin73@gmail.com',
                 'password' => bcrypt('boots12')
             ],
         ]);
