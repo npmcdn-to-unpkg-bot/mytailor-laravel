@@ -77,7 +77,7 @@
                   <div class="mt-shot-item mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
                       <figure>
                         <a href="" class="shot-img_view" ng-click='open("{{$shot->file_name}}")'>
-                          <img src="../uploads/featured/{{$shot->file_name . '.' . $shot->file_type}}">
+                          <img src="../uploads/featured/{{$shot->file_name}}">
                           <div class="grid-overlay-items">
                             <figcaption>
                             </figcaption>

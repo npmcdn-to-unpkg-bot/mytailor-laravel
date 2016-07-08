@@ -2,6 +2,7 @@
 
 namespace MyTailor\Http\Controllers\Admin;
 
+use Illuminate\Support\Facades\Response;
 use MyTailor\Shot;
 use Illuminate\Http\Request;
 use MyTailor\Http\Requests;
@@ -87,8 +88,22 @@ class ShotsController extends Controller    {
 
         $shot = $this->shots->findOrFail($id);
 
-        $shot->fill($request->only('title', 'category', 'featured', 'published', 'views', 'source_url', 'description'))->save();
-       return 'Shot was successfully updated !';
+        $update = $shot->fill($request->only('title', 'category', 'featured', 'published', 'views', 'source_url', 'description'))->save();
+
+        if(! $update){
+            return Response::json([
+                'data' => [
+                    'message' => 'Opps ! there was an error'
+                ]
+            ], 503);
+        }
+
+        return Response::json([
+            'data' => [
+                'message' => 'Shot was updated successfully.'
+            ]
+        ], 200);
+
 
     }
 

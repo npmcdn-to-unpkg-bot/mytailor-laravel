@@ -29,9 +29,10 @@ class ShotsController extends Controller
      * Gets info about a shot and response in Json
      *
      * @param $id
+     * @param Request $request
      * @return mixed
      */
-    public function show($id)
+    public function show($id, Request $request )
     {
 
 
@@ -43,8 +44,13 @@ class ShotsController extends Controller
 
         $shot->publishable->profile = Profile::find([$shot->publishable->profile_id])->first();
 
-        return $shot;
-            }
+        if($request->ajax() || $request->wantsJson()){
+            return $shot;
+        }
+
+        return view('frontend.shot', compact('shots'));
+
+    }
 
     /**
      * Increment views for $this shot

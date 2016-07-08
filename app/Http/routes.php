@@ -39,12 +39,3 @@ Route::get('/', [
 		'as' => 'frontend.home',
 		'uses' => 'Frontend\HomeController@index']
 );
-
-
-Route::get('/tester', function(){
-
-	 $user = MyTailor\User::find(1);
-
-	 return $user->profile;
-	
-});

@@ -55,8 +55,6 @@ Mytailor.me
                     //             $(this).find('.icon-center').removeClass('mdi-magnify');
                     //             $(this).find('.icon-center').addClass('mdi-close-circle');
                     //             $('.mt-search-wrapper').removeClass('hide-on-phone');
-                               
-
                     //   }
                     //    // Search bar is currently showing
                     //   else {
