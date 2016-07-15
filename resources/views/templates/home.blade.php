@@ -61,15 +61,12 @@
                           </div>
                       </a>
 
-
-
                     <div style="clear: both;"></div>
                   </section>
 
-
-                      <div class="mt-after-call-items">
-                      <a href="{{route('shots.latest', 'latest')}}" class="norm-text"><span class="btn btn--mobile redish">View Shots</span></a>
-                      </div>
+                  <div class="mt-after-call-items">
+                    <a href="{{route('shots.latest', 'latest')}}" class="norm-text"><span class="btn btn--mobile redish">View Shots</span></a>
+                  </div>
 
               </section> <!-- Call actions end -->
               <section class="mdl-grid featured-grid grid" ng-controller="shotsController">
@@ -95,8 +92,8 @@
               {{-- Next --}}
 
               <section class="mt-content-section-wrapper grey60">
-                <div class="mt-wrap-ptb clearfix">
-                  <div class="mt-2cols-wrap">
+                <div class="mt-wrap-ptb clearfix mdl-grid">
+                  <div class="mt-2cols-wrap mdl-cell mdl-cell--6-col">
                     <div class="mt-info-box">
                       <div style="padding:2em 0;">
                           <h2 class="bold-title">Occasional Wears</h2>
@@ -109,23 +106,17 @@
                       </div>
                     </div>
                     <div>
-
                     </div>
                   </div>
 
-                  <div class="mt-2cols-wrap mdl-cards">
+                  <div class="mt-2cols-wrap mdl-cell mdl-cell--6-col">
                     <div class="mt-small-banner-wrapper">
                       <ul>
-                        <li>
-                          <div class="mt-small-banner"></div>
-                        </li>
-                       <!--  <li>
-                          <div class="mt-small-banner"></div>
-                        </li> -->
+                        <li><div class="mt-small-banner fixed-image fixed-image--home"></div></li>
                       </ul>
-
                     </div>
                   </div>
+
                 </div>
           </section>
 
