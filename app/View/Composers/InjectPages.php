@@ -1,5 +1,6 @@
 <?php
 namespace MyTailor\View\Composers;
+
 use Illuminate\View\View;
 use MyTailor\Page;
 

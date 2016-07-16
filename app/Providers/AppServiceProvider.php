@@ -3,7 +3,7 @@
 namespace MyTailor\Providers;
 
 use MyTailor\View\Composers;
-use MyTailor\view\ThemeViewFinder;
+use MyTailor\View\ThemeViewFinder;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
