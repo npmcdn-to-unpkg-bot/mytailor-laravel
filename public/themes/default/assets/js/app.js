@@ -13,7 +13,7 @@
 
 app.config(function (ngDialogProvider) {
     ngDialogProvider.setForceHtmlReload(true);
-});
+	});
 
 	/*
 	 * Main Simple function to toggle Sidebar

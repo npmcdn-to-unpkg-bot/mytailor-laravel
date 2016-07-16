@@ -114,20 +114,47 @@ span.special:hover{
     background-repeat: no-repeat;
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 768px){
+@media only screen and (max-width: 1024px) and (min-width: 480px){
     .mt-small-banner{
         background-size: contain;
     }
 
     p.attract-me{
-            font-size: 1.14286rem !important;
+        font-size: 1.14286rem !important;
     }
 
+    .bold-title{
+        font-size: 1.7rem !important;
+    }
     .mt-content-section-wrapper {
-    padding: 0 5em !important;
+        padding: 0 5em !important;
+    }
+
+    .mt-info-box {
+        width: 100% !important;
     }
 }
 
-.mt-small-banner-wrapper{
-    padding-bottom: 50px;
+
+@media only screen and (max-width: 480px){
+    .mt-content-section-wrapper {
+        padding: 0 1em !important;
+    }
+
+    .mt-info-box {
+        width: 100% !important;
+    }
+
+    p.attract-me{
+        font-size: 1.14286rem !important;
+    }
+
+    .bold-title{
+        font-size: 1.5rem !important;
+    }
+
+    .mt-wrap-ptb {
+        padding: 2em 0 !important;
+    }
+
 }

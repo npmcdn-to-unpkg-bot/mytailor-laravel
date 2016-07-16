@@ -93,9 +93,9 @@
 
               <section class="mt-content-section-wrapper grey60">
                 <div class="mt-wrap-ptb clearfix mdl-grid">
-                  <div class="mt-2cols-wrap mdl-cell mdl-cell--6-col">
+                  <div class="mt-2cols-wrap mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
                     <div class="mt-info-box">
-                      <div style="padding:2em 0;">
+                      <div style="padding: 0 0 2em 0;;">
                           <h2 class="bold-title">Occasional Wears</h2>
                       </div>
 
@@ -109,7 +109,7 @@
                     </div>
                   </div>
 
-                  <div class="mt-2cols-wrap mdl-cell mdl-cell--6-col">
+                  <div class="mt-2cols-wrap mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
                     <div class="mt-small-banner-wrapper">
                       <ul>
                         <li><div class="mt-small-banner fixed-image fixed-image--home"></div></li>

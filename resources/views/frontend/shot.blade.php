@@ -8,21 +8,28 @@
 @section('main')
 	<div class="overlay-wrapper">
 
-	<section class="mdl-cell mdl-cell--12-col light-shadow">
+	<section class="mdl-cell mdl-cell--12-col light-shadow mt-shot-wrapper">
 
 	<!-- The header -->
 		<header class="mt-shot-header clearfix">
+			<section class="mt-shot-actions">
+				<div class="mt-shot-actions-back-btn">
+					<a href="/shots" title="Shots">
+						<i class="mt-back-btn"></i>
+					</a>
+				</div>
+			</section>
             <section class="mt-shot-avatar-wrapper">
-              <a href="#" class="mt-shot-avatar" title="Mytailor">
-                <img height="30" width="30" ng-src="/uploads/profiles/@{{shot.publishable.profile.avatar}}" alt="Braden Hamm">
-                <h2 class="mt-avatar-name" ng-bind="shot.publishable.profile.username"></h2>
-              </a>
+	            <a href="#" class="mt-shot-avatar" title="Mytailor">
+	                <img height="30" width="30" ng-src="/uploads/profiles/{{$shot->publishable->profile->avatar}}" alt="Braden Hamm">
+	                <h2 class="mt-avatar-name">{{$shot->publishable->profile->username}}</h2>
+	            </a>
             </section>
-         </header>
+        </header>
 
          <!-- The Figure -->
 		<figure class="mt-figure__card mdl-card shot-cover">
-			<img ng-src="/uploads/@{{shot.file_name}}">
+			<img ng-src="/uploads/{{$shot->file_name}}">
 		</figure>
 
 		<!-- Notes -->
@@ -31,8 +38,7 @@
 				<a href="#" ng-bind="shot.title"></a>
 			</div>
 			<div class="shot-description">
-				<p ng-bind="shot.description">
-				</p>
+				<p>{{$shot->description}}</p>
 			</div>
 		</div>
 
@@ -44,13 +50,13 @@
 					<li class="each-action">
 						<a href="#" class="">
 							<i class="mdi mdi-heart-outline" style="font-size: 2em;color: #F23054;"></i>
-							<span ng-bind="shot.likes"></span>
+							<span>{{$shot->likes}}</span>
 						</a>
 					</li>
 					<li class="each-action">
 						<a>
 							<i class="mdi mdi-eye" style="font-size: 2em;"></i>
-							<span ng-bind="shot.views"></span>
+							<span>{{$shot->views}}</span>
 						</a>
 					</li>
 				</ul>
@@ -58,7 +64,7 @@
 			<div class="mt-shot-utility-icons">
 				<ul>
 					<li class="util-list-surcelink m-0">
-						<a class="btn mt-btn-circle m-0 waves-effect waves-button waves-float"  ng-href="@{{shot.source_url}}" title="source URL">
+						<a class="btn mt-btn-circle m-0 waves-effect waves-button waves-float"  href="{{$shot->source_url}}" title="source URL">
                               <i class="mdi mdi-link-variant"></i>
                         </a>
 					</li>

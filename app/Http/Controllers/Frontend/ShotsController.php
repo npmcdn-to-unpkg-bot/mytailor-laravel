@@ -48,7 +48,7 @@ class ShotsController extends Controller
             return $shot;
         }
 
-        return view('frontend.shot', compact('shots'));
+        return view('frontend.shot', compact('shot'));
 
     }
 

@@ -3,6 +3,27 @@
         color: #fff;
 }
 
+.mt-shot-actions-back-btn {
+    cursor: pointer;
+    background: #EEE;
+    width: 45px;
+}
+
+.mt-shot-actions-back-btn a {
+    display: block;
+    height: 35px;
+    margin: 0;
+    width: 45px;
+    padding: .4em .6em;
+}
+
+.mt-back-btn {
+    background: url("/images/icons/arrow-left.svg");
+    width: 25px;
+    background-repeat: no-repeat;
+    height: 25px;
+    display: block;
+}
 
 .mt-ms-button{
     padding: 10px 17px;
