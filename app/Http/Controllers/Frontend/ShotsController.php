@@ -44,6 +44,8 @@ class ShotsController extends Controller
 
         $shot->publishable->profile = Profile::find([$shot->publishable->profile_id])->first();
 
+        $shot['alt'] = 'hehe';
+
         if($request->ajax() || $request->wantsJson()){
             return $shot;
         }

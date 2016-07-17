@@ -10,6 +10,16 @@ class Shot extends Model {
                             'published_by', 'published_as'
     ];
 
+    protected $appends = array('alt');
+
+
+    /**
+     * @return mixed
+     */
+    public function getAltAttribute()
+    {
+        return $this->displayAlt();
+    }
 
     /**
      * Gets published_At attribute as a boolean.
@@ -70,5 +80,18 @@ class Shot extends Model {
 
         return $this->belongsToMany('MyTailor\Tag');
      }
+
+    private function displayAlt()
+    {
+        $title = $this->title;
+        $desc = $this->desc;
+
+        if(!empty($title)){
+            $alt = substr($title, 0, 30);
+        }else{
+            $alt = substr($desc, 0, 30);
+        }
+        return $alt;
+    }
 
 }

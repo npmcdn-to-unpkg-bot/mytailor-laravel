@@ -29,7 +29,7 @@
       <figure>
             <a href="" class="mt-grid___link" ng-click='open("{{$shot->file_name}}")'>
                 <div class="mt-image-holder">
-                    <img src="/uploads/{{$shot->file_name}}">
+                    <img src="/uploads/{{$shot->file_name}}" alt="{{$shot->alt}}">
                 </div>
                 <div class="dimOverlay"></div>
                 <figcaption>
