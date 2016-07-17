@@ -1,6 +1,6 @@
 <?php
 
-namespace MyTailor\Http\Controllers\admin;
+namespace MyTailor\Http\Controllers\Admin;
 use MyTailor\page;
 use Illuminate\Http\Request;
 
