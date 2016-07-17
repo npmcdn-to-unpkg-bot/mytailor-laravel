@@ -10,7 +10,7 @@
 
 				if ($window.innerWidth < 768) {
 
-					$window.location.href = 'shot/'+ $name;
+					$window.location.href = '/shot/'+ $name;
 					return;
 				};
 
