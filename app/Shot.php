@@ -28,7 +28,7 @@ class Shot extends Model {
     {
         if(empty($desc)){
 
-            return 'blaa blaa blaa blaa';
+            return 'Latest African fashion, Ankara, kitenge, African women dresses, African prints, African men\'s fashion, Nigerian style, Ghanaian fashion';
         }
 
         return $desc;

@@ -5,24 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="657023bf-231f-4b50-a0d6-45ddd5d5ba3a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/errors/frontend/shot404.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/ShotsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/ShotsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/DbShotsRepository.php" afterPath="$PROJECT_DIR$/app/Repositories/DbShotsRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Shot.php" afterPath="$PROJECT_DIR$/app/Shot.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Templates/ShotsTemplate.php" afterPath="$PROJECT_DIR$/app/Templates/ShotsTemplate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/assets/css/admin.css" afterPath="$PROJECT_DIR$/public/themes/default/assets/css/admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/assets/css/admin.css.map" afterPath="$PROJECT_DIR$/public/themes/default/assets/css/admin.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/assets/css/frontend.css" afterPath="$PROJECT_DIR$/public/themes/default/assets/css/frontend.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/assets/css/frontend.css.map" afterPath="$PROJECT_DIR$/public/themes/default/assets/css/frontend.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/assets/js/vendor.js" afterPath="$PROJECT_DIR$/public/themes/default/assets/js/vendor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/assets/sass/frontend.scss" afterPath="$PROJECT_DIR$/public/themes/default/assets/sass/frontend.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/assets/sass/layouts/_cards.scss" afterPath="$PROJECT_DIR$/public/themes/default/assets/sass/layouts/_cards.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/assets/sass/layouts/_frontend_layout.scss" afterPath="$PROJECT_DIR$/public/themes/default/assets/sass/layouts/_frontend_layout.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/assets/sass/vendor/_ng-dialogShots.scss" afterPath="$PROJECT_DIR$/public/themes/default/assets/sass/vendor/_ng-dialogShots.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/views/segments/shots_overlay.html" afterPath="$PROJECT_DIR$/public/themes/default/views/segments/shots_overlay.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/frontend/shot.blade.php" afterPath="$PROJECT_DIR$/resources/views/frontend/shot.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/templates/shots.blade.php" afterPath="$PROJECT_DIR$/resources/views/templates/shots.blade.php" />
     </list>
     <ignored path="mytailor.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,14 +28,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ShotsController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/ShotsController.php">
+      <file leaf-file-name="Shot.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Shot.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4778626">
-              <caret line="55" column="65" selection-start-line="55" selection-start-column="65" selection-end-line="55" selection-end-column="65" />
-              <folding>
-                <marker date="1469186326532" expanded="true" signature="58:157" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.61526716">
+              <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,12 +99,12 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/app/Shot.php" />
         <option value="$PROJECT_DIR$/app/Templates/ShotsTemplate.php" />
         <option value="$PROJECT_DIR$/app/Repositories/DbShotsRepository.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/shots.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/errors/frontend/shot404.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Frontend/ShotsController.php" />
+        <option value="$PROJECT_DIR$/app/Shot.php" />
       </list>
     </option>
   </component>
@@ -200,7 +182,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -289,7 +271,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -644,13 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Shot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45038167">
-          <caret line="60" column="6" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ShotsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21984732">
@@ -670,25 +645,25 @@
         <state vertical-scroll-proportion="0.36793894">
           <caret line="56" column="24" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
           <folding>
-            <marker date="1468824644096" expanded="true" signature="42:223" placeholder="..." />
-            <marker date="1468824644096" expanded="true" signature="272:2935" placeholder="..." />
-            <marker date="1468824644096" expanded="true" signature="313:331" placeholder=" @var ..." />
-            <marker date="1468824644096" expanded="true" signature="362:441" placeholder=" HTTP request for retrieving user input ..." />
-            <marker date="1468824644096" expanded="true" signature="474:595" placeholder=" HomeTemplate constructor. ..." />
-            <marker date="1468824644096" expanded="true" signature="682:754" placeholder="..." />
-            <marker date="1468824644096" expanded="true" signature="815:1427" placeholder="{...}" />
-            <marker date="1468824644096" expanded="true" signature="1050:1381" placeholder="..." />
-            <marker date="1468824644096" expanded="true" signature="1084:1170" placeholder="..." />
-            <marker date="1468824644096" expanded="true" signature="1203:1289" placeholder="..." />
-            <marker date="1468824644096" expanded="true" signature="1314:1371" placeholder="..." />
-            <marker date="1468824644096" expanded="true" signature="1465:2934" placeholder="{...}" />
-            <marker date="1468824644096" expanded="true" signature="1507:2591" placeholder="..." />
-            <marker date="1468824644096" expanded="true" signature="1534:1662" placeholder="..." />
-            <marker date="1468824644096" expanded="true" signature="1689:1817" placeholder="..." />
-            <marker date="1468824644096" expanded="true" signature="1844:1971" placeholder="..." />
-            <marker date="1468824644096" expanded="true" signature="1998:2125" placeholder="..." />
-            <marker date="1468824644096" expanded="true" signature="2152:2279" placeholder="..." />
-            <marker date="1468824644096" expanded="true" signature="2304:2578" placeholder="..." />
+            <marker date="1469187525746" expanded="true" signature="42:223" placeholder="..." />
+            <marker date="1469187525746" expanded="true" signature="272:2935" placeholder="..." />
+            <marker date="1469187525746" expanded="true" signature="313:331" placeholder=" @var ..." />
+            <marker date="1469187525746" expanded="true" signature="362:441" placeholder=" HTTP request for retrieving user input ..." />
+            <marker date="1469187525746" expanded="true" signature="474:595" placeholder=" HomeTemplate constructor. ..." />
+            <marker date="1469187525746" expanded="true" signature="682:754" placeholder="..." />
+            <marker date="1469187525746" expanded="true" signature="815:1427" placeholder="{...}" />
+            <marker date="1469187525746" expanded="true" signature="1050:1381" placeholder="..." />
+            <marker date="1469187525746" expanded="true" signature="1084:1170" placeholder="..." />
+            <marker date="1469187525746" expanded="true" signature="1203:1289" placeholder="..." />
+            <marker date="1469187525746" expanded="true" signature="1314:1371" placeholder="..." />
+            <marker date="1469187525746" expanded="true" signature="1465:2934" placeholder="{...}" />
+            <marker date="1469187525746" expanded="true" signature="1507:2591" placeholder="..." />
+            <marker date="1469187525746" expanded="true" signature="1534:1662" placeholder="..." />
+            <marker date="1469187525746" expanded="true" signature="1689:1817" placeholder="..." />
+            <marker date="1469187525746" expanded="true" signature="1844:1971" placeholder="..." />
+            <marker date="1469187525746" expanded="true" signature="1998:2125" placeholder="..." />
+            <marker date="1469187525746" expanded="true" signature="2152:2279" placeholder="..." />
+            <marker date="1469187525746" expanded="true" signature="2304:2578" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -705,7 +680,7 @@
         <state vertical-scroll-proportion="0.24732825">
           <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
           <folding>
-            <marker date="1469182700771" expanded="true" signature="105:189" placeholder="..." />
+            <marker date="1469187525909" expanded="true" signature="105:189" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -733,11 +708,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/ShotsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4778626">
-          <caret line="55" column="65" selection-start-line="55" selection-start-column="65" selection-end-line="55" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.16488549">
+          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
           <folding>
-            <marker date="1469186326532" expanded="true" signature="58:157" placeholder="..." />
+            <marker date="1469187525729" expanded="true" signature="58:157" placeholder="..." />
+            <marker date="1469187525729" expanded="false" signature="58:253" placeholder="..." />
+            <marker date="1469187525729" expanded="true" signature="295:2564" placeholder="{...}" />
+            <marker date="1469187525729" expanded="true" signature="305:328" placeholder=" @var Shot ..." />
+            <marker date="1469187525729" expanded="true" signature="358:432" placeholder=" shotsController constructor. ..." />
+            <marker date="1469187525729" expanded="true" signature="479:514" placeholder="..." />
+            <marker date="1469187525729" expanded="true" signature="524:658" placeholder=" Gets info about a shot and response in Json ..." />
+            <marker date="1469187525729" expanded="true" signature="709:2160" placeholder="{...}" />
+            <marker date="1469187525729" expanded="true" signature="766:921" placeholder="..." />
+            <marker date="1469187525729" expanded="true" signature="804:910" placeholder="..." />
+            <marker date="1469187525729" expanded="true" signature="988:2082" placeholder="..." />
+            <marker date="1469187525729" expanded="true" signature="1968:2011" placeholder="..." />
+            <marker date="1469187525729" expanded="true" signature="2169:2260" placeholder=" Increment views for $this shot ..." />
+            <marker date="1469187525729" expanded="true" signature="2294:2562" placeholder="{...}" />
+            <marker date="1469187525729" expanded="true" signature="2328:2455" placeholder="..." />
+            <marker date="1469187525729" expanded="true" signature="2337:2420" placeholder="..." />
+            <marker date="1469187525729" expanded="true" signature="2468:2475" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Shot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61526716">
+          <caret line="30" column="46" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
