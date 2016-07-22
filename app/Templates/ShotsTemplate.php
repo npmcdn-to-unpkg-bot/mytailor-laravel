@@ -67,19 +67,26 @@ class ShotsTemplate extends AbstractTemplate   {
         {
             switch($cat){
                 case 'ma':
-                    SEOMeta::setDescription('you want males');
+                    SEOMeta::setDescription('');
+                    OpenGraph::setDescription('');
+
                     break;
                 case 'fm':
-                    SEOMeta::setDescription('you want females');
+                    SEOMeta::setDescription('');
+                    OpenGraph::setDescription('');
+
                     break;
                 case 'cu':
-                    SEOMeta::setDescription('you want couples');
+                    SEOMeta::setDescription('');
+                    OpenGraph::setDescription('');
                     break;
                 case 'ki':
-                    SEOMeta::setDescription('you want kids');
+                    SEOMeta::setDescription('');
+                    OpenGraph::setDescription('');
                     break;
                 case 'ac':
-                    SEOMeta::setDescription('you want Accessories');
+                    SEOMeta::setDescription('');
+                    OpenGraph::setDescription('');
                     break;
                 Default:
                     SEOMeta::setDescription('See what\'s trending in African Fashion. From cultural, modern to classic office wears.');
@@ -92,9 +99,9 @@ class ShotsTemplate extends AbstractTemplate   {
 
         OpenGraph::setTitle('Shots');
         OpenGraph::setUrl('http://mytailor.me/shots');
-        OpenGraph::addProperty('type', 'business.fashion');
+        OpenGraph::addProperty('type', 'business.clothing');
 
         Twitter::setTitle('Home');
-        Twitter::setSite('@LuizVinicius73');
+        Twitter::setSite('');
     }
 }

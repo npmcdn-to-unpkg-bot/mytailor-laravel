@@ -6,7 +6,7 @@
 {{--Content Area for our view--}}
 
 @section('main')
-	<div class="overlay-wrapper">
+	<div class="overlay-wrapper animated fadeIn">
 
 	<section class="mdl-cell mdl-cell--12-col light-shadow mt-shot-wrapper">
 
@@ -21,8 +21,8 @@
 			</section>
             <section class="mt-shot-avatar-wrapper">
 	            <a href="#" class="mt-shot-avatar" title="Mytailor">
+	            	 <h2 class="mt-avatar-name">{{$shot->publishable->profile->username}}</h2>
 	                <img height="30" width="30" ng-src="/uploads/profiles/{{$shot->publishable->profile->avatar}}" alt="Braden Hamm">
-	                <h2 class="mt-avatar-name">{{$shot->publishable->profile->username}}</h2>
 	            </a>
             </section>
         </header>
@@ -33,7 +33,7 @@
 		</figure>
 
 		<!-- Notes -->
-		<div class="shot-info" style="padding: 1em 3em;min-height: 20px;background: #F8F8F8;">
+		<div class="shot-info">
 			<div class="shot-title" style="padding: 1em 0;">
 				<a href="#" ng-bind="shot.title"></a>
 			</div>

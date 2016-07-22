@@ -226,9 +226,21 @@ ul.icons li{
 
 @media (max-width: 425px){
     .mt-shot-wrapper {
-        width: 100%;
+        width: 100% !important;
         min-width: 20em;
         margin: 0 0 2em 0;
+    }
+
+    figure.shot-cover{
+        padding:0 !important;
+    }
+
+    .mt-shots-info-wrap{
+        padding: 0 8px;
+    }
+
+    .shot-info{
+        padding: 1em 1em;
     }
 }
 

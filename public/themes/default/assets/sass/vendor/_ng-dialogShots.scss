@@ -220,24 +220,25 @@
 }
 
 .mt-shot-avatar {
-    margin: 1px 10px;
-    display: inline-block;
+    display: inline-flex;
     outline: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .mt-shot-avatar > img {
     width: 30px;
+    margin-right: 1em;
     border-radius: 27em;
     border: 1px solid #eee;
     display: inline-block;
 }
 
 .mt-avatar-name {
-    font-size: 84%;
+    font-size: 82%;
     color: #262626;
     margin-right: 1em;
     float: left;
     text-transform: capitalize;
     display: inline-block;
-    margin-top: 6px;
 }
