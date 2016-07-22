@@ -22,6 +22,19 @@ class Shot extends Model {
     }
 
     /**
+     * @return mixed
+     */
+    public function getDescriptionAttribute($desc)
+    {
+        if(empty($desc)){
+
+            return 'blaa blaa blaa blaa';
+        }
+
+        return $desc;
+    }
+
+    /**
      * Gets published_At attribute as a boolean.
      *
      * @param $value

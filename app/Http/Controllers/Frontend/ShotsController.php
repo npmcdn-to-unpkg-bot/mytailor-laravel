@@ -7,6 +7,10 @@ use MyTailor\Http\Controllers\Controller;
 use MyTailor\Shot;
 use MyTailor\Profile;
 use MyTailor\Http\Requests;
+use Carbon\Carbon;
+use SEOMeta;
+use OpenGraph;
+use Twitter;
 
 class ShotsController extends Controller
 {
@@ -41,16 +45,34 @@ class ShotsController extends Controller
                            \DB::raw("left(file_name, length(file_name) - LOCATE('.', Reverse(file_name)))"
                                    ), '=', $id)
                                    ->first();
+        if($shot) {
 
-        $shot->publishable->profile = Profile::find([$shot->publishable->profile_id])->first();
+            $shot->publishable->profile = Profile::find([$shot->publishable->profile_id])->first();
 
-        $shot['alt'] = 'hehe';
 
-        if($request->ajax() || $request->wantsJson()){
-            return $shot;
+            SEOMeta::setTitle(substr($shot->title, 0, 30));
+            SEOMeta::setDescription(substr($shot->description, 0, 60));
+            SEOMeta::addMeta('product:published_time', Carbon::parse($shot->updated_at)->subMinutes(2)->diffForHumans(), 'property');
+            SEOMeta::addMeta('product:section', $shot->category, 'property');
+            //SEOMeta::addKeyword(['key1', 'key2', 'key3']);
+
+            OpenGraph::setDescription($shot->description);
+            OpenGraph::setTitle($shot->title);
+            OpenGraph::setUrl('http://mytailor.me/shot/' . pathinfo($shot->file_name, PATHINFO_FILENAME));
+            OpenGraph::addProperty('type', 'product.item');
+            //OpenGraph::addProperty('locale', 'pt-br');
+            //OpenGraph::addProperty('locale:alternate', ['pt-pt', 'en-us']);
+
+
+            if ($request->ajax() || $request->wantsJson()) {
+                return $shot;
+            }
+
+            return view('frontend.shot', compact('shot'));
+
         }
 
-        return view('frontend.shot', compact('shot'));
+        return response()->view('errors.frontend.shot404', [], 404);
 
     }
 

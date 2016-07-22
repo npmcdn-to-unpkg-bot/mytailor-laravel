@@ -25,11 +25,11 @@ class DbShotsRepository implements ShotsRepositoryInterface{
     public function latest($cat) {
         return $shots = $this->shots
             ->category($cat)
-            ->orderBy('created_at', 'desc')
+            ->orderBy('updated_at', 'desc')
             ->orderBy('views', 'desc')
             ->orderBy('id', 'desc')
             ->where('published', '=', 1)
-            ->paginate(15);
+            ->paginate(5);
 
     }
 
@@ -40,12 +40,12 @@ class DbShotsRepository implements ShotsRepositoryInterface{
      */
     public function trending($cat){
         return $shots = $this->shots
-            ->select(\DB::raw('AVG(views/DATEDIFF(NOW(), created_at)) as Popularity, shots.*'))
+            ->select(\DB::raw('AVG(views/DATEDIFF(NOW(), updated_at)) as Popularity, shots.*'))
             ->category($cat)
             ->orderBy('Popularity', 'desc')
             ->where('published', '=', 1)
             ->groupBy('id')
-            ->paginate(15);
+            ->paginate(5);
     }
 
     /**
@@ -59,7 +59,7 @@ class DbShotsRepository implements ShotsRepositoryInterface{
             ->orderBy('views', 'desc')
             ->orderBy('id', 'desc')
             ->where('published', '=', 1)
-            ->paginate(15);
+            ->paginate(5);
     }
 
 
