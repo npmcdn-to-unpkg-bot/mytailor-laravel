@@ -6,8 +6,8 @@ return [
          * The default configurations to be used by the meta generator.
          */
         'defaults'       => [
-            'title'        => "African fashion designers.", // set false to total remove
-            'description'  => 'Check out top African designers and their inspiring attires, prints, fabrics, shoes and more. Find out what to wear.', // set false to total remove
+            'title'        => false,//"African fashion designers.", // set false to total remove
+            'description'  => false, // set false to total remove
             'separator'    => ' | ',
             'keywords'     => [],
             'canonical'    => false, // Set null for using Url::current(), set false to total remove
@@ -29,8 +29,8 @@ return [
          * The default configurations to be used by the opengraph generator.
          */
         'defaults' => [
-            'title'       => 'African Fashion designers', // set false to total remove
-            'description' => 'Check out top African designers and their inspiring attires, prints, fabrics, shoes and more. Find out what to wear.', // set false to total remove
+            'title'       => false, // set false to total remove
+            'description' => false, // set false to total remove
             'url'         => false,
             'type'        => false,
             'site_name'   => false,

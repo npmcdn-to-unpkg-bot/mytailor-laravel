@@ -46,16 +46,16 @@ class HomeTemplate extends AbstractTemplate {
 
     protected function seoMake()
     {
-        SEOMeta::setTitle('MyTailor');
-        //SEOMeta::setDescription('This is my page description');
-        //SEOMeta::setCanonical('https://codecasts.com.br/lesson');
+        SEOMeta::setTitle('MyTailor | African Fashion Designers.');
+        SEOMeta::setDescription('Check out top African designers and their inspiring attires, prints, fabrics, shoes and more. Find out what to wear.');
+        SEOMeta::setCanonical('https://mytailor.me/home');
 
-        OpenGraph::setDescription('This is my page description');
-        OpenGraph::setTitle('Home');
-        OpenGraph::setUrl('http://mytailor.me');
+        OpenGraph::setDescription('Check out top African designers and their inspiring attires, prints, fabrics, shoes and more. Find out what to wear.');
+        OpenGraph::setTitle('MyTailor');
+        OpenGraph::setUrl('http://mytailor.me/home');
         OpenGraph::addProperty('type', 'business.fashion');
 
         Twitter::setTitle('Home');
-        Twitter::setSite('@LuizVinicius73');
+        //Twitter::setSite('@LuizVinicius73');
     }
 }

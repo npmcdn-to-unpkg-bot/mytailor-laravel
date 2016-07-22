@@ -7,6 +7,9 @@
     <list default="true" id="657023bf-231f-4b50-a0d6-45ddd5d5ba3a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/ShotsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/ShotsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Templates/HomeTemplate.php" afterPath="$PROJECT_DIR$/app/Templates/HomeTemplate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Templates/ShotsTemplate.php" afterPath="$PROJECT_DIR$/app/Templates/ShotsTemplate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/seotools.php" afterPath="$PROJECT_DIR$/config/seotools.php" />
     </list>
     <ignored path="mytailor.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,13 +31,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ShotsController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/ShotsController.php">
+      <file leaf-file-name="ShotsTemplate.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Templates/ShotsTemplate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7251908">
-              <caret line="94" column="32" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
+            <state vertical-scroll-proportion="2.1541984">
+              <caret line="97" column="99" selection-start-line="97" selection-start-column="99" selection-end-line="97" selection-end-column="99" />
               <folding>
-                <marker date="1469189836554" expanded="true" signature="58:157" placeholder="..." />
+                <element signature="e#38#66#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,8 +73,6 @@
         <option value="$PROJECT_DIR$/database/migrations/2016_06_27_130543_create_user_profile__table.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PageController.php" />
-        <option value="$PROJECT_DIR$/app/Templates/HomeTemplate.php" />
-        <option value="$PROJECT_DIR$/config/seotools.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/brands.blade.php" />
         <option value="$PROJECT_DIR$/app/Templates/BrandsTemplate.php" />
         <option value="$PROJECT_DIR$/config/cms.php" />
@@ -101,12 +102,14 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/database/seeds/UserTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/app/Templates/ShotsTemplate.php" />
         <option value="$PROJECT_DIR$/app/Repositories/DbShotsRepository.php" />
         <option value="$PROJECT_DIR$/resources/views/templates/shots.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/errors/frontend/shot404.blade.php" />
         <option value="$PROJECT_DIR$/app/Shot.php" />
+        <option value="$PROJECT_DIR$/config/seotools.php" />
+        <option value="$PROJECT_DIR$/app/Templates/HomeTemplate.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Frontend/ShotsController.php" />
+        <option value="$PROJECT_DIR$/app/Templates/ShotsTemplate.php" />
       </list>
     </option>
   </component>
@@ -125,7 +128,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1358" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
@@ -155,7 +158,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -256,7 +259,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -339,7 +342,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1358" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -392,13 +395,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35313532">
@@ -610,13 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3572519">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Authenticate.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3847328">
@@ -631,24 +620,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PagesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5496183">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3847328">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -708,34 +683,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Templates/ShotsTemplate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36793894">
-          <caret line="56" column="24" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
-          <folding>
-            <marker date="1469187525746" expanded="true" signature="42:223" placeholder="..." />
-            <marker date="1469187525746" expanded="true" signature="272:2935" placeholder="..." />
-            <marker date="1469187525746" expanded="true" signature="313:331" placeholder=" @var ..." />
-            <marker date="1469187525746" expanded="true" signature="362:441" placeholder=" HTTP request for retrieving user input ..." />
-            <marker date="1469187525746" expanded="true" signature="474:595" placeholder=" HomeTemplate constructor. ..." />
-            <marker date="1469187525746" expanded="true" signature="682:754" placeholder="..." />
-            <marker date="1469187525746" expanded="true" signature="815:1427" placeholder="{...}" />
-            <marker date="1469187525746" expanded="true" signature="1050:1381" placeholder="..." />
-            <marker date="1469187525746" expanded="true" signature="1084:1170" placeholder="..." />
-            <marker date="1469187525746" expanded="true" signature="1203:1289" placeholder="..." />
-            <marker date="1469187525746" expanded="true" signature="1314:1371" placeholder="..." />
-            <marker date="1469187525746" expanded="true" signature="1465:2934" placeholder="{...}" />
-            <marker date="1469187525746" expanded="true" signature="1507:2591" placeholder="..." />
-            <marker date="1469187525746" expanded="true" signature="1534:1662" placeholder="..." />
-            <marker date="1469187525746" expanded="true" signature="1689:1817" placeholder="..." />
-            <marker date="1469187525746" expanded="true" signature="1844:1971" placeholder="..." />
-            <marker date="1469187525746" expanded="true" signature="1998:2125" placeholder="..." />
-            <marker date="1469187525746" expanded="true" signature="2152:2279" placeholder="..." />
-            <marker date="1469187525746" expanded="true" signature="2304:2578" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/templates/shots.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.4839694">
@@ -747,30 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24732825">
           <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding>
-            <marker date="1469187525909" expanded="true" signature="105:189" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/seotools.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43969464">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding>
-            <marker date="1467933301770" expanded="true" signature="15:1708" placeholder="..." />
-            <marker date="1467933301770" expanded="true" signature="36:891" placeholder="..." />
-            <marker date="1467933301770" expanded="true" signature="47:129" placeholder="..." />
-            <marker date="1467933301770" expanded="true" signature="161:610" placeholder="..." />
-            <marker date="1467933301770" expanded="true" signature="624:678" placeholder="..." />
-            <marker date="1467933301770" expanded="true" signature="710:884" placeholder="..." />
-            <marker date="1467933301770" expanded="true" signature="914:1460" placeholder="..." />
-            <marker date="1467933301770" expanded="true" signature="925:1012" placeholder="..." />
-            <marker date="1467933301770" expanded="true" signature="1038:1453" placeholder="..." />
-            <marker date="1467933301770" expanded="true" signature="1481:1705" placeholder="..." />
-            <marker date="1467933301770" expanded="true" signature="1492:1575" placeholder="..." />
-            <marker date="1467933301770" expanded="true" signature="1601:1698" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -782,12 +705,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3572519">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PagesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5496183">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05496183">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/seotools.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.65954196">
+          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Templates/HomeTemplate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6427481">
+          <caret line="53" column="37" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Frontend/ShotsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7251908">
-          <caret line="94" column="32" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
+        <state vertical-scroll-proportion="1.9236641">
+          <caret line="78" column="7" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
           <folding>
-            <marker date="1469189836554" expanded="true" signature="58:157" placeholder="..." />
+            <marker date="1469199644365" expanded="true" signature="58:157" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Templates/ShotsTemplate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.1541984">
+          <caret line="97" column="99" selection-start-line="97" selection-start-column="99" selection-end-line="97" selection-end-column="99" />
+          <folding>
+            <element signature="e#38#66#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

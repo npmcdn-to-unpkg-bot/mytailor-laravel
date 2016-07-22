@@ -50,7 +50,7 @@ class ShotsController extends Controller
             $shot->publishable->profile = Profile::find([$shot->publishable->profile_id])->first();
 
 
-            SEOMeta::setTitle(substr($shot->title, 0, 30));
+            SEOMeta::setTitle('MyTailor | ' . substr($shot->title, 0, 30));
             SEOMeta::setDescription(substr($shot->description, 0, 60));
             SEOMeta::addMeta('product:published_time', Carbon::parse($shot->updated_at)->subMinutes(2)->diffForHumans(), 'property');
             SEOMeta::addMeta('product:section', $shot->category, 'property');
