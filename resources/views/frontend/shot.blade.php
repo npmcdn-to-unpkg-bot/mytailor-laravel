@@ -35,7 +35,7 @@
 		<!-- Notes -->
 		<div class="shot-info">
 			<div class="shot-title" style="padding: 1em 0;">
-				<a href="#" ng-bind="shot.title"></a>
+				<a href="#">{{$shot->title}}</a>
 			</div>
 			<div class="shot-description">
 				<p>{{$shot->description}}</p>
