@@ -84,10 +84,15 @@ class ShotsController extends Controller
      */
     public function viewed($id)
     {
-        $this->shot->where(\DB::raw(
+        $shot = $this->shot->where(\DB::raw(
             "left(file_name, length(file_name) - LOCATE('.', Reverse(file_name)))"),
             '=',
-            $id)->increment('views');
+            $id)->first();
+
+        $shot->views++;
+        $shot->timestamps = false;
+        $shot->save();
+        $shot->timestamps = true;
 
         return 'Done...';
         // I just viewed a shot can you tell the DB
