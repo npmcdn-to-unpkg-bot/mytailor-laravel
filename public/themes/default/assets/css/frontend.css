@@ -851,8 +851,10 @@ button.icon-round {
   position: absolute;
   transition: bottom 250ms ease-in-out; }
 
-.mt-nav-has-border > .mdl-navigation__link.__active:after {
-  bottom: 0 !important; }
+.mt-nav-has-border > .mdl-navigation__link.__active {
+  background-color: #eee; }
+  .mt-nav-has-border > .mdl-navigation__link.__active:after {
+    bottom: 0 !important; }
 
 .mt-nav-has-border > .mdl-navigation__link {
   font-weight: 600;
@@ -1330,6 +1332,11 @@ span.icon-search {
     transition: ease-out 0.2s;
     border: 2px solid #d8d8d8;
     -webkit-transition: ease-out 0.2s; }
+
+.designer_card__views {
+  margin-top: 5px;
+  display: inline-block;
+  margin-left: 5px; }
 
 /*responsive*/
 @media (max-width: 1235px) {

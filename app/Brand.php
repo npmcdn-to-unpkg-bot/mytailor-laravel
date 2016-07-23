@@ -25,6 +25,6 @@ class Brand extends Model
     public function shots()
     {
 
-        return $this->morphMany(Shot::class, 'publishable_id');
+        return $this->morphMany(Shot::class, 'publishable');
     }
 }

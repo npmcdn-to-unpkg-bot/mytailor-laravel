@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "734b385e46c4f03d0072a36406174915",
-    "content-hash": "fa5324fe00ba711efafe08159b50b9c6",
+    "hash": "0a98c26ed739df6e826f5779469cc224",
+    "content-hash": "e8a69c1d87567a5a1b153f256c882fdf",
     "packages": [
         {
             "name": "anahkiasen/underscore-php",
@@ -1250,6 +1250,63 @@
                 "processing"
             ],
             "time": "2016-01-25 13:35:12"
+        },
+        {
+            "name": "marijnvdwerf/material-palette",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/marijnvdwerf/material-palette-php.git",
+                "reference": "c069afbdaaca7e90bbb587135ddc1a3773170c50"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/marijnvdwerf/material-palette-php/zipball/c069afbdaaca7e90bbb587135ddc1a3773170c50",
+                "reference": "c069afbdaaca7e90bbb587135ddc1a3773170c50",
+                "shasum": ""
+            },
+            "require": {
+                "intervention/image": "~2.2",
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "devster/ubench": "^1.1",
+                "symfony/debug": "~2.6",
+                "symfony/var-dumper": "~2.6"
+            },
+            "suggest": {
+                "ext-gd": "to use the GD implementation",
+                "ext-imagick": "to use the Imagick implementation"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "marijnvdwerf\\palette\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marijn van der Werf",
+                    "email": "mail@marijnvdwerf.nl",
+                    "homepage": "http://marijnvdwerf.nl"
+                }
+            ],
+            "description": "Prominent image colour extraction for PHP",
+            "homepage": "https://github.com/marijnvdwerf/material-palette-php",
+            "keywords": [
+                "color",
+                "colour",
+                "image",
+                "material",
+                "material design",
+                "material-design",
+                "palette"
+            ],
+            "time": "2016-04-24 07:22:14"
         },
         {
             "name": "monolog/monolog",

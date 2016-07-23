@@ -38,7 +38,7 @@ class User extends Authenticatable
      */
     public function shots() {
 
-        return $this->morphMany(Shot::class, 'publishable_id');
+        return $this->morphMany(Shot::class, 'publishable');
     }
 
     public function roles()
