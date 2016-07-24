@@ -39,7 +39,6 @@ class ShotsController extends Controller
     public function show($id, Request $request )
     {
 
-
        $shot = Shot::with('publishable')->where(
 
                            \DB::raw("left(file_name, length(file_name) - LOCATE('.', Reverse(file_name)))"

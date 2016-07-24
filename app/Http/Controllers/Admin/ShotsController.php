@@ -4,6 +4,7 @@ namespace MyTailor\Http\Controllers\Admin;
 
 use Illuminate\Support\Facades\Response;
 use MyTailor\Shot;
+use MyTailor\Tag;
 use Illuminate\Http\Request;
 use MyTailor\Http\Requests;
 use MyTailor\Modules\Shots\UploadServer;
@@ -64,15 +65,8 @@ class ShotsController extends Controller    {
      * @return mixed
      */
     public function show($id) {
-         $shot = Shot::find($id);
 
-//       $tags = [];
-//        foreach($shot->tags as $tag){
-//            $tags [] = $tag->tag_name;
-//        }
-//
-//        unset($shot->tags);
-//        $shot->setAttribute('tags', $tags);
+         $shot = Shot::find($id);
 
         return $shot;
 
@@ -88,7 +82,10 @@ class ShotsController extends Controller    {
 
         $shot = $this->shots->findOrFail($id);
 
+
         $update = $shot->fill($request->only('title', 'category', 'featured', 'published', 'views', 'source_url', 'description'))->save();
+
+        $update->tags()->attach($request->input('tags'));
 
         if(! $update){
             return Response::json([
@@ -118,5 +115,12 @@ class ShotsController extends Controller    {
         $this->shots->where('file_name', '=', $id)->delete();
 
         
+    }
+
+    private function getTags()
+    {
+        $tags = Tag::lists('tag_name', 'id');
+
+        return $tags;
     }
 }

@@ -34,9 +34,12 @@
 
 		<!-- Notes -->
 		<div class="shot-info">
+		@unless (empty($shot->title))
 			<div class="shot-title" style="padding: 1em 0;">
 				<a href="#">{{$shot->title}}</a>
+				<p class="shot-date">just now</p>
 			</div>
+		@endunless
 			<div class="shot-description">
 				<p>{{$shot->description}}</p>
 			</div>

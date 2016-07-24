@@ -7,17 +7,29 @@ use Illuminate\Database\Eloquent\Model;
 class Shot extends Model {
 
     protected $fillable = ['title', 'category', 'featured', 'published', 'views', 'source_url', 'description',
-                            'published_by', 'published_as'
+                            'published_by', 'published_at'
     ];
+
+    protected $dates = ['published_at'];
 
     protected $appends = array('alt');
 
 
     /**
+     * Return null if published at is empty.
+     *
+     * @param $value
+     */
+    public function setPublishedAtAttribute($value){
+
+        $this->attributes['published_at'] = $value ?: null;
+    }
+
+    /**
      * @return mixed
      */
-    public function getAltAttribute()
-    {
+    public function getAltAttribute(){
+
         return $this->displayAlt();
     }
 
@@ -85,25 +97,33 @@ class Shot extends Model {
     }
 
     /**
-     * A shot can have many Tags.
+     * Get the tags associated with the given Shot.
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
     public function tags() {
 
-        return $this->belongsToMany('MyTailor\Tag');
+        return $this->belongsToMany(Tag::class);
      }
+
+    /**
+     * Get a list of tag ids associated with the current shot.
+     *
+     * @return mixed
+     */
+    public function getTagListAttribute()
+    {
+        return $this->tags->lists('id');
+    }
 
     private function displayAlt()
     {
         $title = $this->title;
         $desc = $this->desc;
 
-        if(!empty($title)){
-            $alt = substr($title, 0, 30);
-        }else{
-            $alt = substr($desc, 0, 30);
-        }
+        !empty($title) ?
+            $alt = substr($title, 0, 30) : $alt = substr($desc, 0, 30);
+
         return $alt;
     }
 
