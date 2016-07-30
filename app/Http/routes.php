@@ -19,6 +19,7 @@ Route::get('admin/shots/upload', [
 Route::resource('admin/pages', 'Admin\PagesController');
 Route::resource('admin/users', 'Admin\UsersController');
 Route::resource('admin/shots', 'Admin\ShotsController');
+Route::resource('admin/tags', 'Admin\TagsController');
 
 Route::get('admin/dashboard', [
 		'as' => 'admin.dashboard',

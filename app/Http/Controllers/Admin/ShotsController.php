@@ -66,9 +66,10 @@ class ShotsController extends Controller    {
      */
     public function show($id) {
 
-         $shot = Shot::find($id);
+         $shot = Shot::with('tags')->where(
+             'id', '=', $id)->first();
 
-        return $shot;
+         return $shot;
 
     }
 
@@ -85,7 +86,8 @@ class ShotsController extends Controller    {
 
         $update = $shot->fill($request->only('title', 'category', 'featured', 'published', 'views', 'source_url', 'description'))->save();
 
-        $update->tags()->attach($request->input('tags'));
+        dd($request->input('tags'));
+        $shot->tags()->attach($request->input('tags'));
 
         if(! $update){
             return Response::json([

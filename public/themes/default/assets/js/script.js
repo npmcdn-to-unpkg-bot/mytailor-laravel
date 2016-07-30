@@ -20,16 +20,25 @@ Mytailor.me
                   navSelector     : ".pagination",
                   nextSelector    : ".pagination li.active + li a",
                   itemSelector    : ".grid-item",
-                  debug           : true,
+                  debug           : false,
                   dataType        : 'html',
+                  pixelsFromNavToBottom: 500,
+                  loading: {
+                        speed: 'fast',
+                        finished: function() {
+                            console.log('Finished');
+                      }
+                    },
+
                   path: function(index) {
                       return "?page=" + index;
                   }
               }, function(newElements, data, url){
-                  $('.grid').imagesLoaded(function(){
-
-                        var $newElems = $( newElements ),
+                            var $newElems = $( newElements ),
                             $target = $(".grid");
+                            $newElems.hide();
+
+                  $('.grid').imagesLoaded(function(){
 
                                angular.element($target).injector().invoke(function($compile){
                                 var $scope = angular.element($target).scope();
@@ -37,9 +46,9 @@ Mytailor.me
                                     $scope.$apply();
 
                                });
-                             
-
+                        $newElems.show();
                         $('.grid').masonry( 'appended', $newElems, 'reloadItems');
+
      
                     });
                   
@@ -86,6 +95,13 @@ Mytailor.me
 
 
                   //========== Page ==========
+
+                  $('#tag_lists').select2({
+
+                        tags: true,
+                        tokenSeparators: [',', ' '],
+                        placeholder: 'Choose a tag'
+    });
 
                       // switch (id) {
                           

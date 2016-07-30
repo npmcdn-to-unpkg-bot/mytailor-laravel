@@ -33,8 +33,9 @@ elixir.config.publicPath = 'public/themes/default/assets';
 				'../masonry/dist/masonry.pkgd.min.js',
 			    '../Waves/dist/waves.min.js',
 				'../ng-dialog/js/ngDialog.min.js',
-                '../jquery-infinite-scroll/jquery.infinitescroll.min.js',
-                '../imagesloaded/imagesloaded.pkgd.min.js'
+                '../jquery-infinite-scroll/jquery.infinitescroll.js',
+                '../imagesloaded/imagesloaded.pkgd.min.js',
+				'../select2/dist/js/select2.min.js'
 			   ], 	 'public/themes/default/assets/js/vendor.js');
 
      //   mix vendor css

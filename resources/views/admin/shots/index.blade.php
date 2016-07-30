@@ -5,6 +5,7 @@
     @section('page_styles')
         <link rel="stylesheet" type="text/css" href="{{ theme('css/vendor/ng-img-crop/ng-img-crop.css')}}">
         <link rel="stylesheet" href="{{ theme('css/vendor/ng-dialog/ngDialog.min.css') }}">
+        <link rel="stylesheet" href="{{ theme('css/vendor/select2/select2.min.css') }}">
     @endsection
 
 @section('sidebar_title', 'Edit Shot')
@@ -94,7 +95,9 @@
                       <label class="top-label">Category</label>
                   </div>
                  <div class="mt-form-group">
-                      <input type="text" ng-model="shot.tags">
+                      <select id="tag_lists" multiple>
+                          <option ng-repeat="tags in shot.tags" selected value="@{{tags.id}}">@{{tags.tag_name}}</option>
+                      </select>
                       <label class="top-label">Tags</label>
                   </div>
                   <div class="mdl-checkbox mb-30">
