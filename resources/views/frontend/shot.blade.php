@@ -8,7 +8,7 @@
 @section('main')
 	<div class="overlay-wrapper animated fadeIn">
 
-	<section class="mdl-cell mdl-cell--12-col light-shadow mt-shot-wrapper">
+	<section class="mdl-cell mdl-cell--12-col light-shadow mt-shot-wrapper" ng-controller="shotController">
 
 	<!-- The header -->
 		<header class="mt-shot-header clearfix">

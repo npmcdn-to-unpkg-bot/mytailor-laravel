@@ -801,9 +801,9 @@ button.icon-round {
   position: absolute;
   transition: bottom 250ms ease-in-out; }
 
-.mt-nav-has-border > .mdl-navigation__link .__active {
+.mt-nav-has-border > .mdl-navigation__link.__active {
   background-color: #eee; }
-  .mt-nav-has-border > .mdl-navigation__link .__active:after {
+  .mt-nav-has-border > .mdl-navigation__link.__active:after {
     bottom: 0 !important; }
 
 .mt-nav-has-border > .mdl-navigation__link {

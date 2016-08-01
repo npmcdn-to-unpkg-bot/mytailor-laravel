@@ -14,4 +14,18 @@
 		}
 
 			]);
-	
+
+		app.controller("shotController", ["$scope","shotFactory", "$timeout","$window",
+
+		function($scope, shotFactory, $timeout, $window) {
+
+					var $name = $window.location.href;
+
+					$name = $name.substring($name.lastIndexOf('/')+1);
+
+			 		$timeout(function(){
+			 		 	shotFactory.viewed($name);
+			 		 }, 1500);
+		}
+
+			]);

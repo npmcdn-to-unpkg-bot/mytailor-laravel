@@ -103,7 +103,7 @@ button.icon-round{
     transition: bottom 250ms ease-in-out;
 }
 
-.mt-nav-has-border>.mdl-navigation__link .__active{
+.mt-nav-has-border>.mdl-navigation__link.__active{
             background-color: #eee;
             &:after{
                 bottom:0 !important;    

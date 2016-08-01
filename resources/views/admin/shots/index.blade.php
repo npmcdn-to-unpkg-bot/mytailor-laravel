@@ -95,8 +95,10 @@
                       <label class="top-label">Category</label>
                   </div>
                  <div class="mt-form-group">
-                      <select id="tag_lists" multiple>
-                          <option ng-repeat="tags in shot.tags" selected value="@{{tags.id}}">@{{tags.tag_name}}</option>
+                      <select id="tag_lists" multiple name="a[]">
+                          @foreach($tags as $name => $id)
+                              <option value="{{$id}}">{{$name}}</option>
+                          @endforeach
                       </select>
                       <label class="top-label">Tags</label>
                   </div>

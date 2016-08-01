@@ -1,4 +1,4 @@
-<section class="mt-sub-header mdl-layout__header-row" >
+<section class="mt-sub-header mdl-layout__header-row">
 
     <nav class="mdl-navigation mt-nav-has-border">
         <a class="mdl-navigation__link {{ (Request::is('shots/trending') ? '__active' : '') }}" href="{{URL::to('shots/trending')}}">Trending</a>

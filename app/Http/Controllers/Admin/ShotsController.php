@@ -31,7 +31,8 @@ class ShotsController extends Controller    {
 
         $shots = $this->shots
                         ->orderBy('shots.created_at', 'desc')->paginate(15);
-        return view('admin.shots.index', compact('shots'));
+        $tags = Tag::lists('id', 'tag_name');
+        return view('admin.shots.index', compact('shots', 'tags'));
 }
 
     /**
@@ -86,8 +87,9 @@ class ShotsController extends Controller    {
 
         $update = $shot->fill($request->only('title', 'category', 'featured', 'published', 'views', 'source_url', 'description'))->save();
 
-        dd($request->input('tags'));
-        $shot->tags()->attach($request->input('tags'));
+        //dd($request->input('tags'));
+
+        $shot->tags()->sync($request->input('tags'));
 
         if(! $update){
             return Response::json([
