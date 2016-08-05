@@ -128,7 +128,7 @@
 
           </section>
           <section class="mt-row mdl-grid">
-              <div class="mdl-cell mdl-cell-4--col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp wow bounceIn">
+              <div class="mdl-cell mdl-cell-4--col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                   <div class="mdl-card__media" style="height: 300px">
                       <img src="{{theme('images/backgrounds/women.jpg')}}">
                   </div>
@@ -139,7 +139,7 @@
                     <a href="{{route('shots.index', ['cat=fm'])}}" class="mdl-button mdl-js-button mdl-js-ripple-effect">Women<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
                   </div>
               </div>
-              <div class="mdl-cell dark-card mdl-cell-4--col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp wow bounceIn">
+              <div class="mdl-cell dark-card mdl-cell-4--col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                   <div class="mdl-card__media" style="height: 300px">
                       <img src="{{theme('images/backgrounds/men.jpg')}}">
                   </div>
@@ -150,7 +150,7 @@
                       <a href="{{route('shots.index', ['cat=ma'])}}" class="mdl-button mdl-js-button mdl-js-ripple-effect">Men<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
                   </div>
               </div>
-              <div class="mdl-cell dark-card mdl-cell-4--col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp wow bounceIn">
+              <div class="mdl-cell dark-card mdl-cell-4--col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
                   <div class="mdl-card__media" style="height: 300px">
                       <img src="{{theme('images/backgrounds/kids.jpg')}}">
                   </div>
