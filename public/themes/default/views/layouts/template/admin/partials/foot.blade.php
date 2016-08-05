@@ -4,8 +4,7 @@
             
             </div> <!-- Page wrapper ends -->
             </div>
-            <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
-            {{-- <script src="{{ theme('vendor/material-design-lite/material.min.js') }}"></script> --}}
+            <script src="{{ theme('vendor/material-design-lite/material.min.js') }}"></script>
         <!-- Scripts -->
         <script src="{{ theme('js/app.js') }}"></script>
 
