@@ -41,7 +41,7 @@ class ShotsTemplate extends AbstractTemplate   {
     {
 
         $sort = array_key_exists ( 'sort' , $parameters) ? $parameters['sort'] : 'latest';
-        $cat = $this->request->get('cat') ? $this->request->get('cat') : '';
+        $cat = $this->request->get('cat') ? $this->request->get('cat') : null;
 
         $this->seoMake($cat);
 
@@ -59,7 +59,7 @@ class ShotsTemplate extends AbstractTemplate   {
 
         }
 
-        $view->with('shots', $shots);
+        $view->with('shots', $shots)->with('cat', $cat);
     }
 
     protected function seoMake($cat)

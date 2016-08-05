@@ -96,9 +96,9 @@
                   </div>
                  <div class="mt-form-group">
                       <select id="tag_lists" multiple name="a[]">
-                          @foreach($tags as $name => $id)
+{{--                           @foreach($tags as $name => $id)
                               <option value="{{$id}}">{{$name}}</option>
-                          @endforeach
+                          @endforeach --}}
                       </select>
                       <label class="top-label">Tags</label>
                   </div>

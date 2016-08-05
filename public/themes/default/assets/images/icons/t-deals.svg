@@ -7,8 +7,10 @@
 
 <style>
 
-	#Layer_1_12_{    fill: transparent;
-    stroke : rgba(116, 116, 116, 0.6)}
+	#Layer_1_12_{
+	fill: transparent;
+    stroke : rgba(116, 116, 116, 0.6)
+	}
 
 
 

@@ -3,7 +3,7 @@
                 <div class="cover-container">
                     <div class="hero-viewport">
                         <div class="hero-viewport-image">
-                            <div class="hero-content" style="">
+                            <div class="hero-content wow fadeIn">
                                 <div class="mt-hero-textwrap">
                                     <h1 class="mt-heading">MYTAILOR AFRICA</h1>
                                     <h2 class="mt-subheading">GET INSPIRED BY TALENTED <span>AFRICAN</span> FASHION <span>DESIGNERS</span>.</h2>
@@ -20,7 +20,7 @@
             <section class="mt-layout_calls-wrapper mt-row">
                   <section class="mt-call-actions mdl-grid">
 
-                      <a class="mt-call-items mdl-cell mdl-cell--3-col" href="{{URL::to('shots/trending')}}" title="Trending">
+                      <a class="mt-call-items mdl-cell mdl-cell--3-col wow bounceIn" href="{{URL::to('shots/trending')}}" title="Trending">
                           <div class="call-item">
                             <div class="icon">
                               <img class="kilama-img" style="height:6.25rem;" src="{{theme('images/icons/t-deals.svg')}}" alt="">
@@ -31,7 +31,7 @@
                       </a>
 
 
-                      <a class="mt-call-items mdl-cell mdl-cell--3-col" href="/" title="Local-designers">
+                      <a class="mt-call-items mdl-cell mdl-cell--3-col wow bounceIn" href="/" title="Local-designers">
                           <div class="call-item">
                             <div class="icon">
                               <img class="kilama-img" style="height:6.25rem;" src="{{theme('images/icons/local.svg')}}" alt="">
@@ -41,7 +41,7 @@
                           </div>
                       </a>
 
-                        <a class="mt-call-items mdl-cell mdl-cell--3-col" href="/" title="Community">
+                        <a class="mt-call-items mdl-cell mdl-cell--3-col wow bounceIn" href="/" title="Community">
                           <div class="call-item">
                             <div class="icon">
                               <img class="kilama-img" style="height:6.25rem;" src="{{theme('images/icons/community.svg')}}" alt="">
@@ -51,7 +51,7 @@
                           </div>
                       </a>
 
-                         <a class="mt-call-items mdl-cell mdl-cell--3-col" href="/" title="Partners">
+                         <a class="mt-call-items mdl-cell mdl-cell--3-col wow bounceIn" href="/" title="Partners">
                           <div class="call-item">
                             <div class="icon">
                               <img class="kilama-img" style="height:6.25rem;" src="{{theme('images/icons/partner.svg')}}" alt="">
@@ -128,7 +128,7 @@
 
           </section>
           <section class="mt-row mdl-grid">
-              <div class="mdl-cell mdl-cell-4--col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-cell mdl-cell-4--col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp wow bounceIn">
                   <div class="mdl-card__media" style="height: 300px">
                       <img src="{{theme('images/backgrounds/women.jpg')}}">
                   </div>
@@ -139,7 +139,7 @@
                     <a href="{{route('shots.index', ['cat=fm'])}}" class="mdl-button mdl-js-button mdl-js-ripple-effect">Women<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
                   </div>
               </div>
-              <div class="mdl-cell dark-card mdl-cell-4--col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-cell dark-card mdl-cell-4--col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp wow bounceIn">
                   <div class="mdl-card__media" style="height: 300px">
                       <img src="{{theme('images/backgrounds/men.jpg')}}">
                   </div>
@@ -150,7 +150,7 @@
                       <a href="{{route('shots.index', ['cat=ma'])}}" class="mdl-button mdl-js-button mdl-js-ripple-effect">Men<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
                   </div>
               </div>
-              <div class="mdl-cell dark-card mdl-cell-4--col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+              <div class="mdl-cell dark-card mdl-cell-4--col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp wow bounceIn">
                   <div class="mdl-card__media" style="height: 300px">
                       <img src="{{theme('images/backgrounds/kids.jpg')}}">
                   </div>

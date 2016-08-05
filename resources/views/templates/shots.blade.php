@@ -49,7 +49,7 @@
 
 </section>
 
-{!! $shots->appends(['sort' => 'votes'])->render() !!}
+{!! $shots->appends(['cat'=>$cat])->render() !!}
 
 <section class="mt-load-more-wrapper">
         <div class="mt-load-bar">

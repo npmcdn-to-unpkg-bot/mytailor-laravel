@@ -15,6 +15,7 @@ class DbShotsRepository implements ShotsRepositoryInterface{
     public function __construct(Shot $shots){
 
         $this->shots = $shots;
+
     }
 
     /**
