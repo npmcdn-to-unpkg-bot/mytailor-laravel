@@ -28,11 +28,7 @@ Mytailor.me
                         finished: function() {
                             console.log('Finished');
                       }
-                    },
-
-                  path: function(index) {
-                      return "?page=" + index;
-                  }
+                    }
               }, function(newElements, data, url){
                             var $newElems = $( newElements ),
                             $target = $(".grid");
