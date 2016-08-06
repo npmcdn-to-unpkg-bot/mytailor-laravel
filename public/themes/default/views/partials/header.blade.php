@@ -7,7 +7,7 @@
                     </span>
                     <span class="mt-menu-text">Menu</span>
                   </a>
-
+                  
                 </div>
                 <div class="mt-header-spacer"></div>
                 </div><!-- global header ends--> 

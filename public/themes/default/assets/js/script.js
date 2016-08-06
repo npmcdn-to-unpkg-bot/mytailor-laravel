@@ -52,24 +52,24 @@ Mytailor.me
               });
 
                 //========== Search icon on small devices ==========
-                    //   $('.mt-toggle-search').click(function() {
+                      $('.mt-toggle-search').click(function() {
              
-                    //          if ($(this).children().first().attr('data-type') == 'search') {
-                    //               $('.pull-left').hide();
-                    //             $(this).children().first().attr('data-type', 'close');
-                    //             $(this).find('.icon-center').removeClass('mdi-magnify');
-                    //             $(this).find('.icon-center').addClass('mdi-close-circle');
-                    //             $('.mt-search-wrapper').removeClass('hide-on-phone');
-                    //   }
-                    //    // Search bar is currently showing
-                    //   else {
-                    //       $('.pull-left').show();
-                    //       $(this).children().first().attr('data-type', 'search');
-                    //       $('.mt-search-wrapper').addClass('hide-on-phone');
-                    //       $(this).find('.icon-center').removeClass('mdi-close-circle');
-                    //       $(this).find('.icon-center').addClass('mdi-magnify');
-                    //   }
-                    // });
+                             if ($(this).children().first().attr('data-type') == 'search') {
+                                  $('.pull-left').hide();
+                                $(this).children().first().attr('data-type', 'close');
+                                $(this).find('.icon-center').removeClass('mdi-magnify');
+                                $(this).find('.icon-center').addClass('mdi-close-circle');
+                                $('.mt-search-wrapper').removeClass('hide-on-phone');
+                      }
+                       // Search bar is currently showing
+                      else {
+                          $('.pull-left').show();
+                          $(this).children().first().attr('data-type', 'search');
+                          $('.mt-search-wrapper').addClass('hide-on-phone');
+                          $(this).find('.icon-center').removeClass('mdi-close-circle');
+                          $(this).find('.icon-center').addClass('mdi-magnify');
+                      }
+                    });
               	//=========== Shots clicky ==========
 
                   	  $('.shot-item>a').click(function() {
