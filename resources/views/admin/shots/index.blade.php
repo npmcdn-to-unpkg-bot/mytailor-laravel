@@ -30,7 +30,7 @@
 
                    @foreach($shots as $shot)
                       <div class="shot-item mdl-cell mdl-cell--4-col">
-                         <a href="#" ng-click="show({{$shot->id}})">
+                         <a ng-click="show({{$shot->id}})">
                           <figure class="">
                              <img src="../uploads/{{$shot->file_name}}">
                           </figure>

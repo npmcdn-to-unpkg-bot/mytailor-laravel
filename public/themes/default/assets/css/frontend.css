@@ -1582,6 +1582,9 @@ img {
 .mt-ptop {
   padding-top: 1em; }
 
+a[ng-click] {
+  cursor: pointer; }
+
 /*
 * Layout Styles
 *
