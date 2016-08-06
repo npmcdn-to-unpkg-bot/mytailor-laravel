@@ -48,8 +48,7 @@
                 
           <div class="mt-header-shotEdit mdl-card__actions animated fadeIn">
                 <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1" style="
-    margin-top: 10px;
-">
+    margin-top: 10px;" ng-class="{'is-checked':shot.published}">
                   <input type="checkbox" id="switch-1" class="mdl-switch__input" ng-model="shot.published">
                   <span class="mdl-switch__label">Publish</span>
                 </label>
@@ -103,7 +102,7 @@
                       <label class="top-label">Tags</label>
                   </div>
                   <div class="mdl-checkbox mb-30">
-                      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1" ng-class="{'is-checked':shot.featured}">
                       <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" ng-model="shot.featured">
                       <span class="mdl-checkbox__label">Feature</span>
                     </label>
