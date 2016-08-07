@@ -12,8 +12,8 @@
     </button>
 
    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
-      <li class="mdl-menu__item"><a href="?cat=ma" class="mt-menu__link">Male</a></li>
-      <li class="mdl-menu__item"><a href="?cat=fm" class="mt-menu__link">Female</a></li>
+      <li class="mdl-menu__item"><a href="?cat=ma" class="mt-menu__link">Men</a></li>
+      <li class="mdl-menu__item"><a href="?cat=fm" class="mt-menu__link">Women</a></li>
       <li class="mdl-menu__item"><a href="?cat=ki" class="mt-menu__link">Kids</a></li>
       <li class="mdl-menu__item"><a href="?cat=cu" class="mt-menu__link">Couples</a></li>
       <li class="mdl-menu__item"><a href="?cat=ac" class="mt-menu__link">Accessories</a></li>

@@ -25,6 +25,35 @@ class Shot extends Model {
         $this->attributes['published_at'] = $value ?: null;
     }
 
+
+    /**
+     * @param $value
+     * @return string
+     */
+    public function getCategoryAttribute($value)
+    {
+
+        switch ($value) {
+            case 'fm':
+                $value = 'women';
+                break;
+            case 'ma':
+                $value = 'men';
+                break;
+            case 'ki':
+                $value = 'kids';
+                break;
+            case'cu':
+                $value = 'couples';
+                break;
+
+            default:
+                $value = 'not set';
+
+        }
+        return $value;
+    }
+
     /**
      * @return mixed
      */

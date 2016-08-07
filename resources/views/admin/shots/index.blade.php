@@ -21,6 +21,7 @@
                   <button class="btn mdl-button icon-round">
                     <a href="{{route('shots.upload')}}"><i class="mdi mdi-cloud-upload icon-center red"></i></a>
                   </button>
+
                 </div>
                 <!-- ToolBar starts here -->
            			<div class="mt-tool-bar">
@@ -96,19 +97,17 @@
                   <div class="mt-form-group">
                       <select ng-model="shot.category">
                         <option selected=""></option>
-                          <option value="ma">Men</option>
-                          <option value="fm">Female</option>
-                          <option value="ki">Kids</option>
-                          <option value="cu">Couples</option>
-                          <option value="ac">Accessories</option>
+                          <option value="men">Men</option>
+                          <option value="women">Women</option>
+                          <option value="kids">Kids</option>
+                          <option value="couples">Couples</option>
+                          <option value="accessories">Accessories</option>
                       </select>
                       <label class="top-label">Category</label>
                   </div>
                  <div class="mt-form-group">
-                      <select id="tag_lists" multiple name="a[]">
-{{--                           @foreach($tags as $name => $id)
-                              <option value="{{$id}}">{{$name}}</option>
-                          @endforeach --}}
+                      <select id="tag_lists" multiple name="a[]" ng-model="shot.tags">
+                      <option ng-repeat="option in shot.tags" selected value="@{{option.id}}">@{{option.tag_name}}</option>
                       </select>
                       <label class="top-label">Tags</label>
                   </div>
