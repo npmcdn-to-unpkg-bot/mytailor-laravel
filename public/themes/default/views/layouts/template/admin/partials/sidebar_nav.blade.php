@@ -6,14 +6,17 @@
                     <div class="sidebar-title-wrapper">
                       <span>{{$admin->name}}</span>
                       <div class="mdl-layout-spacer"></div>
-                      <button class="icon-round mdl-button btn" id="dropdown">
-                        <i class="icon-center mdi mdi-menu-down" data-type="hidden"></i>
-                      </button>
-                      <div class="mt-menu-container showMenu" style="visibility:hidden;" id="m9menu">
-                          <ul>
-                            <li class="mt-list-btn btn" style="transition-delay: 0.012s;"><a href="#" class="m-0">Profile</a></li>
-                            <li class="mt-list-btn btn" style="transition-delay: 0.084s;"><a href="{{route('auth.logout')}}" class="m-0">Logout</a></li>
-                          </ul></div>
+                      <!-- Right aligned menu below button -->
+                        <button id="menu-lower-right"
+                                class="mdl-button mdl-js-button mdl-button--icon">
+                          <i class="mdi mdi-menu-down"></i>
+                        </button>
+                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                            for="menu-lower-right">
+                        <li class="mdl-menu__item">Some Action</li>
+                        <li class="mdl-menu__item"><a href="#" class="m-0">Profile</a></li>
+                        <li class="mdl-menu__item"><a href="{{route('auth.logout')}}" class="m-0">Logout</a></li>
+                        </ul>
                     </div>
                   </div>
               </header>

@@ -9,6 +9,7 @@
                   </a>
                 </div>
                 <div class="mt-header-spacer"></div>
+                {{-- Search bar starts here --}}
                   <div class="mt-search-wrapper expandable--search hide-on-phone">
                     <span class="icon-search"><i class="mdi mdi-magnify" style="font-size: 22px;"></i></span>
                     <form method="Get" action="#" id="search-box">

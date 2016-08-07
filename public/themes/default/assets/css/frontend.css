@@ -1700,6 +1700,26 @@ a[ng-click] {
   overflow: hidden;
   padding: 0 40px 0 40px; }
 
+.mt-top-menu > ul {
+  padding: 0;
+  margin-right: 20px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .mt-top-menu > ul li {
+    margin: 0 0 0 10px; }
+    .mt-top-menu > ul li:hover {
+      background-color: rgba(0, 0, 0, 0.17); }
+
+.mt-top-avatar {
+  max-width: 50px;
+  border-radius: 27px;
+  display: inline-block;
+  overflow: hidden; }
+
 /* ==========================================================================
   SideBar layout Styles: 
    ========================================================================== */

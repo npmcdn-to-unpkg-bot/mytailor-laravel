@@ -25,12 +25,17 @@ class ShotsController extends Controller    {
     /**
      *  show me a list of shots
      *
+     * @param Request $request
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function index() {
+    public function index(Request $request) {
 
-        $shots = $this->shots
+        $query = $request->get('q');
+        $shots = $query ? Shot::search($query)->paginate(15)
+                : $this->shots
                         ->orderBy('shots.created_at', 'desc')->paginate(15);
+
+        //also send along tags
         $tags = Tag::lists('id', 'tag_name');
         return view('admin.shots.index', compact('shots', 'tags'));
 }

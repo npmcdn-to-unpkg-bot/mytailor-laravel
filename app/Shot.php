@@ -127,4 +127,9 @@ class Shot extends Model {
         return $alt;
     }
 
+    public function scopeSearch($query, $search)
+    {
+        return $query->where('title', 'LIKE', "%$search%");
+    }
+
 }

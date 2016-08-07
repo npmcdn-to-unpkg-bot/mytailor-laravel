@@ -22,8 +22,17 @@
                     <a href="{{route('shots.upload')}}"><i class="mdi mdi-cloud-upload icon-center red"></i></a>
                   </button>
                 </div>
+                <!-- ToolBar starts here -->
            			<div class="mt-tool-bar">
-           				
+                {{-- Search Box --}}
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+                      <i class="mdi mdi-magnify"></i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                      <input class="mdl-textfield__input" type="search" name="q" id="fixed-header-drawer-exp">
+                    </div>
+                  </div>
            			</div>
            		</header>
            		<section class="mdl-grid admin-shots-wrapper">
