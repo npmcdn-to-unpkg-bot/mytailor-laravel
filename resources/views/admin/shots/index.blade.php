@@ -30,7 +30,9 @@
                       <i class="mdi mdi-magnify"></i>
                     </label>
                     <div class="mdl-textfield__expandable-holder">
+                    <form method="Get" action="">
                       <input class="mdl-textfield__input" type="search" name="q" id="fixed-header-drawer-exp">
+                      </form>
                     </div>
                   </div>
            			</div>
