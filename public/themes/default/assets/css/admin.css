@@ -1269,7 +1269,8 @@ span.icon-search {
 
 .mt-fullwidth-table {
   width: 100%;
-  margin: auto; }
+  margin: auto;
+  padding-bottom: 50px; }
 
 .mt-table-head {
   border: 1px solid rgba(0, 0, 0, 0.12);

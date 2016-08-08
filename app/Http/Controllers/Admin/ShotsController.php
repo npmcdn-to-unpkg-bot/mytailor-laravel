@@ -93,8 +93,8 @@ class ShotsController extends Controller    {
         $update = $shot->fill($request->only('title', 'category', 'featured', 'published', 'views', 'source_url', 'description'))->save();
 
         //dd($request->input('tags'));
-
-        $shot->tags()->sync($request->input('tags'));
+        dd($request->all());
+        $shot->tags()->attach($request->only('a'));
 
         if(! $update){
             return Response::json([

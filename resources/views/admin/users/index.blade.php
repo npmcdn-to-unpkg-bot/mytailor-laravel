@@ -58,9 +58,11 @@
                         <td class="mdl-data-table__cell--non-numeric">{{$user->email}}</td>
                         <td class="mdl-data-table__cell--non-numeric">Admin</td>
                         <td class="mdl-data-table__cell--non-numeric">{{$user->last_login_at or 'Never'}}</td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="#"><i class="mdi mdi-pencil"></i></a>
+                        <td class="mdl-data-table__cell--non-numeric"><a href="#" id="e{{$user->id}}"><i class="mdi mdi-pencil"></i></a>
+                            <div class="mdl-tooltip" for="e{{$user->id}}">Edit</div>
                         </td>
-                        <td class="mdl-data-table__cell--non-numeric"><a href="#"><i class="mdi mdi-delete"></i></a></td>
+                        <td class="mdl-data-table__cell--non-numeric"><a href="#" id="d{{$user->id}}"><i class="mdi mdi-delete"></i></a></td>
+                            <div class="mdl-tooltip" for="d{{$user->id}}">Delete</div>
                     </tr>
                 @empty
                     <tr>

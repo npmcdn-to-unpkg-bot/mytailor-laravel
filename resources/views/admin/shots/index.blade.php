@@ -106,8 +106,11 @@
                       <label class="top-label">Category</label>
                   </div>
                  <div class="mt-form-group">
-                      <select id="tag_lists" multiple name="a[]" ng-model="shot.tags">
-                      <option ng-repeat="option in shot.tags" selected value="@{{option.id}}">@{{option.tag_name}}</option>
+                      <select id="tag_lists" 
+                              ng-options="option.id as option.tag_name for option in shot.tags"
+                              ng-multiple="true" multiple
+
+                              >
                       </select>
                       <label class="top-label">Tags</label>
                   </div>
