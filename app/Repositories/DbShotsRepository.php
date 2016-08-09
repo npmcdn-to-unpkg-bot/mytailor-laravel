@@ -41,7 +41,7 @@ class DbShotsRepository implements ShotsRepositoryInterface{
      */
     public function trending($cat){
         return $shots = $this->shots
-            ->select(\DB::raw('AVG(views/DATEDIFF(NOW(), updated_at)) as Popularity, shots.*'))
+            ->select(\DB::raw('AVG(DATEDIFF(NOW(), updated_at/views)) as Popularity, shots.*'))
             ->category($cat)
             ->orderBy('Popularity', 'desc')
             ->where('published', '=', 1)
