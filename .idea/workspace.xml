@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="657023bf-231f-4b50-a0d6-45ddd5d5ba3a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/DbShotsRepository.php" afterPath="$PROJECT_DIR$/app/Repositories/DbShotsRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/views/layouts/template/frontend/partials/foot.blade.php" afterPath="$PROJECT_DIR$/public/themes/default/views/layouts/template/frontend/partials/foot.blade.php" />
     </list>
     <ignored path="mytailor.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +27,8 @@
       <file leaf-file-name="DbShotsRepository.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Repositories/DbShotsRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.60458016">
-              <caret line="43" column="69" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
+            <state vertical-scroll-proportion="0.63206106">
+              <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -604,7 +602,7 @@
         <state vertical-scroll-proportion="0.8793893">
           <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
-            <marker date="1470416464071" expanded="true" signature="58:157" placeholder="..." />
+            <marker date="1470751174142" expanded="true" signature="58:157" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -661,10 +659,10 @@
         <state vertical-scroll-proportion="0.96183205">
           <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
           <folding>
-            <marker date="1470746169846" expanded="true" signature="41:448" placeholder="/*...*/" />
-            <marker date="1470746169846" expanded="true" signature="589:1454" placeholder="{...}" />
-            <marker date="1470746169846" expanded="true" signature="833:1376" placeholder="[...]" />
-            <marker date="1470746169846" expanded="true" signature="1458:1485" placeholder="/*...*/" />
+            <marker date="1470751174268" expanded="true" signature="41:448" placeholder="/*...*/" />
+            <marker date="1470751174268" expanded="true" signature="589:1454" placeholder="{...}" />
+            <marker date="1470751174268" expanded="true" signature="833:1376" placeholder="[...]" />
+            <marker date="1470751174268" expanded="true" signature="1458:1485" placeholder="/*...*/" />
           </folding>
         </state>
       </provider>
@@ -674,9 +672,9 @@
         <state vertical-scroll-proportion="0.41221374">
           <caret line="15" column="66" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
           <folding>
-            <marker date="1470689293393" expanded="true" signature="92:342" placeholder="{...}" />
-            <marker date="1470689293393" expanded="true" signature="102:230" placeholder=" Get all shots associated with the tag. ..." />
-            <marker date="1470689293393" expanded="true" signature="260:340" placeholder="{...}" />
+            <marker date="1470751174163" expanded="true" signature="92:342" placeholder="{...}" />
+            <marker date="1470751174163" expanded="true" signature="102:230" placeholder=" Get all shots associated with the tag. ..." />
+            <marker date="1470751174163" expanded="true" signature="260:340" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -686,26 +684,26 @@
         <state vertical-scroll-proportion="0.7694656">
           <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
           <folding>
-            <marker date="1470746169877" expanded="true" signature="13:2132" placeholder="{...}" />
-            <marker date="1470746169877" expanded="true" signature="69:2127" placeholder="[...]" />
-            <marker date="1470746169877" expanded="true" signature="194:2126" placeholder="{...}" />
-            <marker date="1470746169877" expanded="true" signature="200:285" placeholder="/** shows data about a single shot. ...*/" />
-            <marker date="1470746169877" expanded="true" signature="315:424" placeholder="{...}" />
-            <marker date="1470746169877" expanded="true" signature="368:415" placeholder="{...}" />
-            <marker date="1470746169877" expanded="true" signature="430:512" placeholder="/** returns all tags in storage. ...*/" />
-            <marker date="1470746169877" expanded="true" signature="560:1974" placeholder="{...}" />
-            <marker date="1470746169877" expanded="true" signature="628:722" placeholder="/** Updates a shot and responds with a snackbar. ...*/" />
-            <marker date="1470746169877" expanded="true" signature="756:1193" placeholder="{...}" />
-            <marker date="1470746169877" expanded="true" signature="833:1185" placeholder="{...}" />
-            <marker date="1470746169877" expanded="true" signature="992:1113" placeholder="{&quot;timeout&quot;: 2000...}" />
-            <marker date="1470746169877" expanded="true" signature="1208:1290" placeholder="/** Changes scope to an empty object ...*/" />
-            <marker date="1470746169877" expanded="true" signature="1328:1357" placeholder="{...}" />
-            <marker date="1470746169877" expanded="true" signature="1372:1479" placeholder="/**  Opens modal for viewing a shot. ...*/" />
-            <marker date="1470746169877" expanded="true" signature="1518:1647" placeholder="{...}" />
-            <marker date="1470746169877" expanded="true" signature="1541:1639" placeholder="{&quot;className&quot;: 'mt-large-overlay'...}" />
-            <marker date="1470746169877" expanded="true" signature="1662:1761" placeholder="/** deletes a shot item and responds with a snackbar. ...*/" />
-            <marker date="1470746169877" expanded="true" signature="1807:1963" placeholder="{...}" />
-            <marker date="1470746169877" expanded="true" signature="1879:1956" placeholder="{...}" />
+            <marker date="1470751174365" expanded="true" signature="13:2132" placeholder="{...}" />
+            <marker date="1470751174365" expanded="true" signature="69:2127" placeholder="[...]" />
+            <marker date="1470751174365" expanded="true" signature="194:2126" placeholder="{...}" />
+            <marker date="1470751174365" expanded="true" signature="200:285" placeholder="/** shows data about a single shot. ...*/" />
+            <marker date="1470751174365" expanded="true" signature="315:424" placeholder="{...}" />
+            <marker date="1470751174365" expanded="true" signature="368:415" placeholder="{...}" />
+            <marker date="1470751174365" expanded="true" signature="430:512" placeholder="/** returns all tags in storage. ...*/" />
+            <marker date="1470751174365" expanded="true" signature="560:1974" placeholder="{...}" />
+            <marker date="1470751174365" expanded="true" signature="628:722" placeholder="/** Updates a shot and responds with a snackbar. ...*/" />
+            <marker date="1470751174365" expanded="true" signature="756:1193" placeholder="{...}" />
+            <marker date="1470751174365" expanded="true" signature="833:1185" placeholder="{...}" />
+            <marker date="1470751174365" expanded="true" signature="992:1113" placeholder="{&quot;timeout&quot;: 2000...}" />
+            <marker date="1470751174365" expanded="true" signature="1208:1290" placeholder="/** Changes scope to an empty object ...*/" />
+            <marker date="1470751174365" expanded="true" signature="1328:1357" placeholder="{...}" />
+            <marker date="1470751174365" expanded="true" signature="1372:1479" placeholder="/**  Opens modal for viewing a shot. ...*/" />
+            <marker date="1470751174365" expanded="true" signature="1518:1647" placeholder="{...}" />
+            <marker date="1470751174365" expanded="true" signature="1541:1639" placeholder="{&quot;className&quot;: 'mt-large-overlay'...}" />
+            <marker date="1470751174365" expanded="true" signature="1662:1761" placeholder="/** deletes a shot item and responds with a snackbar. ...*/" />
+            <marker date="1470751174365" expanded="true" signature="1807:1963" placeholder="{...}" />
+            <marker date="1470751174365" expanded="true" signature="1879:1956" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -715,37 +713,37 @@
         <state vertical-scroll-proportion="0.45038167">
           <caret line="135" column="5" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
           <folding>
-            <marker date="1470746169807" expanded="false" signature="55:226" placeholder="..." />
-            <marker date="1470746169807" expanded="true" signature="273:3305" placeholder="..." />
-            <marker date="1470746169807" expanded="true" signature="305:373" placeholder=" ShotsController constructor. ..." />
-            <marker date="1470746169807" expanded="true" signature="422:489" placeholder="..." />
-            <marker date="1470746169807" expanded="true" signature="499:647" placeholder="  show me a list of shots ..." />
-            <marker date="1470746169807" expanded="true" signature="695:1049" placeholder="..." />
-            <marker date="1470746169807" expanded="true" signature="860:886" placeholder="..." />
-            <marker date="1470746169807" expanded="true" signature="898:900" placeholder="..." />
-            <marker date="1470746169807" expanded="true" signature="1059:1137" placeholder=" @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View ..." />
-            <marker date="1470746169807" expanded="true" signature="1170:1218" placeholder="..." />
-            <marker date="1470746169807" expanded="true" signature="1228:1241" placeholder=" ..." />
-            <marker date="1470746169807" expanded="true" signature="1273:1612" placeholder="..." />
-            <marker date="1470746169807" expanded="true" signature="1335:1382" placeholder=" Store it in the model now ..." />
-            <marker date="1470746169807" expanded="true" signature="1622:1667" placeholder=" @param $id ..." />
-            <marker date="1470746169807" expanded="true" signature="1701:1815" placeholder="..." />
-            <marker date="1470746169807" expanded="true" signature="1746:1774" placeholder="..." />
-            <marker date="1470746169807" expanded="true" signature="1825:1950" placeholder=" Update a shot. ..." />
-            <marker date="1470746169807" expanded="true" signature="2023:2612" placeholder="..." />
-            <marker date="1470746169807" expanded="true" signature="2281:2454" placeholder="..." />
-            <marker date="1470746169807" expanded="true" signature="2316:2443" placeholder="..." />
-            <marker date="1470746169807" expanded="true" signature="2317:2437" placeholder="..." />
-            <marker date="1470746169807" expanded="true" signature="2345:2423" placeholder="..." />
-            <marker date="1470746169807" expanded="true" signature="2487:2603" placeholder="..." />
-            <marker date="1470746169807" expanded="true" signature="2488:2597" placeholder="..." />
-            <marker date="1470746169807" expanded="true" signature="2512:2587" placeholder="..." />
-            <marker date="1470746169807" expanded="true" signature="2622:2650" placeholder=" @return string ..." />
-            <marker date="1470746169807" expanded="true" signature="2686:2836" placeholder="..." />
-            <marker date="1470746169807" expanded="true" signature="2846:2982" placeholder=" Sync up list of tags in the database . ..." />
-            <marker date="1470746169807" expanded="true" signature="3062:3303" placeholder="{...}" />
-            <marker date="1470746169807" expanded="true" signature="3151:3195" placeholder="..." />
-            <marker date="1470746169807" expanded="true" signature="3225:3259" placeholder="..." />
+            <marker date="1470751174107" expanded="false" signature="55:226" placeholder="..." />
+            <marker date="1470751174107" expanded="true" signature="273:3305" placeholder="..." />
+            <marker date="1470751174107" expanded="true" signature="305:373" placeholder=" ShotsController constructor. ..." />
+            <marker date="1470751174107" expanded="true" signature="422:489" placeholder="..." />
+            <marker date="1470751174107" expanded="true" signature="499:647" placeholder="  show me a list of shots ..." />
+            <marker date="1470751174107" expanded="true" signature="695:1049" placeholder="..." />
+            <marker date="1470751174107" expanded="true" signature="860:886" placeholder="..." />
+            <marker date="1470751174107" expanded="true" signature="898:900" placeholder="..." />
+            <marker date="1470751174107" expanded="true" signature="1059:1137" placeholder=" @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View ..." />
+            <marker date="1470751174107" expanded="true" signature="1170:1218" placeholder="..." />
+            <marker date="1470751174107" expanded="true" signature="1228:1241" placeholder=" ..." />
+            <marker date="1470751174107" expanded="true" signature="1273:1612" placeholder="..." />
+            <marker date="1470751174107" expanded="true" signature="1335:1382" placeholder=" Store it in the model now ..." />
+            <marker date="1470751174107" expanded="true" signature="1622:1667" placeholder=" @param $id ..." />
+            <marker date="1470751174107" expanded="true" signature="1701:1815" placeholder="..." />
+            <marker date="1470751174107" expanded="true" signature="1746:1774" placeholder="..." />
+            <marker date="1470751174107" expanded="true" signature="1825:1950" placeholder=" Update a shot. ..." />
+            <marker date="1470751174107" expanded="true" signature="2023:2612" placeholder="..." />
+            <marker date="1470751174107" expanded="true" signature="2281:2454" placeholder="..." />
+            <marker date="1470751174107" expanded="true" signature="2316:2443" placeholder="..." />
+            <marker date="1470751174107" expanded="true" signature="2317:2437" placeholder="..." />
+            <marker date="1470751174107" expanded="true" signature="2345:2423" placeholder="..." />
+            <marker date="1470751174107" expanded="true" signature="2487:2603" placeholder="..." />
+            <marker date="1470751174107" expanded="true" signature="2488:2597" placeholder="..." />
+            <marker date="1470751174107" expanded="true" signature="2512:2587" placeholder="..." />
+            <marker date="1470751174107" expanded="true" signature="2622:2650" placeholder=" @return string ..." />
+            <marker date="1470751174107" expanded="true" signature="2686:2836" placeholder="..." />
+            <marker date="1470751174107" expanded="true" signature="2846:2982" placeholder=" Sync up list of tags in the database . ..." />
+            <marker date="1470751174107" expanded="true" signature="3062:3303" placeholder="{...}" />
+            <marker date="1470751174107" expanded="true" signature="3151:3195" placeholder="..." />
+            <marker date="1470751174107" expanded="true" signature="3225:3259" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -755,25 +753,25 @@
         <state vertical-scroll-proportion="0.56030536">
           <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
           <folding>
-            <marker date="1470749222152" expanded="false" signature="42:223" placeholder="..." />
-            <marker date="1470749222152" expanded="true" signature="272:5176" placeholder="..." />
-            <marker date="1470749222152" expanded="true" signature="313:331" placeholder=" @var ..." />
-            <marker date="1470749222152" expanded="true" signature="362:441" placeholder=" HTTP request for retrieving user input ..." />
-            <marker date="1470749222152" expanded="true" signature="474:595" placeholder=" HomeTemplate constructor. ..." />
-            <marker date="1470749222152" expanded="true" signature="682:754" placeholder="..." />
-            <marker date="1470749222152" expanded="true" signature="815:1448" placeholder="{...}" />
-            <marker date="1470749222152" expanded="true" signature="1054:1383" placeholder="..." />
-            <marker date="1470749222152" expanded="true" signature="1088:1174" placeholder="..." />
-            <marker date="1470749222152" expanded="true" signature="1205:1289" placeholder="..." />
-            <marker date="1470749222152" expanded="true" signature="1314:1373" placeholder="..." />
-            <marker date="1470749222152" expanded="true" signature="1486:5175" placeholder="{...}" />
-            <marker date="1470749222152" expanded="true" signature="1528:4960" placeholder="..." />
-            <marker date="1470749222152" expanded="true" signature="1555:2126" placeholder="..." />
-            <marker date="1470749222152" expanded="true" signature="2153:2723" placeholder="..." />
-            <marker date="1470749222152" expanded="true" signature="2750:3307" placeholder="..." />
-            <marker date="1470749222152" expanded="true" signature="3334:3894" placeholder="..." />
-            <marker date="1470749222152" expanded="true" signature="3921:4398" placeholder="..." />
-            <marker date="1470749222152" expanded="true" signature="4423:4947" placeholder="..." />
+            <marker date="1470751174198" expanded="false" signature="42:223" placeholder="..." />
+            <marker date="1470751174198" expanded="true" signature="272:5176" placeholder="..." />
+            <marker date="1470751174198" expanded="true" signature="313:331" placeholder=" @var ..." />
+            <marker date="1470751174198" expanded="true" signature="362:441" placeholder=" HTTP request for retrieving user input ..." />
+            <marker date="1470751174198" expanded="true" signature="474:595" placeholder=" HomeTemplate constructor. ..." />
+            <marker date="1470751174198" expanded="true" signature="682:754" placeholder="..." />
+            <marker date="1470751174198" expanded="true" signature="815:1448" placeholder="{...}" />
+            <marker date="1470751174198" expanded="true" signature="1054:1383" placeholder="..." />
+            <marker date="1470751174198" expanded="true" signature="1088:1174" placeholder="..." />
+            <marker date="1470751174198" expanded="true" signature="1205:1289" placeholder="..." />
+            <marker date="1470751174198" expanded="true" signature="1314:1373" placeholder="..." />
+            <marker date="1470751174198" expanded="true" signature="1486:5175" placeholder="{...}" />
+            <marker date="1470751174198" expanded="true" signature="1528:4960" placeholder="..." />
+            <marker date="1470751174198" expanded="true" signature="1555:2126" placeholder="..." />
+            <marker date="1470751174198" expanded="true" signature="2153:2723" placeholder="..." />
+            <marker date="1470751174198" expanded="true" signature="2750:3307" placeholder="..." />
+            <marker date="1470751174198" expanded="true" signature="3334:3894" placeholder="..." />
+            <marker date="1470751174198" expanded="true" signature="3921:4398" placeholder="..." />
+            <marker date="1470751174198" expanded="true" signature="4423:4947" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -788,8 +786,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Repositories/DbShotsRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60458016">
-          <caret line="43" column="69" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
+        <state vertical-scroll-proportion="0.63206106">
+          <caret line="44" column="33" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
           <folding />
         </state>
       </provider>
