@@ -10,7 +10,7 @@
                 </div>
                 <div class="mt-header-spacer"></div>
                 {{-- Search bar starts here --}}
-                  <div class="mt-search-wrapper expandable--search hide-on-phone">
+{{--                   <div class="mt-search-wrapper expandable--search hide-on-phone">
                     <span class="icon-search"><i class="mdi mdi-magnify" style="font-size: 22px;"></i></span>
                     <form method="Get" action="#" id="search-box">
                         <input type="search" id="q" autocapitalize="off" autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="text" value="" placeholder="search for items like men, women, shirts, shoes and more ..."/>
@@ -18,6 +18,6 @@
                 </div>
                 <button class="icon-round mdl-button mt-toggle-search" style="visibility:hidden;">
                     <i class="mdi mdi-magnify icon-center" data-type="search"></i>
-                </button>
+                </button> --}}
               </div><!-- global header ends--> 
             </header>
