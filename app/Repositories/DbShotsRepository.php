@@ -35,7 +35,10 @@ class DbShotsRepository implements ShotsRepositoryInterface{
     }
 
     /**
-     * Shots users view the most/trending
+     * Shots users view the most/trending.
+     *
+     * Reddit's Algorithm
+     *
      * @param $cat
      * @return mixed
      */

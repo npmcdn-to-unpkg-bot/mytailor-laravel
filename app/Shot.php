@@ -55,6 +55,33 @@ class Shot extends Model {
     }
 
     /**
+     * @param $value
+     * @return string
+     */
+    public function setCategoryAttribute($value)
+    {
+
+        switch ($value) {
+            case 'women':
+                $value = 'fm';
+                break;
+            case 'men':
+                $value = 'ma';
+                break;
+            case 'kids':
+                $value = 'ki';
+                break;
+            case'couples':
+                $value = 'cu';
+                break;
+
+            default:
+                $value = null;
+
+        }
+        $this->attributes['category'] =  $value;
+    }
+    /**
      * @return mixed
      */
     public function getAltAttribute(){
