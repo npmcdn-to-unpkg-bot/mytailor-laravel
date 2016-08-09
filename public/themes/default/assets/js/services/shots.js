@@ -20,10 +20,13 @@
 			return this;
 	}]);
 
-	// app.controller("ShotsController", function ($scope, $http, $location) {
-	// 			  $scope.loadShotData = 
-				  
-	// 			  };
+	app.factory('tagFactory', ['$http', function($http){
 
-	// });
+			// will return object of a single shot
+			this.show = function () {
+			  	return $http.get("/admin/tags");
+			};
+			return this;
+	}]);
+
 

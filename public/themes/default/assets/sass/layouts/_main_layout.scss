@@ -138,15 +138,10 @@
     align-items: center;
     li{
           margin: 0 14px 0 10px;
-
-          &:hover{
-                background-color: rgba(0, 0, 0, 0.17);
-          }
+          &:hover{background-color: rgba(0, 0, 0, 0.17);}
           a{
             transition: color linear 2ms;
-            &:hover{
-              color: #d3d1d1;
-            }         
+            &:hover{color: #d3d1d1;}         
           }
     }
 }

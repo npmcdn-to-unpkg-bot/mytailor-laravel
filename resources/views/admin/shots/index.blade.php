@@ -109,7 +109,7 @@
                           <ui-select-match>
                               <span>@{{$item.tag_name}}</span>
                           </ui-select-match>
-                          <ui-select-choices repeat="tag in itemArray | filter: {tag_name: $select.search}">
+                          <ui-select-choices repeat="tag in tagsList | filter: {tag_name: $select.search}">
                               <option value="@{{tag.id}}">@{{tag.tag_name}}</option>
                           </ui-select-choices>
                       </ui-select>

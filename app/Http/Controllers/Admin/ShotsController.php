@@ -81,6 +81,7 @@ class ShotsController extends Controller    {
 
     /**
      * Update a shot.
+     *
      * @param Requests\UpdateShotRequest $request
      * @param $id
      * @return string
@@ -92,9 +93,7 @@ class ShotsController extends Controller    {
 
         $update = $shot->fill($request->only('title', 'category', 'featured', 'published', 'views', 'source_url', 'description'))->save();
 
-        //dd($request->input('tags'));
-        dd($request->all());
-        $shot->tags()->attach($request->only('a'));
+        $this->attachTags($request, $shot);
 
         if(! $update){
             return Response::json([
@@ -126,10 +125,25 @@ class ShotsController extends Controller    {
         
     }
 
-    private function getTags()
+    /**
+     * Sync up list of tags in the database .
+     *
+     * @param Requests\UpdateShotRequest $request
+     *
+     * @param $shot
+     */
+    protected function attachTags(Requests\UpdateShotRequest $request, $shot)
     {
-        $tags = Tag::lists('tag_name', 'id');
+        $tags = $request->only("tags");
 
-        return $tags;
+        foreach ($tags['tags'] as $tag) {
+            $tagId[] = $tag['id'];
+        };
+
+        if(empty($tagId)){
+            $tagId = [];
+        }
+        $shot->tags()->sync($tagId);
     }
+
 }

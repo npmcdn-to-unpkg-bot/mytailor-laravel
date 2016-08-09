@@ -1,9 +1,17 @@
-	'use strict';
+(function () {
+   'use strict';
 
-	app.controller("shotsController", ["$scope","shotFactory", "ngDialog", '$window',
 
-		function($scope, shotFactory, ngDialog, $window) {
+	app.controller("shotsController", ["$scope","shotFactory", "ngDialog", '$window','tagFactory',
 
+		function($scope, shotFactory, ngDialog, $window, tagFactory) {
+
+			/**
+			 * shows data about a single shot.
+			 *
+			 * @param id
+			 *
+             */
 			$scope.show = function(id){
 			 		 shotFactory.show(id).then(function(response){
 			 				$scope.shot = response.data;
@@ -11,33 +19,46 @@
 			 		});
 			 	};
 
-			 	$scope.itemArray = [
-					        { tag_name: 'first'},
-					        {id: 2, tag_name: 'second'},
-					        {id: 3, tag_name: 'third'},
-					        {id: 4, tag_name: 'fourth'},
-					        {id: 5, tag_name: 'fifth'},
-    				];
+			/**
+			 * returns all tags in storage.
+			 *
+			 * @return response object.
+			 */
 
+		 		tagFactory.show().then(function(response){
+                    $scope.tagsList = response.data;
+
+            /**
+             * Updates a shot and responds with a snackbar.
+             *
+             */
 			$scope.updateShot = function(){
 				shotFactory.update($scope.shot.id, $scope.shot).then(function(response){
-    				var data = response.data.data;
-					  'use strict';
-					  var snackbarContainer = document.querySelector('#demo-snackbar-example');
+    				var responseData = response.data.data;
+					  
+					  	var snackbarContainer = document.querySelector('#demo-snackbar-example');
 					    var data = {
-					      message: data.message,
-					      timeout: 2000,
-					      actionText: 'Undo'
-					    };
+					      			message: responseData.message,
+					      			timeout: 2000,
+					      			actionText: 'Undo'
+					    		};
 					    snackbarContainer.MaterialSnackbar.showSnackbar(data);
-
 			 	});
 			 };
 
-			 $scope.reset = function(){
+            /**
+             * Changes scope to an empty object
+             *
+             */
+            $scope.reset = function(){
 			 	$scope.shot = {};
-			 };
+			};
 
+            /**
+             *  Opens modal for viewing a shot.
+             *
+             * @param id
+             */
 			$scope.clickToOpen = function (id) {
     			ngDialog.open({ 
     				template: template_path + 'corp_template.html', className: 'mt-large-overlay' 
@@ -45,12 +66,21 @@
 
 			};
 
-			$scope.destroy = function () {
+            /**
+             * deletes a shot item and responds with a snackbar.
+             *
+             */
+                $scope.destroy = function () {
 				shotFactory.destroy($scope.shot.file_name).then(function(response){
 
 					angular.element(document.querySelector('.__active')).remove();
 
 				});
-			}
+			};
 
-	}]);
+
+      });
+
+        }]);
+
+}());
