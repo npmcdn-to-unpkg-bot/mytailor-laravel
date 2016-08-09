@@ -22,10 +22,14 @@
                     <li>
                       <a href="#" class="dropdown-toggle hover-initialized" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                         <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="7"><i class="mdi mdi-email"></i></div>
-                    </a>
+                      </a>
                     </li>
                     <!-- Hmm Icon and Dropdown -->
-                    <li></li>
+                    <li>
+                      <a href="#" class="dropdown-toggle hover-initialized" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                        <div class="material-icons mdl-badge mdl-badge--overlap" data-badge=""><i class="mdi mdi-clipboard-text"></i></div>
+                      </a>
+                    </li>
                     <!-- Avatar Dropdown -->
                    <li>
                       <a href="#" class="dropdown-toggle mt-top-avatar">

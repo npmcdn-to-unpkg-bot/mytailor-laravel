@@ -96,7 +96,6 @@
                   </div>
                   <div class="mt-form-group">
                       <select ng-model="shot.category">
-                        <option selected=""></option>
                           <option value="men">Men</option>
                           <option value="women">Women</option>
                           <option value="kids">Kids</option>
@@ -105,13 +104,15 @@
                       </select>
                       <label class="top-label">Category</label>
                   </div>
-                 <div class="mt-form-group">
-                      <select id="tag_lists" 
-                              ng-options="option.id as option.tag_name for option in shot.tags"
-                              ng-multiple="true" multiple
-
-                              >
-                      </select>
+                  <div class="mt-form-group">
+                      <ui-select multiple tagging ng-model="shot.tags" theme="bootstrap" sortable="true" ng-disabled="ctrl.disabled">
+                          <ui-select-match>
+                              <span>@{{$item.tag_name}}</span>
+                          </ui-select-match>
+                          <ui-select-choices repeat="tag in itemArray | filter: {tag_name: $select.search}">
+                              <option value="@{{tag.id}}">@{{tag.tag_name}}</option>
+                          </ui-select-choices>
+                      </ui-select>
                       <label class="top-label">Tags</label>
                   </div>
                   <div class="mdl-checkbox mb-30">

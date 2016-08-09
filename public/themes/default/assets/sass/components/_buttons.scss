@@ -206,3 +206,19 @@ button#dropdown>i{
 .mt-btn-circle {
     border-radius: 50%;
 }
+
+.ui-select-match>span{
+
+    background: #eee;
+    cursor: pointer;
+    padding: 2px 1px;
+    margin: 0px 5px;
+    box-shadow: 0px 1px 3px rgba(93, 92, 92, 0.51);
+    &:hover{
+        background: rgba(225, 225, 225, 0.93);
+    }
+    span{
+        color: #4d6b8a;
+    }
+
+}

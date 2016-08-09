@@ -35,7 +35,7 @@ elixir.config.publicPath = 'public/themes/default/assets';
 				'../ng-dialog/js/ngDialog.min.js',
                 '../jquery-infinite-scroll/jquery.infinitescroll.js',
                 '../imagesloaded/imagesloaded.pkgd.min.js',
-				'../select2/dist/js/select2.min.js',
+				'../angular-ui-select/dist/select.min.js',
 				'../wow/dist/wow.min.js'
 			   ], 	 'public/themes/default/assets/js/vendor.js');
 
