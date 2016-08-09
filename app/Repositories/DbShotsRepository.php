@@ -41,14 +41,15 @@ class DbShotsRepository implements ShotsRepositoryInterface{
      */
     public function trending($cat){
         return $shots = $this->shots
-            ->select(\DB::raw('views/(DATEDIFF(NOW(), updated_at) * -1.5) as Popularity, shots.*'))
+
+            ->select(\DB::raw( '((views - 1) / (TIMESTAMPDIFF(HOUR, updated_at, NOW()) + 2)^1.5) as Popularity, shots.*'))
             ->category($cat)
             ->orderBy('Popularity', 'desc')
             ->where('published', '=', 1)
             ->groupBy('id')
             ->paginate(5);
     }
-
+//\'views/(DATEDIFF(NOW(), updated_at) * -1.5)
     /**
      * Featured shots on out page
      * @param $cat
