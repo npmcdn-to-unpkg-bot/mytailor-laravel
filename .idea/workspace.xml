@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="657023bf-231f-4b50-a0d6-45ddd5d5ba3a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/USER.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ShotsController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ShotsController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/assets/js/controllers/shotsController.js" afterPath="$PROJECT_DIR$/public/themes/default/assets/js/controllers/shotsController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/assets/js/services/shots.js" afterPath="$PROJECT_DIR$/public/themes/default/assets/js/services/shots.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/assets/sass/layouts/_main_layout.scss" afterPath="$PROJECT_DIR$/public/themes/default/assets/sass/layouts/_main_layout.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/admin/shots/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/admin/shots/index.blade.php" />
     </list>
     <ignored path="mytailor.dev.iws" />
@@ -33,7 +28,7 @@
       <file leaf-file-name="ShotsController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ShotsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7801527">
+            <state vertical-scroll-proportion="0.670229">
               <caret line="143" column="24" selection-start-line="143" selection-start-column="24" selection-end-line="143" selection-end-column="24" />
               <folding />
             </state>
@@ -682,33 +677,33 @@
         <state vertical-scroll-proportion="0.7694656">
           <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
           <folding>
-            <marker date="1470740033446" expanded="true" signature="13:1993" placeholder="{...}" />
-            <marker date="1470740033446" expanded="true" signature="69:1988" placeholder="[...]" />
-            <marker date="1470740033446" expanded="true" signature="194:1987" placeholder="{...}" />
-            <marker date="1470740033446" expanded="true" signature="200:285" placeholder="/** shows data about a single shot. ...*/" />
-            <marker date="1470740033446" expanded="true" signature="315:424" placeholder="{...}" />
-            <marker date="1470740033446" expanded="true" signature="368:415" placeholder="{...}" />
-            <marker date="1470740033446" expanded="true" signature="430:512" placeholder="/** returns all tags in storage. ...*/" />
-            <marker date="1470740033446" expanded="true" signature="560:1974" placeholder="{...}" />
-            <marker date="1470740033446" expanded="true" signature="628:722" placeholder="/** Updates a shot and responds with a snackbar. ...*/" />
-            <marker date="1470740033446" expanded="true" signature="756:1193" placeholder="{...}" />
-            <marker date="1470740033446" expanded="true" signature="833:1185" placeholder="{...}" />
-            <marker date="1470740033446" expanded="true" signature="992:1113" placeholder="{&quot;timeout&quot;: 2000...}" />
-            <marker date="1470740033446" expanded="true" signature="1208:1290" placeholder="/** Changes scope to an empty object ...*/" />
-            <marker date="1470740033446" expanded="true" signature="1328:1357" placeholder="{...}" />
-            <marker date="1470740033446" expanded="true" signature="1372:1479" placeholder="/**  Opens modal for viewing a shot. ...*/" />
-            <marker date="1470740033446" expanded="true" signature="1518:1647" placeholder="{...}" />
-            <marker date="1470740033446" expanded="true" signature="1541:1639" placeholder="{&quot;className&quot;: 'mt-large-overlay'...}" />
-            <marker date="1470740033446" expanded="true" signature="1662:1761" placeholder="/** deletes a shot item and responds with a snackbar. ...*/" />
-            <marker date="1470740033446" expanded="true" signature="1807:1963" placeholder="{...}" />
-            <marker date="1470740033446" expanded="true" signature="1879:1956" placeholder="{...}" />
+            <marker date="1470745484750" expanded="true" signature="13:2132" placeholder="{...}" />
+            <marker date="1470745484750" expanded="true" signature="69:2127" placeholder="[...]" />
+            <marker date="1470745484750" expanded="true" signature="194:2126" placeholder="{...}" />
+            <marker date="1470745484750" expanded="true" signature="200:285" placeholder="/** shows data about a single shot. ...*/" />
+            <marker date="1470745484750" expanded="true" signature="315:424" placeholder="{...}" />
+            <marker date="1470745484750" expanded="true" signature="368:415" placeholder="{...}" />
+            <marker date="1470745484750" expanded="true" signature="430:512" placeholder="/** returns all tags in storage. ...*/" />
+            <marker date="1470745484750" expanded="true" signature="560:1974" placeholder="{...}" />
+            <marker date="1470745484750" expanded="true" signature="628:722" placeholder="/** Updates a shot and responds with a snackbar. ...*/" />
+            <marker date="1470745484750" expanded="true" signature="756:1193" placeholder="{...}" />
+            <marker date="1470745484750" expanded="true" signature="833:1185" placeholder="{...}" />
+            <marker date="1470745484750" expanded="true" signature="992:1113" placeholder="{&quot;timeout&quot;: 2000...}" />
+            <marker date="1470745484750" expanded="true" signature="1208:1290" placeholder="/** Changes scope to an empty object ...*/" />
+            <marker date="1470745484750" expanded="true" signature="1328:1357" placeholder="{...}" />
+            <marker date="1470745484750" expanded="true" signature="1372:1479" placeholder="/**  Opens modal for viewing a shot. ...*/" />
+            <marker date="1470745484750" expanded="true" signature="1518:1647" placeholder="{...}" />
+            <marker date="1470745484750" expanded="true" signature="1541:1639" placeholder="{&quot;className&quot;: 'mt-large-overlay'...}" />
+            <marker date="1470745484750" expanded="true" signature="1662:1761" placeholder="/** deletes a shot item and responds with a snackbar. ...*/" />
+            <marker date="1470745484750" expanded="true" signature="1807:1963" placeholder="{...}" />
+            <marker date="1470745484750" expanded="true" signature="1879:1956" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/ShotsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7801527">
+        <state vertical-scroll-proportion="0.670229">
           <caret line="143" column="24" selection-start-line="143" selection-start-column="24" selection-end-line="143" selection-end-column="24" />
           <folding />
         </state>

@@ -105,7 +105,7 @@
                       <label class="top-label">Category</label>
                   </div>
                   <div class="mt-form-group">
-                      <ui-select multiple tagging ng-model="shot.tags" theme="bootstrap" sortable="true" ng-disabled="ctrl.disabled">
+                      <ui-select multiple tagging="tagTransform" ng-model="shot.tags" theme="bootstrap" sortable="true" ng-disabled="ctrl.disabled">
                           <ui-select-match>
                               <span>@{{$item.tag_name}}</span>
                           </ui-select-match>
