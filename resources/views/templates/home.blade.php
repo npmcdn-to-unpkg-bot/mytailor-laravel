@@ -1,8 +1,26 @@
 
+@section('page_styles')
+
+  <!-- RS5.0 Main Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="{{theme('vendor/revolution/css/settings.css')}}">
+   
+  <!-- RS5.0 Layers and Navigation Styles -->
+  <link rel="stylesheet" type="text/css" href="{{theme('vendor/revolution/css/layers.css')}}">
+  <link rel="stylesheet" type="text/css" href="{{theme('vendor/revolution/css/navigation.css')}}">
+
+    <!-- LOADING FONTS AND ICONS -->
+    <link href="http://fonts.googleapis.com/css?family=Raleway:300,900,100,600,400" rel="stylesheet" property="stylesheet" type="text/css" media="all" />
+    
+    <link rel="stylesheet" type="text/css" href="{{theme('vendor/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{theme('vendor/revolution/fonts/font-awesome/css/font-awesome.min.css')}}">
+
+@endsection
           <section class="hero" style="margin-top:0px;">
                 <div class="cover-container">
+                  
                     <div class="hero-viewport">
-                        <div class="hero-viewport-image">
+                    @include('layouts.template.frontend.partials.slider')
+                        {{-- <div class="hero-viewport-image">
                             <div class="hero-content wow fadeIn">
                                 <div class="mt-hero-textwrap">
                                     <h1 class="mt-heading">MYTAILOR AFRICA</h1>
@@ -12,7 +30,7 @@
                                     <a href="{{route('shots.index')}}" class="btn mt-call-button redish"><span>Explore</span></a>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </section>
@@ -112,7 +130,11 @@
                   <div class="mt-2cols-wrap mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet">
                     <div class="mt-small-banner-wrapper">
                       <ul>
-                        <li><div class="mt-small-banner fixed-image fixed-image--home"></div></li>
+
+                        <li data-description='' data-title='Fade Slots Horizontal' data-rotate='0' data-thumb='../../assets/images/notgenericherobg-280x43.jpg' data-masterspeed='default' data-easeout='default' data-easein='default' data-slotamount='default' data-transition='slotfade-horizontal' data-index='rs-359' data-saveperformance='off' >
+                          <img src="{{theme('images/backgrounds/bb2.jpg')}}" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" >
+                        </li>
+
                       </ul>
                     </div>
                   </div>
@@ -163,3 +185,21 @@
               </div>
 
           </section>
+          @section('page_scripts')
+              <!-- RS5.0 Core JS Files -->
+              <script type="text/javascript" src="{{theme('vendor/revolution/js/jquery.themepunch.tools.min.js?rev=5.0')}}"></script>
+              <script type="text/javascript" src="{{theme('vendor/revolution/js/jquery.themepunch.revolution.min.js?rev=5.0')}}"></script>
+
+              <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
+              (Load Extensions only on Local File Systems !  +
+              The following part can be removed on Server for On Demand Loading) -->  
+            <script type="text/javascript" src="{{theme('vendor/revolution/js/extensions/revolution.extension.actions.min.js')}}"></script>
+            <script type="text/javascript" src="{{theme('vendor/revolution/js/extensions/revolution.extension.carousel.min.js')}}"></script>
+            <script type="text/javascript" src="{{theme('vendor/revolution/js/extensions/revolution.extension.kenburn.min.js')}}"></script>
+            <script type="text/javascript" src="{{theme('vendor/revolution/js/extensions/revolution.extension.layeranimation.min.js')}}"></script>
+            <script type="text/javascript" src="{{theme('vendor/revolution/js/extensions/revolution.extension.migration.min.js')}}"></script>
+            <script type="text/javascript" src="{{theme('vendor/revolution/js/extensions/revolution.extension.navigation.min.js')}}"></script>
+            <script type="text/javascript" src="{{theme('vendor/revolution/js/extensions/revolution.extension.parallax.min.js')}}"></script>
+            <script type="text/javascript" src="{{theme('vendor/revolution/js/extensions/revolution.extension.slideanims.min.js')}}"></script>
+            <script type="text/javascript" src="{{theme('vendor/revolution/js/extensions/revolution.extension.video.min.js')}}"></script>
+          @endsection

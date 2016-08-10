@@ -683,7 +683,7 @@ span.special:hover {
 
 .mt-small-banner {
   height: 55vh;
-  background: url("../images/backgrounds/bb.jpg");
+  background: url("../images/backgrounds/bb2.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -1043,6 +1043,36 @@ p.attract-me {
   margin: 0 6px;
   display: inline;
   color: #929292; }
+
+.mt-slide-cap {
+  font-size: 20px; }
+
+.mt-title-slide {
+  color: #ffffff;
+  font-size: 57px; }
+
+.tp-caption {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  font-style: normal;
+  font-family: Raleway;
+  padding: 0 0 0 0px;
+  text-decoration: none;
+  background-color: transparent;
+  border-color: transparent;
+  border-style: none;
+  border-width: 0px;
+  border-radius: 0 0 0 0px;
+  letter-spacing: 3px; }
 
 /*Forms*/
 .mt-forms {
@@ -1973,7 +2003,7 @@ a.mt-sidebar-link {
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: 4;
+  z-index: 80;
   visibility: hidden;
   transition-property: background-color;
   transition-duration: .2s;

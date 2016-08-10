@@ -70,7 +70,7 @@ class ShotsTemplate extends AbstractTemplate   {
                     SEOMeta::setTitle('Men | MyTailor African Fashion Designers');
                     SEOMeta::setDescription('Women Prints · Check out latest trending African Dresses..');
                     OpenGraph::setDescription('Women Prints · Check out latest trending African Dresses...');
-                    OpenGraph::setUrl('http://mytailor.me/shots/?cat=ac');
+                    OpenGraph::setUrl('http://mytailorafrica.com/shots/?cat=ac');
                     OpenGraph::setTitle('Men | MyTailor African Fashion Designers');
                     Twitter::setTitle('Men | MyTailor African Fashion Designers');
 
@@ -79,7 +79,7 @@ class ShotsTemplate extends AbstractTemplate   {
                     SEOMeta::setTitle('Women | MyTailor African Fashion Designers');
                     SEOMeta::setDescription('Men · Blazers, Shirts, Latest African Fashion Prints...');
                     OpenGraph::setDescription('Men · Blazers, Shirts, Latest African Fashion Prints...');
-                    OpenGraph::setUrl('http://mytailor.me/shots/?cat=ac');
+                    OpenGraph::setUrl('http://mytailorafrica.com/shots/?cat=ac');
                     OpenGraph::setTitle('Women | MyTailor African Fashion Designers');
                     Twitter::setTitle('Women | MyTailor African Fashion Designers');
 
@@ -88,7 +88,7 @@ class ShotsTemplate extends AbstractTemplate   {
                     SEOMeta::setTitle('Couples | MyTailor African Fashion Designers');
                     SEOMeta::setDescription('Couples · Lastest African Prints for couples..');
                     OpenGraph::setDescription('Couples · Lastest African Prints for couples..');
-                    OpenGraph::setUrl('http://mytailor.me/shots/?cat=ac');
+                    OpenGraph::setUrl('http://mytailorafrica.com/shots/?cat=ac');
                     OpenGraph::setTitle('Couples | MyTailor African Fashion Designers');
                     Twitter::setTitle('Couples | MyTailor African Fashion Designers');
                     break;
@@ -96,7 +96,7 @@ class ShotsTemplate extends AbstractTemplate   {
                     SEOMeta::setTitle('Kids | MyTailor African Fashion Designers');
                     SEOMeta::setDescription('Kids · girls, boys, Latest African Fashion Prints...');
                     OpenGraph::setDescription('Kids · girls, boys, Latest African Fashion Prints...');
-                    OpenGraph::setUrl('http://mytailor.me/shots/?cat=ac');
+                    OpenGraph::setUrl('http://mytailorafrica.com/shots/?cat=ac');
                     OpenGraph::setTitle('Kids | MyTailor African Fashion Designers');
                     Twitter::setTitle('Kids | MyTailor African Fashion Designers');
                     break;
@@ -112,7 +112,7 @@ class ShotsTemplate extends AbstractTemplate   {
                     SEOMeta::setTitle('Shots | MyTailor African Fashion Designers');
                     SEOMeta::setDescription('See what\'s trending in African Fashion. From cultural, modern to classic office wears.');
                     OpenGraph::setDescription('See what\'s trending in African Fashion. From cultural, modern to classic office wears.');
-                    OpenGraph::setUrl('http://mytailor.me/shots');
+                    OpenGraph::setUrl('http://mytailorafrica.com/shots');
                     OpenGraph::setTitle('Shots');
                     Twitter::setTitle('Shots');
             }

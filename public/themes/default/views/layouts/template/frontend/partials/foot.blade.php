@@ -19,8 +19,8 @@
         <!-- Scripts -->
         <script src="{{ theme('js/app.js') }}"></script>
         <!-- Algolia -->
-        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css">
-        <script src="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
+
+        <script src="{{ theme('vendor/instantsearch.js/dist/instantsearch.min.js') }}"></script>
 
         <!-- Controllers -->
         <script src="{{ theme('js/controllers/frontend/shotsController.js') }}"></script>
@@ -31,6 +31,8 @@
         <script src="{{ theme('js/services/frontend/shotFactory.js') }}"></script>
         <script src="{{ theme('js/script.js') }}"></script>
 
+        @yield('page_scripts')
+        
         <!-- Google Analytics -->
         <script>
           // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
