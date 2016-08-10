@@ -139,6 +139,10 @@ span.icon-search{
     margin-left: -24px;
 }
 
+.ais-search-box{
+    display: flex;
+    flex-grow: 1;
+}
 
 .mt-search-wrapper input::-webkit-input-placeholder { /* WebKit browsers */
     color: #868686;

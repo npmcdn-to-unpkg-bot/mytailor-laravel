@@ -84,6 +84,26 @@ Mytailor.me
 
                   //========== Tagging System ==========
 
+        var options = {
+          appId : 'RQO4LL16TO',
+          apiKey : '53a754b22aa63d7a38a04c9ee76f596a',
+          indexName : 'instant_search',
+          urlSync: false
+        }
+
+
+
+        search = instantsearch(options);
+
+          search.addWidget(
+            instantsearch.widgets.searchBox({
+              container: '#search-box',
+              placeholder: 'search for items like men, women, shirts, shoes and more ...'
+            })
+          );
+            search.start();
+
+                
                       // switch (id) {
                           
                       //   case 'home':

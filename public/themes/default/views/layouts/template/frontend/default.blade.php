@@ -9,5 +9,6 @@
                 @yield('main')
             </main>
         </div>
+        <div id="hits-container"></div>
     </div>
 @include('layouts.template.frontend.partials.foot')
