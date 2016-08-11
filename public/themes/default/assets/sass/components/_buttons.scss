@@ -222,3 +222,13 @@ button#dropdown>i{
     }
 
 }
+
+.mt-guest-calls__actions{
+    display: flex;
+
+    li{
+       
+        margin: 0 5px;
+        button{font-size: 1em !important;}
+    }
+}

@@ -942,6 +942,15 @@ button#dropdown > i {
   .ui-select-match > span span {
     color: #4d6b8a; }
 
+.mt-guest-calls__actions {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .mt-guest-calls__actions li {
+    margin: 0 5px; }
+    .mt-guest-calls__actions li button {
+      font-size: 1em !important; }
+
 /*Texts*/
 /* ==========================================================================
    This File is for all texts Css
@@ -2071,6 +2080,11 @@ a.mt-sidebar-link {
     color: #202024;
     background-color: #D8D8D8; }
 
+/*********************************************************************************************
+
+      Header Sections
+
+*********************************************************************************************/
 /*********************************************************************************************
 
       Home Sections

@@ -13,11 +13,31 @@
                   <div class="mt-search-wrapper expandable--search hide-on-phone">
                     <span class="icon-search"><i class="mdi mdi-magnify" style="font-size: 22px;"></i></span>
                     <form method="Get" action="#" id="search-box">
-                        {{-- <input type="search" name="q" autocapitalize="off" autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="text" value="" placeholder="search for items like men, women, shirts, shoes and more ..."/> --}}
                     </form>
                 </div>
                 <button class="icon-round mdl-button mt-toggle-search" style="visibility:hidden;">
                     <i class="mdi mdi-magnify icon-center" data-type="search"></i>
                 </button>
+
+                {{-- Non-Login user Actions --}}
+                <div>
+                  <ul class="mt-guest-calls__actions"> 
+                      <li>
+                          <a href=""><!-- Accent-colored flat button -->
+                          <button class="mdl-button mdl-js-button mdl-button--accent">
+                            LOGIN
+                          </button>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="">
+                            <!-- Accent-colored raised button with ripple -->
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                              SIGNUP
+                            </button>
+                          </a>
+                      </li>
+                  </ul>
+                </div>
               </div><!-- global header ends--> 
             </header>
