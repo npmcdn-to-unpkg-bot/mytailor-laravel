@@ -514,15 +514,15 @@
                               </ul>
                           </div>
 
-                          <div class="pb-5 clearfix r-text-div">
+                          <div class="pb-5 clearfix side-bar-analy__item">
                             <h3>Monthly Visits</h3>
                             <span>600</span>
                           </div>
-                          <div class="pb-5 clearfix r-text-div">
+                          <div class="pb-5 clearfix side-bar-analy__item">
                             <h3>Monthly Profit</h3>
                             <span>$4,480</span>
                           </div>
-                          <div class="pb-5 clearfix r-text-div">
+                          <div class="pb-5 clearfix side-bar-analy__item">
                             <h3>Monthly Customers</h3>
                             <span>250</span>
                           </div>

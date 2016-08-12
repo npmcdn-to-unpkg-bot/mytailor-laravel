@@ -19,18 +19,18 @@
                     <i class="mdi mdi-magnify icon-center" data-type="search"></i>
                 </button>
 
-                {{-- Non-Login user Actions --}}
+              {{-- Non-Login user Actions --}}
                 <div>
                   <ul class="mt-guest-calls__actions"> 
                       <li>
-                          <a href=""><!-- Accent-colored flat button -->
+                          <a ng-click="regsign('login')"><!-- Accent-colored flat button -->
                           <button class="mdl-button mdl-js-button mdl-button--accent">
                             LOGIN
                           </button>
                           </a>
                       </li>
                       <li>
-                          <a href="">
+                          <a ng-click="regsign('register')">
                             <!-- Accent-colored raised button with ripple -->
                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                               SIGNUP

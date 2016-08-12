@@ -156,7 +156,8 @@ return [
         MyTailor\Providers\EventServiceProvider::class,
         MyTailor\Providers\RouteServiceProvider::class,
         MyTailor\Providers\MtServiceProvider::class,
-        Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class
+        Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class
 
 
     ],
@@ -209,7 +210,8 @@ return [
         'OpenGraph' => Artesaos\SEOTools\Facades\OpenGraph::class,
         'Twitter'   => Artesaos\SEOTools\Facades\TwitterCard::class,
         // or
-        'SEO' => Artesaos\SEOTools\Facades\SEOTools::class
+        'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
     ],
 

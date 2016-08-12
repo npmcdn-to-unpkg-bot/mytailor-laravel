@@ -12,30 +12,36 @@
 	var template_path = '/themes/default/views/segments/';
 
 app.config(function (ngDialogProvider) {
-    ngDialogProvider.setForceHtmlReload(true);
+    	ngDialogProvider.setForceHtmlReload(true);
 	});
 
 	/*
-	 * Main Simple function to toggle Sidebar
+	 * Sidebar toggle
 	 *
 	 */
-	app.controller("MainController",
-		function($scope) {
-
-			/*
-			 * initial value for vars
-			 */
+	app.controller("MainController", function($scope, ngDialog) {
 
 			$scope.toggle = false;
 			$scope.showForm = false;
 
-			/*
-			 * $this function toggles sidebar
-			 */
-
 			$scope.toggleSidebar = function () {
 					$scope.toggle = !$scope.toggle;
 				};
+
+			$scope.regsign = function($q){
+				history.pushState({}, '', '/'+$q);
+
+			ngDialog.open({
+    				closeByNavigation: true,
+				    cache:false, 
+    				template: template_path + $q+'.html', className: 'small-oval-theme' ,
+    				//controller: 'authController',
+					preCloseCallback: function() {
+				       		history.back();
+				            return true;
+    				}
+    			}); //Dialog
+			};
 
 
 	});

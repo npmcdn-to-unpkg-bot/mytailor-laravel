@@ -23,6 +23,11 @@ class HomeController extends BaseController {
      * @return Var $shots and $View
      */
     public function index(){
+
+        if(Auth::check()){
+          echo 'welcome' .  Auth::user()->username; die();
+        }
+
         $shots = $this->shots->all();
         return view('frontend.index', compact('shots'));
     }

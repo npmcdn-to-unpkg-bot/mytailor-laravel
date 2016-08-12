@@ -1,12 +1,31 @@
 <?php
 
 
-//Authentication :
-Route::get('auth/logout', 'Auth\AuthController@logout');
+/**
+ * Social & Local Registration routes.
+ *
+ */
+Route::get('/login/{provider?}',[
+		'uses' => 'AuthFrontendController@getSocialAuth',
+		'as'   => 'auth.getSocialAuth'
+]);
+
+
+Route::get('/login/callback/{provider?}',[
+		'uses' => 'AuthFrontendController@getSocialAuthCallback',
+		'as'   => 'auth.getSocialAuthCallback'
+]);
+
+/**
+ * Admin Registration Routes.
+ *
+ */
 Route::controller('auth', 'Auth\AuthController', [
 	'getLogin' => 'auth.login',
 	'getLogout' => 'auth.logout'
 	]);
+
+Route::get('auth/logout', 'Auth\AuthController@logout');
 
 //Form to upload shots
 Route::get('admin/shots/upload', [

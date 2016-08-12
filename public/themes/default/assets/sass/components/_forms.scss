@@ -287,3 +287,93 @@ span.icon-search{
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
+
+.form-horizontal{
+    width: 100%;
+    padding: 0;
+}
+.input-icon input{
+    padding: 5px 0 5px 43px;
+    font-size: 15px;
+}
+
+.input-icon>i {
+    color: #a0a0a0;
+    display: block;
+    position: absolute;
+    top: 15px;
+    margin: 11px 2px 4px 10px;
+    z-index: 3;
+    width: 16px;
+    font-size: 19px;
+    text-align: center;
+    left: 0;
+}
+
+.login-options {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.login-options h4 {
+    float: left;
+    font-weight: 600;
+    font-size: 15px;
+    color: #7d91aa!important;
+}
+
+.login-options .social-icons {
+    float: right;
+    padding-top: 3px;
+}
+
+.social-icons:after, .social-icons:before {
+    content: " ";
+    display: table;
+}
+
+.social-icons li {
+    float: left;
+    display: inline;
+    list-style: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-indent: -9999px;
+}
+
+.social-icons li>a {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    width: 28px;
+    height: 28px;
+    display: block;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;}
+
+    .login-options .social-icons li a {
+    border-radius: 15px!important;
+    -moz-border-radius: 15px!important;
+    -webkit-border-radius: 15px!important;
+}
+
+.login .content .form-title {
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+.login-form>h3 {
+    color: map-get($ui-color, redish);
+    text-align: center;
+    font-size: 28px;
+    font-weight: 400!important;
+    margin: 20px 0;
+}

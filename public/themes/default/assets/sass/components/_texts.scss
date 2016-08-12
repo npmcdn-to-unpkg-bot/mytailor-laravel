@@ -211,3 +211,43 @@ font-size: 20px;
     border-radius: 0 0 0 0px;
     letter-spacing: 3px;
     }
+
+    /*
+    * 
+    *
+    */
+
+    .cl-2-item>span{
+        font-size: 25px;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .cl-2-sales{
+        display: flex;
+
+        li{
+            width: 50%;
+            padding: .4em;
+        }
+    }
+
+    .side-bar-analy__item{
+        >*{
+            float: left;
+            width: 50%;
+        }
+
+        >span{
+            padding-left: 10px;
+        }
+    }
+    .mdl-checkbox__label.remember{
+                color: #757575;
+    font-size: 14px;
+    }
+    .forget-password{
+            font-size: 13px;
+    margin-left: 34px;
+    color: #3588ae;
+    }

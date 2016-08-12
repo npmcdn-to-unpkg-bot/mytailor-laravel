@@ -232,3 +232,29 @@ button#dropdown>i{
         button{font-size: 1em !important;}
     }
 }
+.login{
+        margin-top: 1px;
+    font-size: 12px;
+    transition: box-shadow .28s cubic-bezier(.4,0,.2,1);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    user-select: none;
+}
+
+/*** Social */
+
+.social-icons li .facebook {
+    background: url('../images/social/facebook.png') no-repeat;
+}
+
+.social-icons li .twitter {
+    background: url('../images/social/twitter.png') no-repeat;
+}
+
+.social-icon-color {
+    opacity: .7;
+    background-position: 0 -38px!important;
+}

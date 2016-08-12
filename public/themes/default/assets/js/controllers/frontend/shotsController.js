@@ -27,15 +27,11 @@
 					preCloseCallback: function() {
 				       		history.back();
 				            return true;
-    			}
+    				}
 
 				    
     			});
 
 			};
 
-		}
-
-
-
-			]);
+		}]);
