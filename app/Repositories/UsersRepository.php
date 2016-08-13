@@ -3,7 +3,7 @@
 
 namespace MyTailor\Repositories;
 use MyTailor\User;
-
+use MyTailor\Profile;
 class UsersRepository
 {
 
@@ -16,12 +16,13 @@ class UsersRepository
 
         if(!$user){
 
-            $user = User::create(['email' => $userData->email]);
+
             $profile = new Profile(
                 [
                     'username' => $userData->nickname,
                     'avatar' => $userData->avatar
             ]);
+            $user = User::create(['email' => $userData->email]);
             $user->profile()->save($profile);
         }
 
