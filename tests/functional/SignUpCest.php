@@ -16,14 +16,14 @@ class SignUpCest{
 
         $I->amOnPage('/');
         $I->click('SIGNUP');
-        $I->seeCurrentUrlEquals('/register');
+        $I->seeCurrentUrlEquals('/');
 
         $I->fillField('username', 'hotniggah');
         $I->fillField('email', 'johns@gmail.com');
         $I->fillField('password', 'demo');
-        $I->click('Sign Up');
+        $I->click('SignUp');
 
-        $I->seeCurrentUrlEquals('/');
+        $I->seeCurrentUrlEquals('/register');
         $I->see('Hi, hotniggah');
 
 

@@ -35,4 +35,9 @@ class AuthFrontendController extends Controller
             return 'something went wrong';
         }
     }
+
+    public function store()
+    {
+        dd('okay i\'ll see');
+    }
 }

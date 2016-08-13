@@ -16,16 +16,21 @@ Route::get('/login/callback/{provider?}',[
 		'as'   => 'auth.getSocialAuthCallback'
 ]);
 
+Route::controller('auth', 'Auth\AuthController', [
+		'getLogin' => 'auth.login',
+		'getLogout' => 'auth.logout'
+]);
 /**
  * Admin Registration Routes.
  *
  */
-Route::controller('auth', 'Auth\AuthController', [
-	'getLogin' => 'auth.login',
-	'getLogout' => 'auth.logout'
-	]);
+Route::post('/register', [
+	'as' => 'register_user',
+	'uses' => 'AuthFrontendController@store'
+]);
 
 Route::get('auth/logout', 'Auth\AuthController@logout');
+
 
 //Form to upload shots
 Route::get('admin/shots/upload', [

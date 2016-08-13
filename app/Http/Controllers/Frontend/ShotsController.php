@@ -39,7 +39,7 @@ class ShotsController extends Controller
     public function show($id, Request $request )
     {
 
-       $shot = Shot::with('publishable')->where(
+       $shot = Shot::with('publishable', 'tags')->where(
 
                            \DB::raw("left(file_name, length(file_name) - LOCATE('.', Reverse(file_name)))"
                                    ), '=', $id)
@@ -86,7 +86,7 @@ class ShotsController extends Controller
         SEOMeta::setDescription(substr($shot->description, 0, 60));
         SEOMeta::addMeta('product:published_time', Carbon::parse($shot->updated_at)->subMinutes(2)->diffForHumans(), 'property');
         SEOMeta::addMeta('product:section', $shot->category, 'property');
-        //SEOMeta::addKeyword(['key1', 'key2', 'key3']);
+        SEOMeta::addKeyword($shot->tags->lists('tag_name'));
 
         OpenGraph::setDescription($shot->description);
         OpenGraph::setTitle($shot->title);

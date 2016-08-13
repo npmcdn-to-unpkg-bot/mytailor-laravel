@@ -1,10 +1,11 @@
 <div class="register-oval mdl-grid">
 
-	<form class="form-horizontal" role="form" method="POST" action="#">
+	<form class="form-horizontal" role="form" method="POST" action="/register">
 	<div class="mt-form-group">
+		<input type="hidden" class="hidden" name="_token" value="{{ csrf_token() }}">
 	        <div>
 	            <div class="input-icon">
-	                <input type="text" class="form-control" placeholder="Username">
+	                <input type="text" name="username" class="form-control" placeholder="Username">
 	                <div class="form-control-focus"> </div>
 	                <i class="mdi mdi-email-outline"></i>
 	            </div>
@@ -13,7 +14,7 @@
 	    <div class="mt-form-group">
 	        <div>
 	            <div class="input-icon">
-	                <input type="email" class="form-control" placeholder="Email">
+	                <input name="email" type="email" class="form-control" placeholder="Email">
 	                <div class="form-control-focus"> </div>
 	                <i class="mdi mdi-email-outline"></i>
 	            </div>
@@ -22,7 +23,7 @@
 	    <div class="mt-form-group">
 	        <div>
 	            <div class="input-icon right">
-	                <input type="password" class="form-control" placeholder="Password">
+	                <input name="password" type="password" class="form-control" placeholder="Password">
 	                <div class="form-control-focus"> </div>
 	                <i class="mdi mdi-key"></i>
 	            </div>
@@ -36,7 +37,7 @@
         </div>
 	    <div class="mt-form-group">
 	        <div class="center form-buts-wrap">
-	            <button type="submit" class="btn float mdl-button btn-blue waves-effect waves-button waves-float">Sign in</button>
+	            <button type="submit" class="btn float mdl-button btn-blue waves-effect waves-button waves-float">Sign Up</button>
 	        </div>
 	    </div>
 	</form>

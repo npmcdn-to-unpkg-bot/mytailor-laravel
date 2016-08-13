@@ -29,7 +29,7 @@
 
          <!-- The Figure -->
 		<figure class="mt-figure__card mdl-card shot-cover">
-			<img ng-src="/uploads/{{$shot->file_name}}">
+			<img ng-src="/uploads/{{$shot->file_name}}" alt="{{$shot->publishable->profile->username}}'s photo on myailorafrica.com">
 		</figure>
 
 		<!-- Notes -->
