@@ -4,6 +4,7 @@ namespace MyTailor\Http\Controllers;
 
 use Illuminate\Http\Request;
 use MyTailor\Http\Requests;
+use MyTailor\Modules\Users\AuthenticateUser;
 
 class AuthFrontendController extends Controller
 {
@@ -12,29 +13,20 @@ class AuthFrontendController extends Controller
      * Redirect user to login to thirdparty.
      *
      * @param null $provider
+     * @param AuthenticateUser $authenticateUser
+     * @param Request $request
      * @return mixed
      */
-    public function getSocialAuth($provider = null)
+    public function getSocialAuth($provider = null, AuthenticateUser $authenticateUser, Request $request)
     {
-        if (!config("services.$provider")) abort('404'); //just to handle providers that doesn't exist
+        if (!config("services.$provider")) abort('404');
 
-        return \Socialite::with($provider)->redirect();
+        return $authenticateUser->execute($provider, $request->has('code'));
+
+
     }
 
 
-    /**
-     * Okay handle logged in user
-     * @param null $provider
-     * @return string
-     */
-    public function getSocialAuthCallback($provider = null)
-    {
-        if ($user = \Socialite::with($provider)->user()) {
-            dd($user);
-        } else {
-            return 'something went wrong';
-        }
-    }
 
     public function store()
     {

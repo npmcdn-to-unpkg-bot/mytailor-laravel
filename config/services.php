@@ -38,7 +38,7 @@ return [
     'facebook' => [
         'client_id'     => env('FACEBOOK_CLIENT_ID'),
         'client_secret' => env('FACEBOOK_CLIENT_SECRET'),
-        'redirect'      => 'http://mytailorafrica.com/login/callback/facebook'
+        'redirect'      => 'http://dev.mytailor.me/login/facebook'
     ]
 
 ];

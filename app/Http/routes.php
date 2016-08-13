@@ -11,11 +11,6 @@ Route::get('/login/{provider?}',[
 ]);
 
 
-Route::get('/login/callback/{provider?}',[
-		'uses' => 'AuthFrontendController@getSocialAuthCallback',
-		'as'   => 'auth.getSocialAuthCallback'
-]);
-
 Route::controller('auth', 'Auth\AuthController', [
 		'getLogin' => 'auth.login',
 		'getLogout' => 'auth.logout'
