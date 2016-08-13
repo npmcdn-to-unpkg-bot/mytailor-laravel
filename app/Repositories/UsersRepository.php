@@ -10,9 +10,9 @@ class UsersRepository
     public function findByEmailOrCreate($userData)
     {
         return User::firstOrCreate([
-           'username' => $userData->nickname,
             'email' => $userData->email
         ])->with('profile', [
+            'username' => $userData->nickname,
             'avatar' => $userData->avatar
         ]);
     }

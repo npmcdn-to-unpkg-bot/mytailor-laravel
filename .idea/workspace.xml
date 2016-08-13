@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="657023bf-231f-4b50-a0d6-45ddd5d5ba3a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/images/photography1.jpg" afterPath="$PROJECT_DIR$/public/assets/images/photography1.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Modules/Users/AuthenticateUser.php" afterPath="$PROJECT_DIR$/app/Modules/Users/AuthenticateUser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Profile.php" afterPath="$PROJECT_DIR$/app/Profile.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/UsersRepository.php" afterPath="$PROJECT_DIR$/app/Repositories/UsersRepository.php" />
     </list>
     <ignored path="mytailor.dev.iws" />
@@ -28,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Profile.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Profile.php">
+      <file leaf-file-name="UsersRepository.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Repositories/UsersRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21984732">
-              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.32977098">
+              <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -102,9 +99,9 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/AuthFrontendController.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/config/services.php" />
+        <option value="$PROJECT_DIR$/app/Profile.php" />
         <option value="$PROJECT_DIR$/app/Modules/Users/AuthenticateUser.php" />
         <option value="$PROJECT_DIR$/app/Repositories/UsersRepository.php" />
-        <option value="$PROJECT_DIR$/app/Profile.php" />
       </list>
     </option>
   </component>
@@ -154,7 +151,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -189,6 +185,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -524,7 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.45038167">
           <caret line="73" column="26" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -589,7 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24732825">
           <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -631,7 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6870229">
           <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -639,7 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -647,7 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5221374">
           <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -655,13 +647,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6427481">
           <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-          <folding>
-            <marker date="1471091762269" expanded="true" signature="49:146" placeholder="..." />
-            <marker date="1471091762269" expanded="true" signature="195:726" placeholder="{...}" />
-            <marker date="1471091762269" expanded="true" signature="206:394" placeholder=" Redirect user to login to thirdparty. ..." />
-            <marker date="1471091762269" expanded="true" signature="502:651" placeholder="{...}" />
-            <marker date="1471091762269" expanded="true" signature="682:724" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -691,39 +677,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/UsersRepository.php">
+    <entry file="file://$PROJECT_DIR$/app/Profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30229008">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding />
+        <state vertical-scroll-proportion="0.27480915">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <marker date="1471101123906" expanded="true" signature="96:138" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Users/AuthenticateUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7251908">
-          <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.36793894">
+          <caret line="43" column="49" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
           <folding>
-            <marker date="1471094989063" expanded="true" signature="47:176" placeholder="..." />
-            <marker date="1471094989063" expanded="true" signature="201:1652" placeholder="..." />
-            <marker date="1471094989063" expanded="true" signature="210:243" placeholder=" @var UserRepository ..." />
-            <marker date="1471094989063" expanded="true" signature="273:301" placeholder=" @var Socialite ..." />
-            <marker date="1471094989063" expanded="true" signature="335:367" placeholder=" @var Authenticator ..." />
-            <marker date="1471094989063" expanded="true" signature="490:611" placeholder="{...}" />
-            <marker date="1471094989063" expanded="true" signature="620:811" placeholder=" Authenticate a user or redirect them to social plathform. ..." />
-            <marker date="1471094989063" expanded="true" signature="862:1090" placeholder="{...}" />
-            <marker date="1471094989063" expanded="true" signature="1099:1250" placeholder=" Redirect to social to get authorization. ..." />
-            <marker date="1471094989063" expanded="true" signature="1306:1382" placeholder="{...}" />
-            <marker date="1471094989063" expanded="true" signature="1391:1529" placeholder=" Get data about a user from social plathform. ..." />
-            <marker date="1471094989063" expanded="true" signature="1579:1651" placeholder="{...}" />
+            <marker date="1471103732042" expanded="false" signature="47:176" placeholder="..." />
+            <marker date="1471103732042" expanded="true" signature="201:1652" placeholder="..." />
+            <marker date="1471103732042" expanded="true" signature="210:243" placeholder=" @var UserRepository ..." />
+            <marker date="1471103732042" expanded="true" signature="273:301" placeholder=" @var Socialite ..." />
+            <marker date="1471103732042" expanded="true" signature="335:367" placeholder=" @var Authenticator ..." />
+            <marker date="1471103732042" expanded="true" signature="490:611" placeholder="{...}" />
+            <marker date="1471103732042" expanded="true" signature="620:811" placeholder=" Authenticate a user or redirect them to social plathform. ..." />
+            <marker date="1471103732042" expanded="true" signature="862:1090" placeholder="{...}" />
+            <marker date="1471103732042" expanded="true" signature="1099:1250" placeholder=" Redirect to social to get authorization. ..." />
+            <marker date="1471103732042" expanded="true" signature="1306:1382" placeholder="{...}" />
+            <marker date="1471103732042" expanded="true" signature="1391:1529" placeholder=" Get data about a user from social plathform. ..." />
+            <marker date="1471103732042" expanded="true" signature="1579:1651" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Profile.php">
+    <entry file="file://$PROJECT_DIR$/app/Repositories/UsersRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21984732">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.32977098">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
           <folding />
         </state>
       </provider>
