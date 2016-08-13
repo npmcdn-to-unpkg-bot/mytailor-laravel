@@ -24,6 +24,8 @@ class UsersRepository
             ]);
             $user = User::create(['email' => $userData->email]);
             $user->profile()->save($profile);
+
+            return $user;
         }
 
     }
