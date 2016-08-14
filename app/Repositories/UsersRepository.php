@@ -14,19 +14,21 @@ class UsersRepository
 
         $user = User::where('email', $userData->email)->first();
 
-        if(!$user){
+        if(! $user){
 
+            $profile = new Profile();
+            $profile->avatar = $userData->avatar;
+            $profile->username = $userData->avatar;
+            $profile->save();
 
-            $profile = new Profile(
-                [
-                    'username' => $userData->nickname,
-                    'avatar' => $userData->avatar
-            ]);
-            $user = User::create(['email' => $userData->email]);
-            $user->profile()->save($profile);
+            $user = new User();
+            $user->email = $userData->email;
+            $user->profile_id = $profile->id;
+            $user->save();
 
-            return $user;
         }
+
+        return $user;
 
     }
 }

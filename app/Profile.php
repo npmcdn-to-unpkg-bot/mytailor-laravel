@@ -6,5 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Profile extends Model
 {
-    protected $fillable = ['avatar'];
+    protected $fillable = ['avatar', 'username'];
+
+        public function User(){
+    	return $this->belongsTo(User::class);
+	}
 }

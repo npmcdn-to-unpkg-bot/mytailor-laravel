@@ -21,11 +21,13 @@ class AuthFrontendController extends Controller
     {
         if (!config("services.$provider")) abort('404');
 
-        return $authenticateUser->execute($provider, $request->has('code'));
-
-
+        return $authenticateUser->execute($provider, $request->has('code'), $this);
     }
 
+    public function userHasLoggedIn($user){
+
+       return redirect('/');
+    }
 
 
     public function store()

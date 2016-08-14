@@ -27,7 +27,7 @@ class User extends Authenticatable
 
     public function profile()
     {
-        return $this->hasOne(Profile::class, 'id')
+        return $this->hasOne(Profile::class, 'id', 'profile_id')
                     ->select(['id','username','avatar']); //Profile is your profile model
     }
 

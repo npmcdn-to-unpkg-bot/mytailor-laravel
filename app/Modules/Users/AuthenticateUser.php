@@ -4,9 +4,8 @@
 namespace MyTailor\Modules\Users;
 
 use Laravel\Socialite\Contracts\Factory as Socialite;
-use Illuminate\Contracts\Auth\Guard;
 use MyTailor\Repositories\UsersRepository;
-
+use Illuminate\Contracts\Auth\Guard as Authenticator;
 class AuthenticateUser{
 
     /**
@@ -22,7 +21,7 @@ class AuthenticateUser{
      */
     private $auth;
 
-    public function __construct(UsersRepository $users, Socialite $socialite, Guard $authenticator )
+    public function __construct(UsersRepository $users, Socialite $socialite, Authenticator $authenticator )
     {
 
         $this->users = $users;
@@ -37,13 +36,14 @@ class AuthenticateUser{
      * @param $hasCode
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
      */
-    public function execute($provider, $hasCode)
+    public function execute($provider, $hasCode, $listener)
     {
         if(! $hasCode) return $this->getAuthorizationFirst($provider);
 
             $user = $this->users->findByEmailOrCreate($this->getProvidedUser($provider));
-        dd($user);
-            //$this->auth->login($user, true);
+            $this->auth->login($user);
+
+            return $listener->userHasLoggedIn($user);
         
     }
 
