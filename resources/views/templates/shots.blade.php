@@ -20,7 +20,9 @@
     </ul>
 
 </section>
-
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--floating-action">
+  <i class="mdi mdi-camera"></i>
+</button>
 <section class="mt-grid clearfix grid" id="grid" ng-controller="shotsController" ng-init="init()">
 
 @forelse($shots as $shot)

@@ -42,7 +42,8 @@ class AuthenticateUser{
         if(! $hasCode) return $this->getAuthorizationFirst($provider);
 
             $user = $this->users->findByEmailOrCreate($this->getProvidedUser($provider));
-            $this->auth->login($user, true);
+        dd($user);
+            //$this->auth->login($user, true);
         
     }
 

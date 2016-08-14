@@ -61,28 +61,36 @@ button.icon-round{
     line-height: normal;
 }
 
-.mdl-button{
-        background: 0 0;
-    border: none;
-    border-radius: 2px;
-    color: #868686;
-    display: block;
-    position: relative;
-    height: 36px;
-    min-width: 64px;
-    padding: 0 8px;
-    display: inline-block;
-    font-size: 20px;
-    letter-spacing: 0;
-    overflow: hidden;
-    will-change: box-shadow,transform;
-    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
-    outline: none;
-    text-decoration: none;
-    text-align: center;
-    line-height: 36px;
-    vertical-align: middle;
+.mdl-button--floating-action{
+    bottom: 19px;
+    position: fixed;
+    right: 40px;
+    z-index: 998;
 }
+
+
+// .mdl-button{
+//         background: 0 0;
+//     border: none;
+//     border-radius: 2px;
+//     color: #868686;
+//     display: block;
+//     position: relative;
+//     height: 36px;
+//     min-width: 64px;
+//     padding: 0 8px;
+//     display: inline-block;
+//     font-size: 20px;
+//     letter-spacing: 0;
+//     overflow: hidden;
+//     will-change: box-shadow,transform;
+//     transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+//     outline: none;
+//     text-decoration: none;
+//     text-align: center;
+//     line-height: 36px;
+//     vertical-align: middle;
+// }
 
 .mdl-button:hover{
         background-color: rgba(158,158,158,.2);
