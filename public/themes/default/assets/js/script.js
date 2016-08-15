@@ -132,8 +132,6 @@ Mytailor.me
 
 
         });
-        
-      
     
         //Initializa all plugins
         $window.on('load', function(){

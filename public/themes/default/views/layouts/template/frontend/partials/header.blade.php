@@ -20,6 +20,7 @@
                 </button>
 
               {{-- Non-Login user Actions --}}
+                @if(! $user)
                 <div>
                   <ul class="mt-guest-calls__actions"> 
                       <li>
@@ -39,5 +40,8 @@
                       </li>
                   </ul>
                 </div>
+              @endif
               </div><!-- global header ends--> 
             </header>
+
+            <input type="hidden" class="hidden" name="_token" value="{{csrf_token()}}" id="csrf">

@@ -9,7 +9,6 @@
 			      <li>&copy; 2016 MyTailor. All rights reserved.</li>
 			    </ul>
 			</footer>
-
                 <!-- Black Screen -->
                 <div class="mt-obfuscator" ng-class="{'show': toggle}" ng-click="toggleSidebar()"></div>
             
@@ -19,7 +18,7 @@
         <!-- Scripts -->
         <script src="{{ theme('js/app.js') }}"></script>
         <!-- Algolia -->
-
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-cookies.js"></script>
         <script src="{{ theme('vendor/instantsearch.js/dist/instantsearch.min.js') }}"></script>
 
         <!-- Controllers -->

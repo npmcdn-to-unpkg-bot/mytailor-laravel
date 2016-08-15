@@ -17,7 +17,6 @@
 @endsection
           <section class="hero" style="margin-top:0px;">
                 <div class="cover-container">
-                  
                     <div class="hero-viewport">
                     @include('layouts.template.frontend.partials.slider')
                         {{-- <div class="hero-viewport-image">

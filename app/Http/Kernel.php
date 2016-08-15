@@ -45,6 +45,7 @@ class Kernel extends HttpKernel
      */
     protected $routeMiddleware = [
         'auth' => \MyTailor\Http\Middleware\Authenticate::class,
+        'admin'=>\MyTailor\Http\Middleware\AdminMiddleware::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'can' => \Illuminate\Foundation\Http\Middleware\Authorize::class,
         'guest' => \MyTailor\Http\Middleware\RedirectIfAuthenticated::class,

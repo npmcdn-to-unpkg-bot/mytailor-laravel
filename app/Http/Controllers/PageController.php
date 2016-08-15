@@ -5,7 +5,7 @@ namespace MyTailor\Http\Controllers;
 use MyTailor\Page;
 use Illuminate\Http\Request;
 use MyTailor\Http\Requests;
-
+use Illuminate\Support\Facades\Auth;
 
 class PageController extends Controller {
 
@@ -17,6 +17,8 @@ class PageController extends Controller {
     public function show(Page $page, array $parameters){
 
         $this->prepareTemplate($page, $parameters);
+
+        view()->share('user', Auth::user());
         return view('frontend.page', compact('page'));
     }
 

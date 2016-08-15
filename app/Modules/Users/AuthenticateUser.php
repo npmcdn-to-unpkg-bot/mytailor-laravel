@@ -34,6 +34,7 @@ class AuthenticateUser{
      *
      * @param $provider
      * @param $hasCode
+     * @param $listener
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
      */
     public function execute($provider, $hasCode, $listener)

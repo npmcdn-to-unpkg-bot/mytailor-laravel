@@ -8,6 +8,8 @@
     {!! OpenGraph::generate() !!}
     {!! Twitter::generate() !!}
 
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <link rel="shortcut icon" href="{{ theme('images/favicon.png')}}">
     <!-- Material Design style -->
     <link rel="stylesheet" href="{{ theme('vendor/material-design-lite/material.min.css')}}">

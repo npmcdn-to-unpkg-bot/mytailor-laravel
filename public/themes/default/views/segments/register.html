@@ -2,7 +2,7 @@
 
 	<form class="form-horizontal" role="form" method="POST" action="/register">
 	<div class="mt-form-group">
-		<input type="hidden" class="hidden" name="_token" value="{{ csrf_token() }}">
+		<input type="hidden" class="hidden" ng-model="token">
 	        <div>
 	            <div class="input-icon">
 	                <input type="text" name="username" class="form-control" placeholder="Username">

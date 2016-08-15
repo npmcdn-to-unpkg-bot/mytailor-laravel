@@ -52,11 +52,11 @@ class User extends Authenticatable
      * @param $name
      * @return bool
      */
-    public function hasRole($name)
+    public function hasRole($name = [])
     {
         foreach($this->roles as $role){
 
-            if($role->name == $name) return true;
+            if(in_array($role->name, $name)) return true;
         }
 
         return false;

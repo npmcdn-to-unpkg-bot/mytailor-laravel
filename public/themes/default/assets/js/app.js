@@ -7,7 +7,7 @@
 
 
 	// Here we declare our ng-app and modules we need
-	var app = angular.module('app', ['ngAnimate', 'ngMessages', 'ngSanitize', 'ui.select', 'ngDialog']);
+	var app = angular.module('app', ['ngAnimate', 'ngMessages', 'ngSanitize', 'ui.select', 'ngDialog', 'ngCookies']);
 
 	var template_path = '/themes/default/views/segments/';
 
@@ -35,7 +35,7 @@ app.config(function (ngDialogProvider) {
     				closeByNavigation: true,
 				    cache:false, 
     				template: template_path + $q+'.html', className: 'small-oval-theme' ,
-    				//controller: 'authController',
+    				controller: 'authController',
 					preCloseCallback: function() {
 				       		history.back();
 				            return true;
@@ -45,3 +45,24 @@ app.config(function (ngDialogProvider) {
 
 
 	});
+
+	app.controller("authController", ["$scope","$http", "$cookies",
+
+		function($scope, $http, $cookies) {
+
+$scope.token = angular.element(document.getElementById('csrf')).val();
+			 	// 	/**
+		   //           * Updates a shot and responds with a snackbar.
+		   //           *
+		   //           */
+					// $scope.login = function(){
+
+					// 	$http.post('/login').then(function(response){
+					// 			console.log(respone);
+					// 	});
+
+					//  };
+
+
+
+	}]);

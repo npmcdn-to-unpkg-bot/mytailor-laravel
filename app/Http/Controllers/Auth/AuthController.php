@@ -2,6 +2,7 @@
 
 namespace MyTailor\Http\Controllers\Auth;
 
+use MyTailor\Modules\Users\AuthenticateUser;
 use MyTailor\User;
 use Validator;
 use MyTailor\Http\Controllers\Controller;
@@ -71,5 +72,25 @@ class AuthController extends Controller
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+    }
+
+    /**
+     * Redirect user to login to thirdparty.
+     *
+     * @param null $provider
+     * @param AuthenticateUser $authenticateUser
+     * @param Request $request
+     * @return mixed
+     */
+    public function getSocialAuth($provider = null, AuthenticateUser $authenticateUser, Request $request)
+    {
+        if (!config("services.$provider")) abort('404');
+
+        return $authenticateUser->execute($provider, $request->has('code'), $this);
+    }
+
+    public function userHasLoggedIn($user){
+
+        return redirect('/');
     }
 }
