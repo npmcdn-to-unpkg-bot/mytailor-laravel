@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="657023bf-231f-4b50-a0d6-45ddd5d5ba3a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/Members/Controller.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/Members/ProfileController.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Http/Controllers/AuthFrontendController.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/Controller.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/Authenticate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Modules/Users/AuthenticateUser.php" afterPath="$PROJECT_DIR$/app/Modules/Users/AuthenticateUser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/assets/js/app.js" afterPath="$PROJECT_DIR$/public/themes/default/assets/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/assets/js/controllers/pagesController.js" afterPath="$PROJECT_DIR$/public/themes/default/assets/js/controllers/pagesController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/assets/js/controllers/shotsController.js" afterPath="$PROJECT_DIR$/public/themes/default/assets/js/controllers/shotsController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/assets/js/script.js" afterPath="$PROJECT_DIR$/public/themes/default/assets/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/views/layouts/template/frontend/partials/foot.blade.php" afterPath="$PROJECT_DIR$/public/themes/default/views/layouts/template/frontend/partials/foot.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/views/layouts/template/frontend/partials/head.blade.php" afterPath="$PROJECT_DIR$/public/themes/default/views/layouts/template/frontend/partials/head.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/views/layouts/template/frontend/partials/header.blade.php" afterPath="$PROJECT_DIR$/public/themes/default/views/layouts/template/frontend/partials/header.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/views/segments/login.html" afterPath="$PROJECT_DIR$/public/themes/default/views/segments/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/views/segments/register.html" afterPath="$PROJECT_DIR$/public/themes/default/views/segments/register.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/templates/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/templates/home.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Repositories/UsersRepository.php" afterPath="$PROJECT_DIR$/app/Repositories/UsersRepository.php" />
     </list>
     <ignored path="mytailor.dev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,11 +36,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthenticateUser.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AuthenticateUser.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Modules/Users/AuthenticateUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.930693">
-              <caret line="67" column="47" selection-start-line="67" selection-start-column="47" selection-end-line="67" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UsersRepository.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Repositories/UsersRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7970297">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+              <folding>
+                <element signature="e#41#59#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -127,7 +125,6 @@
         <option value="$PROJECT_DIR$/tests/functional/SignUpCest.php" />
         <option value="$PROJECT_DIR$/config/services.php" />
         <option value="$PROJECT_DIR$/app/Profile.php" />
-        <option value="$PROJECT_DIR$/app/Repositories/UsersRepository.php" />
         <option value="$PROJECT_DIR$/database/migrations/2016_08_14_084310_Add_Timestamps_to_profiles.php" />
         <option value="$PROJECT_DIR$/app/Modules/Users/AuthenticateUser.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Frontend/Private/Controller.php" />
@@ -149,6 +146,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/AuthFrontendController.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
+        <option value="$PROJECT_DIR$/app/Repositories/UsersRepository.php" />
       </list>
     </option>
   </component>
@@ -576,6 +574,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27480915">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -598,13 +597,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.77227724">
           <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Repositories/UsersRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41584158">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -650,14 +642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6831683">
           <caret line="47" column="66" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4950495">
-          <caret line="58" column="57" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -784,16 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
-          <folding>
-            <element signature="e#7#38#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -806,9 +780,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Modules/Users/AuthenticateUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.930693">
-          <caret line="67" column="47" selection-start-line="67" selection-start-column="47" selection-end-line="67" selection-end-column="47" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Relations/BelongsToMany.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="934" column="20" selection-start-line="934" selection-start-column="20" selection-end-line="934" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+          <folding>
+            <element signature="e#7#38#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Repositories/UsersRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7970297">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding>
+            <element signature="e#41#59#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

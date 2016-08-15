@@ -25,6 +25,7 @@ class UsersRepository
             $user->email = $userData->email;
             $user->profile_id = $profile->id;
             $user->save();
+            $user->assignRole(4);
 
         }
 
