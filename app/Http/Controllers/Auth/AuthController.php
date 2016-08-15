@@ -2,6 +2,7 @@
 
 namespace MyTailor\Http\Controllers\Auth;
 
+use Illuminate\Http\Request;
 use MyTailor\Modules\Users\AuthenticateUser;
 use MyTailor\User;
 use Validator;
