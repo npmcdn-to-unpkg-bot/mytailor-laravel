@@ -18,18 +18,7 @@
           <section class="hero" style="margin-top:0px;">
                 <div class="cover-container">
                     <div class="hero-viewport">
-                    @include('layouts.template.frontend.partials.slider')
-                        {{-- <div class="hero-viewport-image">
-                            <div class="hero-content wow fadeIn">
-                                <div class="mt-hero-textwrap">
-                                    <h1 class="mt-heading">MYTAILOR AFRICA</h1>
-                                    <h2 class="mt-subheading">GET INSPIRED BY TALENTED <span>AFRICAN</span> FASHION <span>DESIGNERS</span>.</h2>
-                                </div>
-                                <div class="mt-hero-button">
-                                    <a href="{{route('shots.index')}}" class="btn mt-call-button redish"><span>Explore</span></a>
-                                </div>
-                            </div>
-                        </div> --}}
+                      @include('layouts.template.frontend.partials.slider')
                     </div>
                 </div>
             </section>

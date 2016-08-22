@@ -1,7 +1,7 @@
 <?php
 
 namespace MyTailor\Http\Middleware;
-
+use Illuminate\Support\Facades\Auth;
 use Closure;
 
 
@@ -9,6 +9,8 @@ class Authenticate
 {
     /**
      * Handle an incoming request.
+     *
+     * This place is not for guests.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \Closure  $next

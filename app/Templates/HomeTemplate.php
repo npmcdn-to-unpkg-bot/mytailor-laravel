@@ -4,12 +4,12 @@
 namespace MyTailor\Templates;
 
 use Illuminate\View\View;
+use Illuminate\Support\Facades\Auth;
 use MyTailor\Shot;
 use Carbon\Carbon;
 use SEOMeta;
 use OpenGraph;
 use Twitter;
-
 class HomeTemplate extends AbstractTemplate {
 
     protected $view = 'home';
@@ -33,6 +33,7 @@ class HomeTemplate extends AbstractTemplate {
      */
     public function prepare(View $view, array $parameters)
     {
+       // \MyTailor\Shot::reindex();
         $this->seoMake();
 
         $shots = $this->shots
@@ -52,7 +53,7 @@ class HomeTemplate extends AbstractTemplate {
 
         OpenGraph::setDescription('Check out top African designers and their inspiring attires, prints, fabrics, shoes and more. Find out what to wear.');
         OpenGraph::setTitle('MyTailor');
-        OpenGraph::setUrl('http://mytailor.me/home');
+        OpenGraph::setUrl('http://mytailorafrica.com/home');
         OpenGraph::addProperty('type', 'business.fashion');
 
         Twitter::setTitle('Home');

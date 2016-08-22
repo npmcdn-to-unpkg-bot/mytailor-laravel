@@ -1,8 +1,9 @@
 <div class="register-oval mdl-grid">
 
-	<form class="form-horizontal" role="form" method="POST" action="/register">
+	<form class="form-horizontal login-form" role="form" method="POST" action="/register">
+	<h3 class="form-title">Sign Up</h3>
 	<div class="mt-form-group">
-		<input type="hidden" class="hidden" ng-model="token">
+		<input type="hidden" class="hidden" name="_token" value="{{token}}">
 	        <div>
 	            <div class="input-icon">
 	                <input type="text" name="username" class="form-control" placeholder="Username">

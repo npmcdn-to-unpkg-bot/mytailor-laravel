@@ -3,8 +3,11 @@
 namespace MyTailor;
 
 use Illuminate\Database\Eloquent\Model;
+use AlgoliaSearch\Laravel\AlgoliaEloquentTrait;
 
 class Shot extends Model {
+
+    use AlgoliaEloquentTrait;
 
     protected $fillable = ['title', 'category', 'featured', 'published', 'views', 'source_url', 'description',
                             'published_by', 'published_at'

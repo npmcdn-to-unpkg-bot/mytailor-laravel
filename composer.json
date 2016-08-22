@@ -15,7 +15,10 @@
         "artesaos/seotools": "^0.9.2",
         "marijnvdwerf/material-palette": "~1.0",
         "laravel/socialite": "^2.0",
-        "guzzlehttp/guzzle": "^6.2"
+        "guzzlehttp/guzzle": "^6.2",
+        "laracasts/commander": "^1.4",
+        "algolia/algoliasearch-laravel": "^1.2",
+        "laracasts/flash": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

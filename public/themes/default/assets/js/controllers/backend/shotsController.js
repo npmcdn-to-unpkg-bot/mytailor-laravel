@@ -82,15 +82,6 @@
       });
 
 
-// $scope.tagTransform = function (newTag) {
-//     var item = {
-//         name: newTag,
-//         id: newTag
-//     };
-
-//     return item;
-//   };
-
         }]);
 
 }());

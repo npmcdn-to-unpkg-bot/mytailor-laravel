@@ -87,48 +87,108 @@ Mytailor.me
         var options = {
           appId : 'RQO4LL16TO',
           apiKey : '53a754b22aa63d7a38a04c9ee76f596a',
-          indexName : 'instant_search',
-          urlSync: true
+          indexName : 'shots'
         }
 
 
 
+        //========== Instant Search JS ==========
         search = instantsearch(options);
 
           search.addWidget(
             instantsearch.widgets.searchBox({
               container: '#search-box',
-              placeholder: 'search for items like men, women, shirts, shoes and more ...'
+              placeholder: 'search for items like men, women, shirts, shoes and more ...',
+
+            })
+          ); 
+
+          search.addWidget(
+            instantsearch.widgets.hits({
+              container: '#hits-container',
+              hitsPerPage: 10,
+              templates: {
+                item: getTemplate('hit'),
+                empty: getTemplate('no-results')
+              }
             })
           );
-            search.start();
 
-                
-                      // switch (id) {
+        function getTemplate(templateName) {
+          return document.getElementById(templateName + '-template').innerHTML;
+        }
+          search.start();
+            var $searchbox = $('#search-box input'),
+                $mtcontainer = $('.mt-content'),
+                $searchcontainer = $('#mt-search-container')
+
+            //Search Animations
+            $searchbox.on('keyup', function(){
+
+              if ($(this).val()){
+
+                    $mtcontainer.removeClass('fadeIn');
+                    $searchcontainer.removeClass('fadeOut');
+
+                    $mtcontainer.addClass('animated fadeOut');
+                    setTimeout(function() {
+                          $mtcontainer.fadeOut('fast');
+                      }, 350);
+
+                    $searchcontainer.show().addClass('animated fadeIn');
+
+              }else{
+                    $mtcontainer.removeClass('fadeOut');
+                    $searchcontainer.removeClass('fadeIn');
+
+                    $searchcontainer.addClass('fadeOut')
+                      setTimeout(function() {
+                            $searchcontainer.fadeOut('fast');
+                        }, 350);
+
+                  $mtcontainer.addClass('fadeIn').show();
+
+              }
+            });
+
+            //Aleart timer
+            $card = $('#card-alert') ? $('#card-alert'): null;
+            if($card){
+                setTimeout(function(){
+
+                      $card.removeClass('bounceInRight').addClass('bounceOutRight').hide(500);
+
+              }, 8000);
+            };
+
+            //$card = $('#card-alert__close') ? $('#card-alert__close'): null;
+            
+
+                      switch (id) {
                           
-                      //   case 'home':
+                        case 'home':
 
-                      //     var $bar = $('my-header'),
-                      //       $items = $('#items');
+                          var $bar = $('my-header'),
+                            $items = $('#items');
 
-                      //        if ($header.hasClass('normal')
-                      //               &&  $banner.length > 0) {
+                             if ($header.hasClass('normal')
+                                    &&  $banner.length > 0) {
 
-                      //                 $window.on('load', function() {
-                      //                   $banner.scrollwatch({
-                      //                     delay:    0,
-                      //                     range:    0.5,
-                      //                     anchor:   'top',
-                      //                     on:     function() { $header.addClass('mt-header show').removeClass('mt-header-animate'); },
-                      //                     off:    function() { $header.removeClass('show').addClass('mt-header-animate'); }
-                      //                   });
+                                      $window.on('load', function() {
+                                        $banner.scrollwatch({
+                                          delay:    0,
+                                          range:    0.5,
+                                          anchor:   'top',
+                                          on:     function() { $header.addClass('mt-header show').removeClass('mt-header-animate'); },
+                                          off:    function() { $header.removeClass('show').addClass('mt-header-animate'); }
+                                        });
 
-                      //                 });
+                                      });
 
-                      //               }
+                                    }
 
-                      //         break;
-                      // }
+                              break;
+                      }
 
 
         });
@@ -151,12 +211,11 @@ Mytailor.me
                     });
 
             //RevSlider
-
-
           var tpj=jQuery;         
           var revapi48;
+          
             if(tpj("#rev_slider_48_1").revolution == undefined){
-              revslider_showDoubleJqueryError("#rev_slider_48_1");
+              
             }else{
               revapi48 = tpj("#rev_slider_48_1").show().revolution({
                 sliderType:"standard",
@@ -203,7 +262,8 @@ Mytailor.me
                   disableFocusListener:false,
                 }
               });
-            }
+            } // RevSlider ends
+
 
               });
 })(jQuery);

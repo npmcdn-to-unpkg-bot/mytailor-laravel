@@ -129,14 +129,11 @@ class UploadServer extends UploadHandler {
 
     public function delete($print_response = true, $id) {
 
-//        $file_names = $this->get_file_names_params();
-//        if (empty($file_names)) {
-//            $file_names = array($this->get_file_name_param());
-//        }
+
         $file_name = $id;
-       // dd($file_name);
+
         $response = array();
-        //foreach($file_names as $file_name) {
+
             $file_path = $this->get_upload_path($file_name);
             $success = is_file($file_path) && $file_name[0] !== '.' && unlink($file_path);
             if ($success) {
@@ -150,7 +147,7 @@ class UploadServer extends UploadHandler {
                 }
             }
             $response[$file_name] = $success;
-       // }
+
         return $this->generate_response($response, $print_response);
     }
 }

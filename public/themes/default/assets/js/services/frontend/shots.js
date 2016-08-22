@@ -2,11 +2,11 @@
 
 			// will return object of a single shot
 			this.show = function (name) {
-			  	return $http.get("/shot/" + name);
+			  	return $http.get("/api/shot/" + name);
 			};
 
 			this.viewed = function(name){
-				return $http.post("/shot/viewed/" + name);
+				return $http.post("/api/shot/viewed/" + name);
 			};
 
 			// this.update = function(id, shot){

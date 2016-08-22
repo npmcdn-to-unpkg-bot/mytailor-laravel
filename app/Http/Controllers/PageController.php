@@ -16,9 +16,9 @@ class PageController extends Controller {
      */
     public function show(Page $page, array $parameters){
 
+        $this->prepareUser($parameters);
         $this->prepareTemplate($page, $parameters);
 
-        view()->share('user', Auth::user());
         return view('frontend.page', compact('page'));
     }
 
@@ -45,5 +45,17 @@ class PageController extends Controller {
         $template->prepare($view = view($view), $parameters);
 
         $page->view = $view;
+    }
+
+    /**
+     * @param array $parameters
+     *
+     */
+    protected function prepareUser(array $parameters)
+    {
+
+        $user = Auth::user() ?: null;
+        view()->share('user', $user);
+
     }
 }

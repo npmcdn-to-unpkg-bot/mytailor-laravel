@@ -14,25 +14,16 @@
             
             </div> <!-- Page wrapper ends -->
             </div>
-            <script src="{{ theme('vendor/material-design-lite/material.min.js') }}"></script>
-        <!-- Scripts -->
-        <script src="{{ theme('js/app.js') }}"></script>
-        <!-- Algolia -->
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular-cookies.js"></script>
+
+        {{-- Material --}}
+        <script src="{{ theme('vendor/material-design-lite/material.min.js') }}"></script>
+        {{-- Algolia --}}
         <script src="{{ theme('vendor/instantsearch.js/dist/instantsearch.min.js') }}"></script>
-
-        <!-- Controllers -->
-        <script src="{{ theme('js/controllers/frontend/shotsController.js') }}"></script>
-        <script src="{{ theme('js/controllers/frontend/ovalController.js') }}"></script>
-        <script src="{{ theme('js/controllers/frontend/HomeController.js') }}"></script>
-
-        <!-- Services -->
-        <script src="{{ theme('js/services/frontend/shotFactory.js') }}"></script>
-        <script src="{{ theme('js/script.js') }}"></script>
+        {{-- Site Styles --}}
+        <script src="{{ theme('js/frontend.js') }}"></script>
+        <script src="{{ theme('js/frontendScript.js') }}"></script>
 
         @yield('page_scripts')
-        
-        <!-- Google Analytics -->
         <script>
           // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

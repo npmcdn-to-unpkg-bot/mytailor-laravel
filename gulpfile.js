@@ -28,6 +28,7 @@ elixir.config.publicPath = 'public/themes/default/assets';
 			    '../angular/angular.min.js',
 			    '../angular/angular-animate.min.js',
 			    '../angular/angular-messages.min.js',
+				'../mustache.js/mustache.min.js',
 			   	'../angular/angular-sanitize.min.js',
 			    '../jquery/dist/jquery.min.js',
 				'../masonry/dist/masonry.pkgd.min.js',
@@ -39,9 +40,27 @@ elixir.config.publicPath = 'public/themes/default/assets';
 				'../wow/dist/wow.min.js'
 			   ], 	 'public/themes/default/assets/js/vendor.js');
 
-     //   mix vendor css
+		// Frontend Scripts
+		mix.scripts(
+				[
+					'../../../public/themes/default/assets/js/controllers/frontend/app.js',
+					'../../../public/themes/default/assets/js/controllers/frontend/mainController.js',
+					'../../../public/themes/default/assets/js/controllers/frontend/shotsController.js',
+					'../../../public/themes/default/assets/js/controllers/frontend/ovalController.js',
+					'../../../public/themes/default/assets/js/controllers/frontend/designersController.js',
+					'../../../public/themes/default/assets/js/services/frontend/shots.js'
+				],		'public/themes/default/assets/js/frontend.js');
+
+		// Backend Scripts
+		mix.scripts(
+				[
+					'../../../public/themes/default/assets/js/controllers/backend/app.js',
+					'../../../public/themes/default/assets/js/controllers/backend/mainController.js',
+					'../../../public/themes/default/assets/js/controllers/backend/shotsController.js',
+					'../../../public/themes/default/assets/js/controllers/backend/pagesController.js',
+					'../../../public/themes/default/assets/js/services/backend/shots.js',
+					'../../../public/themes/default/assets/js/services/backend/pages.js'
+				],		'public/themes/default/assets/js/backend.js');
+
 	});
 
-/*
- * Here we shall mix
- */

@@ -2,44 +2,41 @@
 
 namespace MyTailor\Http\Controllers\Auth;
 
+use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Illuminate\Http\Request;
+use Laracasts\Commander\CommandBus;
+use MyTailor\Modules\Core\Flash\Flasher;
 use MyTailor\Modules\Users\AuthenticateUser;
-use MyTailor\User;
+use MyTailor\Modules\Users\Registration\RegisterUserCommand;
 use Validator;
 use MyTailor\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
-
 class AuthController extends Controller
 {
-    /*
-    |--------------------------------------------------------------------------
-    | Registration & Login Controller
-    |--------------------------------------------------------------------------
-    |
-    | This controller handles the registration of new users, as well as the
-    | authentication of existing users. By default, this controller uses
-    | a simple trait to add these behaviors. Why don't you explore it?
-    |
-    */
 
     use AuthenticatesUsers;
-
     /**
      * Where to redirect users after login / registration.
      *
      * @var string
      */
     protected $redirectTo = '/';
+    /**
+     * @var CommandBus
+     */
+    private $commandBus;
 
     /**
      * Create a new authentication controller instance.
-     *
-     * @return void
+     * @param CommandBus $commandBus
      */
-    public function __construct()
+    public function __construct(CommandBus $commandBus)
     {
+        $this->commandBus = $commandBus;
+
         $this->redirectAfterLogout = route('auth.login');
         $this->redirectTo = route('admin.dashboard');
+        $this->registerWizard = '/register/wizard';
 
         $this->middleware($this->guestMiddleware(), ['except' => 'logout']);
     }
@@ -54,25 +51,60 @@ class AuthController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|max:255',
+            'username' => 'required|max:255',
             'email' => 'required|email|max:255|unique:users',
-            'password' => 'required|min:6|confirmed',
+            'password' => 'required|min:6',
         ]);
     }
 
+
     /**
-     * Create a new user instance after a valid registration.
+     * Handle a registration request for the application.
      *
-     * @param  array  $data
-     * @return User
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
      */
-    protected function create(array $data)
+    public function register($request)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
-        ]);
+        $validator = $this->validator($request->all());
+
+        if ($validator->fails()) {
+            $this->throwValidationException(
+                $request, $validator
+            );
+        }
+
+        extract($request->only('username', 'email', 'password'));
+
+        $command = new RegisterUserCommand($username, $email, $password, $avatar = null);
+        $this->commandBus->execute($command);
+
+    }
+
+    /**
+     * Handle a login request to the application.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function postLogin(Request $request)
+    {
+
+        return $this->login($request);
+    }
+
+    /**
+     * Registers a new user.
+     *
+     * @param Request $request
+     * @return Redirect user.
+     */
+    public function postRegister(Request $request)
+    {
+        $this->register($request);
+
+        Flasher::flash('info', 'Welcome To MyTailorAfrica', true);
+        return redirect('/shots');
     }
 
     /**

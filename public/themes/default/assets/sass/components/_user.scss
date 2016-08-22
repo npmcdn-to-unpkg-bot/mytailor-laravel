@@ -27,3 +27,76 @@
     display: inline-block;
     margin-left: 5px;
 }
+
+// profile
+/*********************************************************************************************
+
+      Profile Sections
+
+*********************************************************************************************/
+
+.mt-profile__wall{
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(56, 67, 72, 0.49), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.mt-profile-cover{
+    overflow: hidden;
+    height: 72vh;
+
+}
+
+.mt-profile-cover__link{
+    display: block;
+    position: relative;
+    height: 72vh;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.mt-profile-cover__image{
+        top: 0px;
+    width: 100%;
+    image-rendering: optimizeQuality;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    left: 0;
+}
+.mt-profile__info-box{
+    position: absolute;
+    top: 38%;
+    width: 100%;
+    padding: 0 60px;
+    display: inline-flex;
+    >a{
+        height: 130px !important;
+        width: 130px !important;
+        border:none;
+        background: #000;
+
+        &:hover{
+          border: none !important;
+          >img{opacity: .7;}
+        }
+    }
+}
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans|Volkhov';
+.mt-profile__info{
+    padding-left: 0px;
+    padding-top: 10px;
+}
+
+.profile__title{
+     color: rgba(255, 255, 255, 0.81);
+      font-size: 20px;
+      font-family: 'Volkhov', serif;
+}
+
+.profile-tag_name{
+       
+     font-family: 'Josefin Sans', sans-serif;
+}
+

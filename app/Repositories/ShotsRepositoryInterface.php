@@ -1,4 +1,5 @@
-<?php namespace MyTailor\Repositories;
+<?php
+namespace MyTailor\Repositories;
 use MyTailor\Shot;
 
 interface ShotsRepositoryInterface

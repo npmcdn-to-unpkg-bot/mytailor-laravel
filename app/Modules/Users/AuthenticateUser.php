@@ -4,7 +4,7 @@
 namespace MyTailor\Modules\Users;
 
 use Laravel\Socialite\Contracts\Factory as Socialite;
-use MyTailor\Repositories\UsersRepository;
+use MyTailor\Repositories\UsersRepositoryInterface;
 use Illuminate\Contracts\Auth\Guard as Authenticator;
 class AuthenticateUser{
 
@@ -21,7 +21,7 @@ class AuthenticateUser{
      */
     private $auth;
 
-    public function __construct(UsersRepository $users, Socialite $socialite, Authenticator $authenticator )
+    public function __construct(UsersRepositoryInterface $users, Socialite $socialite, Authenticator $authenticator )
     {
 
         $this->users = $users;

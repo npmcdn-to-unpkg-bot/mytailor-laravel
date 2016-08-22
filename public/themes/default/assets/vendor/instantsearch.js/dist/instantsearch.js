@@ -15398,7 +15398,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	exports.encode = function (str) {
 	
-	    // This code was originally written by Brian White (mscdex) for the io.js core querystring library.
+	    // This code was originally written by Brian White (mscdex) for the io.js Core querystring library.
 	    // It has been adapted here for stricter adherence to RFC 3986
 	    if (str.length === 0) {
 	        return str;

@@ -21,6 +21,7 @@
 
               {{-- Non-Login user Actions --}}
                 @if(! $user)
+
                 <div>
                   <ul class="mt-guest-calls__actions"> 
                       <li>
@@ -40,8 +41,12 @@
                       </li>
                   </ul>
                 </div>
+
+              @else()
+
+                @include('layouts.template.frontend.partials.users.header-actions')
               @endif
               </div><!-- global header ends--> 
             </header>
-
+            {{-- CSRF Token --}}
             <input type="hidden" class="hidden" name="_token" value="{{csrf_token()}}" id="csrf">

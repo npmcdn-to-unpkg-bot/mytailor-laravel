@@ -11,4 +11,11 @@ class Profile extends Model
         public function User(){
     	return $this->belongsTo(User::class);
 	}
+
+    public function getAvatarAttribute($value)
+    {
+       return !$value? 'avatar.png' : $value;
+
+
+    }
 }

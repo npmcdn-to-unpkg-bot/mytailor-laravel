@@ -157,7 +157,9 @@ return [
         MyTailor\Providers\RouteServiceProvider::class,
         MyTailor\Providers\MtServiceProvider::class,
         Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
-        Laravel\Socialite\SocialiteServiceProvider::class
+        Laravel\Socialite\SocialiteServiceProvider::class,
+        Laracasts\Commander\CommanderServiceProvider::class,
+        AlgoliaSearch\Laravel\AlgoliaServiceProvider::class
 
 
     ],

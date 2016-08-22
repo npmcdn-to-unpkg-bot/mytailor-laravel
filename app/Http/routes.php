@@ -1,29 +1,28 @@
 <?php
 
 /**
- * Users Authentication
+ * User Authentication
  */
+
+//Event::listen('MyTailor.Modules.Users.Registration.Events.UserRegistered', function($event){
+//	dd('send an email');
+//});
 
 Route::get('/login', [
 		'uses' => 'Auth\AuthController@getLogin',
 		'as'   => 'auth.login'
 ]);
-
-
 Route::get('/logout', [
 		'uses' => 'Auth\AuthController@logout',
 		'as'   => 'auth.logout'
 ]);
-
 Route::post('/login', [
 		'uses' => 'Auth\AuthController@postLogin'
 ]);
-
-
-/**
- * Social & Local Registration routes.
- *
- */
+Route::post('/register', [
+		'uses' => 'Auth\AuthController@postRegister'
+]);
+//Social Auth
 Route::get('/login/{provider?}',[
 		'uses' => 'Auth\AuthController@getSocialAuth',
 		'as'   => 'auth.getSocialAuth'
@@ -36,24 +35,30 @@ Route::get('admin/shots/upload', [
 		'uses' => 'Admin\ShotsController@create'
 ]);
 
-
 // Admin Resources :
 Route::resource('admin/pages', 'Admin\PagesController');
 Route::resource('admin/users', 'Admin\UsersController');
 Route::resource('admin/shots', 'Admin\ShotsController');
 Route::resource('admin/tags', 'Admin\TagsController');
 
-Route::get('admin/dashboard', [
+Route::get('admin', [
 		'as' => 'admin.dashboard',
 		'uses' => 'Admin\DashboardController@index'
 	]);
 
-Route::get('/shot/{id}',  [
-				'as' => 'shot',
-				'uses' => 'Frontend\ShotsController@show']
-);
+Route::group(['prefix' => 'api'], function () {
+	/**
+	 * Frontend Api Routes
+	 */
+	Route::get('/shot/{id}',  [
+					'as' => 'shot',
+					'uses' => 'Frontend\ShotsController@show']
+	);
 
-Route::post('/shot/viewed/{id}',  [
-				'as' => 'shot.viewed',
-				'uses' => 'Frontend\ShotsController@viewed']
-);
+	Route::post('/shot/viewed/{id}',  [
+					'as' => 'shot.viewed',
+					'uses' => 'Frontend\ShotsController@viewed']
+	);
+});
+
+App::bind('MyTailor\Repositories\UsersRepositoryInterface', 'MyTailor\Repositories\DbUsersRepository');

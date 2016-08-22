@@ -7,7 +7,7 @@ use Illuminate\View\View;
 class AddAdminUser  {
 
     public function compose(view $view) {
-        $view->with('admin', auth()->user());
+        $view->with('user', auth()->user());
     }
 
 }

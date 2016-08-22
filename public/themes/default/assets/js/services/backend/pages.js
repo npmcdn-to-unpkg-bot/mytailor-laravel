@@ -5,11 +5,3 @@
 			};
 			return this;
 	}]);
-
-	// app.controller("ShotsController", function ($scope, $http, $location) {
-	// 			  $scope.loadShotData = 
-				  
-	// 			  };
-
-	// });
-

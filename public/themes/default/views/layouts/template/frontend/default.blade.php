@@ -3,12 +3,13 @@
 @include('layouts.template.frontend.partials.sidebar_nav')
 <div class="mt-page-wrapper">
 
-    <div class="mt-layout-content" ng-controller="HomeController">
-        <div class="">
-            <main class="" style="margin: auto;">
+    <div class="mt-layout-content">
+        <div class="mt-content">
+            <main class="" style="margin: auto;" @yield('controller')>
                 @yield('main')
             </main>
         </div>
-        <div id="hits-container"></div>
+        @include('layouts.template.frontend.partials.search')
+        @include('partials.flashing')
     </div>
 @include('layouts.template.frontend.partials.foot')

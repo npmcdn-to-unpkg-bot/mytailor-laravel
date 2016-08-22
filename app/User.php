@@ -3,9 +3,12 @@
 namespace MyTailor;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
-
+use Illuminate\Support\Facades\Hash;
+use Laracasts\Commander\Events\EventGenerator;
+use MyTailor\Modules\Users\Registration\Events\UserRegistered;
 class User extends Authenticatable
 {
+    use EventGenerator;
     /**
      * The attributes that are mass assignable.
      *
@@ -24,6 +27,7 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
 
     public function profile()
     {
@@ -75,6 +79,26 @@ class User extends Authenticatable
      */
     public function revokeRole($role){
         return $this->roles()->detach($role);
+    }
+
+    public static function register($userData, $role)
+    {
+        $profile = new Profile();
+        $profile->avatar = $userData->avatar;
+        $profile->username = $userData->username;
+        $profile->save();
+
+        $user = new User();
+        $user->email = $userData->email;
+        $user->password = bcrypt($userData->password);
+        $user->profile_id = $profile->id;
+        $user->save();
+        $user->assignRole(4);
+
+
+        $user->raise(new UserRegistered($user));
+
+        return $user;
     }
 
 

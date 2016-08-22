@@ -10,7 +10,7 @@ let conf = {
   mochaOpts: {
     ui: 'bdd',
     timeout: 50000,
-    compilers: ['js:babel-core/register']
+    compilers: ['js:babel-Core/register']
   },
   baseUrl: 'http://localhost:9000',
   onPrepare() {

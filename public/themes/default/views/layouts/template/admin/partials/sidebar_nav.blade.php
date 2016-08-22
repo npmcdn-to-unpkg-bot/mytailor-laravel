@@ -4,7 +4,7 @@
                     <img src="{{theme('images/profiles/11698517_10205466839968531_5750592294516276713_n.jpg')}}">
 
                     <div class="sidebar-title-wrapper">
-                      <span>{{$admin->name}}</span>
+                      <span></span>
                       <div class="mdl-layout-spacer"></div>
                       <!-- Right aligned menu below button -->
                         <button id="menu-lower-right"

@@ -1,0 +1,47 @@
+#avatar~.mdl-menu__container{
+	right: 44px !important;
+    top: 65px !important;
+}
+
+#new-followers~.mdl-menu__container{
+	right: 120px !important;
+    top: 65px !important;
+}
+
+#messages~.mdl-menu__container{
+	right: 170px !important;
+    top: 65px !important;
+}
+
+#notifications~.mdl-menu__container{
+	right: 235px !important;
+    top: 65px !important;
+    width: 290px !important;
+    min-height: 340px;
+
+    >.mdl-menu__outline{
+    	    width: 290px !important;
+    	    min-height: 340px;
+    }
+}
+
+.mt-drop__menu{
+    clip: rect(0px 500px 500px 0px) !important;
+    width: 100%;
+    padding: 0;
+}
+
+.mt-dropmenu__header{
+        color: #767676;
+    text-align: center;
+    background: rgba(238, 238, 238, 0.44);
+    padding: 1.2em 0;
+    cursor: pointer;
+    opacity: 0;
+}
+.mt-dropmenu__items{
+    height: 250px;
+    overflow-y: auto;
+    opacity: 0;
+
+}

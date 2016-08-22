@@ -7,7 +7,7 @@ $ui-color: (
     darkbrown : #202024,
     redish : #F23054,
     redish_strong : #D9183C,
-    grey60	: #D8D8D8,
+    grey60	: #eee,
     blue : #03A9F4
 );
 
@@ -77,4 +77,15 @@ $ui-color: (
 }
 .whitee{
     background-color: #fff;
+}
+
+.white-color{
+    color: #fff;
+}
+.light-blue.lighten-5 {
+    background-color: #e1f5fe !important;
+}
+
+.light-blue {
+    background-color: #03a9f4 !important;
 }
