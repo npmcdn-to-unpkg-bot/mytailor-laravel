@@ -2,23 +2,32 @@
 
 namespace MyTailor\Http\Controllers\Admin;
 
-use Illuminate\Support\Facades\Response;
+
+use MyTailor\Modules\Shots\Admin\PostShotCommand;
 use MyTailor\Shot;
 use MyTailor\Tag;
 use Illuminate\Http\Request;
 use MyTailor\Http\Requests;
 use MyTailor\Modules\Shots\UploadServer;
+use Laracasts\Commander\CommandBus;
 
 class ShotsController extends Controller    {
 
     protected $shots;
+    /**
+     * @var CommandBus
+     */
+    private $commandBus;
 
     /**
      * ShotsController constructor.
      * @param Shot $shots
+     * @param CommandBus $commandBus
      */
-    public function __construct(Shot $shots) {
+    public function __construct(Shot $shots, CommandBus $commandBus) {
         $this->shots = $shots;
+        $this->commandBus = $commandBus;
+
         parent::__construct();
     }
 
@@ -48,23 +57,15 @@ class ShotsController extends Controller    {
     }
 
     /**
-     *
+     * save a new shot
      */
     public function store() {
 
+        $file_name = (new UploadServer)->get_name();
 
+        $command = new PostShotCommand($file_name, $published_by = Auth::user()->id);
+        $this->commandBus->execute($command);
 
-        $name = (new UploadServer)->get_name();
-
-        /**
-         * Store it in the model now
-         */
-        $shot = new Shot();
-        $shot->file_name = $name;
-        $shot->published_by = \Auth::user()->id;
-        $shot->publishable_type = 'MyTailor\\Brand';
-        $shot->publishable_id = 1;
-        $shot->save();
 
     }
 

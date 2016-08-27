@@ -102,4 +102,21 @@ class DbShotsRepository implements ShotsRepositoryInterface{
             ->paginate(8);
     }
 
+    /**
+     * @param $file_name
+     * @param $publishable_type
+     * @param $publishable_id
+     * @return Shot
+     */
+    public static function post($file_name, $publishable_type, $publishable_id)
+    {
+        $shot = new Shot();
+        $shot->file_name = $file_name;
+        $shot->publishable_id = $publishable_type;
+        $shot->publishable_id = $publishable_id;
+
+        Shot::saver($shot);
+
+    }
+
 }

@@ -2256,9 +2256,6 @@ ul.admin-call-icons li, .performance-title-wrapper > * {
   margin-left: 5px;
   margin-top: 2px; }
 
-.dashboard-cards-wrapper > * {
-  margin: 10px 10px 10px 0; }
-
 .mdl-card > :first-child {
   width: 100%;
   min-height: 200px; }
@@ -2389,9 +2386,6 @@ header.admin-shots-head {
 .upload-actions button {
   font-size: 14px;
   cursor: pointer; }
-
-.dashboard-cards-wrapper {
-  margin-left: 10px; }
 
 /*Grids*/
 /* ==========================================================================

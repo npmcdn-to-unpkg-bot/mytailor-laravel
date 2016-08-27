@@ -4,9 +4,12 @@ namespace MyTailor;
 
 use Illuminate\Database\Eloquent\Model;
 use AlgoliaSearch\Laravel\AlgoliaEloquentTrait;
+use Laracasts\Commander\Events\EventGenerator;
+use MyTailor\Modules\Shots\Admin\Events\ShotWasPosted;
 
 class Shot extends Model {
 
+    use EventGenerator;
     use AlgoliaEloquentTrait;
 
     protected $fillable = ['title', 'category', 'featured', 'published', 'views', 'source_url', 'description',
@@ -17,6 +20,14 @@ class Shot extends Model {
 
     protected $appends = array('alt');
 
+    /**
+     * @param $shot
+     */
+    public static function saver($shot)
+    {
+        $shot->save();
+        $shot->raise(new ShotWasPosted($shot));
+    }
 
     /**
      * Return null if published at is empty.

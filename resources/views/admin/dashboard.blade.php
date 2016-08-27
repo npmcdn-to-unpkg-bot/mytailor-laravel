@@ -31,9 +31,9 @@
                   </div>
                 </div>
                 <!-- Cards and other stuffs in one bag -->
-                <div class="row p1-Container dashboard-cards-wrapper clearfix">
+                <div class="row mdl-grid">
 
-                    <div class="mdl-card mdl-cell mdl-cell--4-col">
+                    <div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
                       <section class="blue mdl-card__supporting-text purple mt-chart-card">
                           <div>
                               <h2 class="chart-title">Today's Sales</h2>
@@ -60,7 +60,7 @@
                       </section>
                     </div>
 
-                    <div class="mdl-card mdl-cell mdl-cell--4-col">
+                    <div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
                          <section class="bluegreen mdl-card__supporting-text purple mt-chart-card">
                             <div class="p-10">
                               <h2 class="chart-title">Today's Customers</h2>
@@ -87,7 +87,7 @@
                       </section>
                     </div>
 
-                    <div class="mdl-card mdl-cell mdl-cell--4-col">
+                    <div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp">
                        <section class="redish mdl-card__supporting-text purple mt-chart-card">
                             <div class="p-10">
                               <h2 class="chart-title">New Users</h2>
@@ -114,7 +114,7 @@
                       </section>
                     </div>
                     <!-- More Cards -->
-                    <div class="feeds-card mdl-card mdl-cell mdl-cell--8-col" style="height: 400px;">
+                    <div class="feeds-card mdl-card mdl-cell mdl-cell--8-col mdl-shadow--2dp" style="height: 400px;">
                     <header class="admin-feeds-header">
                       <div class="caption link-text">
                         <i class="mdi mdi-share-variant" style="font-size: 1.5em;"></i>
@@ -437,7 +437,7 @@
 
                       </section>
                     </div>
-                    <div class="mdl-card panel-basic mdl-cell mdl-cell--4-col" style="height: 300px;">
+                    <div class="mdl-card panel-basic mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="height: 300px;">
                         <div class="mt-panel-heading">
                             <div class="">
                               <button class="btn mdl-button icon-round" id="dropdown">
@@ -454,7 +454,7 @@
                         </div>
                     </div>
                       <!-- Todos Card -->
-                    <div class="todos-card mdl-card mdl-cell mdl-cell--6-col" style="min-height:240px;">
+                    <div class="todos-card mdl-card mdl-cell mdl-cell--6-col mdl-shadow--2dp" style="min-height:240px;">
                         <header class="todos-header">
                           <div>Todo's List</div>
 
@@ -466,22 +466,22 @@
                         </header>
                     </div>
 
-                    <div class="feeds-card mdl-card mdl-cell mdl-cell--3-col" style="min-height:240px;">
+                    <div class="feeds-card mdl-card mdl-cell mdl-cell--3-col mdl-shadow--2dp" style="min-height:240px;">
                     Facebook Feed
                     </div>
 
-                    <div class="feeds-card mdl-card mdl-cell mdl-cell--3-col" style="min-height:240px;">
+                    <div class="feeds-card mdl-card mdl-cell mdl-cell--3-col mdl-shadow--2dp" style="min-height:240px;">
                     Twitter Feed
                     </div>
-                    <div class="feeds-card mdl-card mdl-cell mdl-cell--4-col" style="min-height:240px;">
+                    <div class="feeds-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--2dp" style="min-height:240px;">
                     Stats
                     </div>
 
-                    <div class="feeds-card mdl-card mdl-cell mdl-cell--8-col" style="min-height:240px;">
+                    <div class="feeds-card mdl-card mdl-cell mdl-cell--8-col mdl-shadow--2dp" style="min-height:240px;">
                     Chats here
                     </div>
 
-                    <div class="feeds-card mdl-card mdl-cell mdl-cell--12-col" style="min-height:240px;">
+                    <div class="feeds-card mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp" style="min-height:240px;">
                       Google Graphs for pageviews
                     </div>
                 </div> <!-- First row ends -->

@@ -2,7 +2,6 @@
 
 namespace MyTailor\Http\Controllers\Auth;
 
-use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use Illuminate\Http\Request;
 use Laracasts\Commander\CommandBus;
 use MyTailor\Modules\Core\Flash\Flasher;
