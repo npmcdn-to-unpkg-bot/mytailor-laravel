@@ -1,11 +1,8 @@
-<?php
+<?php namespace MyTailor\Templates;
 
-
-namespace MyTailor\Templates;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 use MyTailor\Shot;
-use Carbon\Carbon;
 use MyTailor\Repositories\ShotsRepositoryInterface;
 use SEOMeta;
 use OpenGraph;

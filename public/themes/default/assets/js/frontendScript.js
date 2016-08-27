@@ -70,29 +70,17 @@ Mytailor.me
                           $(this).find('.icon-center').addClass('mdi-magnify');
                       }
                     });
-              	//=========== Shots clicky ==========
-                  	  $('.shot-item>a').click(function() {
 
-                          var item = $(this).parent();
+        //========== Instant Search JS ==========
 
-                          if(!item.hasClass('__active')){
-                          	  item.addClass('__active')
-                                 .siblings()
-                                 .removeClass('__active')
-                          }
-                	    });
-
-                  //========== Tagging System ==========
-
-        var options = {
+                var options = {
           appId : 'RQO4LL16TO',
           apiKey : '53a754b22aa63d7a38a04c9ee76f596a',
-          indexName : 'shots'
+          indexName : 'instant_search',
+          urlSync: true
         }
 
 
-
-        //========== Instant Search JS ==========
         search = instantsearch(options);
 
           search.addWidget(

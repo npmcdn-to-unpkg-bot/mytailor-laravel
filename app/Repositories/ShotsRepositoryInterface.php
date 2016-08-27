@@ -1,13 +1,24 @@
 <?php
 namespace MyTailor\Repositories;
-use MyTailor\Shot;
 
 interface ShotsRepositoryInterface
 {
+    /**
+     * @param $cat
+     * @return mixed
+     */
     public function latest($cat);
 
+    /**
+     * @param $cat
+     * @return mixed
+     */
     public function trending($cat);
 
+    /**
+     * @param $cat
+     * @return mixed
+     */
     public function featured($cat);
 
 

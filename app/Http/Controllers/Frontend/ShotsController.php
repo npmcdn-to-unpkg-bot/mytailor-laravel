@@ -47,12 +47,12 @@ class ShotsController extends Controller
         if($shot) {
 
             $shot->publishable->profile = Profile::find([$shot->publishable->profile_id])->first();
-            $this->seoMake($shot);
+            $shot->date = $shot->created_at->diffForHumans();
 
             if ($request->ajax() || $request->wantsJson()) {
+
                 return $shot;
             }
-            return view('frontend.shot', compact('shot'));
 
         }
         return response()->view('errors.frontend.shot404', [], 404);
@@ -80,19 +80,4 @@ class ShotsController extends Controller
         return 'Done...';
     }
 
-    private function seoMake($shot)
-    {
-        SEOMeta::setTitle('MyTailor | ' . substr($shot->title, 0, 30));
-        SEOMeta::setDescription(substr($shot->description, 0, 60));
-        SEOMeta::addMeta('product:published_time', Carbon::parse($shot->updated_at)->subMinutes(2)->diffForHumans(), 'property');
-        SEOMeta::addMeta('product:section', $shot->category, 'property');
-        SEOMeta::addKeyword($shot->tags->lists('tag_name'));
-
-        OpenGraph::setDescription($shot->description);
-        OpenGraph::setTitle($shot->title);
-        OpenGraph::setUrl('http://mytailor.me/shot/' . pathinfo($shot->file_name, PATHINFO_FILENAME));
-        OpenGraph::addProperty('type', 'product.item');
-        //OpenGraph::addProperty('locale', 'pt-br');
-        //OpenGraph::addProperty('locale:alternate', ['pt-pt', 'en-us']);
-    }
 }

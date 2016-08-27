@@ -20,7 +20,7 @@
                                     <span class="mdl-list__item-text-body">
                                       Bryan Cranston played the role of Walter in Breaking Bad. He is also known
                                       for playing Hal in Malcom in the Middle.
-                                    </span>
+                                    </span>2
                                   </span>
                                   <span class="mdl-list__item-secondary-content">
                                     <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>

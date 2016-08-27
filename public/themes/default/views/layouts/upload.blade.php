@@ -10,8 +10,8 @@
     <!-- BEGIN PAGE LEVEL PLUGINS -->
 
     <link href="{{ theme('vendor/jquery-file-upload/blueimp-gallery/blueimp-gallery.min.css')}}" rel="stylesheet" type="text/css"/>
-              <link href="{{ theme('vendor/jquery-file-upload/css/jquery.fileupload.css')}}" rel="stylesheet" type="text/css"/>
-              <link href="{{ theme('vendor/jquery-file-upload/css/jquery.fileupload-ui.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{ theme('vendor/jquery-file-upload/css/jquery.fileupload.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{ theme('vendor/jquery-file-upload/css/jquery.fileupload-ui.css')}}" rel="stylesheet" type="text/css"/>
 
                 <!-- END PAGE LEVEL PLUGINS -->
 </head>
@@ -32,7 +32,7 @@
                 </div><!-- global header ends--> 
             </header>
 
-            @include('partials.sidebar_nav')
+            @include('layouts.template.admin.partials.sidebar_nav')
             
             <div class="mt-page-wrapper">
 
@@ -75,8 +75,8 @@
 
   <!-- END PAGE LEVEL PLUGINS -->
       <script src="{{ theme('js/modules/form-fileupload.js')}}" type="text/javascript"></script>
-        <script src="{{ theme('js/app.js') }}"></script>
-        <script src="{{ theme('js/script.js') }}"></script>
+        <script src="{{ theme('js/backend.js') }}"></script>
+        <script src="{{ theme('js/backendScript.js') }}"></script>
 
 </body>
 </html>

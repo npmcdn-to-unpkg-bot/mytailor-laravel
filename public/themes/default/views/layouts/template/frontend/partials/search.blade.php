@@ -16,7 +16,24 @@
 
 </section>
 	<div class="mdl-grid">
-	    <div class="mdl-cell mdl-cell--3-col">4</div>
+	    <div class="mdl-cell mdl-cell--3-col">
+	    	<div>
+	    		<span class="mt-lightGray-title">Categories</span>
+	    		<div class="mdl-checkbox">
+                      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1" ng-class="{'is-checked':shot.featured}">
+                      <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" ng-model="shot.featured">
+                      <span class="mdl-checkbox__label">Feature</span>
+                    </label>
+                 </div>
+
+                 <div class="mdl-checkbox">
+                      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1" ng-class="{'is-checked':shot.featured}">
+                      <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" ng-model="shot.featured">
+                      <span class="mdl-checkbox__label">Feature</span>
+                    </label>
+                 </div>
+	    	</div>
+	    </div>
 	    <div class="mdl-cell mdl-cell--9-col mt-grid grid" id="hits-container">
 	    	<script type="text/html" id="hit-template">
 	    		    <div class="grid-item">
@@ -38,22 +55,11 @@
 	</div>
 </section>
 
-{{-- 	    		<script type="text/html" id="hit-template">
-					  <div class="grid-item">
-					    <div class="hit-image">
-					      <img src="@{{image}}" alt="@{{name}}">
-					    </div>
-					    <div class="hit-content">
-					      <h3 class="hit-price">$@{{price}}</h3>
-					      <h2 class="hit-name">@{{{_highlightResult.name.value}}}</h2>
-					      <p class="hit-description">@{{{_highlightResult.description.value}}}</p>
-					    </div>
-					  </div>
-				</script> --}}
 
-				<script type="text/html" id="no-results-template">
-				  <div id="no-results-message">
-				    <p>We didn't find any results for the search <em>"@{{query}}"</em>.</p>
-				    <a href="." class="clear-all">Clear search</a>
-				  </div>
-				</script>
+
+<script type="text/html" id="no-results-template">
+  <div id="no-results-message">
+    <p>We didn't find any results for the search <em>"@{{query}}"</em>.</p>
+    <a href="." class="clear-all">Clear search</a>
+  </div>
+</script>

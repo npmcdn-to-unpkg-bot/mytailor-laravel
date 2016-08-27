@@ -52,6 +52,8 @@ class ShotsController extends Controller    {
      */
     public function store() {
 
+
+
         $name = (new UploadServer)->get_name();
 
         /**

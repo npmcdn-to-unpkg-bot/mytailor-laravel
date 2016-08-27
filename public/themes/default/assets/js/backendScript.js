@@ -47,16 +47,6 @@ Mytailor.me
                           }
                 	    });
 
-                  //========== Tagging System ==========
-
-        var options = {
-          appId : 'RQO4LL16TO',
-          apiKey : '53a754b22aa63d7a38a04c9ee76f596a',
-          indexName : 'instant_search',
-          urlSync: true
-        }
-
-
 
 
         });

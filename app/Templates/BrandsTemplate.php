@@ -1,10 +1,6 @@
-<?php
-
-
-namespace MyTailor\Templates;
+<?php namespace MyTailor\Templates;
 
 use Illuminate\View\View;
-use Carbon\Carbon;
 use SEOMeta;
 use OpenGraph;
 use Twitter;

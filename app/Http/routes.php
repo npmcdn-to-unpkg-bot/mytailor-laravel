@@ -60,5 +60,3 @@ Route::group(['prefix' => 'api'], function () {
 					'uses' => 'Frontend\ShotsController@viewed']
 	);
 });
-
-App::bind('MyTailor\Repositories\UsersRepositoryInterface', 'MyTailor\Repositories\DbUsersRepository');

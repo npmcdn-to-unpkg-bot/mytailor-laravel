@@ -175,6 +175,7 @@ class Shot extends Model {
         return $this->tags->lists('id');
     }
 
+
     private function displayAlt()
     {
         $title = $this->title;
@@ -186,9 +187,19 @@ class Shot extends Model {
         return $alt;
     }
 
+//    public function getColorAttribute()
+//    {
+//        $manager = new ImageManager(array('driver' => 'gd'));
+//        $image = $manager->make(public_path().'/uploads/'.$this->file_name);
+//
+//        $palette = Palette::generate($image);
+//        return $palette->getLightVibrantSwatch()->getColor();
+//    }
+
     public function scopeSearch($query, $search)
     {
         return $query->where('title', 'LIKE', "%$search%");
     }
+
 
 }

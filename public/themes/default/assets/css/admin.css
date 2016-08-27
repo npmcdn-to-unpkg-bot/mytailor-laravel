@@ -1133,6 +1133,19 @@ p.attract-me {
 .light-blue-text {
   color: #03a9f4 !important; }
 
+.mt-lightGray-title {
+  font-weight: 600;
+  padding: 0 0 1em 0;
+  display: block;
+  font-size: 16px;
+  color: #5b5b5b; }
+
+.mt-heading-light-bold {
+  padding-left: 2.7em; }
+  .mt-heading-light-bold h1 {
+    font-size: 19px;
+    color: #636363; }
+
 /*Forms*/
 .mt-forms {
   width: 100%;
@@ -2296,8 +2309,7 @@ ul.admin-call-icons li, .performance-title-wrapper > * {
 
 /*Aside*/
 .action-feed {
-  background: #eee;
-  padding: 0 1em; }
+  background: #eee; }
 
 .feed-header {
   background: #202024;
@@ -2387,7 +2399,6 @@ header.admin-shots-head {
    ========================================================================== */
 .mt-card {
   background: #fff;
-  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.07), 1px 2px 5px 0 rgba(0, 0, 0, 0.06);
   padding: 1em; }
 
 .mt__media-card {
@@ -2603,6 +2614,12 @@ figure.shot-cover {
   font-size: 20px;
   position: relative;
   top: 2px; }
+
+#card-right-button {
+  position: absolute;
+  right: 10px;
+  color: #4d4d4d;
+  font-size: 1.2em; }
 
 /*Animate*/
 .__visible {

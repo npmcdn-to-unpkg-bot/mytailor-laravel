@@ -10,6 +10,14 @@ class Flasher
     private static $title = 'News';
     private static $closable;
 
+
+    /**
+     * Flashes the message to the viewer
+     *
+     * @param $type
+     * @param $message
+     * @param bool|false $closable
+     */
     public static function flash($type, $message, $closable=false)
     {
         self::$message = $message;
@@ -19,12 +27,14 @@ class Flasher
     }
 
     /**
+     * Checks the type of Flash we want and sets the fields
+     *
      * @param $type
      */
     protected static function checker($type)
     {
         switch ($type) {
-            case 'new2s-light':
+            case 'news-light':
                 self::setFields('bell','light-blue lighten-5', 'light-blue-text');
                 break;
             case 'info-light':
@@ -57,6 +67,13 @@ class Flasher
         }
     }
 
+    /**
+     * Sets the fields ready to dump to our session.
+     *
+     * @param $icon
+     * @param $background
+     * @param $color
+     */
     private static function setFields($icon, $background, $color)
     {
         self::$icon = $icon;
@@ -65,6 +82,9 @@ class Flasher
 
     }
 
+    /**
+     * Sets the session variables.
+     */
     private static function pushSession()
     {
         session()->flash('flasher.background', self::$background);
