@@ -60,3 +60,7 @@ Route::group(['prefix' => 'api'], function () {
 					'uses' => 'Frontend\ShotsController@viewed']
 	);
 });
+
+Route::get('/test', function(){
+//	\MyTailor\Shot::reindex();
+});

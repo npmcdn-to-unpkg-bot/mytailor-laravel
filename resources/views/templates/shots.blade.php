@@ -20,12 +20,10 @@
     </ul>
 
 </section>
-<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--floating-action">
-  <i class="mdi mdi-camera"></i>
-</button>
+
 <section class="mt-grid clearfix grid" id="grid" ng-controller="shotsController" ng-init="init()">
 
-@forelse($shots as $shot)
+  @forelse($shots as $shot)
 
     <div class="grid-item">
       <figure>
@@ -46,11 +44,16 @@
     <div class="mt-noresult"><h4>ohh no ! sorry we didnt find anything.</h4></div>
 
 
-@endforelse
+  @endforelse
 
 
 </section>
-
+{{-- Post Shot Button --}}
+@if($user)
+  <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-button--floating-action" ng-click="showShotPoster()">
+    <i class="mdi mdi-camera"></i>
+  </button>
+@endif
 {!! $shots->appends(['cat'=>$cat])->render() !!}
 
 <section class="mt-load-more-wrapper">

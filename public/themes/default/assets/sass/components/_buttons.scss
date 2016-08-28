@@ -69,6 +69,19 @@ button.icon-round{
 }
 
 
+.mt-logo__icon{
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-size: 38px 38px;
+    background-position: center center;
+    display: block;
+    height: 37px;
+    outline: none;
+    overflow: hidden;
+    text-indent: -999px;
+    white-space: nowrap;
+    width: 43px;
+}
 // .mdl-button{
 //         background: 0 0;
 //     border: none;

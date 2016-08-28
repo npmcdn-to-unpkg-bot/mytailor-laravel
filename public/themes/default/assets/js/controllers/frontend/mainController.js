@@ -39,10 +39,15 @@ app.controller("MainController", function($scope, ngDialog) {
     };
 
 
-//    $scope.showSearch = function(){
-//        console.log('checking')
-//        $scope.searching = !$scope.searching;
-//}
+   $scope.showShotPoster = function(){
+
+        ngDialog.open({
+            closeByNavigation: true,
+            cache:false,
+            template: template_path + 'shot-upload.html', className: 'shot-upload' ,
+            controller: 'shotsController'
+        }); //Dialog
+}
 
 
 });

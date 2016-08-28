@@ -9,6 +9,12 @@
                   </a>
                 </div>
                 <div class="mt-header-spacer"></div>
+                {{-- Logo --}}
+{{--                 <div>
+                    <h1>
+                      <a href="http://www.mytailorafrica.com/?ref=logo"><span class="mt-logo__icon">MyTailorAfrica</span></a></h1>
+                </div> --}}
+
                 {{-- Search bar starts here --}}
                   <div class="mt-search-wrapper expandable--search hide-on-phone">
                     <span class="icon-search"><i class="mdi mdi-magnify" style="font-size: 22px;"></i></span>

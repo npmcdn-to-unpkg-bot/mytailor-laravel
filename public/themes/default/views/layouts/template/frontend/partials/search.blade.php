@@ -2,9 +2,13 @@
     background: #eee;
     position: absolute;
     top: 62px;
-    width: 100%;display: none;">
+    width: 100%; display: none;">
     <section class="mt-sub-header mdl-layout__header-row">
-
+    <ul>
+      <li>
+        <a href="#">Tags <i class="mdi mdi-chevron-down"></i></a>
+      </li>
+    </ul>
     <nav class="mdl-navigation mt-nav-has-border">
         <a class="mdl-navigation__link" href="">Brands</a>
         <a class="mdl-navigation__link" href="">People</a>
@@ -17,22 +21,10 @@
 </section>
 	<div class="mdl-grid">
 	    <div class="mdl-cell mdl-cell--3-col">
-	    	<div>
-	    		<span class="mt-lightGray-title">Categories</span>
-	    		<div class="mdl-checkbox">
-                      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1" ng-class="{'is-checked':shot.featured}">
-                      <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" ng-model="shot.featured">
-                      <span class="mdl-checkbox__label">Feature</span>
-                    </label>
-                 </div>
-
-                 <div class="mdl-checkbox">
-                      <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1" ng-class="{'is-checked':shot.featured}">
-                      <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" ng-model="shot.featured">
-                      <span class="mdl-checkbox__label">Feature</span>
-                    </label>
-                 </div>
+	    	  <div id="categories">
+	    		   <span class="mt-lightGray-title">Categories</span>
 	    	</div>
+
 	    </div>
 	    <div class="mdl-cell mdl-cell--9-col mt-grid grid" id="hits-container">
 	    	<script type="text/html" id="hit-template">

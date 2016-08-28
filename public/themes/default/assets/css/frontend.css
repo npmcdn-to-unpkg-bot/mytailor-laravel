@@ -829,6 +829,19 @@ button.icon-round {
   right: 40px;
   z-index: 998; }
 
+.mt-logo__icon {
+  background-image: url("../images/logo.png");
+  background-repeat: no-repeat;
+  background-size: 38px 38px;
+  background-position: center center;
+  display: block;
+  height: 37px;
+  outline: none;
+  overflow: hidden;
+  text-indent: -999px;
+  white-space: nowrap;
+  width: 43px; }
+
 .mdl-button:hover {
   background-color: rgba(158, 158, 158, 0.2); }
 
@@ -1312,6 +1325,7 @@ p.attract-me {
 
 .expandable--search {
   margin: 0 50px;
+  margin-left: 10px;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -2168,7 +2182,6 @@ a[ng-click] {
 
 .mt-top-menu > ul {
   padding: 0;
-  margin-right: 20px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -2255,6 +2268,8 @@ header.mt-layout-sidebar__users-info-wrapp {
   -ms-flex-align: center;
   align-items: center;
   width: 100%; }
+  .sidebar-title-wrapper span {
+    text-transform: Capitalize; }
 
 .mt-nav ul li {
   margin: 0;
@@ -2308,8 +2323,7 @@ a.mt-sidebar-link {
    ==========================================================================*/
 .dashboard-main-header {
   background: #Fff;
-  padding: 1em 0;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3); }
+  padding: 1em 0; }
 
 .breadcrump {
   padding: 8px 15px;

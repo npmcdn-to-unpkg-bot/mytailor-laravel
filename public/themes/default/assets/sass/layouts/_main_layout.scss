@@ -133,7 +133,6 @@
 
 .mt-top-menu>ul{
     padding: 0;
-    margin-right: 20px;
     display: flex;
     align-items: center;
     >li{
@@ -236,6 +235,7 @@ header.mt-layout-sidebar__users-info-wrapp{
     -ms-flex-align: center;
     align-items: center;
     width: 100%;
+     span{text-transform: Capitalize;}
 }
 
 
@@ -313,9 +313,6 @@ a.mt-sidebar-link{
 .dashboard-main-header{
     background: #Fff;
     padding: 1em 0;
-    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
-
 }
 
 .breadcrump{   

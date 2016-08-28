@@ -20,6 +20,10 @@ class Shot extends Model {
 
     protected $appends = array('alt');
 
+    public $algoliaSettings = [
+                 'attributesForFaceting' => ["category"]
+        ];
+
     /**
      * @param $shot
      */
@@ -62,7 +66,7 @@ class Shot extends Model {
                 break;
 
             default:
-                $value = 'not set';
+                $value = null;
 
         }
         return $value;

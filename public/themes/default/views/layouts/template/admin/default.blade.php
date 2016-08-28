@@ -10,8 +10,11 @@
                         </main>
                     </div>
                 </div>
+
+                {{-- SnackBar --}}
                 <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
                   <div class="mdl-snackbar__text"></div>
                   <button class="mdl-snackbar__action" type="button"></button>
                 </div>
+                {{-- Upload Shot Call --}}
             @include('layouts.template.admin.partials.foot')
