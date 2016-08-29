@@ -10,10 +10,10 @@
                 </div>
                 <div class="mt-header-spacer"></div>
                 {{-- Logo --}}
-{{--                 <div>
+                <div>
                     <h1>
                       <a href="http://www.mytailorafrica.com/?ref=logo"><span class="mt-logo__icon">MyTailorAfrica</span></a></h1>
-                </div> --}}
+                </div>
 
                 {{-- Search bar starts here --}}
                   <div class="mt-search-wrapper expandable--search hide-on-phone">
@@ -28,7 +28,7 @@
               {{-- Non-Login user Actions --}}
                 @if(! $user)
 
-                <div>
+                <div style="margin-left: 80px;">
                   <ul class="mt-guest-calls__actions"> 
                       <li>
                           <a ng-click="regsign('login')"><!-- Accent-colored flat button -->

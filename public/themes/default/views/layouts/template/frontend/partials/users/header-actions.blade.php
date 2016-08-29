@@ -1,5 +1,5 @@
  {{-- Notification area and avatar --}}
-                <div class="mt-top-menu" style="margin-left: 50px;">
+                <div class="mt-top-menu" style="margin-left: 25px;">
                   <ul>
                   <!-- Notification Icon and Dropdown -->
                     <li>

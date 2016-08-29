@@ -99,7 +99,7 @@ class ShotsTemplate extends AbstractTemplate   {
                     break;
                 case 'ac':
                     SEOMeta::setTitle('Accessories | MyTailor African Fashion Designers');
-                    SEOMeta::setDescription('');
+                    SEOMeta::setDescription('Accessories · shoes, bangles, jewelry African Fashion Prints...');
                     OpenGraph::setDescription('');
                     OpenGraph::setUrl('http://mytailor.me/shots/?cat=ac');
                     OpenGraph::setTitle('Accessories | MyTailor African Fashion Designers');
@@ -116,10 +116,9 @@ class ShotsTemplate extends AbstractTemplate   {
         }
 
 
-        //SEOMeta::setCanonical('https://codecasts.com.br/lesson');
-
+        SEOMeta::setCanonical('https://www.mytailorafrica.com/shots');
         OpenGraph::addProperty('type', 'business.clothing');
         Twitter::setTitle('Shots');
-        Twitter::setSite('');
+        Twitter::setSite('@MyTailor_Africa');
     }
 }

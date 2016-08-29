@@ -52,8 +52,8 @@ class DesignersTemplate extends AbstractTemplate{
     protected function seoMake()
     {
         SEOMeta::setTitle('Designers | MyTailor African Fashion Designers');
-        //SEOMeta::setDescription('This is my page description');
-        //SEOMeta::setCanonical('https://codecasts.com.br/lesson');
+        SEOMeta::setDescription('This is my page description');
+        SEOMeta::setCanonical('https://codecasts.com.br/lesson');
 
         OpenGraph::setDescription('This is my page description');
         OpenGraph::setTitle('Designers');

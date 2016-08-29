@@ -1,7 +1,7 @@
 <section id="mt-search-container" style="
     background: #eee;
     position: absolute;
-    top: 62px;
+    top: 0px;
     width: 100%; display: none;">
     <section class="mt-sub-header mdl-layout__header-row">
     <ul>
@@ -21,7 +21,7 @@
 </section>
 	<div class="mdl-grid">
 	    <div class="mdl-cell mdl-cell--3-col">
-	    	  <div id="categories">
+	    	<div id="categories">
 	    		   <span class="mt-lightGray-title">Categories</span>
 	    	</div>
 

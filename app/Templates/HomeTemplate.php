@@ -33,7 +33,6 @@ class HomeTemplate extends AbstractTemplate {
      */
     public function prepare(View $view, array $parameters)
     {
-       // \MyTailor\Shot::reindex();
         $this->seoMake();
 
         $shots = $this->shots
@@ -47,16 +46,16 @@ class HomeTemplate extends AbstractTemplate {
 
     protected function seoMake()
     {
-        SEOMeta::setTitle('Home | MyTailor African Fashion Designers.');
+        SEOMeta::setTitle('MyTailor | African Fashion Designers.');
         SEOMeta::setDescription('Check out top African designers and their inspiring attires, prints, fabrics, shoes and more. Find out what to wear.');
         SEOMeta::setCanonical('https://mytailorafrica.com/home');
 
         OpenGraph::setDescription('Check out top African designers and their inspiring attires, prints, fabrics, shoes and more. Find out what to wear.');
-        OpenGraph::setTitle('MyTailor');
+        OpenGraph::setTitle('MyTailor | African Fashion Designers.');
         OpenGraph::setUrl('http://mytailorafrica.com/home');
         OpenGraph::addProperty('type', 'business.fashion');
 
         Twitter::setTitle('Home');
-        //Twitter::setSite('@LuizVinicius73');
+        Twitter::setSite('@MyTailor_Africa');
     }
 }

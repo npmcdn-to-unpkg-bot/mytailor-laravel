@@ -146,10 +146,12 @@ button.icon-round{
 
 }
 
-button#demo-menu-lower-right{
-        position: absolute;
+button#top-menu-right{
+    position: absolute;
     right: 6px;
-    top: 75px;
+    top: 14px;
+    font-size: 21px;
+    color: #797979;
 }
 .mdl-checkbox__ripple-container {
     position: absolute;

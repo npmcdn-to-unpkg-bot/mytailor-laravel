@@ -821,10 +821,12 @@ button.icon-round {
     .mt-nav-has-border > .mdl-navigation__link:hover:after {
       bottom: 0 !important; }
 
-button#demo-menu-lower-right {
+button#top-menu-right {
   position: absolute;
   right: 6px;
-  top: 75px; }
+  top: 14px;
+  font-size: 21px;
+  color: #797979; }
 
 .mdl-checkbox__ripple-container {
   position: absolute;
@@ -1899,7 +1901,8 @@ a[ng-click] {
   flex-grow: 1; }
 
 .mt-header--fixed {
-  top: 0; }
+  top: 0;
+  position: fixed; }
 
 .mt-global-header {
   display: -webkit-flex;
@@ -1974,7 +1977,7 @@ a[ng-click] {
   width: 18.45rem;
   height: 100%;
   max-height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   box-sizing: border-box;
@@ -2074,7 +2077,9 @@ a.mt-sidebar-link {
   Page layout & content: 
    ========================================================================== */
 .mt-page-wrapper {
-  z-index: 1; }
+  z-index: 1;
+  top: 60px;
+  position: relative; }
 
 .mt-layout-content {
   min-height: 44em; }

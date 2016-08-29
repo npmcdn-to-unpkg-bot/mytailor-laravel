@@ -85,6 +85,7 @@
 
 .mt-header--fixed{
     top: 0;
+    position: fixed;
 
 }
 
@@ -164,10 +165,9 @@
     width: 18.45rem;
     height: 100%;
     max-height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-
     box-sizing: border-box;
     background: #fafafa;
     color: #424242;
@@ -299,6 +299,8 @@ a.mt-sidebar-link{
 
 .mt-page-wrapper{
         z-index: 1;
+    top: 60px;
+    position: relative;
 }
 
 .mt-layout-content{

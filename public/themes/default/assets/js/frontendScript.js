@@ -76,34 +76,57 @@ Mytailor.me
                 $mtcontainer = $('.mt-content'),
                 $searchcontainer = $('#mt-search-container')
 
+
+                    search_show = function(){
+                      
+                      $mtcontainer.removeClass('fadeIn');
+                      $searchcontainer.removeClass('fadeOut');
+
+                      $mtcontainer.addClass('animated fadeOut');
+                      setTimeout(function() {
+                            $mtcontainer.fadeOut('fast');
+                        }, 350);
+
+                      $searchcontainer.show().addClass('animated fadeIn');
+
+                      return true;
+
+                  }
+
+                  search_hide = function(){
+
+                      $mtcontainer.removeClass('fadeOut');
+                      $searchcontainer.removeClass('fadeIn');
+
+                      $searchcontainer.addClass('fadeOut')
+                        setTimeout(function() {
+                              $searchcontainer.fadeOut('fast');
+                          }, 350);
+
+                    $mtcontainer.addClass('fadeIn').show();
+
+                    return false;
+                  }
+
             //Search Animations
+
+            if ($searchbox.val()){
+
+                    search_show();
+                  };
+
+             //event     
             $searchbox.on('keyup', function(){
 
               if ($(this).val()){
-
-                    $mtcontainer.removeClass('fadeIn');
-                    $searchcontainer.removeClass('fadeOut');
-
-                    $mtcontainer.addClass('animated fadeOut');
-                    setTimeout(function() {
-                          $mtcontainer.fadeOut('fast');
-                      }, 350);
-
-                    $searchcontainer.show().addClass('animated fadeIn');
+                    search_show();
 
               }else{
-                    $mtcontainer.removeClass('fadeOut');
-                    $searchcontainer.removeClass('fadeIn');
-
-                    $searchcontainer.addClass('fadeOut')
-                      setTimeout(function() {
-                            $searchcontainer.fadeOut('fast');
-                        }, 350);
-
-                  $mtcontainer.addClass('fadeIn').show();
-
+                  search_hide();
               }
             });
+
+
 
             //Aleart timer
             $card = $('#card-alert') ? $('#card-alert'): null;
@@ -114,36 +137,6 @@ Mytailor.me
 
               }, 8000);
             };
-
-            //$card = $('#card-alert__close') ? $('#card-alert__close'): null;
-            
-
-                      switch (id) {
-                          
-                        case 'home':
-
-                          var $bar = $('my-header'),
-                            $items = $('#items');
-
-                             if ($header.hasClass('normal')
-                                    &&  $banner.length > 0) {
-
-                                      $window.on('load', function() {
-                                        $banner.scrollwatch({
-                                          delay:    0,
-                                          range:    0.5,
-                                          anchor:   'top',
-                                          on:     function() { $header.addClass('mt-header show').removeClass('mt-header-animate'); },
-                                          off:    function() { $header.removeClass('show').addClass('mt-header-animate'); }
-                                        });
-
-                                      });
-
-                                    }
-
-                              break;
-                      }
-
 
         });
     
