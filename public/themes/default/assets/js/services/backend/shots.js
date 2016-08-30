@@ -10,7 +10,7 @@
 			};
 
 			this.update = function(id, shot){
-				return $http.put('/admin/shots/' + id, shot);
+				return $http.put('/admin/api/shots/' + id, shot);
 			};
 
 			this.destroy = function(name){
@@ -22,7 +22,7 @@
 
 	app.factory('tagFactory', ['$http', function($http){
 
-			// will return object of a single shot
+			// 
 			this.show = function () {
 			  	return $http.get("/admin/tags");
 			};
