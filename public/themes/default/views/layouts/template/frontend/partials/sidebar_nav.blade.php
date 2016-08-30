@@ -34,7 +34,7 @@
                       <a href="/shots" class="mt-sidebar-link btn"><i class="mdi mdi-image"></i>Shots</a>
                     </li>
                     <li class="{{ Route::is('designers.index')? 'mt-list-active' : ''}}">
-                      <a href="/designers" class="mt-sidebar-link btn"><i class="mdi mdi-tshirt-v"></i>Designers</a>
+                      <a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-tshirt-v"></i>Designers</a>
                     </li>
                     <li>
                       <a href="#" class="mt-sidebar-link btn"><i class="mdi mdi-trending-up"></i>Trending</a></li>
