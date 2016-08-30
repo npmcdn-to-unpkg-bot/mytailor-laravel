@@ -47,4 +47,9 @@ return [
         'redirect' => 'http://dev.mytailor.me/login/twitter',
     ],
 
+    'pinterest' => [
+        'client_id' => env('PINTEREST_CLIENT_ID'),
+        'client_secret' => env('PIINTEREST_CLIENT_SECRET'),
+        'redirect' => 'http://dev.mytailor.me/login/pinterest'
+    ]
 ];

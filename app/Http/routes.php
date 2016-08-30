@@ -61,6 +61,6 @@ Route::group(['prefix' => 'api'], function () {
 	);
 });
 
-Route::get('/test', function(){
+//Route::get('/test', function(){
 //	\MyTailor\Shot::reindex();
-});
+//});

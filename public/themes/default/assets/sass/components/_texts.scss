@@ -272,3 +272,16 @@ font-size: 20px;
 
     }
 }
+
+.ais-menu--link{
+    padding: 1.3em 0.5em;
+    display: block;
+    font-weight: 600;
+    &:hover{
+        background: rgba(148, 159, 164, 0.13) !important;
+    }
+}
+
+.ais-menu--item__active{
+    background: rgba(148, 159, 164, 0.13);
+}

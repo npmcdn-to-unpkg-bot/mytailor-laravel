@@ -872,7 +872,7 @@ button.icon-round {
     .mt-nav-has-border > .mdl-navigation__link:hover:after {
       bottom: 0 !important; }
 
-button#top-menu-right {
+button.top-menu-right {
   position: absolute;
   right: 6px;
   top: 14px;
@@ -1211,6 +1211,16 @@ p.attract-me {
   .mt-heading-light-bold h1 {
     font-size: 19px;
     color: #636363; }
+
+.ais-menu--link {
+  padding: 1.3em 0.5em;
+  display: block;
+  font-weight: 600; }
+  .ais-menu--link:hover {
+    background: rgba(148, 159, 164, 0.13) !important; }
+
+.ais-menu--item__active {
+  background: rgba(148, 159, 164, 0.13); }
 
 /*responsive*/
 #avatar ~ .mdl-menu__container {
@@ -1823,11 +1833,6 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   color: #777; }
 
 /*responsive*/
-@media (max-width: 1235px) {
-  .pull-left {
-    width: 15%;
-    min-width: 7rem; } }
-
 /*animations*/
 .__visible {
   -webkit-transform: translateX(0);
@@ -2168,7 +2173,9 @@ a[ng-click] {
   padding: 0 30px 0 30px; }
 
 .pull-left {
-  cursor: pointer; }
+  cursor: pointer;
+  margin-right: 70px;
+  min-width: 77px; }
 
 .pull-left > a {
   padding: 1em 0.5em 1em 0; }
@@ -2791,7 +2798,7 @@ figure.shot-cover {
     position: relative; }
 
 .ais-hits--item > .grid-item {
-  width: 33.3333%; }
+  width: 25%; }
 
 .grid-item figcaption {
   transition: all 700ms ease; }

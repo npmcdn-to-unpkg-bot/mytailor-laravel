@@ -21,7 +21,7 @@ class Shot extends Model {
     protected $appends = array('alt');
 
     public $algoliaSettings = [
-                 'attributesForFaceting' => ["category"]
+                 'attributesForFaceting' => ["category", "tags"]
         ];
 
     /**
@@ -211,10 +211,37 @@ class Shot extends Model {
 //        return $palette->getLightVibrantSwatch()->getColor();
 //    }
 
+    public function getAlgoliaRecord()
+    {
+        /**
+         * Load the categories relation so that it's available
+         *  in the laravel toArray method
+         */
+        $this->tags->lists('id', 'tag_name');
+        $this->name = pathinfo($this->file_name, PATHINFO_FILENAME);
+
+        return $this->toArray();
+    }
+
     public function scopeSearch($query, $search)
     {
         return $query->where('title', 'LIKE', "%$search%");
     }
 
+    public function autoIndex()
+    {
+        if (\App::environment() === 'local') {
+            return false;
+        }
 
+        return true;
+    }
+
+    public function autoDelete(){
+            if (\App::environment() === 'local') {
+            return false;
+            }
+
+        return true;
+    }
 }

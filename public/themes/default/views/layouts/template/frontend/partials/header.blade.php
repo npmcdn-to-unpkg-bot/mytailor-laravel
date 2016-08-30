@@ -10,10 +10,10 @@
                 </div>
                 <div class="mt-header-spacer"></div>
                 {{-- Logo --}}
-                <div>
+{{--                 <div>
                     <h1>
-                      <a href="http://www.mytailorafrica.com/?ref=logo"><span class="mt-logo__icon">MyTailorAfrica</span></a></h1>
-                </div>
+                      <a href="http://www.mytailorafrica.com/"><span class="mt-logo__icon">MyTailorAfrica</span></a></h1>
+                </div> --}}
 
                 {{-- Search bar starts here --}}
                   <div class="mt-search-wrapper expandable--search hide-on-phone">
@@ -26,7 +26,7 @@
                 </button>
 
               {{-- Non-Login user Actions --}}
-                @if(! $user)
+                @if( $user)
 
                 <div style="margin-left: 80px;">
                   <ul class="mt-guest-calls__actions"> 
@@ -50,7 +50,7 @@
 
               @else()
 
-                @include('layouts.template.frontend.partials.users.header-actions')
+                {{-- @include('layouts.template.frontend.partials.users.header-actions') --}}
               @endif
               </div><!-- global header ends--> 
             </header>

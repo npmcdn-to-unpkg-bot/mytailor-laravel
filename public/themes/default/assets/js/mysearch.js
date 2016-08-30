@@ -29,16 +29,31 @@
             })
           );
 
-          search.addWidget(
-              instantsearch.widgets.menu({
-                container: '#categories',
-                attributeName: 'category',
-                limit: 10,
-                templates: {
-                  header: 'Categories'
-                }
-              })
-            );
+        search.addWidget(
+          instantsearch.widgets.refinementList({
+            container: '#tags',
+            attributeName: 'tags.tag_name',
+            limit: 10,
+            sortBy: ['isRefined', 'count:desc', 'name:asc'],
+            operator: 'or',
+            cssClasses: {
+            },
+            templates: {
+            }
+          })
+        );
+
+        search.addWidget(
+          instantsearch.widgets.menu({
+            container: '#category',
+            attributeName: 'category',
+            limit: 10,
+            // sortBy: ['isRefined', 'count:desc', 'name:asc'],
+            templates: {
+              item:'<a class="ais-menu--link" href="{{url}}">{{name}} <span class="ais-menu--count" style="font-weight: 100;">({{count}})</span></a>'
+            }
+          })
+        );
 
         function getTemplate(templateName) {
           return document.getElementById(templateName + '-template').innerHTML;

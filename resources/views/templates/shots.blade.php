@@ -7,7 +7,7 @@
     </nav>
 
     <button id="top-menu-right"
-        class="icon-round mdl-button mdl-js-button mdl-button--icon">
+        class="icon-round mdl-button mdl-js-button mdl-button--icon top-menu-right">
             <i class="icon-center mdi mdi-dots-vertical"></i>
     </button>
 

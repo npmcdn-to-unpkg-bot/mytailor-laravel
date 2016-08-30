@@ -6,9 +6,9 @@
 {{--Content Area for our view--}}
 
 @section('main')
-	<div class="overlay-wrapper animated fadeIn">
+	<div class="overlay-wrapper animated fadeIn" ng-controller="shotsController" ng-init="init()">
 
-	<section class="mdl-cell mdl-cell--12-col mdl-shadow--2dp mt-shot-wrapper" ng-controller="shotController">
+	<section class="mdl-cell mdl-cell--12-col mdl-shadow--2dp mt-shot-wrapper">
 
 	<!-- The header -->
 		<header class="mt-shot-header clearfix">
@@ -98,10 +98,9 @@
 
 			<div class="mdl-cell mdl-cell--12-col pad-1 mdl-grid">
 				@foreach($shot->related as $relate)
-				{{-- {{dd($relate)}} --}}
 	              <div class="mdl-cell mdl-cell--3-col mdl-shadow--2dp" style="background:{{$relate->color}};">
 	                <div class="mt__media-card">
-	                  <a href="#">
+	                  <a ng-click='open("{{$relate->file_name}}")'>
 	                    <img src="/uploads/{{$relate->file_name}}">
 	                  </a>
 	                </div>
