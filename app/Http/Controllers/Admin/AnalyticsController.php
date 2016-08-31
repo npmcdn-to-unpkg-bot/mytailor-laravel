@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 
 use MyTailor\Http\Requests;
 use MyTailor\Repositories\AnalyticsRepositoryInterface;
-use Spatie\Analytics\Period;
 
 class AnalyticsController extends Controller
 {

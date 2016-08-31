@@ -4,8 +4,6 @@
 namespace MyTailor\Repositories;
 
 
-use Spatie\Analytics\Analytics;
-
 class GaAnalyticsRepository implements AnalyticsRepositoryInterface
 {
 
@@ -14,7 +12,7 @@ class GaAnalyticsRepository implements AnalyticsRepositoryInterface
      */
     private $analytics;
 
-    public function __construct(Analytics $analytics)
+    public function __construct(LaravelAnalytics $analytics)
     {
         $this->analytics = $analytics;
     }
