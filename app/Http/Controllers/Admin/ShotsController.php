@@ -3,6 +3,7 @@
 namespace MyTailor\Http\Controllers\Admin;
 
 
+use Illuminate\Support\Facades\Response;
 use MyTailor\Modules\Shots\Admin\PostShotCommand;
 use MyTailor\Shot;
 use MyTailor\Tag;

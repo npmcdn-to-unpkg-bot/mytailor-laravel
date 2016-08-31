@@ -10,7 +10,7 @@
 			};
 
 			this.update = function(id, shot){
-				return $http.put('/admin/api/shots/' + id, shot);
+				return $http.put('/admin/shots/' + id, shot);
 			};
 
 			this.destroy = function(name){
