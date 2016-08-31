@@ -168,6 +168,39 @@ app.controller("authController", ["$scope",
 	}]);
 
 
+(function () {
+   'use strict';
+
+
+	app.controller("DashboardController", ["$scope","maFactory", "$timeout",
+
+		function($scope, maFactory, $timeout) {
+
+			// $scope.users_count = $scope.users.new_users.itemsPerPage;
+
+			/**
+			 * shows data about a single shot.
+			 *
+			 * @param id
+			 *
+             */
+			$scope.ma_get_users = function(id){
+			 		 maFactory.ma_get_users().then(function(response){
+			 				$scope.users = response.data;
+
+			 		});
+			 	};
+
+			$timeout(function(){
+
+			 		 	$scope.ma_get_users();
+
+			 		 }, 500);
+
+
+			 }]);
+
+})();
 	app.factory('shotFactory', ['$http', function($http){
 
 			// will return object of a single shot
@@ -192,7 +225,7 @@ app.controller("authController", ["$scope",
 
 	app.factory('tagFactory', ['$http', function($http){
 
-			// will return object of a single shot
+			// 
 			this.show = function () {
 			  	return $http.get("/admin/tags");
 			};
@@ -209,4 +242,13 @@ app.controller("authController", ["$scope",
 			return this;
 	}]);
 
+	app.factory('maFactory', ['$http', function($http){
+
+			// will return object of a single shot
+			this.ma_get_users = function () {
+			  	return $http.get("/admin/api/ma/users");
+			};
+
+			return this;
+	}]);
 //# sourceMappingURL=backend.js.map

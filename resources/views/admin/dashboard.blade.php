@@ -5,7 +5,14 @@
 @section('bg', 'grey60')
 @section('sidebar_title', 'Analytics')
 @section('icon', 'mdi-chart-areaspline')
+
+@section('page_styles')
+
+  <link href="/themes/default/assets/vendor/c3-angular/c3.min.css" rel="stylesheet" type="text/css"/>
+
 @section('main')
+
+<section ng-controller="DashboardController">
                 @include('partials.breadcrump')
                 <!-- here is where our view starts -->
                 <div class="call-admin-head clearfix">
@@ -37,7 +44,7 @@
                       <section class="blue mdl-card__supporting-text purple mt-chart-card">
                           <div>
                               <h2 class="chart-title">Today's Sales</h2>
-                              <h3 class="chart-number">5</h3>
+                              <h3 class="chart-number">0</h3>
                           </div>
                       </section>
                       <section class="mdl-card__actions mdl-card--border chart-info">
@@ -45,13 +52,13 @@
                               <ul class="row chart-text-addups clearfix">
                                 <li class="mdl-cell mdl-cell--6-col">
                                   <div>
-                                    <span>+$6,525</span>
+                                    <span>+$0.00</span>
                                     Total revenue
                                   </div>
                                 </li>
                                 <li class="mdl-cell mdl-cell--6-col">
                                   <div>
-                                    <span>$1,500</span>
+                                    <span>$0.00</span>
                                     Today's sales
                                   </div>
                                 </li>
@@ -64,7 +71,7 @@
                          <section class="bluegreen mdl-card__supporting-text purple mt-chart-card">
                             <div class="p-10">
                               <h2 class="chart-title">Today's Customers</h2>
-                              <h3 class="chart-number">256</h3>
+                              <h3 class="chart-number">0</h3>
                           </div>
                       </section>
                       <section class="mdl-card__actions mdl-card--border chart-info">
@@ -72,13 +79,13 @@
                               <ul class="row chart-text-addups clearfix">
                                 <li class="mdl-cell mdl-cell--6-col">
                                   <div>
-                                    <span>2,200</span>
+                                    <span>0</span>
                                     Monthly total
                                   </div>
                                 </li>
                                 <li class="mdl-cell mdl-cell--6-col">
                                   <div>
-                                    <span>256</span>
+                                    <span>0</span>
                                     Today's total
                                   </div>
                                 </li>
@@ -91,7 +98,7 @@
                        <section class="redish mdl-card__supporting-text purple mt-chart-card">
                             <div class="p-10">
                               <h2 class="chart-title">New Users</h2>
-                              <h3 class="chart-number">1</h3>
+                              <h3 class="chart-number" ng-bind="users.new_users.rows[0][0]"></h3>
                           </div>
                       </section>
                       <section class="mdl-card__actions mdl-card--border chart-info">
@@ -99,13 +106,13 @@
                               <ul class="row chart-text-addups clearfix">
                                 <li class="mdl-cell mdl-cell--6-col">
                                   <div>
-                                    <span>2,584</span>
+                                    <span ng-bind="users.monthly_users.rows[0][0]"></span>
                                     Monthly total
                                   </div>
                                 </li>
                                 <li class="mdl-cell mdl-cell--6-col">
                                   <div>
-                                    <span>1</span>
+                                    <span ng-bind="users.todays_users.rows[0][0]"></span>
                                     Today's total
                                   </div>
                                 </li>
@@ -481,8 +488,16 @@
                     Chats here
                     </div>
 
-                    <div class="feeds-card mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp" style="min-height:240px;">
-                      Google Graphs for pageviews
+                    <div class="feeds-card mdl-card mdl-cell mdl-cell--12-col mdl-shadow--2dp" style="min-height:240px;" id="">
+                        <c3chart bindto-id="chart7">
+                          <chart-column column-id="Data 1"
+                                        column-values="30,200,100,400,150,250,50"
+                                        column-type="line"/>
+                          <chart-axis>
+                              <chart-axis-x show="false"></chart-axis-x>
+                              <chart-axis-y show="false"></chart-axis-y>
+                          </chart-axis>
+                      </c3chart>
                     </div>
                 </div> <!-- First row ends -->
 
@@ -501,13 +516,13 @@
                               <ul class="cl-2-sales">
                                 <li>
                                   <div class="cl-2-item">
-                                    <span>120</span>
+                                    <span>00</span>
                                       <a href="#" class="link-text">New Sales</a>
                                   </div>
                                 </li>
                                   <li>
                                   <div class="cl-2-item">
-                                    <span>$4,120</span>
+                                    <span>$0.00</span>
                                       <a href="#" class="link-text">Weekly Profit</a>
                                   </div>
                                 </li>
@@ -516,15 +531,15 @@
 
                           <div class="pb-5 clearfix side-bar-analy__item">
                             <h3>Monthly Visits</h3>
-                            <span>600</span>
+                            <span ng-bind="users.monthly_users.rows[0][0]"></span>
                           </div>
                           <div class="pb-5 clearfix side-bar-analy__item">
                             <h3>Monthly Profit</h3>
-                            <span>$4,480</span>
+                            <span>$0.00</span>
                           </div>
                           <div class="pb-5 clearfix side-bar-analy__item">
                             <h3>Monthly Customers</h3>
-                            <span>250</span>
+                            <span>00%</span>
                           </div>
 
                     <div class="p-20">
@@ -533,5 +548,11 @@
 
                     </div>
 
+</section>
 
 @endsection
+
+@section('page_scripts')
+  <script src="/themes/default/assets/vendor/c3-angular/c3-angular.min.js"></script>
+
+  @endsection

@@ -59,8 +59,21 @@ Route::group(['prefix' => 'api'], function () {
 					'as' => 'shot.viewed',
 					'uses' => 'Frontend\ShotsController@viewed']
 	);
+
 });
 
+
+Route::group(['prefix' => 'admin/api'], function () {
+
+	/**
+	 * Backed Api
+	 */
+
+	//Analytics API
+	Route::controllers([
+			'ma' => 'Admin\AnalyticsController'
+	]);
+});
 //Route::get('/test', function(){
 //	\MyTailor\Shot::reindex();
 //});
