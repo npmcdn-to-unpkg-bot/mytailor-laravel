@@ -58,8 +58,10 @@ elixir.config.publicPath = 'public/themes/default/assets';
 					'../../../public/themes/default/assets/js/controllers/backend/mainController.js',
 					'../../../public/themes/default/assets/js/controllers/backend/shotsController.js',
 					'../../../public/themes/default/assets/js/controllers/backend/pagesController.js',
+					'../../../public/themes/default/assets/js/controllers/backend/dashboardController.js',
 					'../../../public/themes/default/assets/js/services/backend/shots.js',
-					'../../../public/themes/default/assets/js/services/backend/pages.js'
+					'../../../public/themes/default/assets/js/services/backend/pages.js',
+					'../../../public/themes/default/assets/js/services/backend/analytics.js'
 				],		'public/themes/default/assets/js/backend.js');
 
 	});

@@ -12,5 +12,7 @@
         <script src="{{ theme('js/backend.js') }}"></script>
         <script src="{{ theme('js/backendScript.js') }}"></script>
 
+        @yield('page_scripts')
+
 </body>
 </html>
