@@ -98,7 +98,7 @@
                        <section class="redish mdl-card__supporting-text purple mt-chart-card">
                             <div class="p-10">
                               <h2 class="chart-title">New Users</h2>
-                              <h3 class="chart-number" ng-bind="users.new_users.rows[0][0]"></h3>
+                              <h3 class="chart-number" ng-bind="users.new_users.totalsForAllResults['ga:newUsers']"></h3>
                           </div>
                       </section>
                       <section class="mdl-card__actions mdl-card--border chart-info">
@@ -106,13 +106,13 @@
                               <ul class="row chart-text-addups clearfix">
                                 <li class="mdl-cell mdl-cell--6-col">
                                   <div>
-                                    <span ng-bind="users.monthly_users.rows[0][0]"></span>
+                                    <span ng-bind="users.monthly_users.totalsForAllResults['ga:users']"></span>
                                     Monthly total
                                   </div>
                                 </li>
                                 <li class="mdl-cell mdl-cell--6-col">
                                   <div>
-                                    <span ng-bind="users.todays_users.rows[0][0]"></span>
+                                    <span ng-bind="users.todays_users.totalsForAllResults['ga:users']"></span>
                                     Today's total
                                   </div>
                                 </li>
@@ -531,7 +531,7 @@
 
                           <div class="pb-5 clearfix side-bar-analy__item">
                             <h3>Monthly Visits</h3>
-                            <span ng-bind="users.monthly_users.rows[0][0]"></span>
+                            <span ng-bind="users.mon_visits.totalsForAllResults['ga:sessions']"></span>
                           </div>
                           <div class="pb-5 clearfix side-bar-analy__item">
                             <h3>Monthly Profit</h3>

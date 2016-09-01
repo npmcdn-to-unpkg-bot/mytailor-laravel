@@ -5,6 +5,7 @@ namespace MyTailor\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 
 use MyTailor\Http\Requests;
+use MyTailor\Modules\Core\Period\Period;
 use MyTailor\Repositories\AnalyticsRepositoryInterface;
 
 class AnalyticsController extends Controller
@@ -34,9 +35,14 @@ class AnalyticsController extends Controller
     public function getUsers($period = null)
     {
        return $data = [
-           'new_users' => $this->analytics->newUsers(Period::days(7)),
-           'monthly_users' => $this->analytics->users(Period::days(31)),
-           'todays_users' => $this->analytics->users(Period::days(1))
+
+             'todays_users' => $this->analytics->users(Period::today()),
+             'monthly_users' => $this->analytics->users(Period::month()),
+             'new_users' => $this->analytics->newusers(Period::week()),
+             'mon_visits' => $this->analytics->sessions(Period::month())
+
         ];
     }
+
+
 }
