@@ -4,6 +4,8 @@
 namespace MyTailor\Repositories;
 
 
+use Spatie\LaravelAnalytics\LaravelAnalytics;
+
 class GaAnalyticsRepository implements AnalyticsRepositoryInterface
 {
 
@@ -34,6 +36,7 @@ class GaAnalyticsRepository implements AnalyticsRepositoryInterface
 
     /**
      * insights about new users
+     *
      * @param $period
      * @return array|null. also returns count
      */
@@ -48,7 +51,23 @@ class GaAnalyticsRepository implements AnalyticsRepositoryInterface
     public function pageViews($period)
     {
 
-        $data = $this->analytics->fetchVisitorsAndPageViews($period);
+        $data = $this->analytics->getVisitorsAndPageViews($period);
+
+        return $data;
+    }
+
+    public function sessions($period)
+    {
+        $metrics = 'ga:sessions';
+        $data = $this->analytics->performQuery($period, $metrics);
+
+        return $data;
+    }
+
+    public function NewVsReturning($period)
+    {
+        $metrics = 'ga:sessions';
+        $data = $this->analytics->performQuery($period, $metrics, ['dimensions' => 'ga:userType']);
 
         return $data;
     }

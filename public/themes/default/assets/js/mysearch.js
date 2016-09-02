@@ -25,9 +25,30 @@
               templates: {
                 item: getTemplate('hit'),
                 empty: getTemplate('no-results')
+              },
+              cssClasses: {
+                item: 'grid-item'
               }
             })
           );
+
+          search.on('render', function(){
+
+              $('.grid>.ais-hits').masonry();
+            });
+
+
+                               // angular.element($target).injector().invoke(function($compile){
+                               //  var $scope = angular.element($target).scope();
+                               //      $compile($newElems)($scope);
+                               //      $scope.$apply();
+
+                               // });
+                        //$newElems.show();
+
+
+
+
 
         search.addWidget(
           instantsearch.widgets.refinementList({

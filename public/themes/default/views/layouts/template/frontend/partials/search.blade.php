@@ -1,6 +1,6 @@
 <section id="mt-search-container" style="
     background: #eee;
-    position: absolute;
+    position: relative;
     top: 0px;
     width: 100%; display: none;">
 
@@ -26,7 +26,6 @@
 
 	    <div class="mdl-cell mdl-cell--12-col mt-grid grid" id="hits-container">
 	    	<script type="text/html" id="hit-template">
-	    		    <div class="grid-item">
 				      <figure>
 				            <a href="/shot/@{{name}}" class="mt-grid___link">
 				                <div class="mt-image-holder">
@@ -38,7 +37,6 @@
 				                </figcaption>
 				            </a>
 				      </figure>
-				    </div>
 			</script>
 		    
 	    </div>
