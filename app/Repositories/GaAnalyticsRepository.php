@@ -51,7 +51,7 @@ class GaAnalyticsRepository implements AnalyticsRepositoryInterface
     public function pageViews($period)
     {
 
-        $data = $this->analytics->fetchVisitorsAndPageViews($period);
+        $data = $this->analytics->getVisitorsAndPageViews($period);
 
         return $data;
     }
@@ -60,6 +60,14 @@ class GaAnalyticsRepository implements AnalyticsRepositoryInterface
     {
         $metrics = 'ga:sessions';
         $data = $this->analytics->performQuery($period, $metrics);
+
+        return $data;
+    }
+
+    public function NewVsReturning($period)
+    {
+        $metrics = 'ga:sessions';
+        $data = $this->analytics->performQuery($period, $metrics, ['dimensions' => 'ga:userType']);
 
         return $data;
     }

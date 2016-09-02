@@ -1,7 +1,7 @@
             @include('layouts.template.admin.partials.head')
                     @include('layouts.template.admin.partials.header')
             @include('layouts.template.admin.partials.sidebar_nav')
-            <div class="mt-page-wrapper" ng-controller="shotsController">
+            <div class="mt-page-wrapper" ng-controller="@yield('controller')">
 
                 <div class="mt-layout-content">
                 

@@ -26,10 +26,10 @@ elixir.config.publicPath = 'public/themes/default/assets';
 		mix.scripts(
 			[
 			    '../angular/angular.min.js',
-			    '../angular/angular-animate.min.js',
-			    '../angular/angular-messages.min.js',
+			    '../angular-animate/angular-animate.min.js',
+			    '../angular-messages/angular-messages.min.js',
+			   	'../angular-sanitize/angular-sanitize.min.js',
 				'../mustache.js/mustache.min.js',
-			   	'../angular/angular-sanitize.min.js',
 			    '../jquery/dist/jquery.min.js',
 				'../masonry/dist/masonry.pkgd.min.js',
 			    '../Waves/dist/waves.min.js',
