@@ -82,28 +82,11 @@ button.icon-round{
     white-space: nowrap;
     width: 43px;
 }
-// .mdl-button{
-//         background: 0 0;
-//     border: none;
-//     border-radius: 2px;
-//     color: #868686;
-//     display: block;
-//     position: relative;
-//     height: 36px;
-//     min-width: 64px;
-//     padding: 0 8px;
-//     display: inline-block;
-//     font-size: 20px;
-//     letter-spacing: 0;
-//     overflow: hidden;
-//     will-change: box-shadow,transform;
-//     transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
-//     outline: none;
-//     text-decoration: none;
-//     text-align: center;
-//     line-height: 36px;
-//     vertical-align: middle;
-// }
+
+.btn.float:hover{
+        -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
+    box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
+}
 
 .mdl-button:hover{
         background-color: rgba(158,158,158,.2);
@@ -280,4 +263,14 @@ button#dropdown>i{
 .social-icon-color {
     opacity: .7;
     background-position: 0 -38px!important;
+}
+
+.mt-toggle-search{
+    position: absolute;
+    right: 7px;
+
+    i{
+        color: #b4b4b4;
+        font-size: 1.35em;
+    }
 }

@@ -851,6 +851,9 @@ button.icon-round {
   white-space: nowrap;
   width: 43px; }
 
+.btn.float:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
+
 .mdl-button:hover {
   background-color: rgba(158, 158, 158, 0.2); }
 
@@ -989,6 +992,13 @@ button#dropdown > i {
 .social-icon-color {
   opacity: .7;
   background-position: 0 -38px !important; }
+
+.mt-toggle-search {
+  position: absolute;
+  right: 7px; }
+  .mt-toggle-search i {
+    color: #b4b4b4;
+    font-size: 1.35em; }
 
 /*Texts*/
 /* ==========================================================================
@@ -2344,7 +2354,7 @@ a.mt-sidebar-link {
    ==========================================================================*/
 .dashboard-main-header {
   background: #Fff;
-  padding: 1em 0; }
+  padding: 0.7em 0; }
 
 .breadcrump {
   padding: 8px 15px;
