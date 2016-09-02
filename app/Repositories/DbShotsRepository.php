@@ -96,8 +96,7 @@ class DbShotsRepository implements ShotsRepositoryInterface{
         return Shot::whereHas('tags', function($q) use ($tag_ids) {
             $q->whereIn('id', $tag_ids);
         })
-            ->select(\DB::raw( '((views - 1) / (TIMESTAMPDIFF(HOUR, updated_at, NOW()) + 2)^1.5) as Popularity, shots.*'))
-            ->orderBy('Popularity', 'desc')
+            ->orderBy('updated_at', 'desc')
             ->whereNotIn('id', [$shot->id])
             ->paginate(8);
     }

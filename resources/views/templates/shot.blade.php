@@ -110,7 +110,7 @@
 	                          <i class="mdi mdi-heart-outline icon-center" style="font-size: 1.2em;color: #F23054;"></i>
 	                          <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span>
 	                      </button>
-	                       <span style="font-size: 13px;">5k</span>
+	                       <span style="font-size: 13px;"></span>
 
 	                      <span class="designer_card__views">
 	                          <i class="mdi mdi-eye"></i>

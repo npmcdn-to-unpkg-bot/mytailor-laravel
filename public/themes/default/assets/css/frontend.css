@@ -654,6 +654,15 @@ a.waves-effect .waves-ripple {
 .light-blue {
   background-color: #03a9f4 !important; }
 
+.bg-facebook {
+  background-color: #47639E; }
+
+.bg-twitter {
+  background-color: #02A8F3; }
+
+.bg-blue500 {
+  background: #3f51b5; }
+
 /*banners*/
 /**
  * MyTailor Banners and viewports

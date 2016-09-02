@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b5064c3f2ecaffa852ecda66402348db",
-    "content-hash": "0c970b4e5d858568508aab86645c3115",
+    "hash": "769081d49d18d1bfff5ac18d084585e3",
+    "content-hash": "88103a3162852ef2b756d07e4b120cee",
     "packages": [
         {
             "name": "algolia/algoliasearch-client-php",
@@ -3274,35 +3274,34 @@
         },
         {
             "name": "spatie/laravel-analytics",
-            "version": "2.2.2",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-analytics.git",
-                "reference": "50531d2ee760d67b19100450b1f89e7615338c5b"
+                "reference": "957f8f698fd14b89dedfff1d90eb486d89b559c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-analytics/zipball/50531d2ee760d67b19100450b1f89e7615338c5b",
-                "reference": "50531d2ee760d67b19100450b1f89e7615338c5b",
+                "url": "https://api.github.com/repos/spatie/laravel-analytics/zipball/957f8f698fd14b89dedfff1d90eb486d89b559c8",
+                "reference": "957f8f698fd14b89dedfff1d90eb486d89b559c8",
                 "shasum": ""
             },
             "require": {
-                "google/apiclient": "^1.1",
-                "illuminate/contracts": "~5.1.0|~5.2.0|~5.3.0",
-                "illuminate/support": "~5.1.0|~5.2.0|~5.3.0",
-                "nesbot/carbon": "^1.21",
-                "php": "^7.0"
+                "google/apiclient": "1.1.*",
+                "illuminate/contracts": "~5.0",
+                "illuminate/support": "~5.0",
+                "nesbot/carbon": "~1.0",
+                "php": ">=5.4.0"
             },
             "require-dev": {
-                "mockery/mockery": "^0.9.5",
-                "orchestra/database": "3.3.x@dev",
-                "orchestra/testbench": "3.3.x@dev",
-                "phpunit/phpunit": "^4.0"
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Spatie\\Analytics\\": "src"
+                    "Spatie\\LaravelAnalytics\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3315,9 +3314,15 @@
                     "email": "freek@spatie.be",
                     "homepage": "https://murze.be",
                     "role": "Developer"
+                },
+                {
+                    "name": "Matthias De Winter",
+                    "email": "dewinter.matthias@gmail.com",
+                    "homepage": "https://github.com/MatthiasDeWinter",
+                    "role": "Developer"
                 }
             ],
-            "description": "A Laravel 5 package to retrieve Google Analytics data.",
+            "description": "An opinionated Laravel 5 package to retrieve Google Analytics data.",
             "homepage": "https://github.com/spatie/laravel-analytics",
             "keywords": [
                 "analytics",
@@ -3327,7 +3332,7 @@
                 "retrieve",
                 "spatie"
             ],
-            "time": "2016-08-23 15:06:52"
+            "time": "2016-05-13 06:41:58"
         },
         {
             "name": "spatie/laravel-glide",

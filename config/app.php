@@ -160,7 +160,7 @@ return [
         Laravel\Socialite\SocialiteServiceProvider::class,
         Laracasts\Commander\CommanderServiceProvider::class,
         AlgoliaSearch\Laravel\AlgoliaServiceProvider::class,
-        Spatie\Analytics\AnalyticsServiceProvider::class
+        Spatie\LaravelAnalytics\LaravelAnalyticsServiceProvider::class
 
 
     ],
@@ -215,7 +215,7 @@ return [
         // or
         'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
-        'Analytics' => Spatie\Analytics\AnalyticsFacade::class
+        'Analytics' => Spatie\LaravelAnalytics\LaravelAnalyticsFacade::class
 
     ],
 
