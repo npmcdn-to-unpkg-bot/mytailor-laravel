@@ -1,6 +1,4 @@
 
-                <!-- Black Screen -->
-                <div class="mt-obfuscator" ng-class="{'show': toggle}" ng-click="toggleSidebar()"></div>
             
             </div> <!-- Page wrapper ends -->
 

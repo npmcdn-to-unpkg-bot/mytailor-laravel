@@ -16,5 +16,8 @@
                   <div class="mdl-snackbar__text"></div>
                   <button class="mdl-snackbar__action" type="button"></button>
                 </div>
+
+                <!-- Black Screen -->
+                <div class="mt-obfuscator" ng-class="{'show': toggle}" ng-click="toggleSidebar()"></div>
                 {{-- Upload Shot Call --}}
             @include('layouts.template.admin.partials.foot')

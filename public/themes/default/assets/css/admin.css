@@ -1722,7 +1722,6 @@ a#buzzle:hover .hvr-buzz-out {
   animation-iteration-count: 1; }
 
 .mt-load-bar {
-  display: none;
   position: relative;
   margin-top: 20px;
   width: 100%;
@@ -2769,7 +2768,6 @@ a#buzzle:hover .hvr-buzz-out {
   animation-iteration-count: 1; }
 
 .mt-load-bar {
-  display: none;
   position: relative;
   margin-top: 20px;
   width: 100%;

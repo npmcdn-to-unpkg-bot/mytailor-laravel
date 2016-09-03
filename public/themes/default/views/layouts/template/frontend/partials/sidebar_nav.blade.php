@@ -28,7 +28,7 @@
                                 
                 <ul class="mt-sidebar-list">
                     <li class="{{ Route::is('home')? 'mt-list-active' : ''}}">
-                      <a href="/" class="mt-sidebar-link btn"><i class="mt-icon mdi mdi-home-variant"></i>Home</a>
+                      <a href="/home" class="mt-sidebar-link btn"><i class="mt-icon mdi mdi-home-variant"></i>Home</a>
                     </li>
                     <li class="{{ Route::is('shots.index')? 'mt-list-active' : ''}}">
                       <a href="/shots" class="mt-sidebar-link btn"><i class="mdi mdi-image"></i>Shots</a>
