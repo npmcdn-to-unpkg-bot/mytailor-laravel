@@ -74,7 +74,6 @@ Route::group(['prefix' => 'admin/api'], function () {
 			'ma' => 'Admin\AnalyticsController'
 	]);
 });
-
 //Route::get('/test', function(){
 //	\MyTailor\Shot::reindex();
 //});

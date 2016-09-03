@@ -1,24 +1,5 @@
 <?php
 
-
-use Jenssegers\Agent\Agent as Agent;
-
-$Agent = new Agent();
-
-// agent detection influences the view storage path
-if ($Agent->isMobile() || $Agent->isTablet()) {
-
-    $viewPath = realpath(base_path('resources/views/mobile'));
-    $compiled = realpath(storage_path('framework/views/mobile'));
-
-} else {
-
-    $viewPath = realpath(base_path('resources/views'));
-    $compiled =     realpath(storage_path('framework/views'));
-}
-
-
-
 return [
 
     /*
@@ -33,7 +14,7 @@ return [
     */
 
     'paths' => [
-            $viewPath
+        realpath(base_path('resources/views')),
     ],
 
     /*
@@ -47,6 +28,6 @@ return [
     |
     */
 
-    'compiled' =>  $compiled
+    'compiled' => realpath(storage_path('framework/views')),
 
 ];
