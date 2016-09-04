@@ -33,7 +33,7 @@
       <figure>
             <a href="" class="mt-grid___link" ng-click='open("{{$shot->file_name}}")'>
                 <div class="mt-image-holder">
-                    <img src="/uploads/{{$shot->file_name}}" alt="{{$shot->alt}}">
+                    <img src="http://www.mytailorafrica.com/uploads/{{$shot->file_name}}" alt="{{$shot->alt}}">
                 </div>
                 <div class="dimOverlay"></div>
                 <figcaption>
@@ -50,6 +50,7 @@
 
   @endforelse
 
+{{-- {!! $shots->appends(['cat'=>$cat])->render() !!} --}}
 
 </section>
 {{-- Post Shot Button --}}
@@ -59,7 +60,7 @@
   </button>
 @endif
 
-{!! $shots->appends(['cat'=>$cat])->render() !!}
+
 
 <section class="mt-load-more-wrapper">
         <div class="mt-load-bar">

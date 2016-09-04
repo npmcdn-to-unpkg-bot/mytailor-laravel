@@ -12,6 +12,7 @@ return [
 		'brands' => MyTailor\Templates\BrandsTemplate::class,
 		'designers' => MyTailor\Templates\DesignersTemplate::class,
 		'profile' =>  MyTailor\Templates\ProfilesTemplate::class,
-		'shot' => MyTailor\Templates\ShotTemplate::class
+		'shot' => MyTailor\Templates\ShotTemplate::class,
+		'explore' => MyTailor\Templates\ExploreTemplate::class
 	]
 ];

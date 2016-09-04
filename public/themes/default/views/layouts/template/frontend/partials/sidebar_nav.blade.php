@@ -1,26 +1,26 @@
 <div class="mt-layout-sidebar --scroll" ng-class="{'__visible': toggle}">
               <header class="mt-layout-sidebar__users-info-wrapp" style="background:#FB4164;">
-              @if($user)
-                  <div class="mt-sidebar-avatar">
-                    <img src="{{'/uploads/profiles/'.$user->profile->avatar}}">
+                  @if($user)
+                      <div class="mt-sidebar-avatar">
+                        <img src="{{'/uploads/profiles/'.$user->profile->avatar}}">
 
-                    <div class="sidebar-title-wrapper">
-                      <span>{{$user->profile->username}}</span>
-                      <div class="mdl-layout-spacer"></div>
-                      <!-- Right aligned menu below button -->
-                        <button id="menu-lower-right"
-                                class="mdl-button mdl-js-button mdl-button--icon">
-                          <i class="mdi mdi-menu-down"></i>
-                        </button>
-                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-                            for="menu-lower-right">
-                        <li class="mdl-menu__item">Some Action</li>
-                        <li class="mdl-menu__item"><a href="#" class="m-0">Profile</a></li>
-                        <li class="mdl-menu__item"><a href="{{route('auth.logout')}}" class="m-0">Logout</a></li>
-                        </ul>
-                    </div>
-                  </div>
-              @endif
+                        <div class="sidebar-title-wrapper">
+                          <span>{{$user->profile->username}}</span>
+                          <div class="mdl-layout-spacer"></div>
+                          <!-- Right aligned menu below button -->
+                            <button id="menu-lower-right"
+                                    class="mdl-button mdl-js-button mdl-button--icon">
+                              <i class="mdi mdi-menu-down"></i>
+                            </button>
+                            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                                for="menu-lower-right">
+                            <li class="mdl-menu__item">Some Action</li>
+                            <li class="mdl-menu__item"><a href="#" class="m-0">Profile</a></li>
+                            <li class="mdl-menu__item"><a href="{{route('auth.logout')}}" class="m-0">Logout</a></li>
+                            </ul>
+                        </div>
+                      </div>
+                  @endif
               </header>
 
               <nav id="mt-nav-main" class="mt-nav" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
