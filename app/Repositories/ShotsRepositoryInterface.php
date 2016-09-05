@@ -25,7 +25,7 @@ interface ShotsRepositoryInterface
      * @param $slug
      * @return mixed
      */
-    public function explore($slug);
+    public function explore($slug, $cat);
 
 
 }

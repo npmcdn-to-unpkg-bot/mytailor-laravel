@@ -159,12 +159,18 @@ a#buzzle:hover .hvr-buzz-out{
   animation-iteration-count: 1;
 }
 
+.mt-load-more-wrapper{
+      position: absolute;
+    top: -26px;
+    width: 100%;
+}
 .mt-load-bar {
   position: relative;
   margin-top: 20px;
   width: 100%;
   height: 6px;
   background-color: #fdba2c;
+  width: 100%;
 }
 .bar {
   content: "";

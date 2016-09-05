@@ -11,13 +11,14 @@
  * Sidebar toggle
  *
  */
-app.controller("MainController", function($scope, ngDialog) {
+app.controller("MainController", function($scope, ngDialog, shotFactory) {
 
     //$location.search({ref: ''});
 
     $scope.toggle = false;
     $scope.showForm = false;
     $scope.searching = false;
+    $scope.links = shotFactory.getParmalinks();
 
     $scope.toggleSidebar = function () {
         $scope.toggle = !$scope.toggle;
@@ -48,7 +49,6 @@ app.controller("MainController", function($scope, ngDialog) {
             controller: 'shotsController'
         }); //Dialog
 }
-
 
 });
 

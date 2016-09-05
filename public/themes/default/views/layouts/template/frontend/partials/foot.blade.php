@@ -1,4 +1,11 @@
 			<footer class = "footerContainerWrapper dark">
+          <section class="mt-load-more-wrapper">
+                  <div class="mt-load-bar">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                  </div>
+          </section>
 			    <ul class="icons">
 			      <li><a href="https://twitter.com/MyTailor_Africa" class="mdi mdi-twitter" title="Twitter"><span class="label"></span></a></li>
 			      <li><a href="https://www.facebook.com/MyTailorAfrica/" class="mdi mdi-facebook" title="Facebook"><span class="label"></span></a></li>
@@ -26,12 +33,12 @@
 
         @yield('page_scripts')
         <script>
-          // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-          // ga('create', 'UA-56825866-2', 'auto');
-          // ga('send', 'pageview');
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-56825866-2', 'auto');
+          ga('send', 'pageview');
         </script>
 
 </body>

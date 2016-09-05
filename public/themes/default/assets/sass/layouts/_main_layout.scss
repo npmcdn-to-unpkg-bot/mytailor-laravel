@@ -418,6 +418,7 @@ a.mt-sidebar-link{
     background-color: map-get($ui-color, darkbrown);
     padding: 16px 40px;
     min-height: 10em;
+    position: relative;
   }
 
   .mt-obfuscator{

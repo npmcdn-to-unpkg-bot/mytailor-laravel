@@ -114,12 +114,15 @@ class DbShotsRepository implements ShotsRepositoryInterface{
      * Look around for shots that have keywords in $slug
      *
      * @param $slug
+     * @param $cat
      * @return \stdClass
+     * @internal param array $facets
      */
-    public function explore($slug)
+    public function explore($slug, $cat)
     {
+        $cat ? $facets = ['filters' => "category:$cat"] : $facets = null;
 
-        $shots = Shot::search($slug);
+        $shots = Shot::search($slug, $facets);
 
         return $this->paginate($shots['hits'], 8);
 
