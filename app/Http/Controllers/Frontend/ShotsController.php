@@ -51,7 +51,7 @@ class ShotsController extends Controller
 
             if ($request->ajax() || $request->wantsJson()) {
 
-                return $shot;
+                return $shot->toArray();
             }
 
         }

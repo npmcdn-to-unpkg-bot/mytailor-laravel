@@ -22,7 +22,7 @@ Mytailor.me
                   itemSelector    : ".grid-item",
                   debug           : false,
                   dataType        : 'html',
-                  pixelsFromNavToBottom: 500,
+                  pixelsFromNavToBottom: 800,
                   loading: {
                         speed: 'fast',
                         finished: function() {

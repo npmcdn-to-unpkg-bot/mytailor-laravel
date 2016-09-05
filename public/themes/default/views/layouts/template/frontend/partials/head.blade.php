@@ -23,5 +23,5 @@
     @yield('page_styles')
     <script src="{{ theme('js/vendor.js') }}"></script>
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/WebPage">
   <div class="mt-layout @yield('bg')" ng-controller="MainController">

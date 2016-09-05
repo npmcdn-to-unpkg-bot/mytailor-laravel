@@ -21,5 +21,11 @@ interface ShotsRepositoryInterface
      */
     public function featured($cat);
 
+    /**
+     * @param $slug
+     * @return mixed
+     */
+    public function explore($slug);
+
 
 }

@@ -2,21 +2,30 @@
 
 namespace MyTailor\Repositories;
 
+use Illuminate\Http\Request;
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Support\Facades\Input;
 use MyTailor\Shot;
 
 class DbShotsRepository implements ShotsRepositoryInterface{
 
     protected $shots;
+    /**
+     * @var Request
+     */
+    private $request;
 
     /**
      * DbShotsRepository constructor.
      * @param Shot $shots
+     * @param Request $request
      */
-    public function __construct(Shot $shots){
+    public function __construct(Shot $shots, Request $request){
 
         $this->shots = $shots;
 
 
+        $this->request = $request;
     }
 
     /**
@@ -31,7 +40,7 @@ class DbShotsRepository implements ShotsRepositoryInterface{
             ->orderBy('views', 'desc')
             ->orderBy('id', 'desc')
             ->where('published', '=', 1)
-            ->paginate(5);
+            ->paginate(8);
 
     }
 
@@ -51,7 +60,7 @@ class DbShotsRepository implements ShotsRepositoryInterface{
             ->orderBy('Popularity', 'desc')
             ->where('published', '=', 1)
             ->groupBy('id')
-            ->paginate(5);
+            ->paginate(8);
     }
     /**
      * Gets shots that are featured orderd by popularity.
@@ -65,7 +74,7 @@ class DbShotsRepository implements ShotsRepositoryInterface{
             ->orderBy('views', 'desc')
             ->orderBy('updated_at', 'desc')
             ->where('published', '=', 1)
-            ->paginate(5);
+            ->paginate(8);
     }
 
     /**
@@ -102,6 +111,22 @@ class DbShotsRepository implements ShotsRepositoryInterface{
     }
 
     /**
+     * Look around for shots that have keywords in $slug
+     *
+     * @param $slug
+     * @return \stdClass
+     */
+    public function explore($slug)
+    {
+
+        $shots = Shot::search($slug);
+
+        return $this->paginate($shots['hits'], 8);
+
+
+    }
+
+    /**
      * @param $file_name
      * @param $publishable_type
      * @param $publishable_id
@@ -115,6 +140,14 @@ class DbShotsRepository implements ShotsRepositoryInterface{
         $shot->publishable_id = $publishable_id;
 
         Shot::saver($shot);
+
+    }
+
+    private function paginate($array, $perPage)
+    {
+        $page = Input::get('page', 1);
+        $offset = ($page * $perPage) - $perPage;
+        return new LengthAwarePaginator(array_slice($array, $offset, $perPage, true), count($array), $perPage, $page, ['path' => $this->request->url(), 'query' => $this->request->query()]);
 
     }
 

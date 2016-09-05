@@ -8,7 +8,7 @@
 @section('main')
 	<div class="overlay-wrapper animated fadeIn" ng-controller="shotsController" ng-init="init()">
 
-	<section class="mdl-cell mdl-cell--12-col mdl-shadow--2dp mt-shot-wrapper">
+	<section class="mdl-cell mdl-cell--12-col mdl-shadow--2dp mt-shot-wrapper" itemprop="mainEntity">
 
 	<!-- The header -->
 		<header class="mt-shot-header clearfix">
@@ -29,7 +29,7 @@
 
          <!-- The Figure -->
 		<figure class="mt-figure__card mdl-card shot-cover">
-			<img ng-src="/uploads/{{$shot->file_name}}" alt="{{$shot->publishable->profile->username}}'s photo on myailorafrica.com">
+			<img itemprop="image" itemscope itemtype="http://schema.org/primaryImageOfPage" ng-src="/uploads/{{$shot->file_name}}" alt="{{$shot->publishable->profile->username}}'s photo on myailorafrica.com">
 		</figure>
 
 		<!-- Notes -->

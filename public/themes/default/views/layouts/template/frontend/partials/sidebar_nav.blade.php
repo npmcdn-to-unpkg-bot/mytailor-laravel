@@ -23,8 +23,7 @@
                   @endif
               </header>
 
-              <nav id="mt-nav-main" class="mt-nav" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement">
-                <h1 class="hidden">Main Navigation</h1>
+              <nav id="mt-nav-main" class="mt-nav" rrole="navigataion" itemscope itemtype="https://schema.org/WPSideBar">
                                 
                 <ul class="mt-sidebar-list">
                     <li class="{{ Route::is('home')? 'mt-list-active' : ''}}">
