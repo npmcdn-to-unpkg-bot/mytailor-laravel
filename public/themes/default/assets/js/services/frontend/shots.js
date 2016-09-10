@@ -13,18 +13,19 @@
 				var data = [
 					{name:'Type', dropElements: [
 
-						{link: '/explore/african-prints-shirts', text: 'Shirt'}, {link: '/explore/african-fashion-dresses', text: 'Dresses'},
+						{link: '/explore/african-prints-shirts', text: 'Shirt'}, {link: '/explore/african-fashion-dress', text: 'Dresses'},
 						{link: '/explore/african-fashion-blazers', text: 'Blazers'}, {link: '/explore/african-fashion-outfits', text: 'Outfits'},
 						{link: '/explore/african-fashion-jackets', text: 'Jackets'}, {link: '/explore/african-fashion-prints-women', text: 'Women'},
-						{link: '/explore/african-prints-pants', text: 'Prints'}, {link: '/explore/african-fashion-prints-bikini', text: 'Bikini'},
+						{link: '/explore/african-prints-pants', text: 'Pants'}, {link: '/explore/african-fashion-prints-bikini', text: 'Bikini'},
 						{link: '/explore/african-prints-swimwear', text: 'Swimwear'}, {link: '/explore/african-fashion-prints-tops', text: 'Tops'},
 						{link: '/explore/african-prints-skirts', text: 'Skirts'}, {link: '/explore/african-fashion-prints-hijab', text: 'Hijab'},
-						{link: '/explore/african-fashion-prints-men', text: 'For Men'}, {link: '/explore/african-fashion-prints-summer-wears', text: 'summer'}
+						{link: '/explore/african-fashion-prints-men', text: 'For Men'}, {link: '/explore/african-fashion-prints-summer-wears', text: 'summer'},
+						{link: '/explore/african-prints-shorts', text: 'Shorts'}
 					]},
 
 					{name:'Style', dropElements: [
 
-						{link: '/explore/african-fashion-blazers', text: 'Prints'}, {link: '/explore/african-fashion-classic-wears', text: 'Classic'},
+						{link: '/explore/african-fashion-prints', text: 'Prints'}, {link: '/explore/african-fashion-classic-wears', text: 'Classic'},
 						{link: '/explore/african-prints-modern', text: 'Modern'}, {link: '/explore/african-fashion-classic-wears', text: 'Classic'},
 						{link: '/explore/african-fashion-prints-ankara', text: 'Ankara'}, {link: '/explore/african-prints-kitenge', text: 'Kitenge'},
 						{link: '/explore/african-fashion-prints-leather', text: 'Leather'}, {link: '/explore/african-fashion-prints-ankara', text: 'Ankara'},
@@ -38,7 +39,7 @@
 
 					{name:'Occassional', dropElements: [
 
-						{link: '/explore/african-prints-weeding', text: 'Weeding'}, {link: '/explore/african-prints-work-wears', text: 'work'},
+						{link: '/explore/african-prints-wedding', text: 'Wedding'}, {link: '/explore/african-prints-work-wears', text: 'work'},
 						{link: '/explore/african-prints-party-wear', text: 'Party'}, {link: '/explore/african-prints-special', text: 'special'}
 					]},
 				];

@@ -106,7 +106,7 @@ class ShotsTemplate extends AbstractTemplate   {
                     Twitter::setTitle('Accessories | MyTailor African Fashion Designers');
                     break;
                 Default:
-                    SEOMeta::setTitle('MyTailor Africa | Fashion Designers Inspiration');
+                    SEOMeta::setTitle('MyTailorAfrica | Fashion Designers Inspiration');
                     SEOMeta::setDescription('See what\'s trending in African Fashion. From cultural, modern to classic office wears.');
                     OpenGraph::setDescription('See what\'s trending in African Fashion. From cultural, modern to classic office wears.');
                     OpenGraph::setUrl('http://mytailorafrica.com/shots');

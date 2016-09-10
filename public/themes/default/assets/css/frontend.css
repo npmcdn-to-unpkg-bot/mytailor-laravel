@@ -841,15 +841,15 @@ button.icon-round {
 .mt-logo__icon {
   background-image: url("../images/logo.png");
   background-repeat: no-repeat;
-  background-size: 38px 38px;
+  background-size: 35px 35px;
   background-position: center center;
   display: block;
-  height: 37px;
+  height: 38px;
   outline: none;
   overflow: hidden;
   text-indent: -999px;
   white-space: nowrap;
-  width: 43px; }
+  width: 38px; }
 
 .mdl-button:hover {
   background-color: rgba(158, 158, 158, 0.2); }

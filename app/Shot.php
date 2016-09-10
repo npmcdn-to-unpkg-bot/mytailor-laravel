@@ -202,15 +202,13 @@ class Shot extends Model {
         return $alt;
     }
 
-//    public function getColorAttribute()
-//    {
-//        $manager = new ImageManager(array('driver' => 'gd'));
-//        $image = $manager->make(public_path().'/uploads/'.$this->file_name);
-//
-//        $palette = Palette::generate($image);
-//        return $palette->getLightVibrantSwatch()->getColor();
-//    }
 
+    /**
+     * Send along tags array.
+     *
+     * @return array
+     *
+     */
     public function getAlgoliaRecord()
     {
         /**

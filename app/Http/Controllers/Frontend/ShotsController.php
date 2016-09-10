@@ -76,8 +76,7 @@ class ShotsController extends Controller
         $shot->timestamps = false;
         $shot->save();
         $shot->timestamps = true;
-
-        return 'Done...';
+        
     }
 
 }

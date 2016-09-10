@@ -6,7 +6,7 @@
 {{--Content Area for our view--}}
 
 @section('main')
-	<div class="overlay-wrapper animated fadeIn" ng-controller="shotsController" ng-init="init()">
+	<div class="overlay-wrapper animated fadeIn">
 
 	<section class="mdl-cell mdl-cell--12-col mdl-shadow--2dp mt-shot-wrapper" itemprop="mainEntity">
 

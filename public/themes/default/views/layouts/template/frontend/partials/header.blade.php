@@ -10,10 +10,10 @@
                   </div>
                   <div class="mt-header-spacer"></div>
                   {{-- Logo --}}
-  {{--                 <div>
+                <div>
                       <h1>
                         <a href="http://www.mytailorafrica.com/"><span class="mt-logo__icon">MyTailorAfrica</span></a></h1>
-                  </div> --}}
+                  </div>
 
                   {{-- Search bar starts here --}}
                     <div class="mt-search-wrapper expandable--search hide-on-phone">

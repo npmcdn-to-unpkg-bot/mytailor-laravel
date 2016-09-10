@@ -151,7 +151,7 @@ class DbShotsRepository implements ShotsRepositoryInterface{
         $page = Input::get('page', 1);
         $offset = ($page * $perPage) - $perPage;
         return new LengthAwarePaginator(array_slice($array, $offset, $perPage, true), count($array), $perPage, $page, ['path' => $this->request->url(), 'query' => $this->request->query()]);
-
+        
     }
 
 }
