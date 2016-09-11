@@ -65,9 +65,9 @@ instantsearch.js is available on [jsDelivr](https://www.jsdelivr.com/):
 We recommend using jsDelivr, but algoliasearch is also available at:
 
 - CDNJS: https://cdnjs.com/libraries/instantsearch.js
-- npmcdn:
-  - https://npmcdn.com/instantsearch.js@1/dist/instantsearch.min.js
-  - https://npmcdn.com/instantsearch.js@1/dist/instantsearch.min.css
+- unpkg:
+  - https://unpkg.com/instantsearch.js@1/dist/instantsearch.min.js
+  - https://unpkg.com/instantsearch.js@1/dist/instantsearch.min.css
 
 Using jsDelivr you will get auto updates for all the 1.x.x versions without any breaking change.
 
